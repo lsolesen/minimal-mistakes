@@ -19,7 +19,7 @@
   {% endfor %}
 </ul>
 
-{% assign entries_layout = page.entries_layout | default: 'list' %}
+{% assign entries_layout = entries_layout | default: 'list' %}
 {% for i in (1..items_max) reversed %}
   {% for taxonomy in include.taxonomies %}
     {% if taxonomy[1].size == i %}

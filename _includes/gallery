@@ -1,7 +1,7 @@
 {% if include.id %}
   {% assign gallery = page[include.id] %}
 {% else %}
-  {% assign gallery = page.gallery %}
+  {% assign gallery = gallery %}
 {% endif %}
 
 {% if include.layout %}

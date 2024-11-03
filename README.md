@@ -3,7 +3,16 @@
 [![LICENSE](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/mmistakes/minimal-mistakes/master/LICENSE)
 [![Jekyll](https://img.shields.io/badge/jekyll-%3E%3D%203.7-blue.svg)](https://jekyllrb.com/)
 
-Minimal Mistakes is a flexible two-column Jekyll theme, perfect for building personal sites, blogs, and portfolios. As the name implies, styling is purposely minimalistic to be enhanced and customized by you :smile:.
+Minimal Mistakes is a flexible two-column 11ty theme, perfect for building personal sites, blogs, and portfolios. As the name implies, styling is purposely minimalistic to be enhanced and customized by you :smile:.
+
+The theme is based on Michael Rose's Jekyll theme.
+
+***
+
+First I rewrote package.json to include Eleventy specific stuff.
+Then I added .eleventy.js with configuration for the site.
+
+***
 
 :sparkles: See what's new in the [CHANGELOG](CHANGELOG.md).
 

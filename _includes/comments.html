@@ -9,7 +9,7 @@
       <section id="disqus_thread"></section>
     {% when "facebook" %}
       <h4 class="page__comments-title">{{ comments_label }}</h4>
-      <section class="fb-comments" data-href="{{ page.url | absolute_url }}" data-mobile="true" data-num-posts="{{ site.comments.facebook.num_posts | default: 5 }}" data-width="100%" data-colorscheme="{{ site.comments.facebook.colorscheme | default: 'light' }}"></section>
+      <section class="fb-comments" data-href="{{ url | absolute_url }}" data-mobile="true" data-num-posts="{{ site.comments.facebook.num_posts | default: 5 }}" data-width="100%" data-colorscheme="{{ site.comments.facebook.colorscheme | default: 'light' }}"></section>
     {% when "staticman_v2" %}
       <section id="static-comments">
         {% if site.repository and site.comments.staticman.branch %}
@@ -68,7 +68,7 @@
                 <input type="url" id="comment-form-url" name="fields[url]" tabindex="4"/>
               </div>
               <div class="form-group hidden" style="display: none;">
-                <input type="hidden" name="options[slug]" value="{{ page.slug }}">
+                <input type="hidden" name="options[slug]" value="{{ slug }}">
                 <label for="comment-form-location">Not used. Leave blank if you are a human.</label>
                 <input type="text" id="comment-form-location" name="fields[hidden]" autocomplete="off"/>
                 {% if site.reCaptcha.siteKey %}<input type="hidden" name="options[reCaptcha][siteKey]" value="{{ site.reCaptcha.siteKey }}">{% endif %}
@@ -151,7 +151,7 @@
                 <input type="url" id="comment-form-url" name="fields[url]" tabindex="4"/>
               </div>
               <div class="form-group hidden" style="display: none;">
-                <input type="hidden" name="options[slug]" value="{{ page.slug }}">
+                <input type="hidden" name="options[slug]" value="{{ slug }}">
                 <label for="comment-form-location">Not used. Leave blank if you are a human.</label>
                 <input type="text" id="comment-form-location" name="fields[hidden]" autocomplete="off"/>
               </div>

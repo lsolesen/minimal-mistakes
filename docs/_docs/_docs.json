@@ -1,0 +1,12 @@
+{
+    "layout": "single",
+    "read_time": false,
+    "author_profile": false,
+    "share": false,
+    "comments": false,
+    "toc_sticky": true,
+    "sidebar": {
+        "nav": "docs"
+    },
+    "permalink": "/docs/{{ page.filePath | slugify }}/"
+}

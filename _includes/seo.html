@@ -1,7 +1,7 @@
 <!-- begin _includes/seo.html -->
 {%- assign title_separator = site.title_separator | default: '-' -%}
 
-{%- assign page_title = page.title | default: site.title | replace: '|', '&#124;' -%}
+{%- assign page_title = title | default: site.title | replace: '|', '&#124;' -%}
 {%- if page_title contains site.title -%}
   {%- assign seo_title = page_title | replace: '|', '&#124;' -%}
 {%- else -%}
@@ -11,25 +11,25 @@
 {%- assign page_title = page_title | markdownify | strip_html | strip_newlines | escape_once -%}
 {%- assign seo_title  = seo_title  | markdownify | strip_html | strip_newlines | escape_once -%}
 
-{%- assign canonical_url = page.canonical_url | default: page.url | replace: "/index.html", "/" | absolute_url %}
+{%- assign canonical_url = canonical_url | default: url | replace: "/index.html", "/" | absolute_url %}
 
-{%- assign seo_description = page.description | default: page.excerpt | default: site.description -%}
+{%- assign seo_description = description | default: excerpt | default: site.description -%}
 {%- if seo_description -%}
   {%- assign seo_description = seo_description | markdownify | strip_html | newline_to_br | strip_newlines | replace: '<br />', ' ' | escape_once | strip -%}
 {%- endif -%}
 
-{%- assign author = page.author | default: page.authors[0] | default: site.author -%}
+{%- assign author = author | default: authors[0] | default: site.author -%}
 {%- assign author = site.data.authors[author] | default: author -%}
 
 {%- if author.twitter -%}
   {%- assign author_twitter = author.twitter | replace: "@", "" -%}
 {%- endif -%}
 
-{%- assign page_large_image = page.header.og_image | default: page.header.overlay_image | default: page.header.image | absolute_url | escape -%}
-{%- assign page_teaser_image = page.header.teaser | default: site.og_image | absolute_url | escape -%}
+{%- assign page_large_image = header.og_image | default: header.overlay_image | default: header.image | absolute_url | escape -%}
+{%- assign page_teaser_image = header.teaser | default: site.og_image | absolute_url | escape -%}
 {%- assign site_og_image = site.og_image | absolute_url | escape -%}
 
-{%- if page.date -%}
+{%- if date -%}
   {%- assign og_type = "article" -%}
 {%- else -%}
   {%- assign og_type = "website" -%}
@@ -82,12 +82,12 @@
   {% endif %}
 {% endif %}
 
-{% if page.date %}
-  <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+{% if date %}
+  <meta property="article:published_time" content="{{ date | date_to_xmlschema }}">
 {% endif %}
 
-{% if og_type == "article" and page.last_modified_at %}
-  <meta property="article:modified_time" content="{{ page.last_modified_at | date_to_xmlschema }}">
+{% if og_type == "article" and last_modified_at %}
+  <meta property="article:modified_time" content="{{ last_modified_at | date_to_xmlschema }}">
 {% endif %}
 
 {% if site.facebook %}
@@ -109,7 +109,7 @@
   <link rel="next" href="{{ paginator.next_page_path | absolute_url }}">
 {% endif %}
 
-{% if page.url == '/' %}
+{% if url == '/' %}
   {% include schema.html %}
 {% endif %}
 
