@@ -5,6 +5,12 @@ const getPosts = collection => {
 const getDocs = collection => {
   return collection.getFilteredByGlob('docs/_docs/**/*.md');
 };
+const getPets = collection => {
+  return collection.getFilteredByGlob('docs/_pets/**/*.md');
+};
+const getRecipes = collection => {
+  return collection.getFilteredByGlob('docs/_recipes/**/*.md');
+};
 
 // Setting up Markdownify
 const markdownIt = require("markdown-it");
@@ -40,6 +46,8 @@ module.exports = function(eleventyConfig) {
     // TODO ADD ALL COLLECTIONS
     eleventyConfig.addCollection('posts', getPosts);
     eleventyConfig.addCollection('docs', getDocs);
+    eleventyConfig.addCollection('pets', getPets);
+    eleventyConfig.addCollection('recipes', getRecipes);
 
     // Pass through
     eleventyConfig.addPassthroughCopy("assets/css");
