@@ -1,5 +1,6 @@
 {
     "layout": "single",
     "author_profile": false,
-    "share": true
+    "share": true,
+    "permalink": "/portfolio/{{ page.fileSlug | slugify }}/"
 }

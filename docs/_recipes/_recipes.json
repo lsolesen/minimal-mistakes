@@ -2,5 +2,6 @@
     "layout": "single",
     "author_profile": true,
     "share": true,
-    "comments": true
+    "comments": true,
+    "permalink": "/recipes/{{ page.fileSlug | slugify }}/"
 }
