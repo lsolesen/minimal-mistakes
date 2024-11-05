@@ -48,13 +48,32 @@ const getSimilarCategories = function(categoriesA, categoriesB) {
 
 module.exports = async function(eleventyConfig) {
 
-  // https://fossheim.io/writing/posts/eleventy-similar-posts/
-  eleventyConfig.addLiquidFilter("similarPosts", function(collection, path, categories){
-    return collection.filter((post) => {
-      return getSimilarCategories(post.data.categories, categories) >= 1 && post.data.page.inputPath !== path;
-    }).sort((a,b) => {
-      return getSimilarCategories(b.data.categories, categories) - getSimilarCategories(a.data.categories, categories);
-    });
+  // https://saadbess.com/blog/creating-a-content-recommendation-plugin-in-11ty/
+  eleventyConfig.addCollection("relatedPosts", function (collection) {
+    return collection
+      .getAll()
+      .filter((item) => !item.data.draft)
+      .map((post) => {
+        let related = [];
+
+        if (post.data.tags) {
+          post.data.tags.forEach((tag) => {
+            collection.getFilteredByTag(tag).forEach((item) => {
+              if (
+                item.url !== post.url &&
+                !related.includes(item) &&
+                !item.data.draft
+              ) {
+                related.push(item);
+              }
+            });
+          });
+        }
+        // Remove duplicates and limit to a specific number of related posts, for instance, 3
+        related = [...new Set(related)].slice(0, 4);
+        post.data.relatedPosts = related;
+        return post;
+      });
   });
 
   const { EleventyHtmlBasePlugin } = await import("@11ty/eleventy");
