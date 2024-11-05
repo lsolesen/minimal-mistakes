@@ -8,7 +8,9 @@ redirect_from:
 toc: true
 ---
 
-Minimal Mistakes has been developed as a [Gem-based theme](http://jekyllrb.com/docs/themes/) for easier use, and 100% compatible with GitHub Pages when used as a remote theme.
+Minimal Mistakes has been developed by Michael Rose for Jekyll. This is a port of that theme to use for 11ty. You can deploy it to Github Pages with Github Actions.
+
+You can sponsor Michael Rose on the links below.
 
 **If you enjoy this theme, please consider [sponsoring me](https://github.com/sponsors/mmistakes) to continue developing and maintaining it.**
 
@@ -16,6 +18,12 @@ Minimal Mistakes has been developed as a [Gem-based theme](http://jekyllrb.com/d
 
 [![Support via PayPal](https://cdn.jsdelivr.net/gh/twolfson/paypal-github-button@1.0.0/dist/button.svg)](https://www.paypal.me/mmistakes)
 {: style="margin-top: 0.5em;"}
+
+## Documentation has NOT been rewritten for 11ty
+
+The docs has NOT been rewritten for 11ty yet.
+
+***
 
 ## Installing the theme
 

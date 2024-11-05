@@ -4,7 +4,6 @@ permalink: /docs/configuration/
 excerpt: "Settings for configuring and customizing the theme."
 last_modified_at: 2021-05-11T10:40:42-04:00
 toc: true
-
 skins:
   - name: air
     description: Calm and blue.
@@ -823,25 +822,13 @@ For pages that don't have a `header.image` assigned in their YAML Front Matter, 
 og_image: /assets/images/site-logo.png
 ```
 
-{% include figure
-   image_path="/assets/images/mm-twitter-card-summary-image.jpg"
-   alt="Twitter Card summary example"
-   caption="Example of an image placed in a Summary Card."
-%}
+{% include figure image_path="/assets/images/mm-twitter-card-summary-image.jpg" alt="Twitter Card summary example" caption="Example of an image placed in a Summary Card." %}
 
 Documents who have a `header.image` assigned in their YAML Front Matter will appear like this when shared on Twitter and Facebook.
 
-{% include figure
-   image_path="/assets/images/mm-twitter-card-summary-large.jpg"
-   alt="page shared on Twitter"
-   caption="Shared page on Twitter with header image assigned."
-%}
+{% include figure image_path="/assets/images/mm-twitter-card-summary-large.jpg" alt="page shared on Twitter" caption="Shared page on Twitter with header image assigned." %}
 
-{% include figure
-   image_path="/assets/images/facebook-share-example.jpg"
-   alt="page shared on Facebook"
-   caption="Shared page on Facebook with header image assigned."
-%}
+{% include figure image_path="/assets/images/facebook-share-example.jpg" alt="page shared on Facebook" caption="Shared page on Facebook with header image assigned." %}
 
 ##### Include your social profile in search results
 
