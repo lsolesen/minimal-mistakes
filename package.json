@@ -8,9 +8,9 @@
     "build:sass": "sass assets/css:_site/assets/css",
     "watch:eleventy": "eleventy --serve",
     "build:eleventy": "eleventy",
-    "build:gh-pages": "eleventy --pathprefix=/minimal-mistakes/",
     "start": "npm-run-all build:sass --parallel watch:*",
-    "build": "npm-run-all build:*"
+    "build": "npm-run-all build:*",
+    "build-gh-pages": "eleventy --pathprefix=/minimal-mistakes/"
   },
   "keywords": [],
   "author": "",
