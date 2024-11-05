@@ -41,12 +41,22 @@ md.use(markdownItAnchor);
 // Allow for data files to be in yaml
 const yaml = require("js-yaml");
 
-// https://fossheim.io/writing/posts/eleventy-similar-posts/
-const getSimilarCategories = function(categoriesA, categoriesB) {
-  return categoriesA.filter(Set.prototype.has, new Set(categoriesB)).length;
-}
 
 module.exports = async function(eleventyConfig) {
+
+	// Return the keys used in an object
+	eleventyConfig.addFilter("getKeys", target => {
+		return Object.keys(target);
+	});
+
+	eleventyConfig.addFilter("filterTagList", function filterTagList(tags) {
+		return (tags || []).filter(tag => ["all", "posts"].indexOf(tag) === -1);
+	});
+
+  // Does not work with categories
+	eleventyConfig.addFilter("filterCategoriesList", function filterCategoriesList(categories) {
+		return (categories || []).filter(category => ["all", "posts"].indexOf(category) === -1);
+	});
 
   // https://saadbess.com/blog/creating-a-content-recommendation-plugin-in-11ty/
   eleventyConfig.addCollection("relatedPosts", function (collection) {

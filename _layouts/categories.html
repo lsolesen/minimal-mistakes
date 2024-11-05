@@ -4,4 +4,5 @@ layout: archive
 
 {{ content }}
 
-{% include posts-taxonomy.html taxonomies=site.categories %}
+{% assign categories = collections | getKeys | filterCategoriesList %}
+{% include posts-taxonomy.html taxonomies=categories %}

@@ -1,7 +1,6 @@
 {
-  "name": "motionsplan-11ty",
+  "name": "minimal-mistakes-11ty",
   "version": "1.0.0",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch:sass": "sass --watch assets/css:_site/assets/css",

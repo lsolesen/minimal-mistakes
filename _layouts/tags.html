@@ -3,5 +3,5 @@ layout: archive
 ---
 
 {{ content }}
-
-{% include posts-taxonomy.html taxonomies=site.tags %}
+{% assign tags = collections | getKeys | filterTagList %}
+{% include posts-taxonomy.html taxonomies=tags %}
