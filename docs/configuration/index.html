@@ -1,0 +1,1285 @@
+
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.26.2 by Michael Rose
+  Copyright 2013-2024 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="en-US" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Configuration - Minimal Mistakes</title>
+<meta name="description" content="Settings for configuring and customizing the theme.">
+
+
+  <meta name="author" content="Michael Rose">
+  
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Minimal Mistakes">
+<meta property="og:title" content="Configuration">
+<meta property="og:url" content="">
+
+
+  <meta property="og:description" content="Settings for configuring and customizing the theme.">
+
+
+
+  <meta property="og:image" content="">
+
+
+
+  <meta name="twitter:site" content="@mmistakes">
+  <meta name="twitter:title" content="Configuration">
+  <meta name="twitter:description" content="Settings for configuring and customizing the theme.">
+  <meta name="twitter:url" content="">
+
+  
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="">
+  
+
+  
+
+
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href=".">
+
+
+
+
+
+
+
+  <meta name="google-site-verification" content="UQj93ERU9zgECodaaXgVpkjrFn9UrDMEzVamacSoQ8Y">
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/minimal-mistakes/feed.xml" type="application/atom+xml" rel="alternate" title="Minimal Mistakes Feed">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  window.enable_copy_code_button = true;
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/minimal-mistakes/assets/css/main.css">
+<link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single" dir="ltr">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/minimal-mistakes/">
+          Minimal Mistakes
+          <span class="site-subtitle">A 11ty theme</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/minimal-mistakes/docs/quick-start-guide/">Quick-Start Guide</a>
+            </li><li class="masthead__menu-item">
+              <a href="/minimal-mistakes/about/">About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/minimal-mistakes/year-archive/">Sample Posts</a>
+            </li><li class="masthead__menu-item">
+              <a href="/minimal-mistakes/collection-archive/">Sample Collections</a>
+            </li><li class="masthead__menu-item">
+              <a href="/minimal-mistakes/terms/">Terms &amp; Privacy Policy</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <i class="fas fa-search"></i>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+      
+    
+    
+      <nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox">
+  <label for="ac-toc">Toggle Menu</label>
+  <ul class="nav__items">
+    
+      
+      
+        <li>
+          
+            <span class="nav__sub-title">Getting Started</span>
+          
+
+          
+          <ul>
+            
+              <li><a href="/minimal-mistakes/docs/quick-start-guide/">Quick-Start Guide</a></li>
+            
+              <li><a href="/minimal-mistakes/docs/structure/">Structure</a></li>
+            
+              <li><a href="/minimal-mistakes/docs/installation/">Installation</a></li>
+            
+              <li><a href="/minimal-mistakes/docs/upgrading/">Upgrading</a></li>
+            
+          </ul>
+          
+        </li>
+      
+        <li>
+          
+            <span class="nav__sub-title">Customization</span>
+          
+
+          
+          <ul>
+            
+              <li><a href="/minimal-mistakes/docs/configuration/">Configuration</a></li>
+            
+              <li><a href="/minimal-mistakes/docs/overriding-theme-defaults/">Overriding Theme Defaults</a></li>
+            
+              <li><a href="/minimal-mistakes/docs/navigation/">Navigation</a></li>
+            
+              <li><a href="/minimal-mistakes/docs/ui-text/">UI Text</a></li>
+            
+              <li><a href="/minimal-mistakes/docs/authors/">Authors</a></li>
+            
+              <li><a href="/minimal-mistakes/docs/layouts/">Layouts</a></li>
+            
+          </ul>
+          
+        </li>
+      
+        <li>
+          
+            <span class="nav__sub-title">Content</span>
+          
+
+          
+          <ul>
+            
+              <li><a href="/minimal-mistakes/docs/posts/">Working with Posts</a></li>
+            
+              <li><a href="/minimal-mistakes/docs/pages/">Working with Pages</a></li>
+            
+              <li><a href="/minimal-mistakes/docs/collections/">Working with Collections</a></li>
+            
+              <li><a href="/minimal-mistakes/docs/helpers/">Helpers</a></li>
+            
+              <li><a href="/minimal-mistakes/docs/utility-classes/">Utility Classes</a></li>
+            
+          </ul>
+          
+        </li>
+      
+        <li>
+          
+            <span class="nav__sub-title">Extras</span>
+          
+
+          
+          <ul>
+            
+              <li><a href="/minimal-mistakes/docs/stylesheets/">Stylesheets</a></li>
+            
+              <li><a href="/minimal-mistakes/docs/javascript/">JavaScript</a></li>
+            
+          </ul>
+          
+        </li>
+      
+        <li>
+          
+            <span class="nav__sub-title">Meta</span>
+          
+
+          
+          <ul>
+            
+              <li><a href="/minimal-mistakes/docs/faq/">FAQ</a></li>
+            
+              <li><a href="/minimal-mistakes/docs/history/">History</a></li>
+            
+              <li><a href="/minimal-mistakes/docs/contributing/">Contributing</a></li>
+            
+              <li><a href="/minimal-mistakes/docs/docs-2-2/">Old 2.2 Docs</a></li>
+            
+              <li><a href="/minimal-mistakes/docs/license/">License</a></li>
+            
+              <li><a href="/minimal-mistakes/terms/">Terms &amp; Privacy Policy</a></li>
+            
+          </ul>
+          
+        </li>
+      
+    
+  </ul>
+</nav>
+
+    
+  
+  </div>
+
+
+
+  <article class="page" itemscope="" itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Configuration">
+    <meta itemprop="description" content="Settings for configuring and customizing the theme.">
+    
+    <meta itemprop="dateModified" content="2021-05-11T14:40:42+00:00">
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">
+            <a href="." itemprop="url">Configuration
+</a>
+          </h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu"><li><a href="#site-settings">Site settings</a><ul><li><a href="#theme">Theme</a></li><li><a href="#skin">Skin</a></li><li><a href="#site-locale">Site locale</a></li><li><a href="#site-title">Site title</a></li><li><a href="#site-subtitle">Site subtitle</a></li><li><a href="#site-name">Site name</a></li><li><a href="#site-description">Site description</a></li><li><a href="#site-url">Site URL</a></li><li><a href="#site-base-url">Site base URL</a></li><li><a href="#site-repository">Site repository</a></li><li><a href="#site-scripts">Site scripts</a></li><li><a href="#site-default-teaser-image">Site default teaser image</a></li><li><a href="#site-masthead-logo">Site masthead logo</a></li><li><a href="#site-masthead-title">Site masthead title</a></li><li><a href="#site-rtl-direction">Site RTL direction</a></li><li><a href="#breadcrumb-navigation-(beta)">Breadcrumb navigation (beta)</a></li><li><a href="#post-dates">Post dates</a></li><li><a href="#reading-time">Reading time</a></li><li><a href="#page-meta-separator">Page meta separator</a></li><li><a href="#code-block-copy-button">Code block copy button</a></li><li><a href="#comments">Comments</a><ul><li><a href="#disqus">Disqus</a></li><li><a href="#discourse">Discourse</a></li><li><a href="#facebook-comments">Facebook comments</a></li><li><a href="#utterances-comments">utterances comments</a></li><li><a href="#giscus-comments">giscus comments</a></li><li><a href="#static-based-comments-via-staticman">Static-based comments via Staticman</a><ul><li><a href="#add-staticman-as-a-collaborator-on-github-(legacy)">Add Staticman as a collaborator on GitHub (legacy)</a></li><li><a href="#configure-staticman">Configure Staticman</a><ul><li><a href="#staticman-v3">Staticman v3</a></li><li><a href="#staticman-v2">Staticman v2</a></li><li><a href="#staticman-v1-(deprecated)">Staticman v1 (deprecated)</a></li></ul></li><li><a href="#comment-moderation">Comment moderation</a></li><li><a href="#recaptcha-support-(v2-only)">reCAPTCHA support (v2 only)</a></li></ul></li><li><a href="#other-comment-providers">Other comment providers</a></li></ul></li><li><a href="#custom-feed-url">Custom feed URL</a></li><li><a href="#disable-feed-icons">Disable Feed Icons</a></li><li><a href="#site-search">Site search</a><ul><li><a href="#lunr-(default)">Lunr (default)</a></li><li><a href="#algolia">Algolia</a></li><li><a href="#google-custom-search-engine">Google Custom Search Engine</a></li></ul></li><li><a href="#seo%2C-social-sharing%2C-and-analytics-settings">SEO, social sharing, and analytics settings</a><ul><li><a href="#google-search-console">Google Search Console</a></li><li><a href="#bing-webmaster-tools">Bing Webmaster Tools</a></li><li><a href="#naver-webmaster-tools">Naver Webmaster Tools</a></li><li><a href="#yandex">Yandex</a></li><li><a href="#baidu">Baidu</a></li><li><a href="#twitter-cards-and-facebook-open-graph">Twitter Cards and Facebook Open Graph</a><ul><li><a href="#site-twitter-username">Site Twitter username</a></li><li><a href="#facebook-open-graph">Facebook Open Graph</a></li><li><a href="#open-graph-default-image">Open Graph default image</a></li><li><a href="#include-your-social-profile-in-search-results">Include your social profile in search results</a></li></ul></li><li><a href="#analytics">Analytics</a></li></ul></li></ul></li><li><a href="#site-author">Site author</a></li><li><a href="#site-footer">Site footer</a></li><li><a href="#reading-files">Reading files</a></li><li><a href="#conversion-and-markdown-processing">Conversion and Markdown processing</a></li><li><a href="#front-matter-defaults">Front Matter Defaults</a></li><li><a href="#outputting">Outputting</a><ul><li><a href="#paginate">Paginate</a></li><li><a href="#paginate-v2">Paginate V2</a></li><li><a href="#timezone">Timezone</a></li></ul></li><li><a href="#plugins">Plugins</a></li><li><a href="#archive-settings">Archive settings</a></li><li><a href="#html-compression">HTML compression</a></li></ul>
+            </nav>
+          </aside>
+        
+        <p>Settings that affect your entire site can be changed in <a href="https://jekyllrb.com/docs/configuration/">Jekyll's configuration file</a>: <code>_config.yml</code>, found in the root of your project. If you don't have this file you'll need to copy or create one using the theme's <a href="https://github.com/mmistakes/minimal-mistakes/blob/master/_config.yml">default <code>_config.yml</code></a> as a base.</p>
+<p class="notice--warning"><strong>Note:</strong> for technical reasons, <code>_config.yml</code> is NOT reloaded automatically when used with <code>jekyll serve</code>. If you make any changes to this file, please restart the server process for them to be applied.</p>
+<p>Take a moment to look over the configuration file included with the theme. Comments have been added to provide examples and default values for most settings. Detailed explanations of each can be found below.</p>
+<h2 id="site-settings" tabindex="-1">Site settings</h2>
+<h3 id="theme" tabindex="-1">Theme</h3>
+<p>If you're using the Ruby gem version of the theme you'll need this line to activate it:</p>
+<pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">theme</span><span class="token punctuation">:</span> minimal<span class="token punctuation">-</span>mistakes<span class="token punctuation">-</span>jekyll</code></pre>
+<h3 id="skin" tabindex="-1">Skin</h3>
+<p>Easily change the color scheme of the theme using one of the provided &quot;skins&quot;:</p>
+<pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">minimal_mistakes_skin</span><span class="token punctuation">:</span> <span class="token string">"default"</span> <span class="token comment"># "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"</span></code></pre>
+<p class="notice--warning"><strong>Note:</strong> If you have made edits to the theme's CSS files be sure to update <a href="https://github.com/mmistakes/minimal-mistakes/blob/master/assets/css/main.scss"><code>/assets/css/main.scss</code></a> to include <code>@import &quot;minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}&quot;; // skin</code> before the <code>minimal-mistakes</code> import.</p>
+<h3 id="site-locale" tabindex="-1">Site locale</h3>
+<p><code>site.locale</code> is used to declare the primary language for each web page within the site.</p>
+<p><em>Example:</em> <code>locale: &quot;en-US&quot;</code> sets the <code>lang</code> attribute for the site to the <em>United States</em> flavor of English, while <code>en-GB</code> would be for the <em>United Kingdom</em> style of English. Country codes are optional and the shorter variation <code>locale: &quot;en&quot;</code> is also acceptable. To find your language and country codes check this <a href="https://msdn.microsoft.com/en-us/library/ee825488(v=cs.20).aspx">reference table</a>.</p>
+<p>Properly setting the locale is important for associating localized text found in the <a href="/minimal-mistakes/docs/ui-text/"><strong>UI Text</strong></a> data file. An improper match will cause parts of the UI to disappear (eg. button labels, section headings, etc).</p>
+<p class="notice--warning"><strong>Note:</strong> The theme comes with localized text in English (<code>en</code>, <code>en-US</code>, <code>en-GB</code>). If you change <code>locale</code> in <code>_config.yml</code> to something else, most of the UI text will go blank. Be sure to add the corresponding locale key and translated text to <code>_data/ui-text.yml</code> to avoid this.</p>
+<h3 id="site-title" tabindex="-1">Site title</h3>
+<p>The name of your site. Is used throughout the theme in places like the site masthead and <code>&lt;title&gt;</code> tags.</p>
+<p><em>Example:</em> <code>title: &quot;My Awesome Site&quot;</code></p>
+<p>You also have the option of customizing the separation character used in SEO-friendly page titles.</p>
+<p><em>Example:</em> <code>title_separator: &quot;|&quot;</code> would produce page titles like <code>Sample Page | My Awesome Site</code>.</p>
+<p class="notice--warning"><strong>Note:</strong> Long site titles have been known to break the masthead layout. Avoid adding a long &quot;tagline&quot; to the title to prevent this from happening, e.g. <code>My Awesome Site is the Best Because I Say So</code>.</p>
+<h3 id="site-subtitle" tabindex="-1">Site subtitle</h3>
+<p>A short tagline that appears below the title in site masthead.</p>
+<p><em>Example:</em> <code>subtitle: &quot;Version 2.0&quot;</code></p>
+<h3 id="site-name" tabindex="-1">Site name</h3>
+<p>Used to assign a site author. Don't worry, you can override the site author with different ones on specific posts, pages, or collection documents.</p>
+<p><em>Example:</em> <code>name: &quot;Michael Rose&quot;</code>.</p>
+<p class="notice--info"><strong>ProTip:</strong> If you want to get crafty with your YAML you can use <a href="http://www.yaml.org/spec/1.2/spec.html#id2785586">anchors</a> to reuse values. For example <code>foo: &amp;var &quot;My String&quot;</code> allows you to reuse <code>&quot;My String&quot;</code> elsewhere in <code>_config.yml</code> like so... <code>bar: *var</code>. You'll see a few examples of this in the provided Jekyll config.</p>
+<h3 id="site-description" tabindex="-1">Site description</h3>
+<p>Fairly obvious. <code>site.description</code> describes the site. Used predominantly in meta descriptions for improving SEO.</p>
+<p><em>Example:</em> <code>description: &quot;A flexible Jekyll theme for your blog or site with a minimalist aesthetic.&quot;</code></p>
+<h3 id="site-url" tabindex="-1">Site URL</h3>
+<p>The base hostname and protocol for your site. If you're hosting on GitHub Pages this will be something like <code>url: &quot;https://mmistakes.github.io&quot;</code> or <code>url: &quot;https://mademistakes.com&quot;</code> if you have a custom domain name.</p>
+<p>GitHub Pages now <a href="https://help.github.com/articles/securing-your-github-pages-site-with-https/">forces <code>https://</code> for new sites</a> so be mindful of that when setting your URL to avoid mixed-content warnings.</p>
+<p class="notice--warning"><strong>Note:</strong> Jekyll 3.3 overrides this value with <code>url: http://localhost:4000</code> when running <code>jekyll serve</code> locally in development. If you want to avoid this behavior set <code>JEKYLL_ENV=production</code> to <a href="https://jekyllrb.com/docs/configuration/environments/">force the environment</a> to production.</p>
+<h3 id="site-base-url" tabindex="-1">Site base URL</h3>
+<p>This little option causes all kinds of confusion in the Jekyll community. If you're not hosting your site as a GitHub Pages Project or in a subfolder (eg: <code>/blog</code>), then don't mess with it.</p>
+<p>In the case of the Minimal Mistakes demo site it's hosted on GitHub at <a href="https://mmistakes.github.io/minimal-mistakes">https://mmistakes.github.io/minimal-mistakes</a>. To correctly set this base path I'd use <code>url: &quot;https://mmistakes.github.io&quot;</code> and <code>baseurl: &quot;/minimal-mistakes&quot;</code>.</p>
+<p>For more information on how to properly use <code>site.url</code> and <code>site.baseurl</code> as intended by the Jekyll maintainers, check <a href="https://byparker.com/blog/2014/clearing-up-confusion-around-baseurl/">Parker Moore's post on the subject</a>.</p>
+<p class="notice--warning"><strong>Note:</strong> When using <code>baseurl</code> remember to include it as part of your path when testing your site locally. Values of <code>url:</code> and <code>baseurl: &quot;/blog&quot;</code> would make your local site visible at <code>http://localhost:4000/blog</code> and not <code>http://localhost:4000</code>.</p>
+<h3 id="site-repository" tabindex="-1">Site repository</h3>
+<p>Add your repository name with organization to your site's configuration file, <code>_config.yml</code>.</p>
+<pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">repository</span><span class="token punctuation">:</span> <span class="token string">"username/repo-name"</span></code></pre>
+<p>&quot;NWO&quot; stands for &quot;<strong>n</strong>ame <strong>w</strong>ith <strong>o</strong>wner.&quot; It is GitHub lingo for the username of the owner of the repository plus a forward slash plus the name of the repository, e.g. <code>mmistakes/minimal-mistakes</code>, where <strong>mmistakes</strong> is the owner and <strong>minimal-mistakes</strong> is the repository name.</p>
+<p>Your <code>site.github.*</code> fields should be filled in like normal. If you run Jekyll with the <code>--verbose</code> flag, you should be able to see all the API calls made.</p>
+<p>If you don't set <code>repository</code> correctly you may see the following error when trying to <code>serve</code> or <code>build</code> your Jekyll site:</p>
+<p class="notice--danger"><strong>Liquid Exceptions:</strong> No repo name found. Specify using <code>PAGES_REPO_NWO</code> environment variables, <code>repository</code> in your configuration, or set up <code>origin</code> git remote pointing to your <a href="http://github.com">github.com</a> repository.</p>
+<p>For more information on how <code>site.github</code> data can be used with Jekyll check out <a href="https://github.com/jekyll/github-metadata"><code>github-metadata</code>'s documentation</a>.</p>
+<h3 id="site-scripts" tabindex="-1">Site scripts</h3>
+<p>Add scripts to the <code>&lt;head&gt;</code> or closing <code>&lt;/body&gt;</code> elements by assigning paths to either <code>head_scripts</code> and/or <code>footer_scripts</code>.</p>
+<p>For example, to add a CDN version of jQuery to page's head along with a custom script you'd do the following:</p>
+<pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">head_scripts</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> https<span class="token punctuation">:</span>//code.jquery.com/jquery<span class="token punctuation">-</span>3.2.1.min.js
+  <span class="token punctuation">-</span> /assets/js/your<span class="token punctuation">-</span>custom<span class="token punctuation">-</span>head<span class="token punctuation">-</span>script.js</code></pre>
+<p class="notice--info">Consult the <a href="/minimal-mistakes/minimal-mistakes_docs/17-javascript.md">JavaScript documentation</a> for more information on working with theme scripts.</p>
+<h3 id="site-default-teaser-image" tabindex="-1">Site default teaser image</h3>
+<p>To assign a fallback teaser image used in the &quot;<strong>Related Posts</strong>&quot; module, place a graphic in the <code>/assets/images/</code> directory and add the filename to <code>_config.yml</code> like so:</p>
+<pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">teaser</span><span class="token punctuation">:</span> /assets/images/500x300.png</code></pre>
+<p>This image can be overridden at anytime by applying the following to a document's YAML Front Matter.</p>
+<pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">header</span><span class="token punctuation">:</span>
+  <span class="token key atrule">teaser</span><span class="token punctuation">:</span> /assets/images/my<span class="token punctuation">-</span>awesome<span class="token punctuation">-</span>post<span class="token punctuation">-</span>teaser.jpg</code></pre>
+<figure>
+  <picture><source type="image/webp" srcset="/minimal-mistakes/img/Qsgo80-Tba-400.webp 400w, /minimal-mistakes/img/Qsgo80-Tba-800.webp 800w, /minimal-mistakes/img/Qsgo80-Tba-1177.webp 1177w" sizes="100vw"><img loading="lazy" decoding="async" src="/minimal-mistakes/img/Qsgo80-Tba-400.jpeg" alt="teaser image example" width="1177" height="485" srcset="/minimal-mistakes/img/Qsgo80-Tba-400.jpeg 400w, /minimal-mistakes/img/Qsgo80-Tba-800.jpeg 800w, /minimal-mistakes/img/Qsgo80-Tba-1177.jpeg 1177w" sizes="100vw"></picture>
+  <figcaption>Example of teaser images found in the related posts module.</figcaption>
+</figure>
+<h3 id="site-masthead-logo" tabindex="-1">Site masthead logo</h3>
+<p>To insert a logo before the site title, place a graphic in the <code>/assets/images/</code> directory and add the filename to <code>_config.yml</code>:</p>
+<pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">logo</span><span class="token punctuation">:</span> <span class="token string">"/assets/images/88x88.png"</span></code></pre>
+<figure>
+  <picture><source type="image/webp" srcset="/minimal-mistakes/img/qjYP1TyMSQ-400.webp 400w, /minimal-mistakes/img/qjYP1TyMSQ-800.webp 800w, /minimal-mistakes/img/qjYP1TyMSQ-966.webp 966w" sizes="100vw"><img loading="lazy" decoding="async" src="/minimal-mistakes/img/qjYP1TyMSQ-400.jpeg" alt="masthead with logo and custom title" width="966" height="483" srcset="/minimal-mistakes/img/qjYP1TyMSQ-400.jpeg 400w, /minimal-mistakes/img/qjYP1TyMSQ-800.jpeg 800w, /minimal-mistakes/img/qjYP1TyMSQ-966.jpeg 966w" sizes="100vw"></picture>
+  <figcaption>Example of masthead with logo and custom title.</figcaption>
+</figure>
+<h3 id="site-masthead-title" tabindex="-1">Site masthead title</h3>
+<p>By default your site title is used in the masthead. You can override this text by adding the following to your <code>_config.yml</code>:</p>
+<pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">masthead_title</span><span class="token punctuation">:</span> <span class="token string">"My Custom Title"</span></code></pre>
+<h3 id="site-rtl-direction" tabindex="-1">Site RTL direction</h3>
+<p><code>site.rtl</code> is used to turn the direction of the page into right to left. This option can be used for RTL languages (like Arabic, Persian, etc)</p>
+<p><em>Example:</em> <code>rtl: true</code> sets the direction of the page to right to left. By default this option is <code>rtl: false</code>.</p>
+<h3 id="breadcrumb-navigation-(beta)" tabindex="-1">Breadcrumb navigation (beta)</h3>
+<p>Enable breadcrumb links to help visitors better navigate deep sites. Because of the fragile method of implementing them they don't always produce accurate links reliably. For best results:</p>
+<ol>
+<li>Use a category based permalink structure e.g. <code>permalink: /:categories/:title/</code></li>
+<li>Manually create pages for each category or use a plugin like <a href="https://github.com/jekyll/jekyll-archives">jekyll-archives</a> to auto-generate them. If these pages don't exist breadcrumb links to them will be broken.</li>
+</ol>
+<p><picture><source type="image/webp" srcset="/minimal-mistakes/img/Dv24k2Ygku-400.webp 400w, /minimal-mistakes/img/Dv24k2Ygku-800.webp 800w, /minimal-mistakes/img/Dv24k2Ygku-1003.webp 1003w" sizes="100vw"><img loading="lazy" decoding="async" src="/minimal-mistakes/img/Dv24k2Ygku-400.jpeg" alt="breadcrumb navigation example" width="1003" height="426" srcset="/minimal-mistakes/img/Dv24k2Ygku-400.jpeg 400w, /minimal-mistakes/img/Dv24k2Ygku-800.jpeg 800w, /minimal-mistakes/img/Dv24k2Ygku-1003.jpeg 1003w" sizes="100vw"></picture></p>
+<pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">breadcrumbs</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>  <span class="token comment"># disabled by default</span></code></pre>
+<p>Breadcrumb start link text and separator character can both be changed in the <a href="/minimal-mistakes/docs/ui-text/">UI Text data file</a>.</p>
+<h3 id="post-dates" tabindex="-1">Post dates</h3>
+<p>Enable post date snippets with <code>show_date: true</code> in YAML Front Matter.</p>
+<p><picture><source type="image/webp" srcset="/minimal-mistakes/img/T3Gq-XaC7D-400.webp 400w, /minimal-mistakes/img/T3Gq-XaC7D-800.webp 800w, /minimal-mistakes/img/T3Gq-XaC7D-1920.webp 1920w" sizes="100vw"><img loading="lazy" decoding="async" src="/minimal-mistakes/img/T3Gq-XaC7D-400.jpeg" alt="post date example" width="1920" height="590" srcset="/minimal-mistakes/img/T3Gq-XaC7D-400.jpeg 400w, /minimal-mistakes/img/T3Gq-XaC7D-800.jpeg 800w, /minimal-mistakes/img/T3Gq-XaC7D-1920.jpeg 1920w" sizes="100vw"></picture></p>
+<p>Instead of adding <code>show_date: true</code> to each post, apply as a default in <code>_config.yml</code> like so:</p>
+<pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">defaults</span><span class="token punctuation">:</span>
+  <span class="token comment"># _posts</span>
+  <span class="token punctuation">-</span> <span class="token key atrule">scope</span><span class="token punctuation">:</span>
+      <span class="token key atrule">path</span><span class="token punctuation">:</span> <span class="token string">""</span>
+      <span class="token key atrule">type</span><span class="token punctuation">:</span> posts
+    <span class="token key atrule">values</span><span class="token punctuation">:</span>
+      <span class="token key atrule">show_date</span><span class="token punctuation">:</span> <span class="token boolean important">true</span></code></pre>
+<p>To disable post date for a post, add <code>show_date: false</code> to its YAML Front Matter, overriding what was set in <code>_config.yml</code>.</p>
+<p>When dates are shown on blog posts or pages, a date format will be chosen to format the date string. The default format is <code>&quot;%B %-d, %Y&quot;</code>, which will be displayed like &quot;February 24, 2016&quot;. You can choose your date format by referencing this <a href="https://www.shortcutfoo.com/app/dojos/ruby-date-format-strftime/cheatsheet">cheat sheet</a>. For example, use your date format in <code>_config.yml</code>.</p>
+<pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">date_format</span><span class="token punctuation">:</span> <span class="token string">"%Y-%m-%d"</span></code></pre>
+<h3 id="reading-time" tabindex="-1">Reading time</h3>
+<p>Enable estimated reading time snippets with <code>read_time: true</code> in YAML Front Matter. <code>200</code> has been set as the default words per minute value  which can be changed by adjusting <code>words_per_minute:</code> in <code>_config.yml</code>.</p>
+<p><picture><source type="image/webp" srcset="/minimal-mistakes/img/5_gJxk1qz9-400.webp 400w, /minimal-mistakes/img/5_gJxk1qz9-800.webp 800w, /minimal-mistakes/img/5_gJxk1qz9-876.webp 876w" sizes="100vw"><img loading="lazy" decoding="async" src="/minimal-mistakes/img/5_gJxk1qz9-400.jpeg" alt="reading time example" width="876" height="341" srcset="/minimal-mistakes/img/5_gJxk1qz9-400.jpeg 400w, /minimal-mistakes/img/5_gJxk1qz9-800.jpeg 800w, /minimal-mistakes/img/5_gJxk1qz9-876.jpeg 876w" sizes="100vw"></picture></p>
+<p>Instead of adding <code>read_time: true</code> to each post, apply as a default in <code>_config.yml</code> like so:</p>
+<pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">defaults</span><span class="token punctuation">:</span>
+  <span class="token comment"># _posts</span>
+  <span class="token punctuation">-</span> <span class="token key atrule">scope</span><span class="token punctuation">:</span>
+      <span class="token key atrule">path</span><span class="token punctuation">:</span> <span class="token string">""</span>
+      <span class="token key atrule">type</span><span class="token punctuation">:</span> posts
+    <span class="token key atrule">values</span><span class="token punctuation">:</span>
+      <span class="token key atrule">read_time</span><span class="token punctuation">:</span> <span class="token boolean important">true</span></code></pre>
+<p>To disable reading time for a post, add <code>read_time: false</code> to its YAML Front Matter to override what was set in <code>_config.yml</code>.</p>
+<p><code>words_per_minute</code> can also be adjusted on a per-page basis by adding to its YAML Front Matter. This is useful for sites with multi-lingual content where you'd like specify a different value from the site config.</p>
+<pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">words_per_minute</span><span class="token punctuation">:</span> <span class="token number">250</span></code></pre>
+<h3 id="page-meta-separator" tabindex="-1">Page meta separator</h3>
+<p>To customise the separator between the page date and reading time (if both are enabled), edit <code>.page__meta-sep::before</code> in a <a href="/minimal-mistakes/docs/stylesheets/">custom stylesheet</a>.</p>
+<p>For example,</p>
+<pre class="language-css"><code class="language-css"><span class="token selector">.page__meta-sep::before</span> <span class="token punctuation">{</span>
+  <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">"\2022"</span><span class="token punctuation">;</span>
+  <span class="token property">padding-left</span><span class="token punctuation">:</span> 0.5em<span class="token punctuation">;</span>
+  <span class="token property">padding-right</span><span class="token punctuation">:</span> 0.5em<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<h3 id="code-block-copy-button" tabindex="-1">Code block copy button</h3>
+<p><em>New in v4.26.0</em></p>
+<p>To enable a copy button on code blocks, add the following to <code>_config.yml</code>:</p>
+<pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">enable_copy_code_button</span><span class="token punctuation">:</span> <span class="token boolean important">true</span></code></pre>
+<p>When enabled site-wide, the button can be disabled on individual code blocks by adding <code>no-copy</code> to the code block's class list.</p>
+<pre class="language-markdown"><code class="language-markdown"><span class="token code"><span class="token punctuation">```</span>
+<span class="token code-block">Hey, I have a "copy to clipboard" button!</span>
+<span class="token punctuation">```</span></span></code></pre>
+<pre class="language-markdown"><code class="language-markdown"><span class="token code"><span class="token punctuation">```</span>
+<span class="token code-block">But I don't have one.</span>
+<span class="token punctuation">```</span></span>
+{: .no-copy}</code></pre>
+<p class="no-copy"></p>
+<h3 id="comments" tabindex="-1">Comments</h3>
+<p><a href="https://disqus.com/"><strong>Disqus</strong></a>, <a href="https://www.discourse.org/"><strong>Discourse</strong></a>, <a href="https://developers.facebook.com/docs/plugins/comments"><strong>Facebook</strong></a>, <a href="https://utteranc.es/"><strong>utterances</strong></a>, <a href="https://giscus.app/"><strong>giscus</strong></a> and static-based commenting via <a href="https://staticman.net/"><strong>Staticman</strong></a> are built into the theme. First set the comment provider you'd like to use:</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Comment Provider</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>disqus</strong></td>
+<td>Disqus</td>
+</tr>
+<tr>
+<td><strong>discourse</strong></td>
+<td>Discourse</td>
+</tr>
+<tr>
+<td><strong>facebook</strong></td>
+<td>Facebook Comments</td>
+</tr>
+<tr>
+<td><strong>staticman_v2</strong></td>
+<td>Staticman v2 / v3</td>
+</tr>
+<tr>
+<td><strong>staticman</strong></td>
+<td>Staticman v1 (deprecated)</td>
+</tr>
+<tr>
+<td><strong>utterances</strong></td>
+<td>utterances</td>
+</tr>
+<tr>
+<td><strong>giscus</strong></td>
+<td>giscus</td>
+</tr>
+<tr>
+<td><strong>custom</strong></td>
+<td>Other</td>
+</tr>
+</tbody>
+</table>
+<p>Then add <code>comments: true</code> to each document you want comments visible on.</p>
+<p>Instead of adding YAML Front Matter to each document, apply as a default in <code>_config.yml</code>. To enable comments for all posts:</p>
+<pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">defaults</span><span class="token punctuation">:</span>
+  <span class="token comment"># _posts</span>
+  <span class="token punctuation">-</span> <span class="token key atrule">scope</span><span class="token punctuation">:</span>
+      <span class="token key atrule">path</span><span class="token punctuation">:</span> <span class="token string">""</span>
+      <span class="token key atrule">type</span><span class="token punctuation">:</span> posts
+    <span class="token key atrule">values</span><span class="token punctuation">:</span>
+      <span class="token key atrule">comments</span><span class="token punctuation">:</span> <span class="token boolean important">true</span></code></pre>
+<p>If you add <code>comments: false</code> to a post's YAML Front Matter it will override the default and disable comments for just that post.</p>
+<p class="notice--info"><strong>Note:</strong> Comments are disabled in <code>development</code>. To enable when testing/building locally be sure to set<br>
+<code>JEKYLL_ENV=production</code> to <a href="http://jekyllrb.com/docs/configuration/#specifying-a-jekyll-environment-at-build-time">force the environment</a> to production.</p>
+<h4 id="disqus" tabindex="-1">Disqus</h4>
+<p>To use Disqus you'll need to create an account and <a href="https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-">shortname</a>. Once you have both update <code>_config.yml</code> to:</p>
+<pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">comments</span><span class="token punctuation">:</span>
+  <span class="token key atrule">provider</span><span class="token punctuation">:</span> <span class="token string">"disqus"</span>
+  <span class="token key atrule">disqus</span><span class="token punctuation">:</span>
+    <span class="token key atrule">shortname</span><span class="token punctuation">:</span> <span class="token string">"your-disqus-shortname"</span></code></pre>
+<h4 id="discourse" tabindex="-1">Discourse</h4>
+<p>For guidance on how to set up Discourse for embedding comments from a topic on a post page, <a href="https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963">consult this guide</a>.</p>
+<pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">comments</span><span class="token punctuation">:</span>
+  <span class="token key atrule">provider</span><span class="token punctuation">:</span> <span class="token string">"discourse"</span>
+  <span class="token key atrule">discourse</span><span class="token punctuation">:</span>
+    <span class="token key atrule">server</span><span class="token punctuation">:</span> <span class="token comment"># meta.discourse.org</span></code></pre>
+<p class="notice--info"><strong>Note:</strong> Do not include <code>http://</code> or <code>https://</code> when setting your Discourse <code>server</code>. The theme automatically prepends the URL <code>//</code>, following a scheme-less pattern.</p>
+<h4 id="facebook-comments" tabindex="-1">Facebook comments</h4>
+<p>To enable Facebook Comments choose how many comments you'd like visible per post and the color scheme of the widget.</p>
+<pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">comments</span><span class="token punctuation">:</span>
+  <span class="token key atrule">provider</span><span class="token punctuation">:</span> <span class="token string">"facebook"</span>
+  <span class="token key atrule">facebook</span><span class="token punctuation">:</span>
+    <span class="token key atrule">appid</span><span class="token punctuation">:</span> <span class="token comment"># optional</span>
+    <span class="token key atrule">num_posts</span><span class="token punctuation">:</span> <span class="token comment"># 5 (default)</span>
+    <span class="token key atrule">colorscheme</span><span class="token punctuation">:</span> <span class="token comment"># "light" (default), "dark"</span></code></pre>
+<h4 id="utterances-comments" tabindex="-1">utterances comments</h4>
+<p>To use utterances you will need to <a href="https://github.com/apps/utterances">install the app</a> to your GitHub repository by adding the following to <code>_config.yml</code>:</p>
+<pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">repository</span><span class="token punctuation">:</span> <span class="token comment"># GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"</span></code></pre>
+<p class="notice--warning"><strong>Note:</strong> Make sure the repo is public, otherwise your readers will not be able to view the issues/comments. The <a href="https://guides.github.com/features/issues/">issues feature</a> also needs to be active on your repo.</p>
+<p>To enable utterances on the front end set <code>comments.provider</code> and the color theme of the widget.</p>
+<pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">comments</span><span class="token punctuation">:</span>
+  <span class="token key atrule">provider</span><span class="token punctuation">:</span> <span class="token string">"utterances"</span>
+  <span class="token key atrule">utterances</span><span class="token punctuation">:</span>
+    <span class="token key atrule">theme</span><span class="token punctuation">:</span> <span class="token string">"github-light"</span> <span class="token comment"># "github-dark"</span>
+    <span class="token key atrule">issue_term</span><span class="token punctuation">:</span> <span class="token string">"pathname"</span>
+    <span class="token key atrule">label</span><span class="token punctuation">:</span> <span class="token string">"comment"</span> <span class="token comment"># Optional - must be existing label.</span></code></pre>
+<h4 id="giscus-comments" tabindex="-1">giscus comments</h4>
+<p>To use giscus you will need to <a href="https://github.com/apps/giscus">install the app</a> to your GitHub repository.</p>
+<p>The next step is to go to <a href="https://giscus.app">https://giscus.app</a> and fill out the desired settings. This will generate JavaScript that will provide you with the settings you will need to configure things below.</p>
+<p>You'll need to ensure you've added the following to <code>_config.yml</code>:</p>
+<pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">repository</span><span class="token punctuation">:</span> <span class="token comment"># GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"</span></code></pre>
+<p class="notice--warning"><strong>Note:</strong> Make sure the repo is public, otherwise your readers will not be able to view the issues/comments. The <a href="https://docs.github.com/en/discussions">discussions feature</a> also needs to be active on your repo.</p>
+<p>To enable giscus on the front end set <code>comments.provider</code> and the other additional options.</p>
+<pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">comments</span><span class="token punctuation">:</span>
+  <span class="token key atrule">provider</span><span class="token punctuation">:</span> <span class="token string">"giscus"</span>
+  <span class="token key atrule">giscus</span><span class="token punctuation">:</span>
+    <span class="token key atrule">repo_id</span>              <span class="token punctuation">:</span> <span class="token comment"># Shown during giscus setup at https://giscus.app</span>
+    <span class="token key atrule">category_name</span>        <span class="token punctuation">:</span> <span class="token comment"># Full text name of the category</span>
+    <span class="token key atrule">category_id</span>          <span class="token punctuation">:</span> <span class="token comment"># Shown during giscus setup at https://giscus.app</span>
+    <span class="token key atrule">discussion_term</span>      <span class="token punctuation">:</span> <span class="token comment"># "pathname" (default), "url", "title", "og:title"</span>
+    <span class="token key atrule">reactions_enabled</span>    <span class="token punctuation">:</span> <span class="token comment"># '1' for enabled (default), '0' for disabled</span>
+    <span class="token key atrule">theme</span>                <span class="token punctuation">:</span> <span class="token comment"># "light" (default), "dark", "dark_dimmed", "transparent_dark", "preferred_color_scheme"</span></code></pre>
+<h4 id="static-based-comments-via-staticman" tabindex="-1">Static-based comments via Staticman</h4>
+<p>Transform user comments into <code>_data</code> files that live inside of your GitHub repository by enabling Staticman.</p>
+<p class="notice--info"><strong>Note:</strong> Looking to migrate comments from a WordPress based site? Give <a href="https://github.com/arthurlacoste/wordpress-comments-jekyll-staticman">this tool</a> a try.</p>
+<p class="notice--warning"><strong>Note:</strong> Please note that as of September 2018, Staticman is reaching GitHub API limits due to its popularity, and it is recommended by its maintainer that users deploy their own instances for production (use <code>site.staticman.endpoint</code>).  Consult the Staticman &quot;<a href="https://staticman.net/docs/index.html">Get Started</a>&quot; guide for more info.</p>
+<h5 id="add-staticman-as-a-collaborator-on-github-(legacy)" tabindex="-1">Add Staticman as a collaborator on GitHub (legacy)</h5>
+<ol>
+<li>Allow Staticman push access to your GitHub repository by clicking on <strong>Settings</strong>, then the <strong>Collaborators</strong> tab and adding your GitHub bot as a collaborator.</li>
+<li>To accept the pending invitation visit: <code>https://{your Staticman v2/3 API}/v[2|3]/connect/{your GitHub username}/{your repository name}</code>.</li>
+</ol>
+<p class="notice--info"><strong>Note:</strong> The new GitHub App authentication method is recommended for GitHub repositories to avoid the API rate limit.</p>
+<h5 id="configure-staticman" tabindex="-1">Configure Staticman</h5>
+<h6 id="staticman-v3" tabindex="-1">Staticman v3</h6>
+<p>Due to the <a href="https://github.com/eduardoboucas/staticman/pull/219">support for GitLab</a>, the URL scheme has been changed.  Between <code>v3/entry/</code> and <code>/{your Git username}</code>, one needs to input a Git service provider (either <code>github</code> or <code>gitlab</code>).  For example</p>
+<p>https://{your Staticman v3 API}/v3/entry/github/{your Git username}/{your repository name}/...</p>
+<pre class="language-yaml"><code class="language-yaml"><span class="token comment"># _config.yml (defaults)</span>
+<span class="token key atrule">repository</span>  <span class="token punctuation">:</span> <span class="token comment"># Git username/repo-name e.g. "mmistakes/minimal-mistakes"</span>
+<span class="token key atrule">comments</span><span class="token punctuation">:</span>
+  <span class="token key atrule">provider</span>  <span class="token punctuation">:</span> <span class="token string">"staticman_v2"</span>
+  <span class="token key atrule">staticman</span><span class="token punctuation">:</span>
+    <span class="token key atrule">branch</span>    <span class="token punctuation">:</span> <span class="token string">"master"</span>
+    <span class="token key atrule">endpoint</span>  <span class="token punctuation">:</span> https<span class="token punctuation">:</span>//<span class="token punctuation">{</span>your Staticman v3 API<span class="token punctuation">}</span>/v3/entry/github/</code></pre>
+<h6 id="staticman-v2" tabindex="-1">Staticman v2</h6>
+<p>Default settings have been provided in <a href="https://github.com/mmistakes/minimal-mistakes/blob/master/staticman.yml"><code>staticman.yml</code></a> and are commented to guide you through setup. View the <a href="https://staticman.net/docs/configuration">full list of configurations</a>.</p>
+<pre class="language-yaml"><code class="language-yaml"><span class="token comment"># staticman.yml (defaults)</span>
+<span class="token key atrule">comments</span><span class="token punctuation">:</span>
+  <span class="token key atrule">allowedFields</span>      <span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">"name"</span><span class="token punctuation">,</span> <span class="token string">"email"</span><span class="token punctuation">,</span> <span class="token string">"url"</span><span class="token punctuation">,</span> <span class="token string">"message"</span><span class="token punctuation">]</span>
+  <span class="token key atrule">branch</span>             <span class="token punctuation">:</span> <span class="token string">"master"</span>
+  <span class="token key atrule">commitMessage</span>      <span class="token punctuation">:</span> <span class="token string">"New comment by {fields.name}"</span>
+  <span class="token key atrule">filename</span>           <span class="token punctuation">:</span> <span class="token string">"comment-{@timestamp}"</span>
+  <span class="token key atrule">format</span>             <span class="token punctuation">:</span> <span class="token string">"yaml"</span>
+  <span class="token key atrule">generatedFields</span><span class="token punctuation">:</span>
+    <span class="token key atrule">date</span><span class="token punctuation">:</span>
+      <span class="token key atrule">type</span>           <span class="token punctuation">:</span> <span class="token string">"date"</span>
+      <span class="token key atrule">options</span><span class="token punctuation">:</span>
+        <span class="token key atrule">format</span>       <span class="token punctuation">:</span> <span class="token string">"iso8601"</span>
+  <span class="token key atrule">moderation</span>         <span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">path</span>               <span class="token punctuation">:</span> <span class="token string">"_data/comments/{options.slug}"</span>
+  <span class="token key atrule">requiredFields</span>     <span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">"name"</span><span class="token punctuation">,</span> <span class="token string">"email"</span><span class="token punctuation">,</span> <span class="token string">"message"</span><span class="token punctuation">]</span>
+  <span class="token key atrule">transforms</span><span class="token punctuation">:</span>
+    <span class="token key atrule">email</span>            <span class="token punctuation">:</span> md5</code></pre>
+<p>These settings need to be added to your <code>_config.yml</code> file as well:</p>
+<pre class="language-yaml"><code class="language-yaml"><span class="token comment"># _config.yml (defaults)</span>
+<span class="token key atrule">repository</span>  <span class="token punctuation">:</span> <span class="token comment"># GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"</span>
+<span class="token key atrule">comments</span><span class="token punctuation">:</span>
+  <span class="token key atrule">provider</span>  <span class="token punctuation">:</span> <span class="token string">"staticman_v2"</span>
+  <span class="token key atrule">staticman</span><span class="token punctuation">:</span>
+    <span class="token key atrule">branch</span>    <span class="token punctuation">:</span> <span class="token string">"master"</span></code></pre>
+<p class="notice--info"><strong>Branch setting:</strong> This is the branch comment files will be sent to via pull requests. If you host your site on GitHub Pages it will likely be <code>master</code> unless your repo is setup as a project --- use <code>gh-pages</code> in that case.</p>
+<p class="notice--warning"><strong>Note:</strong> Staticman is currently compatible with GitHub and GitLab based repositories. <a href="https://github.com/eduardoboucas/staticman/issues/22">Support for GitLab Pages</a> is already available at <a href="https://github.com/eduardoboucas/staticman/pull/219">Staticman v3</a>.</p>
+<h6 id="staticman-v1-(deprecated)" tabindex="-1">Staticman v1 (deprecated)</h6>
+<p>Default settings have been provided in <code>_config.yml</code>. The important ones to set are <code>provider: &quot;staticman&quot;</code>, <code>branch</code>, and <code>path</code>. View the <a href="https://staticman.net/docs/configuration">full list of configurations</a>.</p>
+<pre class="language-yaml"><code class="language-yaml"><span class="token comment"># _config.yml (defaults)</span>
+<span class="token key atrule">comments</span><span class="token punctuation">:</span>
+  <span class="token key atrule">provider</span><span class="token punctuation">:</span> <span class="token string">"staticman"</span>
+<span class="token key atrule">staticman</span><span class="token punctuation">:</span>
+  <span class="token key atrule">allowedFields</span>          <span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'name'</span><span class="token punctuation">,</span> <span class="token string">'email'</span><span class="token punctuation">,</span> <span class="token string">'url'</span><span class="token punctuation">,</span> <span class="token string">'message'</span><span class="token punctuation">]</span>
+  <span class="token key atrule">branch</span>                 <span class="token punctuation">:</span> <span class="token string">"master"</span>
+  <span class="token key atrule">commitMessage</span>          <span class="token punctuation">:</span> <span class="token string">"New comment by {fields.name}"</span>
+  <span class="token key atrule">filename</span>               <span class="token punctuation">:</span> comment<span class="token punctuation">-</span><span class="token punctuation">{</span>@timestamp<span class="token punctuation">}</span>
+  <span class="token key atrule">format</span>                 <span class="token punctuation">:</span> <span class="token string">"yml"</span>
+  <span class="token key atrule">moderation</span>             <span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">path</span>                   <span class="token punctuation">:</span> <span class="token string">"_data/comments/{options.slug}"</span>
+  <span class="token key atrule">requiredFields</span>         <span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'name'</span><span class="token punctuation">,</span> <span class="token string">'email'</span><span class="token punctuation">,</span> <span class="token string">'message'</span><span class="token punctuation">]</span>
+  <span class="token key atrule">transforms</span><span class="token punctuation">:</span>
+    <span class="token key atrule">email</span>                <span class="token punctuation">:</span> <span class="token string">"md5"</span>
+  <span class="token key atrule">generatedFields</span><span class="token punctuation">:</span>
+    <span class="token key atrule">date</span><span class="token punctuation">:</span>
+      <span class="token key atrule">type</span>               <span class="token punctuation">:</span> <span class="token string">"date"</span>
+      <span class="token key atrule">options</span><span class="token punctuation">:</span>
+        <span class="token key atrule">format</span>           <span class="token punctuation">:</span> <span class="token string">"iso8601"</span> <span class="token comment"># "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"</span></code></pre>
+<h5 id="comment-moderation" tabindex="-1">Comment moderation</h5>
+<p>By default comment moderation is enabled in <code>staticman.yml</code>. As new comments are submitted Staticman will send a pull request. Merging these in will approve the comment, close the issue, and automatically rebuild your site (if hosted on GitHub Pages).</p>
+<p>To skip this moderation step simply set <code>moderation: false</code>.</p>
+<p class="notice--info"><strong>ProTip:</strong> Create a GitHub webhook that sends a <code>POST</code> request to the following payload URL <code>https://{your Staticman API URL}/v2/webhook</code> and triggers a &quot;Pull request&quot; event to delete Staticman branches on merge.</p>
+<p><picture><source type="image/webp" srcset="/minimal-mistakes/img/P4bb2ivDQF-400.webp 400w, /minimal-mistakes/img/P4bb2ivDQF-800.webp 800w, /minimal-mistakes/img/P4bb2ivDQF-876.webp 876w" sizes="100vw"><img loading="lazy" decoding="async" src="/minimal-mistakes/img/P4bb2ivDQF-400.jpeg" alt="pull-request webhook" width="876" height="326" srcset="/minimal-mistakes/img/P4bb2ivDQF-400.jpeg 400w, /minimal-mistakes/img/P4bb2ivDQF-800.jpeg 800w, /minimal-mistakes/img/P4bb2ivDQF-876.jpeg 876w" sizes="100vw"></picture></p>
+<h5 id="recaptcha-support-(v2-only)" tabindex="-1">reCAPTCHA support (v2 only)</h5>
+<p>To enable Google's reCAPTCHA to aid in spam detection you'll need to:</p>
+<ol>
+<li>Apply for <a href="https://www.google.com/recaptcha">reCAPTCHA API</a> keys and register your site using the reCAPTCHA V2 type.</li>
+<li>Add your site and secret keys to <code>staticman.yml</code> and <code>_config.yml</code>. Be sure to properly encrypt your secret key using <a href="https://staticman.net/docs/encryption">Staticman's encrypt endpoint</a>.</li>
+</ol>
+<pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">reCaptcha</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enabled</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">siteKey</span><span class="token punctuation">:</span> <span class="token comment"># "6LdRBykTAAAAAFB46MnIu6ixuxwu9W1ihFF8G60Q"</span>
+  <span class="token key atrule">secret</span><span class="token punctuation">:</span> <span class="token comment"># "PznnZGu3P6eTHRPLORniSq+J61YEf+A9zmColXDM5icqF49gbunH51B8+h+i2IvewpuxtA9TFoK68TuhUp/X3YKmmqhXasegHYabY50fqF9nJh9npWNhvITdkQHeaOqnFXUIwxfiEeUt49Yoa2waRR7a5LdRAP3SVM8hz0KIBT4="</span></code></pre>
+<h4 id="other-comment-providers" tabindex="-1">Other comment providers</h4>
+<p>To use another provider not included with the theme set <code>provider: &quot;custom&quot;</code> then add their embed code to <code>_includes/comments-providers/custom.html</code>.</p>
+<h3 id="custom-feed-url" tabindex="-1">Custom feed URL</h3>
+<p>By default the theme links to <code>feed.xml</code> generated in the root of your site by the <strong>jekyll-feed</strong> plugin. To link to an externally hosted feed update <code>atom_feed</code> in <code>_config.yml</code> like so:</p>
+<pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">atom_feed</span><span class="token punctuation">:</span>
+  <span class="token key atrule">path</span><span class="token punctuation">:</span> <span class="token string">"http://feeds.feedburner.com/youFeedname"</span></code></pre>
+<p class="notice--info"><strong>Note:</strong> By default the site feed is linked in two locations: inside the <a href="https://github.com/mmistakes/minimal-mistakes/blob/master/_includes/head.html"><code>&lt;head&gt;</code> element</a> and at the bottom of every page in the <a href="https://github.com/mmistakes/minimal-mistakes/blob/master/_includes/footer.html">site footer</a>.</p>
+<h3 id="disable-feed-icons" tabindex="-1">Disable Feed Icons</h3>
+<p>By default the theme links to <code>feed.xml</code> generated in the root of your site by the <strong>jekyll-feed</strong> plugin. To remove the RSS icon in the header and footer, update <code>atom_feed</code> in <code>_config.yml</code> like so:</p>
+<pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">atom_feed</span><span class="token punctuation">:</span>
+  <span class="token key atrule">hide</span><span class="token punctuation">:</span> <span class="token boolean important">true</span></code></pre>
+<h3 id="site-search" tabindex="-1">Site search</h3>
+<p>To enable site-wide search add <code>search: true</code> to your <code>_config.yml</code>.</p>
+<p><picture><source type="image/webp" srcset="/minimal-mistakes/img/0JE7zJ1Rl5-400.webp 400w, /minimal-mistakes/img/0JE7zJ1Rl5-800.webp 800w, /minimal-mistakes/img/0JE7zJ1Rl5-900.webp 900w" sizes="100vw"><img loading="lazy" decoding="async" src="/minimal-mistakes/img/0JE7zJ1Rl5-400.jpeg" alt="masthead search example" width="900" height="556" srcset="/minimal-mistakes/img/0JE7zJ1Rl5-400.jpeg 400w, /minimal-mistakes/img/0JE7zJ1Rl5-800.jpeg 800w, /minimal-mistakes/img/0JE7zJ1Rl5-900.jpeg 900w" sizes="100vw"></picture></p>
+<h4 id="lunr-(default)" tabindex="-1">Lunr (default)</h4>
+<p>The default search uses <a href="https://lunrjs.com/"><strong>Lunr</strong></a> to build a search index of all post and your documents in collections. This method is 100% compatible with sites hosted on GitHub Pages.</p>
+<p>To have it index all pages, update <code>lunr</code> in <code>_config.yml</code> like so:</p>
+<pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">lunr</span><span class="token punctuation">:</span>
+  <span class="token key atrule">search_within_pages</span><span class="token punctuation">:</span> <span class="token boolean important">true</span></code></pre>
+<p class="notice--warning"><strong>Note:</strong> Only the first 50 words of a post or page's body content is added to the Lunr search index. Setting <code>search_full_content</code> to <code>true</code> in your <code>_config.yml</code> will override this and could impact page load performance.</p>
+<h4 id="algolia" tabindex="-1">Algolia</h4>
+<p>For faster and more relevant search (<a href="https://mmistakes.github.io/minimal-mistakes-algolia-search/">see demo</a>):</p>
+<ol>
+<li>
+<p>Add the <a href="https://github.com/algolia/jekyll-algolia"><code>jekyll-algolia</code></a> gem to your <code>Gemfile</code>, in the <code>:jekyll_plugins</code> section.</p>
+<pre class="language-ruby"><code class="language-ruby">group <span class="token symbol">:jekyll_plugins</span> <span class="token keyword">do</span>
+  gem <span class="token string-literal"><span class="token string">"jekyll-feed"</span></span>
+  gem <span class="token string-literal"><span class="token string">"jekyll-seo-tag"</span></span>
+  gem <span class="token string-literal"><span class="token string">"jekyll-sitemap"</span></span>
+  gem <span class="token string-literal"><span class="token string">"jekyll-paginate"</span></span>
+  gem <span class="token string-literal"><span class="token string">"jekyll-include-cache"</span></span>
+  gem <span class="token string-literal"><span class="token string">"jekyll-algolia"</span></span>
+<span class="token keyword">end</span></code></pre>
+<p>Once this is done, download all dependencies by running <code>bundle install</code>.</p>
+</li>
+<li>
+<p>Switch search providers from <code>lunr</code> to <code>algolia</code> in your <code>_config.yml</code> file:</p>
+<pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">search_provider</span><span class="token punctuation">:</span> algolia</code></pre>
+</li>
+<li>
+<p>Add the following Algolia credentials to your <code>_config.yml</code> file. <em>If you don't have an Algolia account, you can open a free <a href="https://www.algolia.com/users/sign_up/hacker">Community plan</a>. Once signed in, you can grab your credentials from <a href="https://www.algolia.com/licensing">your dashboard</a>.</em></p>
+<pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">algolia</span><span class="token punctuation">:</span>
+  <span class="token key atrule">application_id</span><span class="token punctuation">:</span> <span class="token comment"># YOUR_APPLICATION_ID</span>
+  <span class="token key atrule">index_name</span><span class="token punctuation">:</span> <span class="token comment"># YOUR_INDEX_NAME</span>
+  <span class="token key atrule">search_only_api_key</span><span class="token punctuation">:</span> <span class="token comment"># YOUR_SEARCH_ONLY_API_KEY</span>
+  <span class="token key atrule">powered_by</span><span class="token punctuation">:</span> <span class="token comment"># true (default), false</span></code></pre>
+</li>
+<li>
+<p>Once your credentials are setup, you can run the indexing with the following command:</p>
+<pre><code>ALGOLIA_API_KEY=your_admin_api_key bundle exec jekyll algolia
+</code></pre>
+<p>For Windows users you will have to use <code>set</code> to assigned the <code>ALGOLIA_API_KEY</code> environment variable.</p>
+<pre><code>set ALGOLIA_API_KEY=your_admin_api_key
+bundle exec jekyll algolia
+</code></pre>
+<p>Note that <code>ALGOLIA_API_KEY</code> should be set to your admin API key.</p>
+</li>
+</ol>
+<p>To use the Algolia search with GitHub Pages hosted sites follow <a href="https://community.algolia.com/jekyll-algolia/github-pages.html">this deployment guide</a>. Or this guide for <a href="https://community.algolia.com/jekyll-algolia/netlify.html">deploying on Netlify</a>.</p>
+<p class="notice--info"><strong>Note:</strong> The Jekyll Algolia plugin can be configured in several ways. Be sure to check out <a href="https://community.algolia.com/jekyll-algolia/options.html" title="Algolia configuration">their full documentation</a> on how to exclude files and other valuable settings.</p>
+<h4 id="google-custom-search-engine" tabindex="-1">Google Custom Search Engine</h4>
+<p>Add a Google search box to your site.</p>
+<ol>
+<li>
+<p>Create a <strong>New search engine</strong> in <a href="https://cse.google.com/cse/all">Google Custom Search Engine</a>, give it an appropriate name and setup &quot;Sites to search&quot; to your liking.</p>
+</li>
+<li>
+<p>Under <strong>Look and feel</strong> choose the &quot;Results only&quot; layout and a theme (<em>Minimalist</em> is a good choice to match the default look of the Minimal Mistakes).</p>
+<p><picture><source type="image/webp" srcset="/minimal-mistakes/img/ny_Dg3oUKq-400.webp 400w, /minimal-mistakes/img/ny_Dg3oUKq-800.webp 800w, /minimal-mistakes/img/ny_Dg3oUKq-923.webp 923w" sizes="100vw"><img loading="lazy" decoding="async" src="/minimal-mistakes/img/ny_Dg3oUKq-400.jpeg" alt="Google Custom Search Engine layout" width="923" height="633" srcset="/minimal-mistakes/img/ny_Dg3oUKq-400.jpeg 400w, /minimal-mistakes/img/ny_Dg3oUKq-800.jpeg 800w, /minimal-mistakes/img/ny_Dg3oUKq-923.jpeg 923w" sizes="100vw"></picture></p>
+</li>
+<li>
+<p>Select &quot;Save &amp; Get Code&quot; and grab your search engine ID from the line that begins with <code>var cx = 'YOUR_SEARCH_ENGINE_ID'</code>.</p>
+</li>
+<li>
+<p>Add your search engine ID to <code>_config.yml</code> like so:</p>
+<pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">google</span><span class="token punctuation">:</span>
+  <span class="token key atrule">search_engine_id</span><span class="token punctuation">:</span> YOUR_SEARCH_ENGINE_ID</code></pre>
+</li>
+</ol>
+<p class="notice--info"><strong>Note:</strong> If your site is new and hasn't been indexed by Google yet, search will be incomplete and won't provide accurate results.</p>
+<h3 id="seo%2C-social-sharing%2C-and-analytics-settings" tabindex="-1">SEO, social sharing, and analytics settings</h3>
+<p>All optional, but a good idea to take the time setting up to improve SEO and links shared from the site.</p>
+<h4 id="google-search-console" tabindex="-1">Google Search Console</h4>
+<p>Formerly known as <a href="https://www.google.com/webmasters/tools/">Google Webmaster Tools</a>, add your <a href="https://support.google.com/analytics/answer/1142414?hl=en">verification code</a> like so: <code>google_site_verification: &quot;yourVerificationCode&quot;</code>.</p>
+<p class="notice--warning"><strong>Note:</strong> You likely won't have to do this if you verify site ownership through <strong>Google Analytics</strong> instead.</p>
+<h4 id="bing-webmaster-tools" tabindex="-1">Bing Webmaster Tools</h4>
+<p>There are several ways to <a href="https://www.bing.com/webmasters/help/add-and-verify-site-12184f8b">verify site ownership</a> --- the easiest adding an authentication code to your config file.</p>
+<p>Copy and paste the string inside of <code>content</code>:</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>msvalidate.01<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>0FC3FD70512616B052E755A56F8952D<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span></code></pre>
+<p>Into <code>_config.yml</code></p>
+<pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">bing_site_verification</span><span class="token punctuation">:</span> <span class="token string">"0FC3FD70512616B052E755A56F8952D"</span></code></pre>
+<h4 id="naver-webmaster-tools" tabindex="-1">Naver Webmaster Tools</h4>
+<p>To verify site ownership you will need to <a href="https://nid.naver.com/user2/joinGlobal.nhn?lang=en_US&amp;m=init">create a Naver account</a> and then <strong>Add your site</strong> via <a href="http://webmastertool.naver.com/">Naver Webmaster Tools</a>.</p>
+<p>Much like Google and Bing you'll be provided with a meta description:</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>naver-site-verification<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>6BF5A01C0E650B479B612AC5A2184144<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>`</code></pre>
+<p>Which you can add to your <code>_config.yml</code> like so:</p>
+<pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">naver_site_verification</span><span class="token punctuation">:</span> <span class="token string">"6BF5A01C0E650B479B612AC5A2184144"</span></code></pre>
+<h4 id="yandex" tabindex="-1">Yandex</h4>
+<p>To verify site ownership copy and paste the string inside of <code>content</code>:</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">'</span>yandex-verification<span class="token punctuation">'</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">'</span>2132801JL<span class="token punctuation">'</span></span> <span class="token punctuation">/></span></span></code></pre>
+<p>Into <code>_config.yml</code></p>
+<pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">yandex_site_verification</span><span class="token punctuation">:</span> <span class="token string">"2132801JL"</span></code></pre>
+<h4 id="baidu" tabindex="-1">Baidu</h4>
+<p>There are several ways to verify site ownership — the easiest is adding an authentication code to your config file.</p>
+<p>Copy and paste the string inside of <code>content</code>:</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>baidu-site-verification<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>code-iA0wScWXN1<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span></code></pre>
+<p>Into <code>_config.yml</code></p>
+<pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">baidu_site_verification</span><span class="token punctuation">:</span> <span class="token string">"code-iA0wScWXN1"</span></code></pre>
+<h4 id="twitter-cards-and-facebook-open-graph" tabindex="-1">Twitter Cards and Facebook Open Graph</h4>
+<p>To improve the appearance of links shared from your site to social networks like Twitter and Facebook be sure to configure the following.</p>
+<h5 id="site-twitter-username" tabindex="-1">Site Twitter username</h5>
+<p>Twitter username for the site. For pages that have custom author Twitter accounts assigned in their YAML Front Matter or data file, they will be attributed as a <strong>creator</strong> in the Twitter Card.</p>
+<p>For example if my site's Twitter account is <code>@mmistakes-theme</code> I would add the following to <code>_config.yml</code></p>
+<pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">twitter</span><span class="token punctuation">:</span>
+  <span class="token key atrule">username</span><span class="token punctuation">:</span> <span class="token string">"mmistakes-theme"</span></code></pre>
+<p>And if I assign <code>@mmistakes</code> as an author account it will appear in the Twitter Card along with <code>@mmistakes-theme</code>, attributed as a creator of the page being shared.</p>
+<p class="notice--warning"><strong>Note</strong>: You need to validate cards are working and have Twitter <a href="https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/player-card">approve Player Cards</a> before they begin showing up.</p>
+<h5 id="facebook-open-graph" tabindex="-1">Facebook Open Graph</h5>
+<p>If you have a Facebook ID or publisher page add them:</p>
+<pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">facebook</span><span class="token punctuation">:</span>
+  <span class="token key atrule">app_id</span><span class="token punctuation">:</span>  <span class="token comment"># A Facebook app ID</span>
+  <span class="token key atrule">publisher</span><span class="token punctuation">:</span>  <span class="token comment"># A Facebook page URL or ID of the publishing entity</span></code></pre>
+<p>While not part a part of Open Graph, you can also add your Facebook username for use in the sidebar and footer.</p>
+<pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">facebook</span><span class="token punctuation">:</span>
+  <span class="token key atrule">username</span><span class="token punctuation">:</span> <span class="token string">"michaelrose"</span>  <span class="token comment"># https://www.facebook.com/michaelrose</span></code></pre>
+<p class="notice--info"><strong>ProTip:</strong> To debug Open Graph data use <a href="https://developers.facebook.com/tools/debug/">this tool</a> to test your pages. If content changes aren't reflected you will probably have to hit the <strong>Scrape Again</strong> button to refresh.</p>
+<h5 id="open-graph-default-image" tabindex="-1">Open Graph default image</h5>
+<p>For pages that don't have a <code>header.image</code> assigned in their YAML Front Matter, <code>site.og_image</code> will be used as a fallback. Use your logo, icon, avatar or something else that is meaningful. Just make sure it is placed in the <code>/assets/images/</code> folder, has a minimum size of 120px by 120px, and is less than 1MB in file size.</p>
+<pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">og_image</span><span class="token punctuation">:</span> /assets/images/site<span class="token punctuation">-</span>logo.png</code></pre>
+<figure class=""><picture><source type="image/webp" srcset="/minimal-mistakes/img/qruPsHN7Mb-400.webp 400w, /minimal-mistakes/img/qruPsHN7Mb-800.webp 800w, /minimal-mistakes/img/qruPsHN7Mb-851.webp 851w" sizes="100vw"><img loading="lazy" decoding="async" src="/minimal-mistakes/img/qruPsHN7Mb-400.jpeg" alt="Twitter Card summary example" width="851" height="484" srcset="/minimal-mistakes/img/qruPsHN7Mb-400.jpeg 400w, /minimal-mistakes/img/qruPsHN7Mb-800.jpeg 800w, /minimal-mistakes/img/qruPsHN7Mb-851.jpeg 851w" sizes="100vw"></picture><figcaption>
+      Example of an image placed in a Summary Card.
+<p></p></figcaption></figure><p></p>
+<p>Documents who have a <code>header.image</code> assigned in their YAML Front Matter will appear like this when shared on Twitter and Facebook.</p>
+<figure class=""><picture><source type="image/webp" srcset="/minimal-mistakes/img/FQXs3xKrvc-400.webp 400w, /minimal-mistakes/img/FQXs3xKrvc-800.webp 800w, /minimal-mistakes/img/FQXs3xKrvc-840.webp 840w" sizes="100vw"><img loading="lazy" decoding="async" src="/minimal-mistakes/img/FQXs3xKrvc-400.jpeg" alt="page shared on Twitter" width="840" height="624" srcset="/minimal-mistakes/img/FQXs3xKrvc-400.jpeg 400w, /minimal-mistakes/img/FQXs3xKrvc-800.jpeg 800w, /minimal-mistakes/img/FQXs3xKrvc-840.jpeg 840w" sizes="100vw"></picture><figcaption>
+      Shared page on Twitter with header image assigned.
+<p></p></figcaption></figure><p></p>
+<figure class=""><picture><source type="image/webp" srcset="/minimal-mistakes/img/wqnqN5cUWX-400.webp 400w, /minimal-mistakes/img/wqnqN5cUWX-800.webp 800w, /minimal-mistakes/img/wqnqN5cUWX-840.webp 840w" sizes="100vw"><img loading="lazy" decoding="async" src="/minimal-mistakes/img/wqnqN5cUWX-400.jpeg" alt="page shared on Facebook" width="840" height="491" srcset="/minimal-mistakes/img/wqnqN5cUWX-400.jpeg 400w, /minimal-mistakes/img/wqnqN5cUWX-800.jpeg 800w, /minimal-mistakes/img/wqnqN5cUWX-840.jpeg 840w" sizes="100vw"></picture><figcaption>
+      Shared page on Facebook with header image assigned.
+<p></p></figcaption></figure><p></p>
+<h5 id="include-your-social-profile-in-search-results" tabindex="-1">Include your social profile in search results</h5>
+<p>Use markup on your official website to add your <a href="https://developers.google.com/structured-data/customize/social-profiles#adding_structured_markup_to_your_site">social profile information</a> to the Google Knowledge panel in some searches. Knowledge panels can prominently display your social profile information.</p>
+<pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">social</span><span class="token punctuation">:</span>
+  <span class="token key atrule">type</span><span class="token punctuation">:</span>  <span class="token comment"># Person or Organization (defaults to Person)</span>
+  <span class="token key atrule">name</span><span class="token punctuation">:</span>  <span class="token comment"># If the user or organization name differs from the site's name</span>
+  <span class="token key atrule">links</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> <span class="token string">"https://twitter.com/yourTwitter"</span>
+    <span class="token punctuation">-</span> <span class="token string">"https://www.facebook.com/yourFacebook"</span>
+    <span class="token punctuation">-</span> <span class="token string">"https://instagram.com/yourProfile"</span>
+    <span class="token punctuation">-</span> <span class="token string">"https://www.linkedin.com/in/yourprofile"</span></code></pre>
+<h4 id="analytics" tabindex="-1">Analytics</h4>
+<p>Analytics is disabled by default. To enable globally select one of the following:</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Analytics Provider</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>google</strong></td>
+<td><a href="https://www.google.com/analytics/">Google Standard Analytics</a></td>
+</tr>
+<tr>
+<td><strong>google-universal</strong></td>
+<td><a href="https://www.google.com/analytics/">Google Universal Analytics</a></td>
+</tr>
+<tr>
+<td><strong>google-gtag</strong></td>
+<td><a href="https://www.google.com/analytics/">Google Analytics Global Site Tag</a></td>
+</tr>
+<tr>
+<td><strong>custom</strong></td>
+<td>Other analytics providers</td>
+</tr>
+</tbody>
+</table>
+<p>For Google Analytics add your Tracking Code:</p>
+<pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">analytics</span><span class="token punctuation">:</span>
+  <span class="token key atrule">provider</span><span class="token punctuation">:</span> <span class="token string">"google-gtag"</span>
+  <span class="token key atrule">google</span><span class="token punctuation">:</span>
+    <span class="token key atrule">tracking_id</span><span class="token punctuation">:</span> <span class="token string">"UA-1234567-8"</span>
+    <span class="token key atrule">anonymize_ip</span><span class="token punctuation">:</span> <span class="token boolean important">false</span> <span class="token comment"># default</span></code></pre>
+<p>To use another provider not included with the theme set <code>provider: &quot;custom&quot;</code> then add their embed code to <code>_includes/analytics-providers/custom.html</code>.</p>
+<p class="notice--info"><strong>Note:</strong> Analytics are disabled in <code>development</code>. To enable when testing/building locally be sure to set<br>
+<code>JEKYLL_ENV=production</code> to <a href="http://jekyllrb.com/docs/configuration/#specifying-a-jekyll-environment-at-build-time">force the environment</a> to production.</p>
+<h2 id="site-author" tabindex="-1">Site author</h2>
+<p>Used as the defaults for defining what appears in the author sidebar.</p>
+<p><picture><source type="image/webp" srcset="/minimal-mistakes/img/PbW6AdabfR-400.webp 400w, /minimal-mistakes/img/PbW6AdabfR-800.webp 800w, /minimal-mistakes/img/PbW6AdabfR-969.webp 969w" sizes="100vw"><img loading="lazy" decoding="async" src="/minimal-mistakes/img/PbW6AdabfR-400.jpeg" alt="author sidebar example" width="969" height="630" srcset="/minimal-mistakes/img/PbW6AdabfR-400.jpeg 400w, /minimal-mistakes/img/PbW6AdabfR-800.jpeg 800w, /minimal-mistakes/img/PbW6AdabfR-969.jpeg 969w" sizes="100vw"></picture></p>
+<p class="notice--info"><strong>Note:</strong> For sites with multiple authors these values can be overridden post by post with custom YAML Front Matter and a data file. For more information on how that works see below.</p>
+<pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">author</span><span class="token punctuation">:</span>
+  <span class="token key atrule">name</span>     <span class="token punctuation">:</span> <span class="token string">"Your Name"</span>
+  <span class="token key atrule">avatar</span>   <span class="token punctuation">:</span> <span class="token string">"/assets/images/bio-photo.jpg"</span>
+  <span class="token key atrule">bio</span>      <span class="token punctuation">:</span> <span class="token string">"My awesome biography constrained to a sentence or two goes here."</span>
+  <span class="token key atrule">location</span> <span class="token punctuation">:</span> <span class="token string">"Somewhere, USA"</span></code></pre>
+<p>Author links are all optional, include the ones you want visible under the <code>author.links</code> array.</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>label</strong></td>
+<td>Link label (e.g. <code>&quot;Twitter&quot;</code>)</td>
+</tr>
+<tr>
+<td><strong>icon</strong></td>
+<td><a href="https://fontawesome.com/v6/search">Font Awesome icon</a> classes (e.g. <code>&quot;fab fa-fw fa-twitter-square&quot;</code>)</td>
+</tr>
+<tr>
+<td><strong>url</strong></td>
+<td>Link URL (e.g. <code>&quot;https://twitter.com/mmistakes&quot;</code>)</td>
+</tr>
+</tbody>
+</table>
+<pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">author</span><span class="token punctuation">:</span>
+  <span class="token key atrule">name</span><span class="token punctuation">:</span> <span class="token string">"Your Name"</span>
+  <span class="token key atrule">avatar</span><span class="token punctuation">:</span> <span class="token string">"/assets/images/bio-photo.jpg"</span>
+  <span class="token key atrule">bio</span><span class="token punctuation">:</span> <span class="token string">"I am an **amazing** person."</span> <span class="token comment"># Note: Markdown is allowed</span>
+  <span class="token key atrule">location</span><span class="token punctuation">:</span> <span class="token string">"Somewhere"</span>
+  <span class="token key atrule">links</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> <span class="token key atrule">label</span><span class="token punctuation">:</span> <span class="token string">"Made Mistakes"</span>
+      <span class="token key atrule">icon</span><span class="token punctuation">:</span> <span class="token string">"fas fa-fw fa-link"</span>
+      <span class="token key atrule">url</span><span class="token punctuation">:</span> <span class="token string">"https://mademistakes.com"</span>
+    <span class="token punctuation">-</span> <span class="token key atrule">label</span><span class="token punctuation">:</span> <span class="token string">"Twitter"</span>
+      <span class="token key atrule">icon</span><span class="token punctuation">:</span> <span class="token string">"fab fa-fw fa-twitter-square"</span>
+      <span class="token key atrule">url</span><span class="token punctuation">:</span> <span class="token string">"https://twitter.com/mmistakes"</span>
+    <span class="token punctuation">-</span> <span class="token key atrule">label</span><span class="token punctuation">:</span> <span class="token string">"GitHub"</span>
+      <span class="token key atrule">icon</span><span class="token punctuation">:</span> <span class="token string">"fab fa-fw fa-github"</span>
+      <span class="token key atrule">url</span><span class="token punctuation">:</span> <span class="token string">"https://github.com/mmistakes"</span>
+    <span class="token punctuation">-</span> <span class="token key atrule">label</span><span class="token punctuation">:</span> <span class="token string">"Instagram"</span>
+      <span class="token key atrule">icon</span><span class="token punctuation">:</span> <span class="token string">"fab fa-fw fa-instagram"</span>
+      <span class="token key atrule">url</span><span class="token punctuation">:</span> <span class="token string">"https://instagram.com/mmistakes"</span></code></pre>
+<p>To customize the author sidebar, read the full <a href="/minimal-mistakes/docs/layouts/#author-profile">layout documentation</a>.</p>
+<h2 id="site-footer" tabindex="-1">Site footer</h2>
+<p>Footer links can be added under the <code>footer.links</code> array.</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>label</strong></td>
+<td>Link label (e.g. <code>&quot;Twitter&quot;</code>)</td>
+</tr>
+<tr>
+<td><strong>icon</strong></td>
+<td><a href="https://fontawesome.com/v6/search">Font Awesome icon</a> classes (e.g. <code>&quot;fab fa-fw fa-twitter-square&quot;</code>)</td>
+</tr>
+<tr>
+<td><strong>url</strong></td>
+<td>Link URL (e.g. <code>&quot;https://twitter.com/mmistakes&quot;</code>)</td>
+</tr>
+</tbody>
+</table>
+<pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">footer</span><span class="token punctuation">:</span>
+  <span class="token key atrule">links</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> <span class="token key atrule">label</span><span class="token punctuation">:</span> <span class="token string">"Twitter"</span>
+      <span class="token key atrule">icon</span><span class="token punctuation">:</span> <span class="token string">"fab fa-fw fa-twitter-square"</span>
+      <span class="token key atrule">url</span><span class="token punctuation">:</span> <span class="token string">"https://twitter.com/mmistakes"</span>
+    <span class="token punctuation">-</span> <span class="token key atrule">label</span><span class="token punctuation">:</span> <span class="token string">"GitHub"</span>
+      <span class="token key atrule">icon</span><span class="token punctuation">:</span> <span class="token string">"fab fa-fw fa-github"</span>
+      <span class="token key atrule">url</span><span class="token punctuation">:</span> <span class="token string">"https://github.com/mmistakes"</span>
+    <span class="token punctuation">-</span> <span class="token key atrule">label</span><span class="token punctuation">:</span> <span class="token string">"Instagram"</span>
+      <span class="token key atrule">icon</span><span class="token punctuation">:</span> <span class="token string">"fab fa-fw fa-instagram"</span>
+      <span class="token key atrule">url</span><span class="token punctuation">:</span> <span class="token string">"https://instagram.com/mmistakes"</span></code></pre>
+<p class="notice--danger"><strong>Note:</strong> Twitter and Facebook footer links no longer automatically pull from <code>site.twitter.username</code> and <code>site.facebook.username</code>. This behavior has been deprecated in favor of the <code>footer.links</code> array above.</p>
+<p>To change &quot;Follow:&quot; text that precedes footer links, edit the <code>follow_label</code> key in <code>_data/ui-text.yml</code>.</p>
+<h2 id="reading-files" tabindex="-1">Reading files</h2>
+<p>Nothing out of the ordinary here. <code>include</code> and <code>exclude</code> may be the only things you need to alter.</p>
+<h2 id="conversion-and-markdown-processing" tabindex="-1">Conversion and Markdown processing</h2>
+<p>Again nothing out of the ordinary here as the theme adheres to the defaults used by GitHub Pages. <a href="http://kramdown.gettalong.org/"><strong>Kramdown</strong></a> for Markdown conversion, <a href="https://rouge.jneen.net/"><strong>Rouge</strong></a> syntax highlighting, and incremental building disabled. Change them if you need to.</p>
+<h2 id="front-matter-defaults" tabindex="-1">Front Matter Defaults</h2>
+<p>To save yourself time setting <a href="https://jekyllrb.com/docs/configuration/front-matter-defaults/">Front Matter Defaults</a> for posts, pages, and collections is the way to go. Sure you can assign layouts and toggle settings like <strong>reading time</strong>, <strong>comments</strong>, and <strong>social sharing</strong> in each file, but that's not ideal.</p>
+<p>Using the <code>default</code> key in <code>_config.yml</code> you could set the layout and enable author profiles, reading time, comments, social sharing, and related posts for all posts --- in one shot.</p>
+<pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">defaults</span><span class="token punctuation">:</span>
+  <span class="token comment"># _posts</span>
+  <span class="token punctuation">-</span> <span class="token key atrule">scope</span><span class="token punctuation">:</span>
+      <span class="token key atrule">path</span><span class="token punctuation">:</span> <span class="token string">""</span>
+      <span class="token key atrule">type</span><span class="token punctuation">:</span> posts
+    <span class="token key atrule">values</span><span class="token punctuation">:</span>
+      <span class="token key atrule">layout</span><span class="token punctuation">:</span> single
+      <span class="token key atrule">author_profile</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+      <span class="token key atrule">read_time</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+      <span class="token key atrule">comments</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+      <span class="token key atrule">share</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+      <span class="token key atrule">related</span><span class="token punctuation">:</span> <span class="token boolean important">true</span></code></pre>
+<p>Pages Front Matter defaults can be scoped like this:</p>
+<pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">defaults</span><span class="token punctuation">:</span>
+  <span class="token comment"># _pages</span>
+  <span class="token punctuation">-</span> <span class="token key atrule">scope</span><span class="token punctuation">:</span>
+      <span class="token key atrule">path</span><span class="token punctuation">:</span> <span class="token string">""</span>
+      <span class="token key atrule">type</span><span class="token punctuation">:</span> pages
+    <span class="token key atrule">values</span><span class="token punctuation">:</span>
+      <span class="token key atrule">layout</span><span class="token punctuation">:</span> single</code></pre>
+<p>And collections like this:</p>
+<pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">defaults</span><span class="token punctuation">:</span>
+  <span class="token comment"># _foo</span>
+  <span class="token punctuation">-</span> <span class="token key atrule">scope</span><span class="token punctuation">:</span>
+      <span class="token key atrule">path</span><span class="token punctuation">:</span> <span class="token string">""</span>
+      <span class="token key atrule">type</span><span class="token punctuation">:</span> foo
+    <span class="token key atrule">values</span><span class="token punctuation">:</span>
+      <span class="token key atrule">layout</span><span class="token punctuation">:</span> single</code></pre>
+<p>And of course any default value can be overridden by settings in a post, page, or collection file. All you need to do is specify the settings in the YAML Front Matter. For more examples be sure to check out the demo site's <a href="https://github.com/mmistakes/minimal-mistakes/blob/master/_config.yml"><code>_config.yml</code></a>.</p>
+<h2 id="outputting" tabindex="-1">Outputting</h2>
+<p>The default permalink style used by the theme is <code>permalink: /:categories/:title/</code>. If you have a post named <code>2016-01-01-my-post.md</code> with <code>categories: foo</code> in the YAML Front Matter, Jekyll will generate <code>_site/foo/my-post/index.html</code>.</p>
+<p class="notice--warning"><strong>Note:</strong> If you plan on enabling breadcrumb links --- including category names in permalinks is a big part of how those are created.</p>
+<h3 id="paginate" tabindex="-1">Paginate</h3>
+<p>If <a href="https://github.com/jekyll/jekyll-paginate">using pagination</a> on the homepage you can change the amount of posts shown with:</p>
+<pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">paginate</span><span class="token punctuation">:</span> <span class="token number">5</span></code></pre>
+<p>You'll also need to include some Liquid and HTML to properly use the paginator, which you can find in the <strong>Layouts</strong> section under <a href="/minimal-mistakes/docs/layouts/#home-page">Home Page</a>.</p>
+<p>The paginator only works on files with name <code>index.html</code>. To use pagination in a subfolder --- for example <code>/recent/</code>, create <code>/recent/index.html</code> and set the <code>paginate_path</code> in <code>_config.yml</code> to this:</p>
+<pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">paginate_path</span><span class="token punctuation">:</span> /recent/page<span class="token punctuation">:</span>num/</code></pre>
+<p class="notice--info"><strong>Please note:</strong> When using Jekyll's default <a href="https://jekyllrb.com/docs/pagination/">pagination plugin</a> <code>paginator.posts</code> can only be called once. If you're looking for something more powerful that can paginate category, tag, and collection pages I suggest <strong><a href="https://github.com/sverrirs/jekyll-paginate-v2">jekyll-paginate-v2</a></strong>.</p>
+<h3 id="paginate-v2" tabindex="-1">Paginate V2</h3>
+<p><em>New in v4.26.0</em></p>
+<p>If you're using <a href="https://github.com/sverrirs/jekyll-paginate-v2">Jekyll Paginate V2</a>, you can enjoy its powerful features by removing <code>paginate</code> and <code>paginate_path</code> and adding the following configuration to your <code>_config.yml</code>:</p>
+<pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">pagination</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enabled</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">collection</span><span class="token punctuation">:</span> <span class="token string">'posts'</span>
+  <span class="token key atrule">per_page</span><span class="token punctuation">:</span> <span class="token number">5</span>
+  <span class="token key atrule">permalink</span><span class="token punctuation">:</span> <span class="token string">'/page/:num/'</span>  <span class="token comment"># Pages are index.html inside this folder (default)</span>
+  <span class="token key atrule">title</span><span class="token punctuation">:</span> <span class="token string">':title - page :num'</span>
+  <span class="token key atrule">limit</span><span class="token punctuation">:</span> <span class="token number">0</span>
+  <span class="token key atrule">sort_field</span><span class="token punctuation">:</span> <span class="token string">'date'</span>
+  <span class="token key atrule">sort_reverse</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">trail</span><span class="token punctuation">:</span>
+    <span class="token key atrule">before</span><span class="token punctuation">:</span> <span class="token number">2</span>
+    <span class="token key atrule">after</span><span class="token punctuation">:</span> <span class="token number">2</span></code></pre>
+<p>Then, create <code>/posts/index.html</code> with the following content:</p>
+<pre class="language-html"><code class="language-html">---
+title: "Posts"
+layout: home
+permalink: /posts/
+pagination:
+  enabled: true
+---</code></pre>
+<p>Your posts will be paginated at <code>/posts/</code>, <code>/posts/page/2/</code> and <code>/posts/page/3/</code> etc.</p>
+<p>Similarly, if you want to paginate a collection or a tag, you can create another <code>index.html</code> at an appropriate location, and add configuration to the <code>pagination</code> key in the front matter, like this:</p>
+<pre class="language-html"><code class="language-html">---
+title: "Lovely pets"
+layout: home
+permalink: /pets/
+pagination:
+  enabled: true
+  collection:
+    - cat
+    - dog
+---</code></pre>
+<div class="notice--danger" markdown="1">
+**Note:** There are two more configuration options from Jekyll Paginate V2 that this theme doesn't support yet. You should either leave them out or use their default values as shown below. Changing them may lead to unexpected results and you're on your own.
+<pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">pagination</span><span class="token punctuation">:</span>
+  <span class="token comment"># Optional, the default file extension for generated pages (e.g html, json, xml).</span>
+  <span class="token comment"># Internally this is set to html by default</span>
+  <span class="token key atrule">extension</span><span class="token punctuation">:</span> html
+
+  <span class="token comment"># Optional, the default name of the index file for generated pages (e.g. 'index.html')</span>
+  <span class="token comment"># Without file extension</span>
+  <span class="token key atrule">indexpage</span><span class="token punctuation">:</span> <span class="token string">'index'</span></code></pre>
+</div>
+<h3 id="timezone" tabindex="-1">Timezone</h3>
+<p>This sets the timezone environment variable, which Ruby uses to handle time and date creation and manipulation. Any entry from the <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones">IANA Time Zone Database</a> is valid. The default is the local time zone, as set by your operating system.</p>
+<pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">timezone</span><span class="token punctuation">:</span> America/New_York</code></pre>
+<h2 id="plugins" tabindex="-1">Plugins</h2>
+<p>When hosting with GitHub Pages a small <a href="https://pages.github.com/versions/">set of gems</a> have been whitelisted for use. The theme uses a few of them which can be found under <code>gems</code>. Additional settings and configurations are documented in the links below.</p>
+<table>
+<thead>
+<tr>
+<th>Plugin</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/jekyll/jekyll-paginate">jekyll-paginate</a></td>
+<td>Pagination Generator for Jekyll.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/jekyll/jekyll-sitemap">jekyll-sitemap</a></td>
+<td>Jekyll plugin to silently generate a <a href="http://sitemaps.org">sitemaps.org</a> compliant sitemap for your Jekyll site.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/jekyll/jekyll-gist">jekyll-gist</a></td>
+<td>Liquid tag for displaying GitHub Gists in Jekyll sites.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/jekyll/jekyll-feed">jekyll-feed</a></td>
+<td>A Jekyll plugin to generate an Atom (RSS-like) feed of your Jekyll posts.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/benbalter/jekyll-include-cache">jekyll-include-cache</a></td>
+<td>Liquid tag that caches Liquid includes.</td>
+</tr>
+</tbody>
+</table>
+<p>If you're hosting elsewhere then you don't really have to worry about what is whitelisted as you are free to include whatever <a href="https://jekyllrb.com/docs/plugins/">Jekyll plugins</a> you desire.</p>
+<p class="notice--warning"><strong>Note:</strong> The <a href="https://github.com/benbalter/jekyll-include-cache">jekyll-include-cache</a> plugin needs to be installed in your <code>Gemfile</code> and added to the <code>plugins</code> array of <code>_config.yml</code>. Otherwise you'll throw <code>Unknown tag 'include_cached'</code> errors at build.</p>
+<h2 id="archive-settings" tabindex="-1">Archive settings</h2>
+<p>The theme ships with support for taxonomy (category and tag) pages. GitHub Pages hosted sites need to use a <em>Liquid only</em> approach while those hosted elsewhere can use plugins like <a href="https://github.com/jekyll/jekyll-archives"><strong>jekyll-archives</strong></a> to generate these pages automatically.</p>
+<p>The default <code>type</code> is set to use Liquid.</p>
+<p class="notice--danger"><strong>Note:</strong> <code>category_archive</code> and <code>tag_archive</code> were previously named <code>categories</code> and <code>tags</code>. Names were changed to avoid possible conflicts with <code>site.categories</code> and <code>site.tags</code>.</p>
+<pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">category_archive</span><span class="token punctuation">:</span>
+  <span class="token key atrule">type</span><span class="token punctuation">:</span> liquid
+  <span class="token key atrule">path</span><span class="token punctuation">:</span> /categories/
+<span class="token key atrule">tag_archive</span><span class="token punctuation">:</span>
+  <span class="token key atrule">type</span><span class="token punctuation">:</span> liquid
+  <span class="token key atrule">path</span><span class="token punctuation">:</span> /tags/</code></pre>
+<p>Which would create category and tag links in the breadcrumbs and page meta like: <code>/categories/#foo</code> and <code>/tags/#foo</code>.</p>
+<p class="notice--warning"><strong>Note:</strong> these are simply hash (fragment) links into the full taxonomy index pages. For them to resolve properly, the category and tag index pages need to exist at <a href="https://github.com/lsolesen/minimal-mistakes/blob/master/docs/_pages/category-archive.md"><code>/categories/index.html</code></a> (copy to <code>_pages/category-archive.md</code>) and <a href="https://github.com/lsolesen/minimal-mistakes/blob/master/docs/_pages/tag-archive.md"><code>/tags/index.html</code></a> (copy to <code>_pages/tag-archive.md</code>).</p>
+<p>If you have the luxury of using Jekyll Plugins, then <a href="https://github.com/jekyll/jekyll-archives"><strong>jekyll-archives</strong></a> will create a better experience as discrete taxonomy pages would be generated, and their corresponding links would be &quot;real&quot; (not just hash/fragment links into a larger index). However, the plugin will not generate the taxonomy index pages (<code>category-archive.md</code> and <code>tag-archive.md</code>) so you'd still need to manually create them if you'd like to have them (see note above).</p>
+<p>First, you'll need to make sure that the <code>jekyll-archives</code> plugin is installed. Either run <code>gem install jekyll-archives</code> or add the following to your <code>Gemfile</code>:</p>
+<pre><code>group :jekyll_plugins do
+  gem &quot;jekyll-archives&quot;
+end
+</code></pre>
+<p>Then run <code>bundle install</code>.</p>
+<p>Now that the plugin is installed, change <code>type</code> to <code>jekyll-archives</code> and apply the following <a href="https://github.com/jekyll/jekyll-archives/blob/master/docs/configuration.md">configurations</a>:</p>
+<pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">category_archive</span><span class="token punctuation">:</span>
+  <span class="token key atrule">type</span><span class="token punctuation">:</span> jekyll<span class="token punctuation">-</span>archives
+  <span class="token key atrule">path</span><span class="token punctuation">:</span> /categories/
+<span class="token key atrule">tag_archive</span><span class="token punctuation">:</span>
+  <span class="token key atrule">type</span><span class="token punctuation">:</span> jekyll<span class="token punctuation">-</span>archives
+  <span class="token key atrule">path</span><span class="token punctuation">:</span> /tags/
+<span class="token key atrule">jekyll-archives</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enabled</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> categories
+    <span class="token punctuation">-</span> tags
+  <span class="token key atrule">layouts</span><span class="token punctuation">:</span>
+    <span class="token key atrule">category</span><span class="token punctuation">:</span> archive<span class="token punctuation">-</span>taxonomy
+    <span class="token key atrule">tag</span><span class="token punctuation">:</span> archive<span class="token punctuation">-</span>taxonomy
+  <span class="token key atrule">permalinks</span><span class="token punctuation">:</span>
+    <span class="token key atrule">category</span><span class="token punctuation">:</span> /categories/<span class="token punctuation">:</span>name/
+    <span class="token key atrule">tag</span><span class="token punctuation">:</span> /tags/<span class="token punctuation">:</span>name/</code></pre>
+<p class="notice--info"><strong>Note:</strong> The <code>archive-taxonomy</code> layout used by jekyll-archives is provided with the theme and can be found in the <code>_layouts</code> folder.</p>
+<div class="notice--success" markdown="1">
+<h4 class="no_toc"><i class="fas fa-lightbulb"></i> Tip</h4>
+<p>To apply <a href="https://jekyllrb.com/docs/configuration/front-matter-defaults/">Front Matter defaults</a> to pages generated by the <code>jekyll-archives</code> plugin, you can specify a scope of an empty <code>path</code> and a <code>type</code> of either <code>tag</code> or <code>category</code>.</p>
+<p>For example, the following configuration enables author profile on tag archives and disables comments on category archives.</p>
+<pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">defaults</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> <span class="token key atrule">scope</span><span class="token punctuation">:</span>
+      <span class="token key atrule">path</span><span class="token punctuation">:</span> <span class="token string">""</span>
+      <span class="token key atrule">type</span><span class="token punctuation">:</span> tag
+    <span class="token key atrule">values</span><span class="token punctuation">:</span>
+      <span class="token key atrule">author_profile</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token punctuation">-</span> <span class="token key atrule">scope</span><span class="token punctuation">:</span>
+      <span class="token key atrule">path</span><span class="token punctuation">:</span> <span class="token string">""</span>
+      <span class="token key atrule">type</span><span class="token punctuation">:</span> category
+    <span class="token key atrule">values</span><span class="token punctuation">:</span>
+      <span class="token key atrule">comments</span><span class="token punctuation">:</span> <span class="token boolean important">false</span></code></pre>
+</div>
+<h2 id="html-compression" tabindex="-1">HTML compression</h2>
+<p>If you care at all about performance (and really who doesn't) compressing the HTML files generated by Jekyll is a good thing to do.</p>
+<p>If you're hosting with GitHub Pages there aren't many options afforded to you for optimizing the HTML Jekyll generates. Thankfully there is some Liquid wizardry you can use to strip whitespace and comments to reduce file size.</p>
+<p>There's a variety of configurations and caveats to using the <code>compress</code> layout, so be sure to read through the <a href="http://jch.penibelst.de/">documentation</a> if you decide to make change the defaults set in the theme's <code>_config.yml</code>.</p>
+<pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">compress_html</span><span class="token punctuation">:</span>
+  <span class="token key atrule">clippings</span><span class="token punctuation">:</span> all
+  <span class="token key atrule">ignore</span><span class="token punctuation">:</span>
+    <span class="token key atrule">envs</span><span class="token punctuation">:</span> development  <span class="token comment"># disable compression in dev environment</span></code></pre>
+<p class="notice--warning"><strong>Caution:</strong> Inline JavaScript comments can cause problems with <code>compress.html</code>, so be sure to <code>/* comment this way */</code> and avoid <code>// these sorts of comments</code>.</p>
+<p class="notice--info"><strong>Note:</strong> CDN services such as CloudFlare provide optional automatic minification for HTML, CSS, and JavaScript. If you are serving your site via such a service and have minification enabled, this configuration might be redundant.</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2021-05-11">May 11, 2021</time></p>
+
+      </footer>
+
+      
+
+      
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+      
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><div class="search-searchbar"></div>
+  <div class="search-hits"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+        
+          <li><a href="https://twitter.com/mmistakes" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+          <li><a href="https://github.com/mmistakes" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://instagram.com/mmistakes" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+        
+      
+    
+
+    
+      <li><a href="/minimal-mistakes/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy;  <a href="https://mmistakes.github.io">Minimal Mistakes</a>. Powered by <a href="https://www.11ty.dev/" rel="nofollow">11ty</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/minimal-mistakes/assets/js/main.min.js"></script>
+
+
+<script>
+// Including InstantSearch.js library and styling
+const loadSearch = function() {
+  const loadCSS = function(src) {
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = src;
+    link.media = 'all';
+    document.head.appendChild(link);
+  };
+
+  var script = document.createElement('script');
+  script.setAttribute("type", "text/javascript");
+  script.setAttribute("src", "https://cdn.jsdelivr.net/npm/instantsearch.js@2.3.3/dist/instantsearch.min.js");
+  script.addEventListener("load", function() {
+    // Instantiating InstantSearch.js with Algolia credentials
+    const search = instantsearch({
+      appId: 'QB6HVGBSBA',
+      apiKey: '9d5014e5bbc77372547bce778dfa5663',
+      indexName: 'minimal_mistakes',
+      searchParameters: {
+        restrictSearchableAttributes: ['title', 'content']
+      }
+    });
+
+    const hitTemplate = function(hit) {
+      const url = hit.url;
+      const hightlight = hit._highlightResult;
+      const title = hightlight.title && hightlight.title.value  || "";
+      const content = hightlight.html && hightlight.html.value  || "";
+
+      return `
+        <div class="list__item">
+          <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+            <h2 class="archive__item-title" itemprop="headline"><a href="/minimal-mistakes${url}">${title}</a></h2>
+            <div class="archive__item-excerpt" itemprop="description">${content}</div>
+          </article>
+        </div>
+      `;
+    }
+
+    // Adding searchbar and results widgets
+    search.addWidget(
+      instantsearch.widgets.searchBox({
+        container: '.search-searchbar',
+        poweredBy: true,
+        placeholder: 'Enter your search term...'
+      })
+    );
+    search.addWidget(
+      instantsearch.widgets.hits({
+        container: '.search-hits',
+        templates: {
+          item: hitTemplate,
+          empty: 'No results',
+        }
+      })
+    );
+
+    if (!search.started) {
+      search.start();
+    }
+  });
+  document.body.appendChild(script);
+
+  loadCSS("https://cdn.jsdelivr.net/npm/instantsearch.js@2.3.3/dist/instantsearch.min.css");
+  loadCSS("https://cdn.jsdelivr.net/npm/instantsearch.js@2.3.3/dist/instantsearch-theme-algolia.min.css");
+};
+
+// Starting the search only when toggle is clicked
+$(document).ready(function() {
+  var scriptLoaded = false;
+
+  $(".search__toggle").on("click", function() {
+    if (!scriptLoaded) {
+      loadSearch();
+      scriptLoaded = true;
+    }
+  });
+});
+</script>
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
