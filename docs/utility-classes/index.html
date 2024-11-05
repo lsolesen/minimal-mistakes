@@ -1,0 +1,681 @@
+
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.26.2 by Michael Rose
+  Copyright 2013-2024 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="en-US" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Utility Classes - Minimal Mistakes</title>
+<meta name="description" content="CSS classes for aligning text/image, styling buttons and notices, and more.">
+
+
+  <meta name="author" content="Michael Rose">
+  
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Minimal Mistakes">
+<meta property="og:title" content="Utility Classes">
+<meta property="og:url" content="">
+
+
+  <meta property="og:description" content="CSS classes for aligning text/image, styling buttons and notices, and more.">
+
+
+
+  <meta property="og:image" content="">
+
+
+
+  <meta name="twitter:site" content="@mmistakes">
+  <meta name="twitter:title" content="Utility Classes">
+  <meta name="twitter:description" content="CSS classes for aligning text/image, styling buttons and notices, and more.">
+  <meta name="twitter:url" content="">
+
+  
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="">
+  
+
+  
+
+
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="">
+
+
+
+
+
+
+
+  <meta name="google-site-verification" content="UQj93ERU9zgECodaaXgVpkjrFn9UrDMEzVamacSoQ8Y">
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Minimal Mistakes Feed">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  window.enable_copy_code_button = true;
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single" dir="ltr">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Minimal Mistakes
+          <span class="site-subtitle">A Jekyll theme</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/docs/quick-start-guide/">Quick-Start Guide</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about/">About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/year-archive/">Sample Posts</a>
+            </li><li class="masthead__menu-item">
+              <a href="/collection-archive/">Sample Collections</a>
+            </li><li class="masthead__menu-item">
+              <a href="/terms/">Terms &amp; Privacy Policy</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <i class="fas fa-search"></i>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+      
+    
+    
+      <nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox">
+  <label for="ac-toc">Toggle Menu</label>
+  <ul class="nav__items">
+    
+      
+      
+        <li>
+          
+            <span class="nav__sub-title">Getting Started</span>
+          
+
+          
+          <ul>
+            
+              <li><a href="/docs/quick-start-guide/">Quick-Start Guide</a></li>
+            
+              <li><a href="/docs/structure/">Structure</a></li>
+            
+              <li><a href="/docs/installation/">Installation</a></li>
+            
+              <li><a href="/docs/upgrading/">Upgrading</a></li>
+            
+          </ul>
+          
+        </li>
+      
+        <li>
+          
+            <span class="nav__sub-title">Customization</span>
+          
+
+          
+          <ul>
+            
+              <li><a href="/docs/configuration/">Configuration</a></li>
+            
+              <li><a href="/docs/overriding-theme-defaults/">Overriding Theme Defaults</a></li>
+            
+              <li><a href="/docs/navigation/">Navigation</a></li>
+            
+              <li><a href="/docs/ui-text/">UI Text</a></li>
+            
+              <li><a href="/docs/authors/">Authors</a></li>
+            
+              <li><a href="/docs/layouts/">Layouts</a></li>
+            
+          </ul>
+          
+        </li>
+      
+        <li>
+          
+            <span class="nav__sub-title">Content</span>
+          
+
+          
+          <ul>
+            
+              <li><a href="/docs/posts/">Working with Posts</a></li>
+            
+              <li><a href="/docs/pages/">Working with Pages</a></li>
+            
+              <li><a href="/docs/collections/">Working with Collections</a></li>
+            
+              <li><a href="/docs/helpers/">Helpers</a></li>
+            
+              <li><a href="/docs/utility-classes/">Utility Classes</a></li>
+            
+          </ul>
+          
+        </li>
+      
+        <li>
+          
+            <span class="nav__sub-title">Extras</span>
+          
+
+          
+          <ul>
+            
+              <li><a href="/docs/stylesheets/">Stylesheets</a></li>
+            
+              <li><a href="/docs/javascript/">JavaScript</a></li>
+            
+          </ul>
+          
+        </li>
+      
+        <li>
+          
+            <span class="nav__sub-title">Meta</span>
+          
+
+          
+          <ul>
+            
+              <li><a href="/docs/faq/">FAQ</a></li>
+            
+              <li><a href="/docs/history/">History</a></li>
+            
+              <li><a href="/docs/contributing/">Contributing</a></li>
+            
+              <li><a href="/docs/docs-2-2/">Old 2.2 Docs</a></li>
+            
+              <li><a href="/docs/license/">License</a></li>
+            
+              <li><a href="/terms/">Terms &amp; Privacy Policy</a></li>
+            
+          </ul>
+          
+        </li>
+      
+    
+  </ul>
+</nav>
+
+    
+  
+  </div>
+
+
+
+  <article class="page" itemscope="" itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Utility Classes">
+    <meta itemprop="description" content="CSS classes for aligning text/image, styling buttons and notices, and more.">
+    
+    <meta itemprop="dateModified" content="2018-11-26T00:46:43+00:00">
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">
+            <a href="" itemprop="url">Utility Classes
+</a>
+          </h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-cogs"></i> Utility Classes</h4></header>
+              <ul class="toc__menu"><li><a href="#text-alignment">Text alignment</a></li><li><a href="#image-alignment">Image alignment</a></li><li><a href="#buttons">Buttons</a></li><li><a href="#notices">Notices</a></li></ul>
+            </nav>
+          </aside>
+        
+        <p>Using the Kramdown Markdown renderer with Jekyll allows you to add <a href="http://kramdown.gettalong.org/quickref.html#block-attributes">block</a> and <a href="http://kramdown.gettalong.org/quickref.html#inline-attributes">inline attributes</a>. This is nice if you want to add custom styling to text and image, and still write in Markdown.</p>
+<p class="notice--warning"><strong>Jekyll 3:</strong> Kramdown is the default for <code>jekyll new</code> sites and those hosted on GitHub Pages. Not using Kramdown? That's OK. The following classes are still available when used with standard HTML.</p>
+<h2 id="text-alignment" tabindex="-1">Text alignment</h2>
+<p>Align text blocks with the following classes.</p>
+<p class="text-left">Left aligned text <code>.text-left</code></p>
+<pre class="language-markdown"><code class="language-markdown">Left aligned text
+{: .text-left}</code></pre>
+<p class="text-center">Center aligned text. <code>.text-center</code></p>
+<pre class="language-markdown"><code class="language-markdown">Center aligned text.
+{: .text-center}</code></pre>
+<hr>
+<p class="text-right">Right aligned text. <code>.text-right</code></p>
+<pre class="language-markdown"><code class="language-markdown">Right aligned text.
+{: .text-right}</code></pre>
+<hr>
+<p class="text-justify"><strong>Justified text.</strong> <code>.text-justify</code> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel eleifend odio, eu elementum purus. In hac habitasse platea dictumst. Fusce sed sapien eleifend, sollicitudin neque non, faucibus est. Proin tempus nisi eu arcu facilisis, eget venenatis eros consequat.</p>
+<pre class="language-markdown"><code class="language-markdown">Justified text.
+{: .text-justify}</code></pre>
+<hr>
+<p class="text-nowrap">No wrap text. <code>.text-nowrap</code></p>
+<pre class="language-markdown"><code class="language-markdown">No wrap text.
+{: .text-nowrap}</code></pre>
+<h2 id="image-alignment" tabindex="-1">Image alignment</h2>
+<p>Position images with the following classes.</p>
+<p><picture><source type="image/webp" srcset="/img/UwLKwVHjoW-400.webp 400w, /img/UwLKwVHjoW-580.webp 580w" sizes="100vw"><img loading="lazy" decoding="async" src="/img/UwLKwVHjoW-400.jpeg" alt="image-center" class="align-center" width="580" height="300" srcset="/img/UwLKwVHjoW-400.jpeg 400w, /img/UwLKwVHjoW-580.jpeg 580w" sizes="100vw"></picture></p>
+<p>The image above happens to be <strong>centered</strong>.</p>
+<pre class="language-markdown"><code class="language-markdown"><span class="token url"><span class="token operator">!</span>[<span class="token content">image-center</span>](<span class="token url">/assets/images/filename.jpg</span>)</span>{: .align-center}</code></pre>
+<hr>
+<p><picture><source type="image/webp" srcset="/img/1qyStLzw8_-150.webp 150w" sizes="100vw"><img loading="lazy" decoding="async" src="/img/1qyStLzw8_-150.jpeg" alt="image-left" class="align-left" width="150" height="150"></picture> The rest of this paragraph is filler for the sake of seeing the text wrap around the 150×150 image, which is <strong>left aligned</strong>. There should be plenty of room above, below, and to the right of the image. Just look at him there --- Hey guy! Way to rock that left side. I don't care what the right aligned image says, you look great. Don't let anyone else tell you differently.</p>
+<pre class="language-markdown"><code class="language-markdown"><span class="token url"><span class="token operator">!</span>[<span class="token content">image-left</span>](<span class="token url">/assets/images/filename.jpg</span>)</span>{: .align-left}</code></pre>
+<hr>
+<p><picture><source type="image/webp" srcset="/img/o09oUzmDKm-300.webp 300w" sizes="100vw"><img loading="lazy" decoding="async" src="/img/o09oUzmDKm-300.jpeg" alt="image-right" class="align-right" width="300" height="200"></picture></p>
+<p>And now we're going to shift things to the <strong>right align</strong>. Again, there should be plenty of room above, below, and to the left of the image. Just look at him there --- Hey guy! Way to rock that right side. I don't care what the left aligned image says, you look great. Don't let anyone else tell you differently.</p>
+<pre class="language-markdown"><code class="language-markdown"><span class="token url"><span class="token operator">!</span>[<span class="token content">image-right</span>](<span class="token url">/assets/images/filename.jpg</span>)</span>{: .align-right}</code></pre>
+<hr>
+<p class="full"><picture><source type="image/webp" srcset="/img/RrQEF87qds-400.webp 400w, /img/RrQEF87qds-800.webp 800w, /img/RrQEF87qds-1200.webp 1200w" sizes="100vw"><img loading="lazy" decoding="async" src="/img/RrQEF87qds-400.jpeg" alt="full" width="1200" height="400" srcset="/img/RrQEF87qds-400.jpeg 400w, /img/RrQEF87qds-800.jpeg 800w, /img/RrQEF87qds-1200.jpeg 1200w" sizes="100vw"></picture></p>
+<p>The image above should extend outside of the parent container on right.</p>
+<pre class="language-markdown"><code class="language-markdown"><span class="token url"><span class="token operator">!</span>[<span class="token content">full</span>](<span class="token url">/assets/images/filename.jpg</span>)</span>
+{: .full}</code></pre>
+<h2 id="buttons" tabindex="-1">Buttons</h2>
+<p>Make any link standout more when applying the <code>.btn .btn--primary</code> classes.</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn btn--primary<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Link Text<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span></code></pre>
+<table>
+<thead>
+<tr>
+<th>Button Type</th>
+<th>Example</th>
+<th>Class</th>
+<th>Kramdown</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default</td>
+<td><a href="#link" class="btn">Text</a></td>
+<td><code>.btn</code></td>
+<td><code>[Text](#link){: .btn}</code></td>
+</tr>
+<tr>
+<td>Primary</td>
+<td><a href="#link" class="btn btn--primary">Text</a></td>
+<td><code>.btn .btn--primary</code></td>
+<td><code>[Text](#link){: .btn .btn--primary}</code></td>
+</tr>
+<tr>
+<td>Success</td>
+<td><a href="#link" class="btn btn--success">Text</a></td>
+<td><code>.btn .btn--success</code></td>
+<td><code>[Text](#link){: .btn .btn--success}</code></td>
+</tr>
+<tr>
+<td>Warning</td>
+<td><a href="#link" class="btn btn--warning">Text</a></td>
+<td><code>.btn .btn--warning</code></td>
+<td><code>[Text](#link){: .btn .btn--warning}</code></td>
+</tr>
+<tr>
+<td>Danger</td>
+<td><a href="#link" class="btn btn--danger">Text</a></td>
+<td><code>.btn .btn--danger</code></td>
+<td><code>[Text](#link){: .btn .btn--danger}</code></td>
+</tr>
+<tr>
+<td>Info</td>
+<td><a href="#link" class="btn btn--info">Text</a></td>
+<td><code>.btn .btn--info</code></td>
+<td><code>[Text](#link){: .btn .btn--info}</code></td>
+</tr>
+<tr>
+<td>Inverse</td>
+<td><a href="#link" class="btn btn--inverse">Text</a></td>
+<td><code>.btn .btn--inverse</code></td>
+<td><code>[Text](#link){: .btn .btn--inverse}</code></td>
+</tr>
+<tr>
+<td>Light Outline</td>
+<td><a href="#link" class="btn btn--light-outline">Text</a></td>
+<td><code>.btn .btn--light-outline</code></td>
+<td><code>[Text](#link){: .btn .btn--light-outline}</code></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Button Size</th>
+<th>Example</th>
+<th>Class</th>
+<th>Kramdown</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>X-Large</td>
+<td><a href="#" class="btn btn--primary btn--x-large">X-Large Button</a></td>
+<td><code>.btn .btn--primary .btn--x-large</code></td>
+<td><code>[Text](#link){: .btn .btn--primary .btn--x-large}</code></td>
+</tr>
+<tr>
+<td>Large</td>
+<td><a href="#" class="btn btn--primary btn--large">Large Button</a></td>
+<td><code>.btn .btn--primary .btn--large</code></td>
+<td><code>[Text](#link){: .btn .btn--primary .btn--large}</code></td>
+</tr>
+<tr>
+<td>Default</td>
+<td><a href="#" class="btn btn--primary">Default Button</a></td>
+<td><code>.btn .btn--primary</code></td>
+<td><code>[Text](#link){: .btn .btn--primary }</code></td>
+</tr>
+<tr>
+<td>Small</td>
+<td><a href="#" class="btn btn--primary btn--small">Small Button</a></td>
+<td><code>.btn .btn--primary .btn--small</code></td>
+<td><code>[Text](#link){: .btn .btn--primary .btn--small}</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="notices" tabindex="-1">Notices</h2>
+<p>Call attention to a block of text.</p>
+<table>
+<thead>
+<tr>
+<th>Notice Type</th>
+<th>Class</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default</td>
+<td><code>.notice</code></td>
+</tr>
+<tr>
+<td>Primary</td>
+<td><code>.notice--primary</code></td>
+</tr>
+<tr>
+<td>Info</td>
+<td><code>.notice--info</code></td>
+</tr>
+<tr>
+<td>Warning</td>
+<td><code>.notice--warning</code></td>
+</tr>
+<tr>
+<td>Success</td>
+<td><code>.notice--success</code></td>
+</tr>
+<tr>
+<td>Danger</td>
+<td><code>.notice--danger</code></td>
+</tr>
+</tbody>
+</table>
+<p class="notice"><strong>Watch out!</strong> This paragraph of text has been <a href="#">emphasized</a> with the <code>{: .notice}</code> class.</p>
+<p class="notice--primary"><strong>Watch out!</strong> This paragraph of text has been <a href="#">emphasized</a> with the <code>{: .notice--primary}</code> class.</p>
+<p class="notice--info"><strong>Watch out!</strong> This paragraph of text has been <a href="#">emphasized</a> with the <code>{: .notice--info}</code> class.</p>
+<p class="notice--warning"><strong>Watch out!</strong> This paragraph of text has been <a href="#">emphasized</a> with the <code>{: .notice--warning}</code> class.</p>
+<p class="notice--success"><strong>Watch out!</strong> This paragraph of text has been <a href="#">emphasized</a> with the <code>{: .notice--success}</code> class.</p>
+<p class="notice--danger"><strong>Watch out!</strong> This paragraph of text has been <a href="#">emphasized</a> with the <code>{: .notice--danger}</code> class.</p>
+<div class="notice--info">
+  <h4 class="no_toc">Notice Headline:</h4>
+  <p>You can also add the <code>.notice</code> class to a <code>&lt;div&gt;</code> element.</p>
+<ul>
+<li>Bullet point 1</li>
+<li>Bullet point 2</li>
+</ul>
+</div>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2018-11-26">November 26, 2018</time></p>
+
+      </footer>
+
+      
+
+      
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+      
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><div class="search-searchbar"></div>
+  <div class="search-hits"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+        
+          <li><a href="https://twitter.com/mmistakes" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+          <li><a href="https://github.com/mmistakes" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://instagram.com/mmistakes" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy;  <a href="https://mmistakes.github.io">Minimal Mistakes</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+<script>
+// Including InstantSearch.js library and styling
+const loadSearch = function() {
+  const loadCSS = function(src) {
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = src;
+    link.media = 'all';
+    document.head.appendChild(link);
+  };
+
+  var script = document.createElement('script');
+  script.setAttribute("type", "text/javascript");
+  script.setAttribute("src", "https://cdn.jsdelivr.net/npm/instantsearch.js@2.3.3/dist/instantsearch.min.js");
+  script.addEventListener("load", function() {
+    // Instantiating InstantSearch.js with Algolia credentials
+    const search = instantsearch({
+      appId: 'QB6HVGBSBA',
+      apiKey: '9d5014e5bbc77372547bce778dfa5663',
+      indexName: 'minimal_mistakes',
+      searchParameters: {
+        restrictSearchableAttributes: ['title', 'content']
+      }
+    });
+
+    const hitTemplate = function(hit) {
+      const url = hit.url;
+      const hightlight = hit._highlightResult;
+      const title = hightlight.title && hightlight.title.value  || "";
+      const content = hightlight.html && hightlight.html.value  || "";
+
+      return `
+        <div class="list__item">
+          <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+            <h2 class="archive__item-title" itemprop="headline"><a href="/minimal-mistakes${url}">${title}</a></h2>
+            <div class="archive__item-excerpt" itemprop="description">${content}</div>
+          </article>
+        </div>
+      `;
+    }
+
+    // Adding searchbar and results widgets
+    search.addWidget(
+      instantsearch.widgets.searchBox({
+        container: '.search-searchbar',
+        poweredBy: true,
+        placeholder: 'Enter your search term...'
+      })
+    );
+    search.addWidget(
+      instantsearch.widgets.hits({
+        container: '.search-hits',
+        templates: {
+          item: hitTemplate,
+          empty: 'No results',
+        }
+      })
+    );
+
+    if (!search.started) {
+      search.start();
+    }
+  });
+  document.body.appendChild(script);
+
+  loadCSS("https://cdn.jsdelivr.net/npm/instantsearch.js@2.3.3/dist/instantsearch.min.css");
+  loadCSS("https://cdn.jsdelivr.net/npm/instantsearch.js@2.3.3/dist/instantsearch-theme-algolia.min.css");
+};
+
+// Starting the search only when toggle is clicked
+$(document).ready(function() {
+  var scriptLoaded = false;
+
+  $(".search__toggle").on("click", function() {
+    if (!scriptLoaded) {
+      loadSearch();
+      scriptLoaded = true;
+    }
+  });
+});
+</script>
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

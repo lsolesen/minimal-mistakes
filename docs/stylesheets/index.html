@@ -1,0 +1,782 @@
+
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.26.2 by Michael Rose
+  Copyright 2013-2024 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="en-US" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Stylesheets - Minimal Mistakes</title>
+<meta name="description" content="Instructions for customizing and building the theme&#39;s stylesheets.">
+
+
+  <meta name="author" content="Michael Rose">
+  
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Minimal Mistakes">
+<meta property="og:title" content="Stylesheets">
+<meta property="og:url" content="">
+
+
+  <meta property="og:description" content="Instructions for customizing and building the theme&#39;s stylesheets.">
+
+
+
+  <meta property="og:image" content="">
+
+
+
+  <meta name="twitter:site" content="@mmistakes">
+  <meta name="twitter:title" content="Stylesheets">
+  <meta name="twitter:description" content="Instructions for customizing and building the theme&#39;s stylesheets.">
+  <meta name="twitter:url" content="">
+
+  
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="">
+  
+
+  
+
+
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="">
+
+
+
+
+
+
+
+  <meta name="google-site-verification" content="UQj93ERU9zgECodaaXgVpkjrFn9UrDMEzVamacSoQ8Y">
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Minimal Mistakes Feed">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  window.enable_copy_code_button = true;
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single" dir="ltr">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Minimal Mistakes
+          <span class="site-subtitle">A Jekyll theme</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/docs/quick-start-guide/">Quick-Start Guide</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about/">About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/year-archive/">Sample Posts</a>
+            </li><li class="masthead__menu-item">
+              <a href="/collection-archive/">Sample Collections</a>
+            </li><li class="masthead__menu-item">
+              <a href="/terms/">Terms &amp; Privacy Policy</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <i class="fas fa-search"></i>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+      
+    
+    
+      <nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox">
+  <label for="ac-toc">Toggle Menu</label>
+  <ul class="nav__items">
+    
+      
+      
+        <li>
+          
+            <span class="nav__sub-title">Getting Started</span>
+          
+
+          
+          <ul>
+            
+              <li><a href="/docs/quick-start-guide/">Quick-Start Guide</a></li>
+            
+              <li><a href="/docs/structure/">Structure</a></li>
+            
+              <li><a href="/docs/installation/">Installation</a></li>
+            
+              <li><a href="/docs/upgrading/">Upgrading</a></li>
+            
+          </ul>
+          
+        </li>
+      
+        <li>
+          
+            <span class="nav__sub-title">Customization</span>
+          
+
+          
+          <ul>
+            
+              <li><a href="/docs/configuration/">Configuration</a></li>
+            
+              <li><a href="/docs/overriding-theme-defaults/">Overriding Theme Defaults</a></li>
+            
+              <li><a href="/docs/navigation/">Navigation</a></li>
+            
+              <li><a href="/docs/ui-text/">UI Text</a></li>
+            
+              <li><a href="/docs/authors/">Authors</a></li>
+            
+              <li><a href="/docs/layouts/">Layouts</a></li>
+            
+          </ul>
+          
+        </li>
+      
+        <li>
+          
+            <span class="nav__sub-title">Content</span>
+          
+
+          
+          <ul>
+            
+              <li><a href="/docs/posts/">Working with Posts</a></li>
+            
+              <li><a href="/docs/pages/">Working with Pages</a></li>
+            
+              <li><a href="/docs/collections/">Working with Collections</a></li>
+            
+              <li><a href="/docs/helpers/">Helpers</a></li>
+            
+              <li><a href="/docs/utility-classes/">Utility Classes</a></li>
+            
+          </ul>
+          
+        </li>
+      
+        <li>
+          
+            <span class="nav__sub-title">Extras</span>
+          
+
+          
+          <ul>
+            
+              <li><a href="/docs/stylesheets/">Stylesheets</a></li>
+            
+              <li><a href="/docs/javascript/">JavaScript</a></li>
+            
+          </ul>
+          
+        </li>
+      
+        <li>
+          
+            <span class="nav__sub-title">Meta</span>
+          
+
+          
+          <ul>
+            
+              <li><a href="/docs/faq/">FAQ</a></li>
+            
+              <li><a href="/docs/history/">History</a></li>
+            
+              <li><a href="/docs/contributing/">Contributing</a></li>
+            
+              <li><a href="/docs/docs-2-2/">Old 2.2 Docs</a></li>
+            
+              <li><a href="/docs/license/">License</a></li>
+            
+              <li><a href="/terms/">Terms &amp; Privacy Policy</a></li>
+            
+          </ul>
+          
+        </li>
+      
+    
+  </ul>
+</nav>
+
+    
+  
+  </div>
+
+
+
+  <article class="page" itemscope="" itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Stylesheets">
+    <meta itemprop="description" content="Instructions for customizing and building the theme&#39;s stylesheets.">
+    
+    <meta itemprop="dateModified" content="2018-11-26T00:47:43+00:00">
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">
+            <a href="" itemprop="url">Stylesheets
+</a>
+          </h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu"><li><a href="#customizing">Customizing</a><ul><li><a href="#paragraph-indention">Paragraph indention</a></li><li><a href="#font-stacks">Font stacks</a><ul><li><a href="#typography-from-older-versions">Typography from older versions</a></li></ul></li><li><a href="#type-scale">Type scale</a></li><li><a href="#colors">Colors</a><ul><li><a href="#syntax-highlighting">Syntax highlighting</a><ul><li><a href="#default">Default</a></li><li><a href="#solarized-light">Solarized light</a></li><li><a href="#contrast">Contrast</a></li><li><a href="#dark">Dark</a></li><li><a href="#dirt">Dirt</a></li><li><a href="#dracula">Dracula</a></li><li><a href="#neon">Neon</a></li><li><a href="#plum">Plum</a></li><li><a href="#sunrise">Sunrise</a></li></ul></li></ul></li><li><a href="#breakpoints-and-grid-stuff">Breakpoints and grid stuff</a></li><li><a href="#disabling-animations">Disabling animations</a></li></ul></li></ul>
+            </nav>
+          </aside>
+        
+        <p>The theme's <code>assets/css/main.css</code> file is built from several SCSS partials located in <a href="https://github.com/mmistakes/minimal-mistakes/tree/master/_sass"><code>_sass/</code></a> and is structured as follows:</p>
+<pre class="language-bash"><code class="language-bash">minimal-mistakes
+├── _sass
+<span class="token operator">|</span>  └── minimal-mistakes
+<span class="token operator">|</span>     ├── vendor               <span class="token comment"># vendor SCSS partials</span>
+<span class="token operator">|</span>     <span class="token operator">|</span>   ├── breakpoint       <span class="token comment"># media query mixins</span>
+<span class="token operator">|</span>     <span class="token operator">|</span>   ├── magnific-popup   <span class="token comment"># Magnific Popup lightbox</span>
+<span class="token operator">|</span>     <span class="token operator">|</span>   └── susy             <span class="token comment"># Susy grid system</span>
+<span class="token operator">|</span>     ├── _animations.scss     <span class="token comment"># animations</span>
+<span class="token operator">|</span>     ├── _archive.scss        <span class="token comment"># archives (list, grid, feature views)</span>
+<span class="token operator">|</span>     ├── _base.scss           <span class="token comment"># base HTML elements</span>
+<span class="token operator">|</span>     ├── _buttons.scss        <span class="token comment"># buttons</span>
+<span class="token operator">|</span>     ├── _footer.scss         <span class="token comment"># footer</span>
+<span class="token operator">|</span>     ├── _masthead.scss       <span class="token comment"># masthead</span>
+<span class="token operator">|</span>     ├── _mixins.scss         <span class="token comment"># mixins (em function, clearfix)</span>
+<span class="token operator">|</span>     ├── _navigation.scss     <span class="token comment"># nav links (breadcrumb, priority+, toc, pagination, etc.)</span>
+<span class="token operator">|</span>     ├── _notices.scss        <span class="token comment"># notices</span>
+<span class="token operator">|</span>     ├── _page.scss           <span class="token comment"># pages</span>
+<span class="token operator">|</span>     ├── _print.scss          <span class="token comment"># print styles</span>
+<span class="token operator">|</span>     ├── _reset.scss          <span class="token comment"># reset</span>
+<span class="token operator">|</span>     ├── _sidebar.scss        <span class="token comment"># sidebar</span>
+<span class="token operator">|</span>     ├── _syntax.scss         <span class="token comment"># syntax highlighting</span>
+<span class="token operator">|</span>     ├── _tables.scss         <span class="token comment"># tables</span>
+<span class="token operator">|</span>     ├── _utilities.scss      <span class="token comment"># utility classes (text/image alignment)</span>
+<span class="token operator">|</span>     └── _variables.scss      <span class="token comment"># theme defaults (fonts, colors, etc.)</span>
+├── assets
+<span class="token operator">|</span>  ├── css
+<span class="token operator">|</span>  <span class="token operator">|</span>  └── main.scss            <span class="token comment"># main stylesheet, loads SCSS partials in _sass</span></code></pre>
+<h2 id="customizing" tabindex="-1">Customizing</h2>
+<p>To override the default <a href="http://sass-lang.com/guide">Sass</a> (located in theme's<br>
+<code>_sass</code> directory), do one of the following:</p>
+<ol>
+<li>
+<p>Copy directly from the Minimal Mistakes theme gem</p>
+<ul>
+<li>Go to your local Minimal Mistakes gem installation directory (run<br>
+<code>bundle show minimal-mistakes-jekyll</code> to get the path to it).</li>
+<li>Copy the contents of <code>/assets/css/main.scss</code> from there to<br>
+<code>&lt;your_project&gt;</code>.</li>
+<li>Customize what you want inside <code>&lt;your_project&gt;/assets/css/main.scss</code>.</li>
+</ul>
+</li>
+<li>
+<p>Copy from this repo.</p>
+<ul>
+<li>Copy the contents of <a href="https://github.com/mmistakes/minimal-mistakes/blob/master/assets/css/main.scss">assets/css/main.scss</a><br>
+to <code>&lt;your_project&gt;</code>.</li>
+<li>Customize what you want inside <code>&lt;your_project/assets/css/main.scss</code>.</li>
+</ul>
+</li>
+</ol>
+<p><strong>Note:</strong> To make more extensive changes and customize the Sass partials bundled<br>
+in the gem. You will need to copy the complete contents of the <code>_sass</code> directory<br>
+to <code>&lt;your_project&gt;</code> due to the way Jekyll currently reads those files.</p>
+<p>To make basic tweaks to theme's style Sass variables can be overridden by adding<br>
+to <code>&lt;your_project&gt;/assets/css/main.scss</code>. For instance, to change the<br>
+link color used throughout the theme add:</p>
+<pre class="language-scss"><code class="language-scss"><span class="token property"><span class="token variable">$link-color</span></span><span class="token punctuation">:</span> red<span class="token punctuation">;</span></code></pre>
+<p>Before any <code>@import</code> lines.</p>
+<h3 id="paragraph-indention" tabindex="-1">Paragraph indention</h3>
+<p>To mimic the look of type set in a printed book or manuscript you may want to enable paragraph indention. When <code>$paragraph-indent</code> is set to <code>true</code> indents are added to each sibling and the margin below each paragraph is removed.</p>
+<figure>
+  <picture><source type="image/webp" srcset="/img/kVqjKlv8fd-400.webp 400w, /img/kVqjKlv8fd-800.webp 800w, /img/kVqjKlv8fd-900.webp 900w" sizes="100vw"><img loading="lazy" decoding="async" src="/img/kVqjKlv8fd-400.jpeg" alt="indented paragraph example" width="900" height="528" srcset="/img/kVqjKlv8fd-400.jpeg 400w, /img/kVqjKlv8fd-800.jpeg 800w, /img/kVqjKlv8fd-900.jpeg 900w" sizes="100vw"></picture>
+  <figcaption>Example of indented paragraphs.</figcaption>
+</figure>
+<p>The size of the indent can also be customized by changing the value of <code>$indent-var</code>.</p>
+<h3 id="font-stacks" tabindex="-1">Font stacks</h3>
+<p>By default the theme uses <a href="https://medium.com/designing-medium/system-shock-6b1dc6d6596f#.rb81vgn7i">system fonts</a> for all of the font stacks (serif, sans-serif, and monospace). This is done in part to provide a clean base for you to build off of and to improve performance since we aren't loading any custom webfonts by default.</p>
+<pre class="language-scss"><code class="language-scss"><span class="token comment">/* system typefaces */</span>
+<span class="token property"><span class="token variable">$serif</span></span>      <span class="token punctuation">:</span> Georgia<span class="token punctuation">,</span> Times<span class="token punctuation">,</span> serif<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$sans-serif</span></span> <span class="token punctuation">:</span> -apple-system<span class="token punctuation">,</span> BlinkMacSystemFont<span class="token punctuation">,</span> <span class="token string">"Roboto"</span><span class="token punctuation">,</span> <span class="token string">"Segoe UI"</span><span class="token punctuation">,</span> <span class="token string">"Helvetica Neue"</span><span class="token punctuation">,</span> <span class="token string">"Lucida Grande"</span><span class="token punctuation">,</span> Arial<span class="token punctuation">,</span> sans-serif<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$monospace</span></span>  <span class="token punctuation">:</span> Monaco<span class="token punctuation">,</span> Consolas<span class="token punctuation">,</span> <span class="token string">"Lucida Console"</span><span class="token punctuation">,</span> monospace<span class="token punctuation">;</span></code></pre>
+<p>Sans-serif fonts have been used for most of the type, with serifs reserved for captions. If you wish to change this you'll need to poke around the various <code>SCSS</code> partials and modify <code>font-family</code> declarations.</p>
+<p class="notice--info"><strong>ProTip:</strong> To use webfonts from services like <a href="https://typekit.com/">Adobe TypeKit</a> or <a href="https://www.google.com/fonts">Google Fonts</a> simply update the font stacks and then add their scripts to <code>_includes/head/custom.html</code>.</p>
+<h4 id="typography-from-older-versions" tabindex="-1">Typography from older versions</h4>
+<p>Not a fan of the refreshed typography of the theme and want to revert back an older version? Easy enough.</p>
+<p><strong>1.</strong> Add this Google Fonts script to <a href="https://github.com/mmistakes/minimal-mistakes/blob/master/_includes/head/custom.html"><code>_includes/head/custom.html</code></a>:</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700|PT+Serif:400,700,400italic<span class="token punctuation">"</span></span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text/css<span class="token punctuation">"</span></span><span class="token punctuation">></span></span></code></pre>
+<p><strong>2.</strong> Update the following SCSS variables:</p>
+<pre class="language-scss"><code class="language-scss"><span class="token property"><span class="token variable">$serif</span></span>              <span class="token punctuation">:</span> <span class="token string">"PT Serif"</span><span class="token punctuation">,</span> Georgia<span class="token punctuation">,</span> Times<span class="token punctuation">,</span> serif<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$sans-serif-narrow</span></span>  <span class="token punctuation">:</span> <span class="token string">"PT Sans Narrow"</span><span class="token punctuation">,</span> -apple-system<span class="token punctuation">,</span> BlinkMacSystemFont<span class="token punctuation">,</span> <span class="token string">"Roboto"</span><span class="token punctuation">,</span> <span class="token string">"Segoe UI"</span><span class="token punctuation">,</span> <span class="token string">"Helvetica Neue"</span><span class="token punctuation">,</span> <span class="token string">"Lucida Grande"</span><span class="token punctuation">,</span> Arial<span class="token punctuation">,</span> sans-serif<span class="token punctuation">;</span>
+
+<span class="token property"><span class="token variable">$global-font-family</span></span> <span class="token punctuation">:</span> <span class="token variable">$serif</span><span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$header-font-family</span></span> <span class="token punctuation">:</span> <span class="token variable">$sans-serif-narrow</span><span class="token punctuation">;</span></code></pre>
+<h3 id="type-scale" tabindex="-1">Type scale</h3>
+<p>Wherever possible type scale variables have been used instead of writing out fixed sizes. This makes updating much easier by changing values in one file.</p>
+<p>Example:</p>
+<pre class="language-scss"><code class="language-scss"><span class="token selector">.page__lead </span><span class="token punctuation">{</span>
+  <span class="token property">font-family</span><span class="token punctuation">:</span> <span class="token variable">$global-font-family</span><span class="token punctuation">;</span>
+  <span class="token property">font-size</span><span class="token punctuation">:</span> <span class="token variable">$type-size-4</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<p>Type sizes are set in ems to proportional scale as the screen size changes. Large headlines that look great on desktop monitors will shrink ever so slightly as to not be too big on mobile devices. To adjust this hierarchy simply edit the default values:</p>
+<pre class="language-scss"><code class="language-scss"><span class="token comment">/* type scale */</span>
+<span class="token property"><span class="token variable">$type-size-1</span></span> <span class="token punctuation">:</span> 2.441em<span class="token punctuation">;</span>  <span class="token comment">// ~39.056px</span>
+<span class="token property"><span class="token variable">$type-size-2</span></span> <span class="token punctuation">:</span> 1.953em<span class="token punctuation">;</span>  <span class="token comment">// ~31.248px</span>
+<span class="token property"><span class="token variable">$type-size-3</span></span> <span class="token punctuation">:</span> 1.563em<span class="token punctuation">;</span>  <span class="token comment">// ~25.008px</span>
+<span class="token property"><span class="token variable">$type-size-4</span></span> <span class="token punctuation">:</span> 1.25em<span class="token punctuation">;</span>   <span class="token comment">// ~20px</span>
+<span class="token property"><span class="token variable">$type-size-5</span></span> <span class="token punctuation">:</span> 1em<span class="token punctuation">;</span>      <span class="token comment">// ~16px</span>
+<span class="token property"><span class="token variable">$type-size-6</span></span> <span class="token punctuation">:</span> 0.75em<span class="token punctuation">;</span>   <span class="token comment">// ~12px</span>
+<span class="token property"><span class="token variable">$type-size-7</span></span> <span class="token punctuation">:</span> 0.6875em<span class="token punctuation">;</span> <span class="token comment">// ~11px</span>
+<span class="token property"><span class="token variable">$type-size-8</span></span> <span class="token punctuation">:</span> 0.625em<span class="token punctuation">;</span>  <span class="token comment">// ~10px</span></code></pre>
+<h3 id="colors" tabindex="-1">Colors</h3>
+<p>Change the mood of your site by altering a few color variables. <code>$body-color</code>, <code>$background-color</code>, <code>$text-color</code>, <code>$link-color</code>, and <code>$masthead-link-color</code> will have the most effect when changed.</p>
+<h4 id="syntax-highlighting" tabindex="-1">Syntax highlighting</h4>
+<p>To make customizing the colors used in code highlighted blocks, a base of sixteen colors (<a href="http://chriskempson.com/projects/base16/">Base16</a>) have been used.</p>
+<p>Code block colors can easily be changed by overriding any of the following color variables:</p>
+<h5 id="default" tabindex="-1">Default</h5>
+<p><picture><source type="image/webp" srcset="/img/OV7AIUjRGu-400.webp 400w, /img/OV7AIUjRGu-662.webp 662w" sizes="100vw"><img loading="lazy" decoding="async" src="/img/OV7AIUjRGu-400.jpeg" alt="default-code-block" width="662" height="714" srcset="/img/OV7AIUjRGu-400.jpeg 400w, /img/OV7AIUjRGu-662.jpeg 662w" sizes="100vw"></picture></p>
+<pre class="language-scss"><code class="language-scss"><span class="token comment">/* default syntax highlighting (base16) */</span>
+<span class="token property"><span class="token variable">$base00</span></span><span class="token punctuation">:</span> #263238<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base01</span></span><span class="token punctuation">:</span> #2e3c43<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base02</span></span><span class="token punctuation">:</span> #314549<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base03</span></span><span class="token punctuation">:</span> #546e7a<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base04</span></span><span class="token punctuation">:</span> #b2ccd6<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base05</span></span><span class="token punctuation">:</span> #eeffff<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base06</span></span><span class="token punctuation">:</span> #eeffff<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base07</span></span><span class="token punctuation">:</span> #ffffff<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base08</span></span><span class="token punctuation">:</span> #f07178<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base09</span></span><span class="token punctuation">:</span> #f78c6c<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base0a</span></span><span class="token punctuation">:</span> #ffcb6b<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base0b</span></span><span class="token punctuation">:</span> #c3e88d<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base0c</span></span><span class="token punctuation">:</span> #89ddff<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base0d</span></span><span class="token punctuation">:</span> #82aaff<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base0e</span></span><span class="token punctuation">:</span> #c792ea<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base0f</span></span><span class="token punctuation">:</span> #ff5370<span class="token punctuation">;</span></code></pre>
+<h5 id="solarized-light" tabindex="-1">Solarized light</h5>
+<p><picture><source type="image/webp" srcset="/img/qLl71XuOt0-400.webp 400w, /img/qLl71XuOt0-705.webp 705w" sizes="100vw"><img loading="lazy" decoding="async" src="/img/qLl71XuOt0-400.jpeg" alt="solarized-light-code-block" width="705" height="736" srcset="/img/qLl71XuOt0-400.jpeg 400w, /img/qLl71XuOt0-705.jpeg 705w" sizes="100vw"></picture></p>
+<pre class="language-scss"><code class="language-scss"><span class="token comment">/* solarized light syntax highlighting (base16) */</span>
+<span class="token property"><span class="token variable">$base00</span></span><span class="token punctuation">:</span> #fafafa <span class="token statement keyword">!default</span><span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base01</span></span><span class="token punctuation">:</span> #073642 <span class="token statement keyword">!default</span><span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base02</span></span><span class="token punctuation">:</span> #586e75 <span class="token statement keyword">!default</span><span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base03</span></span><span class="token punctuation">:</span> #657b83 <span class="token statement keyword">!default</span><span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base04</span></span><span class="token punctuation">:</span> #839496 <span class="token statement keyword">!default</span><span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base05</span></span><span class="token punctuation">:</span> #586e75 <span class="token statement keyword">!default</span><span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base06</span></span><span class="token punctuation">:</span> #eee8d5 <span class="token statement keyword">!default</span><span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base07</span></span><span class="token punctuation">:</span> #fdf6e3 <span class="token statement keyword">!default</span><span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base08</span></span><span class="token punctuation">:</span> #dc322f <span class="token statement keyword">!default</span><span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base09</span></span><span class="token punctuation">:</span> #cb4b16 <span class="token statement keyword">!default</span><span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base0a</span></span><span class="token punctuation">:</span> #b58900 <span class="token statement keyword">!default</span><span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base0b</span></span><span class="token punctuation">:</span> #859900 <span class="token statement keyword">!default</span><span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base0c</span></span><span class="token punctuation">:</span> #2aa198 <span class="token statement keyword">!default</span><span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base0d</span></span><span class="token punctuation">:</span> #268bd2 <span class="token statement keyword">!default</span><span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base0e</span></span><span class="token punctuation">:</span> #6c71c4 <span class="token statement keyword">!default</span><span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base0f</span></span><span class="token punctuation">:</span> #d33682 <span class="token statement keyword">!default</span><span class="token punctuation">;</span></code></pre>
+<h5 id="contrast" tabindex="-1">Contrast</h5>
+<p><picture><source type="image/webp" srcset="/img/uz4xp2fl83-400.webp 400w, /img/uz4xp2fl83-656.webp 656w" sizes="100vw"><img loading="lazy" decoding="async" src="/img/uz4xp2fl83-400.jpeg" alt="contrast-code-block" width="656" height="712" srcset="/img/uz4xp2fl83-400.jpeg 400w, /img/uz4xp2fl83-656.jpeg 656w" sizes="100vw"></picture></p>
+<pre class="language-scss"><code class="language-scss"><span class="token comment">/* contrast syntax highlighting (base16) */</span>
+<span class="token property"><span class="token variable">$base00</span></span><span class="token punctuation">:</span> #000000<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base01</span></span><span class="token punctuation">:</span> #242422<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base02</span></span><span class="token punctuation">:</span> #484844<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base03</span></span><span class="token punctuation">:</span> #6c6c66<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base04</span></span><span class="token punctuation">:</span> #918f88<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base05</span></span><span class="token punctuation">:</span> #b5b3aa<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base06</span></span><span class="token punctuation">:</span> #d9d7cc<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base07</span></span><span class="token punctuation">:</span> #fdfbee<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base08</span></span><span class="token punctuation">:</span> #ff6c60<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base09</span></span><span class="token punctuation">:</span> #e9c062<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base0a</span></span><span class="token punctuation">:</span> #ffffb6<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base0b</span></span><span class="token punctuation">:</span> #a8ff60<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base0c</span></span><span class="token punctuation">:</span> #c6c5fe<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base0d</span></span><span class="token punctuation">:</span> #96cbfe<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base0e</span></span><span class="token punctuation">:</span> #ff73fd<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base0f</span></span><span class="token punctuation">:</span> #b18a3d<span class="token punctuation">;</span></code></pre>
+<h5 id="dark" tabindex="-1">Dark</h5>
+<p><picture><source type="image/webp" srcset="/img/KsC54jCuNY-400.webp 400w, /img/KsC54jCuNY-679.webp 679w" sizes="100vw"><img loading="lazy" decoding="async" src="/img/KsC54jCuNY-400.jpeg" alt="dark-code-block" width="679" height="726" srcset="/img/KsC54jCuNY-400.jpeg 400w, /img/KsC54jCuNY-679.jpeg 679w" sizes="100vw"></picture></p>
+<pre class="language-scss"><code class="language-scss"><span class="token comment">/* dark syntax highlighting (base16) */</span>
+<span class="token property"><span class="token variable">$base00</span></span><span class="token punctuation">:</span> #ffffff<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base01</span></span><span class="token punctuation">:</span> #e0e0e0<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base02</span></span><span class="token punctuation">:</span> #d0d0d0<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base03</span></span><span class="token punctuation">:</span> #b0b0b0<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base04</span></span><span class="token punctuation">:</span> #000000<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base05</span></span><span class="token punctuation">:</span> #101010<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base06</span></span><span class="token punctuation">:</span> #151515<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base07</span></span><span class="token punctuation">:</span> #202020<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base08</span></span><span class="token punctuation">:</span> #ff0086<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base09</span></span><span class="token punctuation">:</span> #fd8900<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base0a</span></span><span class="token punctuation">:</span> #aba800<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base0b</span></span><span class="token punctuation">:</span> #00c918<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base0c</span></span><span class="token punctuation">:</span> #1faaaa<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base0d</span></span><span class="token punctuation">:</span> #3777e6<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base0e</span></span><span class="token punctuation">:</span> #ad00a1<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base0f</span></span><span class="token punctuation">:</span> #cc6633<span class="token punctuation">;</span></code></pre>
+<h5 id="dirt" tabindex="-1">Dirt</h5>
+<p><picture><source type="image/webp" srcset="/img/lWMT3PFm2Q-400.webp 400w, /img/lWMT3PFm2Q-673.webp 673w" sizes="100vw"><img loading="lazy" decoding="async" src="/img/lWMT3PFm2Q-400.jpeg" alt="dirt-code-block" width="673" height="716" srcset="/img/lWMT3PFm2Q-400.jpeg 400w, /img/lWMT3PFm2Q-673.jpeg 673w" sizes="100vw"></picture></p>
+<pre class="language-scss"><code class="language-scss"><span class="token comment">/* dirt syntax highlighting (base16) */</span>
+<span class="token property"><span class="token variable">$base00</span></span><span class="token punctuation">:</span> #231e18<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base01</span></span><span class="token punctuation">:</span> #302b25<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base02</span></span><span class="token punctuation">:</span> #48413a<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base03</span></span><span class="token punctuation">:</span> #9d8b70<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base04</span></span><span class="token punctuation">:</span> #b4a490<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base05</span></span><span class="token punctuation">:</span> #cabcb1<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base06</span></span><span class="token punctuation">:</span> #d7c8bc<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base07</span></span><span class="token punctuation">:</span> #e4d4c8<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base08</span></span><span class="token punctuation">:</span> #d35c5c<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base09</span></span><span class="token punctuation">:</span> #ca7f32<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base0a</span></span><span class="token punctuation">:</span> #e0ac16<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base0b</span></span><span class="token punctuation">:</span> #b7ba53<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base0c</span></span><span class="token punctuation">:</span> #6eb958<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base0d</span></span><span class="token punctuation">:</span> #88a4d3<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base0e</span></span><span class="token punctuation">:</span> #bb90e2<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base0f</span></span><span class="token punctuation">:</span> #b49368<span class="token punctuation">;</span></code></pre>
+<h5 id="dracula" tabindex="-1">Dracula</h5>
+<p><picture><source type="image/webp" srcset="/img/J7su-IPaiN-400.webp 400w, /img/J7su-IPaiN-691.webp 691w" sizes="100vw"><img loading="lazy" decoding="async" src="/img/J7su-IPaiN-400.jpeg" alt="dracula-code-block" width="691" height="715" srcset="/img/J7su-IPaiN-400.jpeg 400w, /img/J7su-IPaiN-691.jpeg 691w" sizes="100vw"></picture></p>
+<pre class="language-scss"><code class="language-scss"><span class="token comment">/* dracula syntax highlighting (base16) */</span>
+<span class="token comment">/* https://github.com/dracula/base16-dracula-scheme */</span>
+<span class="token property"><span class="token variable">$base00</span></span><span class="token punctuation">:</span> #282936<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base01</span></span><span class="token punctuation">:</span> #3a3c4e<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base02</span></span><span class="token punctuation">:</span> #4d4f68<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base03</span></span><span class="token punctuation">:</span> #626483<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base04</span></span><span class="token punctuation">:</span> #62d6e8<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base05</span></span><span class="token punctuation">:</span> #e9e9f4<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base06</span></span><span class="token punctuation">:</span> #f1f2f8<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base07</span></span><span class="token punctuation">:</span> #f7f7fb<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base08</span></span><span class="token punctuation">:</span> #ea51b2<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base09</span></span><span class="token punctuation">:</span> #b45bcf<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base0a</span></span><span class="token punctuation">:</span> #00f769<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base0b</span></span><span class="token punctuation">:</span> #ebff87<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base0c</span></span><span class="token punctuation">:</span> #a1efe4<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base0d</span></span><span class="token punctuation">:</span> #62d6e8<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base0e</span></span><span class="token punctuation">:</span> #b45bcf<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base0f</span></span><span class="token punctuation">:</span> #00f769<span class="token punctuation">;</span></code></pre>
+<h5 id="neon" tabindex="-1">Neon</h5>
+<p><picture><source type="image/webp" srcset="/img/aCkJ3r2BUX-400.webp 400w, /img/aCkJ3r2BUX-705.webp 705w" sizes="100vw"><img loading="lazy" decoding="async" src="/img/aCkJ3r2BUX-400.jpeg" alt="neon-code-block" width="705" height="725" srcset="/img/aCkJ3r2BUX-400.jpeg 400w, /img/aCkJ3r2BUX-705.jpeg 705w" sizes="100vw"></picture></p>
+<pre class="language-scss"><code class="language-scss"><span class="token comment">/* neon syntax highlighting (base16) */</span>
+<span class="token property"><span class="token variable">$base00</span></span><span class="token punctuation">:</span> #ffffff<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base01</span></span><span class="token punctuation">:</span> #e0e0e0<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base02</span></span><span class="token punctuation">:</span> #d0d0d0<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base03</span></span><span class="token punctuation">:</span> #b0b0b0<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base04</span></span><span class="token punctuation">:</span> #000000<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base05</span></span><span class="token punctuation">:</span> #101010<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base06</span></span><span class="token punctuation">:</span> #151515<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base07</span></span><span class="token punctuation">:</span> #202020<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base08</span></span><span class="token punctuation">:</span> #ff0086<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base09</span></span><span class="token punctuation">:</span> #fd8900<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base0a</span></span><span class="token punctuation">:</span> #aba800<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base0b</span></span><span class="token punctuation">:</span> #00c918<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base0c</span></span><span class="token punctuation">:</span> #1faaaa<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base0d</span></span><span class="token punctuation">:</span> #3777e6<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base0e</span></span><span class="token punctuation">:</span> #ad00a1<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base0f</span></span><span class="token punctuation">:</span> #cc6633<span class="token punctuation">;</span></code></pre>
+<h5 id="plum" tabindex="-1">Plum</h5>
+<p><picture><source type="image/webp" srcset="/img/PWRQthV0OD-400.webp 400w, /img/PWRQthV0OD-710.webp 710w" sizes="100vw"><img loading="lazy" decoding="async" src="/img/PWRQthV0OD-400.jpeg" alt="plum-code-block" width="710" height="732" srcset="/img/PWRQthV0OD-400.jpeg 400w, /img/PWRQthV0OD-710.jpeg 710w" sizes="100vw"></picture></p>
+<pre class="language-scss"><code class="language-scss"><span class="token comment">/* plum syntax highlighting (base16) */</span>
+<span class="token property"><span class="token variable">$base00</span></span><span class="token punctuation">:</span> #ffffff<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base01</span></span><span class="token punctuation">:</span> #e0e0e0<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base02</span></span><span class="token punctuation">:</span> #d0d0d0<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base03</span></span><span class="token punctuation">:</span> #b0b0b0<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base04</span></span><span class="token punctuation">:</span> #000000<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base05</span></span><span class="token punctuation">:</span> #101010<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base06</span></span><span class="token punctuation">:</span> #151515<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base07</span></span><span class="token punctuation">:</span> #202020<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base08</span></span><span class="token punctuation">:</span> #ff0086<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base09</span></span><span class="token punctuation">:</span> #fd8900<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base0a</span></span><span class="token punctuation">:</span> #aba800<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base0b</span></span><span class="token punctuation">:</span> #00c918<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base0c</span></span><span class="token punctuation">:</span> #1faaaa<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base0d</span></span><span class="token punctuation">:</span> #3777e6<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base0e</span></span><span class="token punctuation">:</span> #ad00a1<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base0f</span></span><span class="token punctuation">:</span> #cc6633<span class="token punctuation">;</span></code></pre>
+<h5 id="sunrise" tabindex="-1">Sunrise</h5>
+<p><picture><source type="image/webp" srcset="/img/TGskAw6cuF-400.webp 400w, /img/TGskAw6cuF-727.webp 727w" sizes="100vw"><img loading="lazy" decoding="async" src="/img/TGskAw6cuF-400.jpeg" alt="sunrise-code-block" width="727" height="721" srcset="/img/TGskAw6cuF-400.jpeg 400w, /img/TGskAw6cuF-727.jpeg 727w" sizes="100vw"></picture></p>
+<pre class="language-scss"><code class="language-scss"><span class="token comment">/* sunrise syntax highlighting (base16) */</span>
+<span class="token property"><span class="token variable">$base00</span></span><span class="token punctuation">:</span> #1d1f21<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base01</span></span><span class="token punctuation">:</span> #282a2e<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base02</span></span><span class="token punctuation">:</span> #373b41<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base03</span></span><span class="token punctuation">:</span> #969896<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base04</span></span><span class="token punctuation">:</span> #b4b7b4<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base05</span></span><span class="token punctuation">:</span> #c5c8c6<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base06</span></span><span class="token punctuation">:</span> #e0e0e0<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base07</span></span><span class="token punctuation">:</span> #ffffff<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base08</span></span><span class="token punctuation">:</span> #cc6666<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base09</span></span><span class="token punctuation">:</span> #de935f<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base0a</span></span><span class="token punctuation">:</span> #f0c674<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base0b</span></span><span class="token punctuation">:</span> #b5bd68<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base0c</span></span><span class="token punctuation">:</span> #8abeb7<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base0d</span></span><span class="token punctuation">:</span> #81a2be<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base0e</span></span><span class="token punctuation">:</span> #b294bb<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$base0f</span></span><span class="token punctuation">:</span> #a3685a<span class="token punctuation">;</span></code></pre>
+<h3 id="breakpoints-and-grid-stuff" tabindex="-1">Breakpoints and grid stuff</h3>
+<p>Probably won't need to touch these, but they're there if you need to. Width variables are used with the <a href="http://breakpoint-sass.com/"><code>@include breakpoint()</code></a> mixin to adapt the design of certain elements.</p>
+<p>And <code>$susy</code> is used for setting <a href="http://susy.oddbird.net/">the grid</a> the theme uses. Uncommenting the lines under <code>debug</code> can be useful if you want to show the columns when adjusting the layout.</p>
+<figure>
+  <picture><source type="image/webp" srcset="/img/eLbEeUBSwr-400.webp 400w, /img/eLbEeUBSwr-800.webp 800w, /img/eLbEeUBSwr-900.webp 900w" sizes="100vw"><img loading="lazy" decoding="async" src="/img/eLbEeUBSwr-400.jpeg" alt="Susy grid overlay for debugging" width="900" height="569" srcset="/img/eLbEeUBSwr-400.jpeg 400w, /img/eLbEeUBSwr-800.jpeg 800w, /img/eLbEeUBSwr-900.jpeg 900w" sizes="100vw"></picture>
+  <figcaption>Susy grid debug overlay enabled.</figcaption>
+</figure>
+<h3 id="disabling-animations" tabindex="-1">Disabling animations</h3>
+<p>You can disable either the fade-in intro animation, element transition animations, or both by overriding the corresponding variables. For example if you wanted to disable all animations you could include the following lines:</p>
+<pre class="language-scss"><code class="language-scss"><span class="token property"><span class="token variable">$intro-transition</span></span>  <span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$global-transition</span></span> <span class="token punctuation">:</span> none<span class="token punctuation">;</span></code></pre>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2018-11-26">November 26, 2018</time></p>
+
+      </footer>
+
+      
+
+      
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+      
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><div class="search-searchbar"></div>
+  <div class="search-hits"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+        
+          <li><a href="https://twitter.com/mmistakes" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+          <li><a href="https://github.com/mmistakes" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://instagram.com/mmistakes" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy;  <a href="https://mmistakes.github.io">Minimal Mistakes</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+<script>
+// Including InstantSearch.js library and styling
+const loadSearch = function() {
+  const loadCSS = function(src) {
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = src;
+    link.media = 'all';
+    document.head.appendChild(link);
+  };
+
+  var script = document.createElement('script');
+  script.setAttribute("type", "text/javascript");
+  script.setAttribute("src", "https://cdn.jsdelivr.net/npm/instantsearch.js@2.3.3/dist/instantsearch.min.js");
+  script.addEventListener("load", function() {
+    // Instantiating InstantSearch.js with Algolia credentials
+    const search = instantsearch({
+      appId: 'QB6HVGBSBA',
+      apiKey: '9d5014e5bbc77372547bce778dfa5663',
+      indexName: 'minimal_mistakes',
+      searchParameters: {
+        restrictSearchableAttributes: ['title', 'content']
+      }
+    });
+
+    const hitTemplate = function(hit) {
+      const url = hit.url;
+      const hightlight = hit._highlightResult;
+      const title = hightlight.title && hightlight.title.value  || "";
+      const content = hightlight.html && hightlight.html.value  || "";
+
+      return `
+        <div class="list__item">
+          <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+            <h2 class="archive__item-title" itemprop="headline"><a href="/minimal-mistakes${url}">${title}</a></h2>
+            <div class="archive__item-excerpt" itemprop="description">${content}</div>
+          </article>
+        </div>
+      `;
+    }
+
+    // Adding searchbar and results widgets
+    search.addWidget(
+      instantsearch.widgets.searchBox({
+        container: '.search-searchbar',
+        poweredBy: true,
+        placeholder: 'Enter your search term...'
+      })
+    );
+    search.addWidget(
+      instantsearch.widgets.hits({
+        container: '.search-hits',
+        templates: {
+          item: hitTemplate,
+          empty: 'No results',
+        }
+      })
+    );
+
+    if (!search.started) {
+      search.start();
+    }
+  });
+  document.body.appendChild(script);
+
+  loadCSS("https://cdn.jsdelivr.net/npm/instantsearch.js@2.3.3/dist/instantsearch.min.css");
+  loadCSS("https://cdn.jsdelivr.net/npm/instantsearch.js@2.3.3/dist/instantsearch-theme-algolia.min.css");
+};
+
+// Starting the search only when toggle is clicked
+$(document).ready(function() {
+  var scriptLoaded = false;
+
+  $(".search__toggle").on("click", function() {
+    if (!scriptLoaded) {
+      loadSearch();
+      scriptLoaded = true;
+    }
+  });
+});
+</script>
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

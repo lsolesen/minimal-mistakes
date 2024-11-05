@@ -1,0 +1,575 @@
+
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.26.2 by Michael Rose
+  Copyright 2013-2024 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="en-US" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Markup: Syntax Highlighting - Minimal Mistakes</title>
+<meta name="description" content="Post displaying the various ways of highlighting code in Markdown.">
+
+
+  <meta name="author" content="Michael Rose">
+  
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Minimal Mistakes">
+<meta property="og:title" content="Markup: Syntax Highlighting">
+<meta property="og:url" content="">
+
+
+  <meta property="og:description" content="Post displaying the various ways of highlighting code in Markdown.">
+
+
+
+  <meta property="og:image" content="">
+
+
+
+  <meta name="twitter:site" content="@mmistakes">
+  <meta name="twitter:title" content="Markup: Syntax Highlighting">
+  <meta name="twitter:description" content="Post displaying the various ways of highlighting code in Markdown.">
+  <meta name="twitter:url" content="">
+
+  
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="">
+  
+
+  
+
+
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="">
+
+
+
+
+
+
+
+  <meta name="google-site-verification" content="UQj93ERU9zgECodaaXgVpkjrFn9UrDMEzVamacSoQ8Y">
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Minimal Mistakes Feed">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  window.enable_copy_code_button = true;
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single" dir="ltr">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Minimal Mistakes
+          <span class="site-subtitle">A Jekyll theme</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/docs/quick-start-guide/">Quick-Start Guide</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about/">About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/year-archive/">Sample Posts</a>
+            </li><li class="masthead__menu-item">
+              <a href="/collection-archive/">Sample Collections</a>
+            </li><li class="masthead__menu-item">
+              <a href="/terms/">Terms &amp; Privacy Policy</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <i class="fas fa-search"></i>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope="" itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="/">
+        <picture><source type="image/webp" srcset="/img/4AlpoBDRnB-160.webp 160w" sizes="100vw"><img loading="lazy" decoding="async" src="/img/4AlpoBDRnB-160.jpeg" alt="Michael Rose" itemprop="image" class="u-photo" width="160" height="160"></picture>
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="/" itemprop="url">Michael Rose</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>Just another <em>boring</em>, <em>tattooed</em>, <em>time traveling</em>, <em>designer</em>.</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope="" itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">Buffalo, NY</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="https://mademistakes.com" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fas fa-fw fa-link" aria-hidden="true"></i><span class="label">Made Mistakes</span></a></li>
+          
+        
+          
+            <li><a href="https://twitter.com/mmistakes" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i><span class="label">Twitter</span></a></li>
+          
+        
+          
+            <li><a href="https://github.com/mmistakes" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://instagram.com/mmistakes" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i><span class="label">Instagram</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page" itemscope="" itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Markup: Syntax Highlighting">
+    <meta itemprop="description" content="Post displaying the various ways of highlighting code in Markdown.">
+    
+    <meta itemprop="dateModified" content="2018-01-03T14:45:06+00:00">
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">
+            <a href="" itemprop="url">Markup: Syntax Highlighting
+</a>
+          </h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right ">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu"><li><a href="#gfm-code-blocks">GFM Code Blocks</a></li><li><a href="#code-blocks-in-lists">Code Blocks in Lists</a></li><li><a href="#jekyll-highlight-tag">Jekyll Highlight Tag</a></li><li><a href="#github-gist-embed">GitHub Gist Embed</a></li></ul>
+            </nav>
+          </aside>
+        
+        <p>Syntax highlighting is a feature that displays source code, in different colors and fonts according to the category of terms. This feature facilitates writing in a structured language such as a programming language or a markup language as both structures and syntax errors are visually distinct. Highlighting does not affect the meaning of the text itself; it is intended only for human readers.<a href="http://en.wikipedia.org/wiki/Syntax_highlighting">^1</a></p>
+<h3 id="gfm-code-blocks" tabindex="-1">GFM Code Blocks</h3>
+<p>GitHub Flavored Markdown <a href="https://help.github.com/articles/creating-and-highlighting-code-blocks/">fenced code blocks</a> are supported. To modify styling and highlight colors edit <code>/_sass/syntax.scss</code>.</p>
+<pre class="language-css"><code class="language-css"><span class="token selector">#container</span> <span class="token punctuation">{</span>
+  <span class="token property">float</span><span class="token punctuation">:</span> left<span class="token punctuation">;</span>
+  <span class="token property">margin</span><span class="token punctuation">:</span> 0 -240px 0 0<span class="token punctuation">;</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<pre class="language-scss"><code class="language-scss"><span class="token selector">.highlight </span><span class="token punctuation">{</span>
+  <span class="token property">margin</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+  <span class="token property">padding</span><span class="token punctuation">:</span> 1em<span class="token punctuation">;</span>
+  <span class="token property">font-family</span><span class="token punctuation">:</span> <span class="token variable">$monospace</span><span class="token punctuation">;</span>
+  <span class="token property">font-size</span><span class="token punctuation">:</span> <span class="token variable">$type-size-7</span><span class="token punctuation">;</span>
+  <span class="token property">line-height</span><span class="token punctuation">:</span> 1.8<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>nav</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>pagination<span class="token punctuation">"</span></span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>navigation<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  {% if page.previous %}
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>{{ site.url }}{{ page.previous.url }}<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn<span class="token punctuation">"</span></span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>{{ page.previous.title }}<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Previous article<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span>
+  {% endif %}
+  {% if page.next %}
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>{{ site.url }}{{ page.next.url }}<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn<span class="token punctuation">"</span></span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>{{ page.next.title }}<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Next article<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span>
+  {% endif %}
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>nav</span><span class="token punctuation">></span></span><span class="token comment">&lt;!-- /.pagination --></span></code></pre>
+<pre class="language-ruby"><code class="language-ruby"><span class="token keyword">module</span> <span class="token class-name">Jekyll</span>
+  <span class="token keyword">class</span> <span class="token class-name">TagIndex</span> <span class="token operator">&lt;</span> Page
+    <span class="token keyword">def</span> <span class="token method-definition"><span class="token function">initialize</span></span><span class="token punctuation">(</span>site<span class="token punctuation">,</span> base<span class="token punctuation">,</span> dir<span class="token punctuation">,</span> tag<span class="token punctuation">)</span>
+      <span class="token variable">@site</span> <span class="token operator">=</span> site
+      <span class="token variable">@base</span> <span class="token operator">=</span> base
+      <span class="token variable">@dir</span> <span class="token operator">=</span> dir
+      <span class="token variable">@name</span> <span class="token operator">=</span> <span class="token string-literal"><span class="token string">'index.html'</span></span>
+      <span class="token keyword">self</span><span class="token punctuation">.</span>process<span class="token punctuation">(</span><span class="token variable">@name</span><span class="token punctuation">)</span>
+      <span class="token keyword">self</span><span class="token punctuation">.</span>read_yaml<span class="token punctuation">(</span><span class="token builtin">File</span><span class="token punctuation">.</span>join<span class="token punctuation">(</span>base<span class="token punctuation">,</span> <span class="token string-literal"><span class="token string">'_layouts'</span></span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string-literal"><span class="token string">'tag_index.html'</span></span><span class="token punctuation">)</span>
+      <span class="token keyword">self</span><span class="token punctuation">.</span>data<span class="token punctuation">[</span><span class="token string-literal"><span class="token string">'tag'</span></span><span class="token punctuation">]</span> <span class="token operator">=</span> tag
+      tag_title_prefix <span class="token operator">=</span> site<span class="token punctuation">.</span>config<span class="token punctuation">[</span><span class="token string-literal"><span class="token string">'tag_title_prefix'</span></span><span class="token punctuation">]</span> <span class="token operator">||</span> <span class="token string-literal"><span class="token string">'Tagged: '</span></span>
+      tag_title_suffix <span class="token operator">=</span> site<span class="token punctuation">.</span>config<span class="token punctuation">[</span><span class="token string-literal"><span class="token string">'tag_title_suffix'</span></span><span class="token punctuation">]</span> <span class="token operator">||</span> <span class="token string-literal"><span class="token string">'&amp;#8211;'</span></span>
+      <span class="token keyword">self</span><span class="token punctuation">.</span>data<span class="token punctuation">[</span><span class="token string-literal"><span class="token string">'title'</span></span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string-literal"><span class="token string">"</span><span class="token interpolation"><span class="token delimiter punctuation">#{</span><span class="token content">tag_title_prefix</span><span class="token delimiter punctuation">}</span></span><span class="token interpolation"><span class="token delimiter punctuation">#{</span><span class="token content">tag</span><span class="token delimiter punctuation">}</span></span><span class="token string">"</span></span>
+      <span class="token keyword">self</span><span class="token punctuation">.</span>data<span class="token punctuation">[</span><span class="token string-literal"><span class="token string">'description'</span></span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string-literal"><span class="token string">"An archive of posts tagged </span><span class="token interpolation"><span class="token delimiter punctuation">#{</span><span class="token content">tag</span><span class="token delimiter punctuation">}</span></span><span class="token string">."</span></span>
+    <span class="token keyword">end</span>
+  <span class="token keyword">end</span>
+<span class="token keyword">end</span></code></pre>
+<h3 id="code-blocks-in-lists" tabindex="-1">Code Blocks in Lists</h3>
+<p>Indentation matters. Be sure the indent of the code block aligns with the first non-space character after the list item marker (e.g., <code>1.</code>). Usually this will mean indenting 3 spaces instead of 4.</p>
+<ol>
+<li>
+<p>Do step 1.</p>
+</li>
+<li>
+<p>Now do this:</p>
+<pre class="language-ruby"><code class="language-ruby"><span class="token keyword">def</span> <span class="token method-definition"><span class="token function">print_hi</span></span><span class="token punctuation">(</span>name<span class="token punctuation">)</span>
+  puts <span class="token string-literal"><span class="token string">"Hi, </span><span class="token interpolation"><span class="token delimiter punctuation">#{</span><span class="token content">name</span><span class="token delimiter punctuation">}</span></span><span class="token string">"</span></span>
+<span class="token keyword">end</span>
+print_hi<span class="token punctuation">(</span><span class="token string-literal"><span class="token string">'Tom'</span></span><span class="token punctuation">)</span>
+<span class="token comment">#=> prints 'Hi, Tom' to STDOUT.</span></code></pre>
+</li>
+<li>
+<p>Now you can do this.</p>
+</li>
+</ol>
+<h3 id="jekyll-highlight-tag" tabindex="-1">Jekyll Highlight Tag</h3>
+<p>An example of a code blocking using Jekyll's <a href="https://jekyllrb.com/docs/templates/#code-snippet-highlighting"><code>{% highlight %}</code> tag</a>.</p>
+<pre class="language-javascript"><code class="language-javascript"><span class="highlight-line"><span class="token comment">// 'gulp html' -- does nothing</span></span>
+<span class="highlight-line"><span class="token comment">// 'gulp html --prod' -- minifies and gzips HTML files for production</span></span>
+<span class="highlight-line">gulp<span class="token punctuation">.</span><span class="token function">task</span><span class="token punctuation">(</span><span class="token string">'html'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span></span>
+<span class="highlight-line">  <span class="token keyword">return</span> gulp<span class="token punctuation">.</span><span class="token function">src</span><span class="token punctuation">(</span>paths<span class="token punctuation">.</span>siteFolderName <span class="token operator">+</span> paths<span class="token punctuation">.</span>htmlPattern<span class="token punctuation">)</span></span>
+<span class="highlight-line">    <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span><span class="token function">when</span><span class="token punctuation">(</span>argv<span class="token punctuation">.</span>prod<span class="token punctuation">,</span> <span class="token function">htmlmin</span><span class="token punctuation">(</span><span class="token punctuation">{</span></span>
+<span class="highlight-line">      <span class="token literal-property property">removeComments</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span></span>
+<span class="highlight-line">      <span class="token literal-property property">collapseWhitespace</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span></span>
+<span class="highlight-line">      <span class="token literal-property property">collapseBooleanAttributes</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span></span>
+<span class="highlight-line">      <span class="token literal-property property">removeAttributeQuotes</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span></span>
+<span class="highlight-line">      <span class="token literal-property property">removeRedundantAttributes</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span></span>
+<span class="highlight-line">      <span class="token literal-property property">minifyJS</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span></span>
+<span class="highlight-line">      <span class="token literal-property property">minifyCSS</span><span class="token operator">:</span> <span class="token boolean">true</span></span>
+<span class="highlight-line">    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span></span>
+<span class="highlight-line">    <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span><span class="token function">when</span><span class="token punctuation">(</span>argv<span class="token punctuation">.</span>prod<span class="token punctuation">,</span> <span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token literal-property property">title</span><span class="token operator">:</span> <span class="token string">'optimized HTML'</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span></span>
+<span class="highlight-line">    <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span><span class="token function">when</span><span class="token punctuation">(</span>argv<span class="token punctuation">.</span>prod<span class="token punctuation">,</span> gulp<span class="token punctuation">.</span><span class="token function">dest</span><span class="token punctuation">(</span>paths<span class="token punctuation">.</span>siteFolderName<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span></span>
+<span class="highlight-line">    <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span><span class="token function">when</span><span class="token punctuation">(</span>argv<span class="token punctuation">.</span>prod<span class="token punctuation">,</span> <span class="token function">gzip</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token literal-property property">append</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span></span>
+<span class="highlight-line">    <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span><span class="token function">when</span><span class="token punctuation">(</span>argv<span class="token punctuation">.</span>prod<span class="token punctuation">,</span> <span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">{</span></span>
+<span class="highlight-line">      <span class="token literal-property property">title</span><span class="token operator">:</span> <span class="token string">'gzipped HTML'</span><span class="token punctuation">,</span></span>
+<span class="highlight-line">      <span class="token literal-property property">gzip</span><span class="token operator">:</span> <span class="token boolean">true</span></span>
+<span class="highlight-line">    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span></span>
+<span class="highlight-line">    <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span><span class="token function">when</span><span class="token punctuation">(</span>argv<span class="token punctuation">.</span>prod<span class="token punctuation">,</span> gulp<span class="token punctuation">.</span><span class="token function">dest</span><span class="token punctuation">(</span>paths<span class="token punctuation">.</span>siteFolderName<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span></span>
+<span class="highlight-line"><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></span></code></pre>
+<pre class="language-wl"><code class="language-wl"><span class="highlight-line"><span class="token keyword">Module</span><span class="token punctuation">[</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span></span>
+<span class="highlight-line">  Sqrt<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span></span>
+<span class="highlight-line">  <span class="token number">4</span></span>
+<span class="highlight-line"><span class="token punctuation">]</span></span></code></pre>
+<h3 id="github-gist-embed" tabindex="-1">GitHub Gist Embed</h3>
+<p>An example of a Gist embed below.</p>
+<script src="https://gist.github.com/mmistakes/77c68fbb07731a456805a7b473f47841.js"></script>
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2018-01-03">January 3, 2018</time></p>
+
+      </footer>
+
+      <section class="page__share">
+  <h4 class="page__share-title">Share on</h4>
+
+  <a href="https://twitter.com/intent/tweet?via=mmistakes&text=Markup%3A+Syntax+Highlighting%20" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+      
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><div class="search-searchbar"></div>
+  <div class="search-hits"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+        
+          <li><a href="https://twitter.com/mmistakes" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+          <li><a href="https://github.com/mmistakes" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://instagram.com/mmistakes" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy;  <a href="https://mmistakes.github.io">Minimal Mistakes</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+<script>
+// Including InstantSearch.js library and styling
+const loadSearch = function() {
+  const loadCSS = function(src) {
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = src;
+    link.media = 'all';
+    document.head.appendChild(link);
+  };
+
+  var script = document.createElement('script');
+  script.setAttribute("type", "text/javascript");
+  script.setAttribute("src", "https://cdn.jsdelivr.net/npm/instantsearch.js@2.3.3/dist/instantsearch.min.js");
+  script.addEventListener("load", function() {
+    // Instantiating InstantSearch.js with Algolia credentials
+    const search = instantsearch({
+      appId: 'QB6HVGBSBA',
+      apiKey: '9d5014e5bbc77372547bce778dfa5663',
+      indexName: 'minimal_mistakes',
+      searchParameters: {
+        restrictSearchableAttributes: ['title', 'content']
+      }
+    });
+
+    const hitTemplate = function(hit) {
+      const url = hit.url;
+      const hightlight = hit._highlightResult;
+      const title = hightlight.title && hightlight.title.value  || "";
+      const content = hightlight.html && hightlight.html.value  || "";
+
+      return `
+        <div class="list__item">
+          <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+            <h2 class="archive__item-title" itemprop="headline"><a href="/minimal-mistakes${url}">${title}</a></h2>
+            <div class="archive__item-excerpt" itemprop="description">${content}</div>
+          </article>
+        </div>
+      `;
+    }
+
+    // Adding searchbar and results widgets
+    search.addWidget(
+      instantsearch.widgets.searchBox({
+        container: '.search-searchbar',
+        poweredBy: true,
+        placeholder: 'Enter your search term...'
+      })
+    );
+    search.addWidget(
+      instantsearch.widgets.hits({
+        container: '.search-hits',
+        templates: {
+          item: hitTemplate,
+          empty: 'No results',
+        }
+      })
+    );
+
+    if (!search.started) {
+      search.start();
+    }
+  });
+  document.body.appendChild(script);
+
+  loadCSS("https://cdn.jsdelivr.net/npm/instantsearch.js@2.3.3/dist/instantsearch.min.css");
+  loadCSS("https://cdn.jsdelivr.net/npm/instantsearch.js@2.3.3/dist/instantsearch-theme-algolia.min.css");
+};
+
+// Starting the search only when toggle is clicked
+$(document).ready(function() {
+  var scriptLoaded = false;
+
+  $(".search__toggle").on("click", function() {
+    if (!scriptLoaded) {
+      loadSearch();
+      scriptLoaded = true;
+    }
+  });
+});
+</script>
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

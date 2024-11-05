@@ -1,0 +1,560 @@
+
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.26.2 by Michael Rose
+  Copyright 2013-2024 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="en-US" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Installation - Minimal Mistakes</title>
+<meta name="description" content="Instructions for installing the theme for new and existing Jekyll based sites.">
+
+
+  <meta name="author" content="Michael Rose">
+  
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Minimal Mistakes">
+<meta property="og:title" content="Installation">
+<meta property="og:url" content="">
+
+
+  <meta property="og:description" content="Instructions for installing the theme for new and existing Jekyll based sites.">
+
+
+
+  <meta property="og:image" content="">
+
+
+
+  <meta name="twitter:site" content="@mmistakes">
+  <meta name="twitter:title" content="Installation">
+  <meta name="twitter:description" content="Instructions for installing the theme for new and existing Jekyll based sites.">
+  <meta name="twitter:url" content="">
+
+  
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="">
+  
+
+  
+
+
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="">
+
+
+
+
+
+
+
+  <meta name="google-site-verification" content="UQj93ERU9zgECodaaXgVpkjrFn9UrDMEzVamacSoQ8Y">
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Minimal Mistakes Feed">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  window.enable_copy_code_button = true;
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single" dir="ltr">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Minimal Mistakes
+          <span class="site-subtitle">A Jekyll theme</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/docs/quick-start-guide/">Quick-Start Guide</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about/">About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/year-archive/">Sample Posts</a>
+            </li><li class="masthead__menu-item">
+              <a href="/collection-archive/">Sample Collections</a>
+            </li><li class="masthead__menu-item">
+              <a href="/terms/">Terms &amp; Privacy Policy</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <i class="fas fa-search"></i>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+      
+    
+    
+      <nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox">
+  <label for="ac-toc">Toggle Menu</label>
+  <ul class="nav__items">
+    
+      
+      
+        <li>
+          
+            <span class="nav__sub-title">Getting Started</span>
+          
+
+          
+          <ul>
+            
+              <li><a href="/docs/quick-start-guide/">Quick-Start Guide</a></li>
+            
+              <li><a href="/docs/structure/">Structure</a></li>
+            
+              <li><a href="/docs/installation/">Installation</a></li>
+            
+              <li><a href="/docs/upgrading/">Upgrading</a></li>
+            
+          </ul>
+          
+        </li>
+      
+        <li>
+          
+            <span class="nav__sub-title">Customization</span>
+          
+
+          
+          <ul>
+            
+              <li><a href="/docs/configuration/">Configuration</a></li>
+            
+              <li><a href="/docs/overriding-theme-defaults/">Overriding Theme Defaults</a></li>
+            
+              <li><a href="/docs/navigation/">Navigation</a></li>
+            
+              <li><a href="/docs/ui-text/">UI Text</a></li>
+            
+              <li><a href="/docs/authors/">Authors</a></li>
+            
+              <li><a href="/docs/layouts/">Layouts</a></li>
+            
+          </ul>
+          
+        </li>
+      
+        <li>
+          
+            <span class="nav__sub-title">Content</span>
+          
+
+          
+          <ul>
+            
+              <li><a href="/docs/posts/">Working with Posts</a></li>
+            
+              <li><a href="/docs/pages/">Working with Pages</a></li>
+            
+              <li><a href="/docs/collections/">Working with Collections</a></li>
+            
+              <li><a href="/docs/helpers/">Helpers</a></li>
+            
+              <li><a href="/docs/utility-classes/">Utility Classes</a></li>
+            
+          </ul>
+          
+        </li>
+      
+        <li>
+          
+            <span class="nav__sub-title">Extras</span>
+          
+
+          
+          <ul>
+            
+              <li><a href="/docs/stylesheets/">Stylesheets</a></li>
+            
+              <li><a href="/docs/javascript/">JavaScript</a></li>
+            
+          </ul>
+          
+        </li>
+      
+        <li>
+          
+            <span class="nav__sub-title">Meta</span>
+          
+
+          
+          <ul>
+            
+              <li><a href="/docs/faq/">FAQ</a></li>
+            
+              <li><a href="/docs/history/">History</a></li>
+            
+              <li><a href="/docs/contributing/">Contributing</a></li>
+            
+              <li><a href="/docs/docs-2-2/">Old 2.2 Docs</a></li>
+            
+              <li><a href="/docs/license/">License</a></li>
+            
+              <li><a href="/terms/">Terms &amp; Privacy Policy</a></li>
+            
+          </ul>
+          
+        </li>
+      
+    
+  </ul>
+</nav>
+
+    
+  
+  </div>
+
+
+
+  <article class="page" itemscope="" itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Installation">
+    <meta itemprop="description" content="Instructions for installing the theme for new and existing Jekyll based sites.">
+    
+    <meta itemprop="dateModified" content="2019-08-21T01:36:18+00:00">
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">
+            <a href="" itemprop="url">Installation
+</a>
+          </h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu"><li><a href="#install-the-theme">Install the theme</a></li><li><a href="#theme-migration">Theme migration</a></li><li><a href="#install-dependencies">Install dependencies</a></li></ul>
+            </nav>
+          </aside>
+        
+        <h2 id="install-the-theme" tabindex="-1">Install the theme</h2>
+<p><strong>1.</strong> For a <strong>new site</strong>, install the <code>minimal-mistakes-jekyll</code> gem, remote theme, or fork the Minimal Mistakes repo on GitHub following the steps outlined in the <a href="/docs/quick-start-guide/"><em>Quick-Start Guide</em></a>.</p>
+<p>If you plan to host with GitHub Pages be sure to properly setup <a href="https://github.com/benbalter/jekyll-remote-theme"><strong>jekyll-remote-theme</strong></a> as it is required for the theme to work properly.</p>
+<p><strong>2.</strong> For an <strong>existing site</strong> follow the steps outlined in the <a href="/docs/quick-start-guide/"><em>Quick-Start Guide</em></a>. Then work through the guidelines below for migration and setup.</p>
+<p><strong>3.</strong> For those who'd like to make substantial edits to the theme, download as a ZIP file to customize.</p>
+<p><a href="https://github.com/mmistakes/minimal-mistakes/archive/master.zip" class="btn btn--success"><i class="fas fa-download"></i> Download Minimal Mistakes Theme</a></p>
+<p class="notice--info"><strong>ProTip:</strong> Be sure to remove <code>/docs</code> and <code>/test</code> if you forked or downloaded Minimal Mistakes. These folders contain documentation and test pages for the theme and you probably don't want them littering up in your repo.</p>
+<p class="notice--warning"><strong>Note:</strong> The theme uses the <a href="https://github.com/benbalter/jekyll-include-cache">jekyll-include-cache</a> plugin which will need to be installed in your <code>Gemfile</code> and added to the <code>plugins</code> array of <code>_config.yml</code>. Otherwise you'll throw <code>Unknown tag 'include_cached'</code> errors at build.</p>
+<h2 id="theme-migration" tabindex="-1">Theme migration</h2>
+<p>To move over any existing content you'll want to copy the contents of your <code>_posts</code> folder to the new site. Along with any pages, collections, data files, images, or other assets you may have.</p>
+<p>Next you'll need to convert posts and pages to use the proper layouts and settings. In most cases you simply need to update <code>_config.yml</code> to your liking and set the correct <code>layout</code> in their YAML Front Matter.</p>
+<p><a href="https://jekyllrb.com/docs/configuration/#front-matter-defaults"><strong>Front Matter defaults</strong></a> are your friend and I encourage you to leverage them instead of setting a layout and other global options in each post/page's YAML Front Matter.</p>
+<p>Posts can be configured to use the <code>single</code> layout  with reading time, comments, social sharing links, and related posts enabled. Adding the following to <code>_config.yml</code> will set these defaults for all posts:</p>
+<pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">defaults</span><span class="token punctuation">:</span>
+  <span class="token comment"># _posts</span>
+  <span class="token punctuation">-</span> <span class="token key atrule">scope</span><span class="token punctuation">:</span>
+      <span class="token key atrule">path</span><span class="token punctuation">:</span> <span class="token string">""</span>
+      <span class="token key atrule">type</span><span class="token punctuation">:</span> posts
+    <span class="token key atrule">values</span><span class="token punctuation">:</span>
+      <span class="token key atrule">layout</span><span class="token punctuation">:</span> single
+      <span class="token key atrule">read_time</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+      <span class="token key atrule">comments</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+      <span class="token key atrule">share</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+      <span class="token key atrule">related</span><span class="token punctuation">:</span> <span class="token boolean important">true</span></code></pre>
+<p class="notice--info"><strong>Post/Page Settings</strong>: Be sure to read through the &quot;Working with...&quot; documentation to learn about all the options available to you. The theme has been designed to be flexible --- with numerous settings for each.</p>
+<h2 id="install-dependencies" tabindex="-1">Install dependencies</h2>
+<p>If this is your first time using Jekyll be sure to read through the <a href="https://jekyllrb.com/docs/home/">official documentation</a> before jumping in. This guide assumes you have Ruby v2 installed and a basic understanding of how Jekyll works.</p>
+<p>To keep your sanity and better manage dependencies I strongly urge you to <a href="http://bundler.io/">install Bundler</a> with <code>gem install bundler</code> and use the following <code>Gemfile</code>:</p>
+<pre class="language-ruby"><code class="language-ruby">source <span class="token string-literal"><span class="token string">"https://rubygems.org"</span></span>
+
+<span class="token comment"># Hello! This is where you manage which Jekyll version is used to run.</span>
+<span class="token comment"># When you want to use a different version, change it below, save the</span>
+<span class="token comment"># file and run `bundle install`. Run Jekyll with `bundle exec`, like so:</span>
+<span class="token comment">#</span>
+<span class="token comment">#     bundle exec jekyll serve</span>
+<span class="token comment">#</span>
+<span class="token comment"># This will help ensure the proper Jekyll version is running.</span>
+<span class="token comment"># Happy Jekylling!</span>
+
+<span class="token comment"># gem "github-pages", group: :jekyll_plugins</span>
+
+<span class="token comment"># To upgrade, run `bundle update`.</span>
+
+gem <span class="token string-literal"><span class="token string">"jekyll"</span></span>
+gem <span class="token string-literal"><span class="token string">"minimal-mistakes-jekyll"</span></span>
+
+<span class="token comment"># The following plugins are automatically loaded by the theme-gem:</span>
+<span class="token comment">#   gem "jekyll-paginate"</span>
+<span class="token comment">#   gem "jekyll-sitemap"</span>
+<span class="token comment">#   gem "jekyll-gist"</span>
+<span class="token comment">#   gem "jekyll-feed"</span>
+<span class="token comment">#   gem "jekyll-include-cache"</span>
+<span class="token comment">#</span>
+<span class="token comment"># If you have any other plugins, put them here!</span>
+<span class="token comment"># Cf. https://jekyllrb.com/docs/plugins/installation/</span>
+group <span class="token symbol">:jekyll_plugins</span> <span class="token keyword">do</span>
+<span class="token keyword">end</span></code></pre>
+<p class="notice--info"><strong>ProTip:</strong> To be bleeding edge install the latest (unreleased) version of Minimal Mistakes by adding this line to your <code>Gemfile</code>: <code>gem &quot;minimal-mistakes-jekyll&quot;, :github =&gt; &quot;mmistakes/minimal-mistakes&quot;</code>.</p>
+<p>To maintain a local Jekyll environment in sync with GitHub Pages replace the <code>gem &quot;jekyll&quot;</code> line with <code>gem &quot;github-pages&quot;, group: :jekyll_plugins</code> and run the following:</p>
+<pre class="language-bash"><code class="language-bash">$ bundle <span class="token function">install</span></code></pre>
+<p class="notice--warning"><strong>Note:</strong> The <a href="https://github.com/github/pages-gem">GitHub Pages gem</a> installs additional dependencies that may need to be added to your <code>Gemfile</code> if you decide to remove the <code>gem &quot;github-pages&quot;</code> eg. <code>jekyll-paginate</code>, <code>jekyll-sitemap</code>, <code>jekyll-feed</code>, <code>jekyll-include-cache</code>, etc.</p>
+<figure>
+  <picture><source type="image/webp" srcset="/img/fY9hv8ltQD-400.webp 400w, /img/fY9hv8ltQD-720.webp 720w" sizes="100vw"><img loading="lazy" decoding="async" src="/img/fY9hv8ltQD-400.jpeg" alt="bundle install in Terminal window" width="720" height="410" srcset="/img/fY9hv8ltQD-400.jpeg 400w, /img/fY9hv8ltQD-720.jpeg 720w" sizes="100vw"></picture>
+</figure>
+<p>Depending on what gems you already have installed you may have to run <code>bundle update</code> to clear up any dependency issues. Bundler is usually pretty good at letting you know what gems need updating or have issues installing, to further investigate.</p>
+<p>When using Bundler to manage gems you'll want to run Jekyll using <code>bundle exec jekyll serve</code> and <code>bundle exec jekyll build</code>.</p>
+<p>Doing so executes the gem versions specified in <code>Gemfile.lock</code>. Sure you can test your luck with a naked <code>jekyll serve</code>, but I wouldn't suggest it. A lot of Jekyll errors originate from outdated or conflicting gems fighting with each other. So do yourself a favor and just use Bundler.</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2019-08-21">August 21, 2019</time></p>
+
+      </footer>
+
+      
+
+      
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+      
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><div class="search-searchbar"></div>
+  <div class="search-hits"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+        
+          <li><a href="https://twitter.com/mmistakes" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+          <li><a href="https://github.com/mmistakes" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://instagram.com/mmistakes" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy;  <a href="https://mmistakes.github.io">Minimal Mistakes</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+<script>
+// Including InstantSearch.js library and styling
+const loadSearch = function() {
+  const loadCSS = function(src) {
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = src;
+    link.media = 'all';
+    document.head.appendChild(link);
+  };
+
+  var script = document.createElement('script');
+  script.setAttribute("type", "text/javascript");
+  script.setAttribute("src", "https://cdn.jsdelivr.net/npm/instantsearch.js@2.3.3/dist/instantsearch.min.js");
+  script.addEventListener("load", function() {
+    // Instantiating InstantSearch.js with Algolia credentials
+    const search = instantsearch({
+      appId: 'QB6HVGBSBA',
+      apiKey: '9d5014e5bbc77372547bce778dfa5663',
+      indexName: 'minimal_mistakes',
+      searchParameters: {
+        restrictSearchableAttributes: ['title', 'content']
+      }
+    });
+
+    const hitTemplate = function(hit) {
+      const url = hit.url;
+      const hightlight = hit._highlightResult;
+      const title = hightlight.title && hightlight.title.value  || "";
+      const content = hightlight.html && hightlight.html.value  || "";
+
+      return `
+        <div class="list__item">
+          <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+            <h2 class="archive__item-title" itemprop="headline"><a href="/minimal-mistakes${url}">${title}</a></h2>
+            <div class="archive__item-excerpt" itemprop="description">${content}</div>
+          </article>
+        </div>
+      `;
+    }
+
+    // Adding searchbar and results widgets
+    search.addWidget(
+      instantsearch.widgets.searchBox({
+        container: '.search-searchbar',
+        poweredBy: true,
+        placeholder: 'Enter your search term...'
+      })
+    );
+    search.addWidget(
+      instantsearch.widgets.hits({
+        container: '.search-hits',
+        templates: {
+          item: hitTemplate,
+          empty: 'No results',
+        }
+      })
+    );
+
+    if (!search.started) {
+      search.start();
+    }
+  });
+  document.body.appendChild(script);
+
+  loadCSS("https://cdn.jsdelivr.net/npm/instantsearch.js@2.3.3/dist/instantsearch.min.css");
+  loadCSS("https://cdn.jsdelivr.net/npm/instantsearch.js@2.3.3/dist/instantsearch-theme-algolia.min.css");
+};
+
+// Starting the search only when toggle is clicked
+$(document).ready(function() {
+  var scriptLoaded = false;
+
+  $(".search__toggle").on("click", function() {
+    if (!scriptLoaded) {
+      loadSearch();
+      scriptLoaded = true;
+    }
+  });
+});
+</script>
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

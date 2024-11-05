@@ -1,0 +1,668 @@
+
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.26.2 by Michael Rose
+  Copyright 2013-2024 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="en-US" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>2.2 Documentation - Minimal Mistakes</title>
+<meta name="description" content="Setup and installation instructions for Minimal Mistakes 2.2 (deprecated).">
+
+
+  <meta name="author" content="Michael Rose">
+  
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Minimal Mistakes">
+<meta property="og:title" content="2.2 Documentation">
+<meta property="og:url" content="">
+
+
+  <meta property="og:description" content="Setup and installation instructions for Minimal Mistakes 2.2 (deprecated).">
+
+
+
+  <meta property="og:image" content="">
+
+
+
+  <meta name="twitter:site" content="@mmistakes">
+  <meta name="twitter:title" content="2.2 Documentation">
+  <meta name="twitter:description" content="Setup and installation instructions for Minimal Mistakes 2.2 (deprecated).">
+  <meta name="twitter:url" content="">
+
+  
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="">
+  
+
+  
+
+
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="">
+
+
+
+
+
+
+
+  <meta name="google-site-verification" content="UQj93ERU9zgECodaaXgVpkjrFn9UrDMEzVamacSoQ8Y">
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Minimal Mistakes Feed">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  window.enable_copy_code_button = true;
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single" dir="ltr">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Minimal Mistakes
+          <span class="site-subtitle">A Jekyll theme</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/docs/quick-start-guide/">Quick-Start Guide</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about/">About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/year-archive/">Sample Posts</a>
+            </li><li class="masthead__menu-item">
+              <a href="/collection-archive/">Sample Collections</a>
+            </li><li class="masthead__menu-item">
+              <a href="/terms/">Terms &amp; Privacy Policy</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <i class="fas fa-search"></i>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+      
+    
+    
+      <nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox">
+  <label for="ac-toc">Toggle Menu</label>
+  <ul class="nav__items">
+    
+      
+      
+        <li>
+          
+            <span class="nav__sub-title">Getting Started</span>
+          
+
+          
+          <ul>
+            
+              <li><a href="/docs/quick-start-guide/">Quick-Start Guide</a></li>
+            
+              <li><a href="/docs/structure/">Structure</a></li>
+            
+              <li><a href="/docs/installation/">Installation</a></li>
+            
+              <li><a href="/docs/upgrading/">Upgrading</a></li>
+            
+          </ul>
+          
+        </li>
+      
+        <li>
+          
+            <span class="nav__sub-title">Customization</span>
+          
+
+          
+          <ul>
+            
+              <li><a href="/docs/configuration/">Configuration</a></li>
+            
+              <li><a href="/docs/overriding-theme-defaults/">Overriding Theme Defaults</a></li>
+            
+              <li><a href="/docs/navigation/">Navigation</a></li>
+            
+              <li><a href="/docs/ui-text/">UI Text</a></li>
+            
+              <li><a href="/docs/authors/">Authors</a></li>
+            
+              <li><a href="/docs/layouts/">Layouts</a></li>
+            
+          </ul>
+          
+        </li>
+      
+        <li>
+          
+            <span class="nav__sub-title">Content</span>
+          
+
+          
+          <ul>
+            
+              <li><a href="/docs/posts/">Working with Posts</a></li>
+            
+              <li><a href="/docs/pages/">Working with Pages</a></li>
+            
+              <li><a href="/docs/collections/">Working with Collections</a></li>
+            
+              <li><a href="/docs/helpers/">Helpers</a></li>
+            
+              <li><a href="/docs/utility-classes/">Utility Classes</a></li>
+            
+          </ul>
+          
+        </li>
+      
+        <li>
+          
+            <span class="nav__sub-title">Extras</span>
+          
+
+          
+          <ul>
+            
+              <li><a href="/docs/stylesheets/">Stylesheets</a></li>
+            
+              <li><a href="/docs/javascript/">JavaScript</a></li>
+            
+          </ul>
+          
+        </li>
+      
+        <li>
+          
+            <span class="nav__sub-title">Meta</span>
+          
+
+          
+          <ul>
+            
+              <li><a href="/docs/faq/">FAQ</a></li>
+            
+              <li><a href="/docs/history/">History</a></li>
+            
+              <li><a href="/docs/contributing/">Contributing</a></li>
+            
+              <li><a href="/docs/docs-2-2/">Old 2.2 Docs</a></li>
+            
+              <li><a href="/docs/license/">License</a></li>
+            
+              <li><a href="/terms/">Terms &amp; Privacy Policy</a></li>
+            
+          </ul>
+          
+        </li>
+      
+    
+  </ul>
+</nav>
+
+    
+  
+  </div>
+
+
+
+  <article class="page" itemscope="" itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="2.2 Documentation">
+    <meta itemprop="description" content="Setup and installation instructions for Minimal Mistakes 2.2 (deprecated).">
+    
+    <meta itemprop="dateModified" content="2018-03-20T20:00:34+00:00">
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">
+            <a href="" itemprop="url">2.2 Documentation
+</a>
+          </h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu"><li><a href="#installation">Installation</a></li><li><a href="#running-jekyll">Running Jekyll</a></li><li><a href="#scaffolding">Scaffolding</a></li><li><a href="#site-setup">Site Setup</a><ul><li><a href="#site-wide-configuration">Site Wide Configuration</a><ul><li><a href="#title">title</a></li><li><a href="#url">url</a></li><li><a href="#google-analytics-and-webmaster-tools">Google Analytics and Webmaster Tools</a></li></ul></li><li><a href="#navigation-links">Navigation Links</a></li></ul></li><li><a href="#adding-new-content-with-octopress">Adding New Content with Octopress</a><ul><li><a href="#new-post">New Post</a></li><li><a href="#new-page">New Page</a></li></ul></li><li><a href="#layouts-and-content">Layouts and Content</a><ul><li><a href="#post-and-page">Post and Page</a></li><li><a href="#post-index-page">Post Index Page</a></li><li><a href="#feature-images">Feature Images</a></li><li><a href="#thumbnails-for-og-and-twitter-cards">Thumbnails for OG and Twitter Cards</a></li><li><a href="#author-override">Author Override</a></li><li><a href="#kramdown-table-of-contents">Kramdown Table of Contents</a></li><li><a href="#paragraph-indentation">Paragraph Indentation</a></li><li><a href="#videos">Videos</a></li><li><a href="#social-sharing-links">Social Sharing Links</a></li></ul></li><li><a href="#further-customization">Further Customization</a></li></ul>
+            </nav>
+          </aside>
+        
+        <h2 id="installation" tabindex="-1">Installation</h2>
+<p>Minimal Mistakes now requires <a href="http://jekyllrb.com/">Jekyll</a> 3.0. Make sure to run <code>bundle update</code> if you aren't on the latest version to update all gem dependencies.</p>
+<p>If you are creating a new Jekyll site using Minimal Mistakes follow these steps:</p>
+<ol>
+<li>Fork the <a href="http://github.com/mmistakes/minimal-mistakes/fork">Minimal Mistakes repo</a>.</li>
+<li>Clone the repo you just forked and rename it.</li>
+<li><a href="http://bundler.io">Install Bundler</a> <code>gem install bundler</code> and Run <code>bundle install</code> to install all dependencies (Jekyll, <a href="https://github.com/jekyll/jekyll-sitemap">Jekyll-Sitemap</a>, <a href="https://github.com/octopress/octopress">Octopress</a>, etc)</li>
+<li>Update <code>config.yml</code>, add navigation, and replace demo posts and pages with your own. Full details below.</li>
+</ol>
+<p>If you want to use Minimal Mistakes with an existing Jekyll site follow these steps:</p>
+<ol>
+<li><a href="https://github.com/mmistakes/minimal-mistakes/releases/tag/2.2.1">Download Minimal Mistakes</a> and unzip.</li>
+<li>Rename <code>minimal-mistakes-master</code> to something meaningful ie: <code>new-site</code></li>
+<li>Run <code>bundle install</code> to install all dependencies (Jekyll, <a href="https://github.com/jekyll/jekyll-sitemap">Jekyll-Sitemap</a>, <a href="https://github.com/octopress/octopress">Octopress</a>, etc)</li>
+<li>Remove demo posts/pages and replace with your own posts, pages, and any other content you want to move over.</li>
+<li>Update posts' and pages' YAML to match variables used by Minimal Mistakes. Full details below.</li>
+<li>Update <code>_config.yml</code> and add navigation links. Full details below.</li>
+</ol>
+<p class="notice"><strong>Pro-tip:</strong> Delete the <code>gh-pages</code> branch after cloning and start fresh by branching off <code>master</code>. There is a bunch of garbage in <code>gh-pages</code> used for the theme's demo site that I'm guessing you won't want.</p>
+<h2 id="running-jekyll" tabindex="-1">Running Jekyll</h2>
+<p>The preferred method for running Jekyll is with <code>bundle exec</code>, but if you're willing to deal gem conflicts feel free to go cowboy with a <code>jekyll serve</code> or <code>jekyll build</code>.</p>
+<blockquote>
+<p>In some cases, running executables without bundle exec may work, if the executable happens to be installed in your system and does not pull in any gems that conflict with your bundle.</p>
+<p>However, this is unreliable and is the source of considerable pain. Even if it looks like it works, it may not work in the future or on another machine.</p>
+</blockquote>
+<pre class="language-bash"><code class="language-bash">bundle <span class="token builtin class-name">exec</span> jekyll serve</code></pre>
+<h2 id="scaffolding" tabindex="-1">Scaffolding</h2>
+<p>How Minimal Mistakes is organized and what the various files are. All posts, layouts, includes, stylesheets, assets, and whatever else is grouped nicely under the root folder. The compiled Jekyll site outputs to <code>_site/</code>.</p>
+<pre class="language-bash"><code class="language-bash">minimal-mistakes/
+├── _includes/
+<span class="token operator">|</span>    ├── author-bio.html        <span class="token comment"># bio stuff layout. pulls optional owner data from _config.yml</span>
+<span class="token operator">|</span>    ├── disqus-comments   <span class="token comment"># Disqus comments script</span>
+<span class="token operator">|</span>    ├── footer            <span class="token comment"># site footer</span>
+<span class="token operator">|</span>    ├── <span class="token function">head</span>              <span class="token comment"># site head</span>
+<span class="token operator">|</span>    ├── navigation        <span class="token comment"># site top navigation</span>
+<span class="token operator">|</span>    ├── open-graph.html        <span class="token comment"># Twitter Cards and Open Graph meta data</span>
+<span class="token operator">|</span>    └── scripts           <span class="token comment"># site scripts</span>
+├── _layouts/
+<span class="token operator">|</span>    ├── home.html               <span class="token comment"># homepage layout</span>
+<span class="token operator">|</span>    ├── page.html               <span class="token comment"># page layout</span>
+<span class="token operator">|</span>    ├── post-index.html         <span class="token comment"># post index layout</span>
+<span class="token operator">|</span>    └── post.html               <span class="token comment"># single post layout</span>
+├── _posts/                      <span class="token comment"># MarkDown formatted posts</span>
+├── _sass/                       <span class="token comment"># Sass stylesheets</span>
+├── _templates/                  <span class="token comment"># used by Octopress to define YAML variables for new posts/pages</span>
+├── about/                       <span class="token comment"># sample about page</span>
+├── assets/
+<span class="token operator">|</span>    ├── css/                    <span class="token comment"># compiled stylesheets</span>
+<span class="token operator">|</span>    ├── fonts/                  <span class="token comment"># webfonts</span>
+<span class="token operator">|</span>    ├── js/
+<span class="token operator">|</span>    <span class="token operator">|</span>   ├── _main.js            <span class="token comment"># main JavaScript file, plugin settings, etc</span>
+<span class="token operator">|</span>    <span class="token operator">|</span>   ├── plugins/            <span class="token comment"># scripts and jQuery plugins to combine with _main.js</span>
+<span class="token operator">|</span>    <span class="token operator">|</span>   ├── scripts.min.js      <span class="token comment"># concatenated and minified _main.js + plugin scripts</span>
+<span class="token operator">|</span>    <span class="token operator">|</span>   └── vendor/             <span class="token comment"># vendor scripts to leave alone and load as is</span>
+<span class="token operator">|</span>    └── less/
+├── images/                      <span class="token comment"># images for posts and pages</span>
+├── <span class="token number">404</span>.md                       <span class="token comment"># 404 page</span>
+├── feed.xml                     <span class="token comment"># Atom feed template</span>
+├── index.md                     <span class="token comment"># sample homepage. lists 5 latest posts</span>
+├── posts/                       <span class="token comment"># sample post index page. lists all posts in reverse chronology</span>
+└── theme-setup/                 <span class="token comment"># theme setup page. safe to remove</span></code></pre>
+<h2 id="site-setup" tabindex="-1">Site Setup</h2>
+<p>A quick checklist of the files you'll want to edit to get up and running.</p>
+<h3 id="site-wide-configuration" tabindex="-1">Site Wide Configuration</h3>
+<p><code>_config.yml</code> is your friend. Open it up and personalize it. Most variables are self explanatory but here's an explanation of each if needed:</p>
+<h4 id="title" tabindex="-1">title</h4>
+<p>The title of your site... shocker!</p>
+<p>Example <code>title: My Awesome Site</code></p>
+<h4 id="url" tabindex="-1">url</h4>
+<p>Used to generate absolute urls in <code>sitemap.xml</code>, <code>feed.xml</code>, and for generating canonical URLs in <code>&lt;head&gt;</code>. When developing locally either comment this out or use something like <code>http://localhost:4000</code> so all assets load properly. <em>Don't include a trailing <code>/</code></em>.</p>
+<p>Examples:</p>
+<pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">url</span><span class="token punctuation">:</span> http<span class="token punctuation">:</span>//mmistakes.github.io/minimal<span class="token punctuation">-</span>mistakes
+<span class="token key atrule">url</span><span class="token punctuation">:</span> http<span class="token punctuation">:</span>//localhost<span class="token punctuation">:</span><span class="token number">4000</span>
+<span class="token key atrule">url</span><span class="token punctuation">:</span> //cooldude.github.io
+<span class="token key atrule">url</span><span class="token punctuation">:</span></code></pre>
+<h4 id="google-analytics-and-webmaster-tools" tabindex="-1">Google Analytics and Webmaster Tools</h4>
+<p>Google Analytics UA and Webmaster Tool verification tags can be entered under <code>owner</code> in <code>_config.yml</code>. For more information on obtaining these meta tags check <a href="http://support.google.com/webmasters/bin/answer.py?hl=en&amp;answer=35179">Google Webmaster Tools</a> and <a href="https://ssl.bing.com/webmaster/configure/verify/ownership">Bing Webmaster Tools</a> support.</p>
+<h3 id="navigation-links" tabindex="-1">Navigation Links</h3>
+<p>To set what links appear in the top navigation edit <code>_data/navigation.yml</code>. Use the following format to set the URL and title for as many links as you'd like. <em>External links will open in a new window.</em></p>
+<pre class="language-yaml"><code class="language-yaml"><span class="token punctuation">-</span> <span class="token key atrule">title</span><span class="token punctuation">:</span> Portfolio
+  <span class="token key atrule">url</span><span class="token punctuation">:</span> /portfolio/
+
+<span class="token punctuation">-</span> <span class="token key atrule">title</span><span class="token punctuation">:</span> Made Mistakes
+  <span class="token key atrule">url</span><span class="token punctuation">:</span> http<span class="token punctuation">:</span>//mademistakes.com</code></pre>
+<h2 id="adding-new-content-with-octopress" tabindex="-1">Adding New Content with Octopress</h2>
+<p>While completely optional, I've included Octopress and some starter templates to automate the creation of new posts and pages. To take advantage of it start by installing the <a href="https://github.com/octopress/octopress">Octopress</a> gem if it isn't already.</p>
+<pre class="language-bash"><code class="language-bash">$ gem <span class="token function">install</span> octopress</code></pre>
+<h3 id="new-post" tabindex="-1">New Post</h3>
+<p>Default command</p>
+<pre class="language-bash"><code class="language-bash">$ octopress new post <span class="token string">"Post Title"</span></code></pre>
+<p>Default works great if you want all your posts in one directory, but if you're like me and want to group them into subfolders like <code>/posts</code>, <code>/portfolio</code>, etc. Then this is the command for you. By specifying the DIR it will create a new post in that folder and populate the <code>categories:</code> YAML with the same value.</p>
+<pre class="language-bash"><code class="language-bash">$ octopress new post <span class="token string">"New Portfolio Post Title"</span> <span class="token parameter variable">--dir</span> portfolio</code></pre>
+<h3 id="new-page" tabindex="-1">New Page</h3>
+<p>To create a new page use the following command.</p>
+<pre class="language-bash"><code class="language-bash">$ octopress new page new-page/</code></pre>
+<p>This will create a page at <code>/new-page/index.md</code></p>
+<h2 id="layouts-and-content" tabindex="-1">Layouts and Content</h2>
+<p>Explanations of the various <code>_layouts</code> included with the theme and when to use them.</p>
+<h3 id="post-and-page" tabindex="-1">Post and Page</h3>
+<p>These two layouts are very similar. Both have an author sidebar, allow for large feature images at the top, and optional Disqus comments. The only real difference is the post layout includes related posts at the end of the page.</p>
+<h3 id="post-index-page" tabindex="-1">Post Index Page</h3>
+<p>A <a href="https://mmistakes.github.io/posts/">sample index page</a> listing all posts grouped by the year they were published has been provided. The name can be customized to your liking by editing a few references. For example, to change <strong>Posts</strong> to <strong>Writing</strong> update the following:</p>
+<p>In <code>_config.yml</code> under <code>links:</code> rename the title and URL to the following:</p>
+<pre class="language-yaml"><code class="language-yaml">  <span class="token key atrule">links</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> <span class="token key atrule">title</span><span class="token punctuation">:</span> Writing
+    <span class="token key atrule">url</span><span class="token punctuation">:</span> /writing/</code></pre>
+<ul>
+<li>Rename <code>posts/index.md</code> to <code>writing/index.md</code> and update the YAML front matter accordingly.</li>
+<li>Update the <strong>View all posts</strong> link in the <code>post.html</code> layout found in <code>_layouts</code> to match title and URL set previously.</li>
+</ul>
+<h3 id="feature-images" tabindex="-1">Feature Images</h3>
+<p>A good rule of thumb is to keep feature images nice and wide so you don't push the body text too far down. An image cropped around around 1024 x 256 pixels will keep file size down with an acceptable resolution for most devices. If you want to serve these images responsively I'd suggest looking at the <a href="https://github.com/robwierzbowski/jekyll-picture-tag">Jekyll Picture Tag</a> plugin[^plugins].</p>
+<p>[^plugins]: If you're using GitHub Pages to host your site be aware that plugins are disabled. You'll need to build your site locally and then manually deploy if you want to use this sweet plugin.</p>
+<p>The post and page layouts make the assumption that the feature images live in the <code>images/</code> folder. To add a feature image to a post or page just include the filename in the front matter like so. It's probably best to host all your images from this folder, but you can hotlink from external sources if you desire.</p>
+<pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">image</span><span class="token punctuation">:</span>
+  <span class="token key atrule">feature</span><span class="token punctuation">:</span> feature<span class="token punctuation">-</span>image<span class="token punctuation">-</span>filename.jpg
+  <span class="token key atrule">thumb</span><span class="token punctuation">:</span> thumbnail<span class="token punctuation">-</span>image.jpg <span class="token comment">#keep it square 200x200 px is good</span></code></pre>
+<p>To add attribution to a feature image use the following YAML front matter on posts or pages. Image credits appear directly below the feature image with a link back to the original source if supplied.</p>
+<pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">image</span><span class="token punctuation">:</span>
+  <span class="token key atrule">feature</span><span class="token punctuation">:</span> feature<span class="token punctuation">-</span>image<span class="token punctuation">-</span>filename.jpg
+  <span class="token key atrule">credit</span><span class="token punctuation">:</span> Michael Rose <span class="token comment">#name of the person or site you want to credit</span>
+  <span class="token key atrule">creditlink</span><span class="token punctuation">:</span> http<span class="token punctuation">:</span>//mademistakes.com <span class="token comment">#url to their site or licensing</span></code></pre>
+<h3 id="thumbnails-for-og-and-twitter-cards" tabindex="-1">Thumbnails for OG and Twitter Cards</h3>
+<p>Feature and thumbnail images are used by <a href="https://developers.facebook.com/docs/opengraph/">Open Graph</a> and <a href="https://dev.twitter.com/docs/cards">Twitter Cards</a> as well. If you don't assign a thumbnail the default graphic <em>(default-thumb.png)</em> is used. I'd suggest changing this to something more meaningful  your logo or avatar are good options.</p>
+<p><strong>Pro-Tip</strong>: You need to <a href="https://dev.twitter.com/docs/cards">apply for Twitter Cards</a> before they will begin showing up when links to your site are shared.</p>
+<h3 id="author-override" tabindex="-1">Author Override</h3>
+<p>By making use of data files you can assign different authors for each post.</p>
+<p>Start by modifying <code>authors.yml</code> file in the <code>_data</code> folder and add your authors using the following format.</p>
+<pre class="language-yaml"><code class="language-yaml"><span class="token comment"># Authors</span>
+
+<span class="token key atrule">billy_rick</span><span class="token punctuation">:</span>
+  <span class="token key atrule">name</span>        <span class="token punctuation">:</span> <span class="token string">"Billy Rick"</span>
+  <span class="token key atrule">web</span>         <span class="token punctuation">:</span> <span class="token string">"http://thewhip.com"</span>
+  <span class="token key atrule">email</span>       <span class="token punctuation">:</span> <span class="token string">"billy@rick.com"</span>
+  <span class="token key atrule">bio</span>         <span class="token punctuation">:</span> <span class="token string">"What do you want, jewels? I am a very extravagant man."</span>
+  <span class="token key atrule">avatar</span>      <span class="token punctuation">:</span> <span class="token string">"bio-photo-2.jpg"</span>
+  <span class="token key atrule">twitter</span>     <span class="token punctuation">:</span> <span class="token string">"extravagantman"</span>
+  <span class="token key atrule">google_plus</span> <span class="token punctuation">:</span> <span class="token string">"BillyRick"</span>
+
+<span class="token key atrule">cornelius_fiddlebone</span><span class="token punctuation">:</span>
+  <span class="token key atrule">name</span>        <span class="token punctuation">:</span> <span class="token string">"Cornelius Fiddlebone"</span>
+  <span class="token key atrule">email</span>       <span class="token punctuation">:</span> <span class="token string">"cornelius@thewhip.com"</span>
+  <span class="token key atrule">bio</span>         <span class="token punctuation">:</span> <span class="token string">"I ordered what?"</span>
+  <span class="token key atrule">avatar</span>      <span class="token punctuation">:</span> <span class="token string">"bio-photo.jpg"</span>
+  <span class="token key atrule">twitter</span>     <span class="token punctuation">:</span> <span class="token string">"rhymeswithsackit"</span>
+  <span class="token key atrule">google_plus</span> <span class="token punctuation">:</span> <span class="token string">"CorneliusFiddlebone"</span></code></pre>
+<p>To assign Billy Rick as an author for our post. We'd add the following YAML front matter to a post:</p>
+<pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">author</span><span class="token punctuation">:</span> billy_rick</code></pre>
+<h3 id="kramdown-table-of-contents" tabindex="-1">Kramdown Table of Contents</h3>
+<p>To include an auto-generated <strong>table of contents</strong> for posts and pages, add the following <code>_include</code> before the actual content. <a href="http://kramdown.rubyforge.org/converter/html.html#toc">Kramdown will take care of the rest</a> and convert all headlines into list of links.</p>
+<pre class="language-html"><code class="language-html">{% include toc.html %}</code></pre>
+<h3 id="paragraph-indentation" tabindex="-1">Paragraph Indentation</h3>
+<p>By default the margin below paragraphs has been removed and indent added to each. This is an intentional design decision to mimic the look of type set in a printed book or manuscript.</p>
+<figure>
+  <picture><source type="image/webp" srcset="/img/kW63bH8Gqu-400.webp 400w, /img/kW63bH8Gqu-553.webp 553w" sizes="100vw"><img loading="lazy" decoding="async" src="/img/kW63bH8Gqu-400.jpeg" alt="screen shot of paragraphs with default indent style set" width="553" height="328" srcset="/img/kW63bH8Gqu-400.jpeg 400w, /img/kW63bH8Gqu-553.jpeg 553w" sizes="100vw"></picture>
+  <figcaption>Example of the default paragraph style (indented first line and bottom margin removed).</figcaption>
+</figure>
+<p>To disable the indents and add spacing between paragraphs change the following line in <code>_sass/variables.scss</code> from <code>true !default</code> to <code>false</code> like so.</p>
+<pre class="language-scss"><code class="language-scss"><span class="token property"><span class="token variable">$paragraph-indent</span></span><span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">;</span></code></pre>
+<figure>
+  <picture><source type="image/webp" srcset="/img/yfxOr7Xgp0-400.webp 400w, /img/yfxOr7Xgp0-553.webp 553w" sizes="100vw"><img loading="lazy" decoding="async" src="/img/yfxOr7Xgp0-400.jpeg" alt="screen shot of paragraphs with indent style disabled" width="553" height="349" srcset="/img/yfxOr7Xgp0-400.jpeg 400w, /img/yfxOr7Xgp0-553.jpeg 553w" sizes="100vw"></picture>
+  <figcaption>Example of paragraphs with $paragraph-indent disabled.</figcaption>
+</figure>
+<h3 id="videos" tabindex="-1">Videos</h3>
+<p>Video embeds are responsive and scale with the width of the main content block with the help of <a href="http://fitvidsjs.com/">FitVids</a>.</p>
+<p>Not sure if this only effects Kramdown or if it's an issue with Markdown in general. But adding YouTube video embeds causes errors when building your Jekyll site. To fix add a space between the <code>&lt;iframe&gt;</code> tags and remove <code>allowfullscreen</code>. Example below:</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>iframe</span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>560<span class="token punctuation">"</span></span> <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>315<span class="token punctuation">"</span></span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>http://www.youtube.com/embed/PWf4WUoMXwg<span class="token punctuation">"</span></span> <span class="token attr-name">frameborder</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>0<span class="token punctuation">"</span></span><span class="token punctuation">></span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>iframe</span><span class="token punctuation">></span></span></code></pre>
+<h3 id="social-sharing-links" tabindex="-1">Social Sharing Links</h3>
+<p>Social sharing links for Twitter, Facebook, and Google+ are included on posts/pages by default. To hide them on specific posts or pages add <code>share: false</code> to the YAML Front Matter. If you'd like to use different social networks modify <code>_includes/social-share</code> to your liking. Icons are set using <a href="http://fontawesome.io">Font Awesome</a>.</p>
+<h2 id="further-customization" tabindex="-1">Further Customization</h2>
+<p>Jekyll 2.x added support for Sass files making it much easier to modify a theme's fonts and colors. By editing values found in <code>_sass/variables.scss</code> you can fine tune the site's colors and typography.</p>
+<p>For example if you wanted a red background instead of white you'd change <code>$bodycolor: #fff;</code> to <code>$bodycolor: $cc0033;</code>.</p>
+<p>To modify the site's JavaScript files I setup a Grunt build script to lint/concatenate/minify all scripts into <code>scripts.min.js</code>. <a href="http://nodejs.org/">Install Node.js</a>, then <a href="http://gruntjs.com/getting-started">install Grunt</a>, and then finally install the dependencies for the theme contained in <code>package.json</code>:</p>
+<pre class="language-bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span></code></pre>
+<p>From the theme's root, use <code>grunt</code> concatenate JavaScript files, and optimize .jpg, .png, and .svg files in the <code>images/</code> folder. You can also use <code>grunt dev</code> in combination with <code>jekyll build --watch</code> to watch for updates JS files that Grunt will then automatically re-build as you write your code which will in turn auto-generate your Jekyll site when developing locally.</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2018-03-20">March 20, 2018</time></p>
+
+      </footer>
+
+      
+
+      
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+      
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><div class="search-searchbar"></div>
+  <div class="search-hits"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+        
+          <li><a href="https://twitter.com/mmistakes" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+          <li><a href="https://github.com/mmistakes" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://instagram.com/mmistakes" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy;  <a href="https://mmistakes.github.io">Minimal Mistakes</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+<script>
+// Including InstantSearch.js library and styling
+const loadSearch = function() {
+  const loadCSS = function(src) {
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = src;
+    link.media = 'all';
+    document.head.appendChild(link);
+  };
+
+  var script = document.createElement('script');
+  script.setAttribute("type", "text/javascript");
+  script.setAttribute("src", "https://cdn.jsdelivr.net/npm/instantsearch.js@2.3.3/dist/instantsearch.min.js");
+  script.addEventListener("load", function() {
+    // Instantiating InstantSearch.js with Algolia credentials
+    const search = instantsearch({
+      appId: 'QB6HVGBSBA',
+      apiKey: '9d5014e5bbc77372547bce778dfa5663',
+      indexName: 'minimal_mistakes',
+      searchParameters: {
+        restrictSearchableAttributes: ['title', 'content']
+      }
+    });
+
+    const hitTemplate = function(hit) {
+      const url = hit.url;
+      const hightlight = hit._highlightResult;
+      const title = hightlight.title && hightlight.title.value  || "";
+      const content = hightlight.html && hightlight.html.value  || "";
+
+      return `
+        <div class="list__item">
+          <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+            <h2 class="archive__item-title" itemprop="headline"><a href="/minimal-mistakes${url}">${title}</a></h2>
+            <div class="archive__item-excerpt" itemprop="description">${content}</div>
+          </article>
+        </div>
+      `;
+    }
+
+    // Adding searchbar and results widgets
+    search.addWidget(
+      instantsearch.widgets.searchBox({
+        container: '.search-searchbar',
+        poweredBy: true,
+        placeholder: 'Enter your search term...'
+      })
+    );
+    search.addWidget(
+      instantsearch.widgets.hits({
+        container: '.search-hits',
+        templates: {
+          item: hitTemplate,
+          empty: 'No results',
+        }
+      })
+    );
+
+    if (!search.started) {
+      search.start();
+    }
+  });
+  document.body.appendChild(script);
+
+  loadCSS("https://cdn.jsdelivr.net/npm/instantsearch.js@2.3.3/dist/instantsearch.min.css");
+  loadCSS("https://cdn.jsdelivr.net/npm/instantsearch.js@2.3.3/dist/instantsearch-theme-algolia.min.css");
+};
+
+// Starting the search only when toggle is clicked
+$(document).ready(function() {
+  var scriptLoaded = false;
+
+  $(".search__toggle").on("click", function() {
+    if (!scriptLoaded) {
+      loadSearch();
+      scriptLoaded = true;
+    }
+  });
+});
+</script>
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
