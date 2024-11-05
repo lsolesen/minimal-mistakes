@@ -137,8 +137,13 @@ module.exports = async function(eleventyConfig) {
     // @source https://24ways.org/2018/turn-jekyll-up-to-eleventy/
     // TODO: Might be better to turn off in the future, but for now this makes i way easier
     eleventyConfig.setLiquidOptions({
-      jekyllInclude: true,
-      extname: "" // Do not require an ext-name
+      jekyllInclude: true, // allow to use jekyll style include
+      extname: ".liquid", // Use .liquid if not specified
+      dynamicPartials: false, // allow to use feature_row without quotes
+      //trimTagLeft: true,
+      //trimTagRight: false,
+      //trimOutputRight: true,
+      //trimOutputLeft: false
     });
 
     eleventyConfig.addDataExtension("yaml, yml", (contents) => yaml.load(contents));
