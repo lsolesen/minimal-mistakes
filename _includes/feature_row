@@ -1,5 +1,5 @@
 {% if include.id %}
-  {% assign fr = feature_row[include.id] %}
+  {% assign fr = feature_rows[include.id] %}
 {% else %}
   {% assign fr = feature_row %}
 {% endif %}

@@ -1,5 +1,5 @@
 {% if include.id %}
-  {% assign gallery = page[include.id] %}
+  {% assign gallery = galleries[include.id] %}
 {% else %}
   {% assign gallery = gallery %}
 {% endif %}
@@ -17,17 +17,17 @@
 {% endif %}
 
 <figure class="{{ gallery_layout }} {{ include.class }}">
-  {% for img in gallery %}
-    {% if img.url %}
+  {%- for img in gallery -%}
+    {%- if img.url -%}
       <a href="{{ img.url | relative_url }}"
-        {% if img.title %}title="{{ img.title }}"{% endif %}>
+        {%- if img.title %}title="{{ img.title }}"{%- endif -%}>
           <img src="{{ img.image_path | relative_url }}"
                alt="{% if img.alt %}{{ img.alt }}{% endif %}">
       </a>
-    {% else %}
+    {%- else -%}
       <img src="{{ img.image_path | relative_url }}"
            alt="{% if img.alt %}{{ img.alt }}{% endif %}">
-    {% endif %}
+    {%- endif -%}
   {% endfor %}
   {% if include.caption %}
     <figcaption>{{ include.caption | markdownify | remove: "<p>" | remove: "</p>" }}</figcaption>
