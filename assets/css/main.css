@@ -914,7 +914,8 @@ figure.half figcaption {
 }
 @media (min-width: 37.5em) {
   figure.third > a,
-  figure.third > img {
+  figure.third > img,
+  figure.third > picture {
     width: calc(33.3333% - 0.5em);
   }
 }
