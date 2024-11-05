@@ -70,11 +70,12 @@ layout: default
     {% endif %}
   </article>
 
+  {% assign related_posts = collections.posts | similarPosts: page.inputPath, categories %}
   {% comment %}<!-- only show related on a post page when `related: true` -->{% endcomment %}
-  {% if id and related and site.related_posts.size > 0 %}
-    {% include page__related.html posts=site.related_posts %}
+  {% if related and related_posts.size > 0 %}
+    {% include page__related.html posts=related_posts %}
   {% comment %}<!-- otherwise show recent posts if no related when `related: true` -->{% endcomment %}
-  {% elsif id and related %}
-    {% include page__related.html posts=site.posts %}
+  {% elsif related %}
+    {% include page__related.html posts=collections.posts %}
   {% endif %}
 </div>

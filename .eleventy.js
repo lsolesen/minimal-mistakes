@@ -41,7 +41,21 @@ md.use(markdownItAnchor);
 // Allow for data files to be in yaml
 const yaml = require("js-yaml");
 
+// https://fossheim.io/writing/posts/eleventy-similar-posts/
+const getSimilarCategories = function(categoriesA, categoriesB) {
+  return categoriesA.filter(Set.prototype.has, new Set(categoriesB)).length;
+}
+
 module.exports = async function(eleventyConfig) {
+
+  // https://fossheim.io/writing/posts/eleventy-similar-posts/
+  eleventyConfig.addLiquidFilter("similarPosts", function(collection, path, categories){
+    return collection.filter((post) => {
+      return getSimilarCategories(post.data.categories, categories) >= 1 && post.data.page.inputPath !== path;
+    }).sort((a,b) => {
+      return getSimilarCategories(b.data.categories, categories) - getSimilarCategories(a.data.categories, categories);
+    });
+  });
 
   const { EleventyHtmlBasePlugin } = await import("@11ty/eleventy");
 	eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
