@@ -16,7 +16,7 @@ Here are some examples of what a post with images might look like. If you want t
 #### One Up
 
 <figure>
-	<a href="http://farm9.staticflickr.com/8426/7758832526_cc8f681e48_b.jpg"><img src="http://farm9.staticflickr.com/8426/7758832526_cc8f681e48_c.jpg"></a>
+	<a href="http://farm9.staticflickr.com/8426/7758832526_cc8f681e48_b.jpg"><img src="http://farm9.staticflickr.com/8426/7758832526_cc8f681e48_c.jpg" alt="Morning Fog Emerging From Trees by A Guy Taking Pictures, on Flickr"></a>
 	<figcaption><a href="http://www.flickr.com/photos/80901381@N04/7758832526/" title="Morning Fog Emerging From Trees by A Guy Taking Pictures, on Flickr">Morning Fog Emerging From Trees by A Guy Taking Pictures, on Flickr</a>.</figcaption>
 </figure>
 
@@ -37,8 +37,8 @@ Apply the `half` class like so to display two images side by side that share the
 And you'll get something that looks like this:
 
 <figure class="half">
-	<a href="http://placehold.it/1200x600.JPG"><img src="http://placehold.it/600x300.jpg"></a>
-	<a href="http://placehold.it/1200x600.jpeg"><img src="http://placehold.it/600x300.jpg"></a>
+	<a href="http://placehold.it/1200x600.JPG"><img src="http://placehold.it/600x300.jpg" alt=""></a>
+	<a href="http://placehold.it/1200x600.jpeg"><img src="http://placehold.it/600x300.jpg" alt=""></a>
 	<figcaption>Two images.</figcaption>
 </figure>
 
@@ -58,8 +58,8 @@ Apply the `third` class like so to display three images side by side that share 
 And you'll get something that looks like this:
 
 <figure class="third">
-	<img src="http://placehold.it/600x300.jpg">
-	<img src="http://placehold.it/600x300.jpg">
-	<img src="http://placehold.it/600x300.jpg">
+	<img src="http://placehold.it/600x300.jpg" alt="">
+	<img src="http://placehold.it/600x300.jpg" alt="">
+	<img src="http://placehold.it/600x300.jpg" alt="">
 	<figcaption>Three images.</figcaption>
 </figure>

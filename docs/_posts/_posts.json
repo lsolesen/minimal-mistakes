@@ -6,5 +6,5 @@
     "share": true,
     "related": true,
     "categories": [],
-    "permalink": "/{{ page.data.page.categories | slugify }}/{{ page.fileSlug | slugify }}/"
+    "permalink": "{% for cat in categories %}{{ cat | slugify }}/{% endfor %}{{ page.fileSlug | slugify }}/"
 }

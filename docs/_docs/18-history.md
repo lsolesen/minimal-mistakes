@@ -1700,8 +1700,6 @@ toc: false
 - Cleaned up table of contents styling
 - Reworked top navigation to be a better experience on small screens. Nav items now display vertically when the menu button is tapped, revealing links with larger touch targets.
 
-![menu animation](https://camo.githubusercontent.com/3fbd8c1326485f4b1ab32c0005c0fca7660b5d31/68747470733a2f2f662e636c6f75642e6769746875622e636f6d2f6173736574732f313337363734392f323136343037352f31653366303663322d393465372d313165332d383961612d6436623636376562306564662e676966)
-
 ## [1.2.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/1.2.0)
 
 ### Bug Fixes

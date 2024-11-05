@@ -1,47 +1,48 @@
-name: build
+# If you’d like to deploy this to GitHub pages, rename this
+# file to `gh-pages.yml` and read the mini-tutorial on
+# https://www.11ty.dev/docs/deployment/#deploy-an-eleventy-project-to-github-pages
+name: Deploy to GitHub Pages
 
 on:
   push:
     branches:
-      - master
-  workflow_dispatch: {}
-  repository_dispatch: {}
+      - 11ty
+  pull_request:
 
 jobs:
-  build:
-    if: github.repository == 'mmistakes/minimal-mistakes'
-    runs-on: ubuntu-latest
+  deploy:
+    runs-on: ubuntu-22.04
+    permissions:
+      contents: write
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
     steps:
-    - uses: actions/checkout@v4
-      with:
-        fetch-depth: 0
+      - uses: actions/checkout@v3
 
-    - uses: ruby/setup-ruby@v1
-      with:
-        ruby-version: '3.2'
-    - name: Setup cache for Bundler
-      id: cache
-      uses: actions/cache@v4
-      with:
-        path: |
-          docs/Gemfile.lock
-          docs/vendor/bundle
-        key: ${{ runner.os }}-bundler-${{ hashFiles('docs/Gemfile') }}
-        restore-keys: |
-          ${{ runner.os }}-bundler-
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
 
-    - name: Install - Bundler
-      env:
-        MAKE: make -j2
-      working-directory: docs/
-      run: |
-        bundle config set path vendor/bundle
-        bundle install --jobs=4 --retry=3
-        bundle clean
+      - name: Cache npm
+        uses: actions/cache@v3
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package.json') }}
 
-    - name: Update Algolia index
-      working-directory: docs/
-      run: bundle exec jekyll algolia push
-      env:
-        ALGOLIA_API_KEY: ${{ secrets.ALGOLIA_API_KEY }}
-      continue-on-error: true
+      - name: Cache Eleventy .cache
+        uses: actions/cache@v3
+        with:
+          path: ./.cache
+          key: ${{ runner.os }}-eleventy-fetch-cache
+
+
+      - run: npm install
+      - run: npm run build:eleventy
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        if: github.ref == 'refs/heads/11ty'
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site

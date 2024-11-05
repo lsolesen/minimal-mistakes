@@ -5,20 +5,26 @@ permalink: /collection-archive/
 author_profile: true
 ---
 
-{% capture written_label %}'None'{% endcapture %}
+<h2 id="docs" class="archive__subtitle">docs</h2>
 
-{% for collection in collections %}
+{% for post in collections.docs %}
+  {% include archive-single.html %}
+{% endfor %}
 
-  {% if collection[0] != "all" %}
-  {% unless collection[0] == "posts" %}
-    {% capture label %}{{ collection[0] }}{% endcapture %}
-    {% if label != written_label %}
-      <h2 id="{{ label | slugify }}" class="archive__subtitle">{{ label }}</h2>
-      {% capture written_label %}{{ label }}{% endcapture %}
-    {% endif %}
-  {% endunless %}
-  {% for post in collection[1] %}
-    {% include archive-single.html %}
-  {% endfor %}
-  {% endif %}
+<h2 id="pets" class="archive__subtitle">pets</h2>
+
+{% for post in collections.pets %}
+  {% include archive-single.html %}
+{% endfor %}
+
+<h2 id="portfolio" class="archive__subtitle">portfolio</h2>
+
+{% for post in collections.portfolio %}
+  {% include archive-single.html %}
+{% endfor %}
+
+<h2 id="recipes" class="archive__subtitle">recipes</h2>
+
+{% for post in collections.recipes %}
+  {% include archive-single.html %}
 {% endfor %}

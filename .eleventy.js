@@ -1,3 +1,5 @@
+const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
+
 // Collections
 const getPosts = collection => {
   return collection.getFilteredByGlob('docs/_posts/**/*.md');
@@ -10,6 +12,9 @@ const getPets = collection => {
 };
 const getRecipes = collection => {
   return collection.getFilteredByGlob('docs/_recipes/**/*.md');
+};
+const getPortfolio = collection => {
+  return collection.getFilteredByGlob('docs/_portfolio/**/*.md');
 };
 
 // Setting up Markdownify
@@ -36,7 +41,25 @@ md.use(markdownItAnchor);
 // Allow for data files to be in yaml
 const yaml = require("js-yaml");
 
-module.exports = function(eleventyConfig) {
+module.exports = async function(eleventyConfig) {
+
+  const { EleventyHtmlBasePlugin } = await import("@11ty/eleventy");
+	eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
+
+  eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+    // which file extensions to process
+    extensions: 'html',
+    // optional, output image formats
+    formats: ['jpg', 'webp'],
+    // optional, output image widths
+    widths: ['auto', 400, 800],
+    // optional, attributes assigned on <img> override these values.
+    defaultAttributes: {
+        loading: 'lazy',
+        sizes: '100vw',
+        decoding: 'async',
+    },
+  });
 
     // TODO Missing copy button
     // Can be created using this
@@ -48,12 +71,13 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addCollection('docs', getDocs);
     eleventyConfig.addCollection('pets', getPets);
     eleventyConfig.addCollection('recipes', getRecipes);
+    eleventyConfig.addCollection('portfolio', getPortfolio);
 
     // Pass through
     eleventyConfig.addPassthroughCopy("assets/css");
     eleventyConfig.addPassthroughCopy("assets/js");
     eleventyConfig.addPassthroughCopy("assets/images/");
-    eleventyConfig.addPassthroughCopy("docs/assets/images/", "assets/images");
+    eleventyConfig.addPassthroughCopy({"docs/assets/images": "assets/images"});
 
     // Setup shortcodes and filters
     eleventyConfig.setLibrary("md", md);
@@ -87,39 +111,13 @@ module.exports = function(eleventyConfig) {
     */
 
     // TODO FIX SHORTCODE TO REMOVE COLLECTION BASED STUFF
-    eleventyConfig.addShortcode("post_url", (slug) => {
-      try {
-        if (typeof slug !== "string")
-          throw "Slug is an invalid type - it must be a string!";
-  
-        const found = collections.all.find((p) => p.fileSlug.includes(slug));
-        if (found === 0 || found === undefined)
-          throw `${slug} not found in specified collection.`;
-        else return found.url;
-      } catch (e) {
-        console.error(
-          `An error occured while searching for the url to ${slug}. Details:`,
-          e
-        );
-      }
+    eleventyConfig.addShortcode("post_url", (url) => {
+      return url;
     });
 
     // TODO FIX SHORTCODE TO REMOVE COLLECTION BASED STUFF
-    eleventyConfig.addShortcode("link", (slug) => {
-      try {
-        if (typeof slug !== "string")
-          throw "Slug is an invalid type - it must be a string!";
-  
-        const found = collections.all.find((p) => p.fileSlug.includes(slug));
-        if (found === 0 || found === undefined)
-          throw `${slug} not found in specified collection.`;
-        else return found.url;
-      } catch (e) {
-        console.error(
-          `An error occured while searching for the url to ${slug}. Details:`,
-          e
-        );
-      }
+    eleventyConfig.addShortcode("link", (url) => {
+      return url;  
     });
 
     // @source https://24ways.org/2018/turn-jekyll-up-to-eleventy/
@@ -148,6 +146,7 @@ module.exports = function(eleventyConfig) {
         htmlTemplateEngine: "liquid",
         dataTemplateEngine: "html",
         output: "_site",
+        pathPrefix: "/minimal-mistakes"
       },
     };
 };
