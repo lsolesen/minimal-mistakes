@@ -6,7 +6,7 @@ header:
   teaser: assets/images/unsplash-gallery-image-1-th.jpg
 sidebar:
   - title: "Role"
-    image: http://placehold.it/350x250
+    image: /assets/images/placeholder/350x250.png
     image_alt: "logo"
     text: "Designer, Front-End Developer"
   - title: "Responsibilities"
