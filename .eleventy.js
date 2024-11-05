@@ -99,6 +99,32 @@ module.exports = async function(eleventyConfig) {
         md.render(markdownString),
     );
 
+    // Create computed excerpts per page
+    eleventyConfig.addGlobalData("eleventyComputed.excerpt", () => (data) => {
+      // If property is explicitly set, use that
+      if (data.excerpt) {
+        return data.excerpt;
+      }
+
+      // Grab raw page content
+      let content = data.page.rawInput;
+
+      // If template uses Markdown, render it
+      if (data.page.templateSyntax.includes('md')) {
+        content = md.render(content);
+      }
+
+      // Vanilla paragraphs ending in period, question or exclamation
+      const matches = content.match(/<p>(.+[\.\?\!])<\/p>/);
+
+      // If found, return content
+      if (matches) {
+        return matches[1];
+      }
+
+      return null;
+    });
+
     // TODO FIX SHORTCODE TO REMOVE COLLECTION BASED STUFF
     eleventyConfig.addFilter("absolute_url", (url) =>
       url,
