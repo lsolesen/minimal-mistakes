@@ -22,10 +22,9 @@ TODO FIX?
 {% endcomment %}
 
 <div class="page__hero{% if header.overlay_color or header.overlay_image %}--overlay{% endif %}"
-  style="{% if header.overlay_color %}background-color: {{ header.overlay_color | default: 'transparent' }};{% endif %} {% if overlay_img_path %}background-image: {% if overlay_filter %}{{ overlay_filter }}, {% endif %}url('{{ overlay_img_path | htmlBaseUrl }}');{% endif %}"
->
+  style="{% if header.overlay_color %}background-color: {{ header.overlay_color | default: 'transparent' }};{% endif %}">
   {% if header.overlay_color or header.overlay_image %}
-    <div class="wrapper">
+    <div class="wrapper" style="position: relative; z-index: 1;">
       <h1 id="page-title" class="page__title" itemprop="headline">
         {% if paginator and site.paginate_show_page_num %}
           {{ site.title }}{% unless paginator.page == 1 %} {{ site.data.ui-text[site.locale].page | default: "Page" }} {{ paginator.page }}{% endunless %}
@@ -47,6 +46,9 @@ TODO FIX?
         </p>
       {% endif %}
     </div>
+    {% if header.overlay_image %}
+      <img src="{{ overlay_img_path }}" alt="" loading="eager" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0;">
+    {% endif %}
   {% else %}
     <img src="{{ header.image | relative_url }}" alt="{{ image_description }}" class="page__hero-image">
   {% endif %}
