@@ -91,6 +91,8 @@
 <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
 <noscript><link rel="stylesheet" href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" as="style"></noscript>
 
+<meta name="generator" content="Eleventy v3.0.0">
+
 
 
     <!-- start custom head snippets -->
@@ -168,7 +170,7 @@
   
     <div class="author__avatar">
       <a href="/minimal-mistakes/">
-        <picture><source type="image/webp" srcset="/minimal-mistakes/img/4AlpoBDRnB-160.webp 160w" sizes="100vw"><img loading="lazy" decoding="async" src="/minimal-mistakes/img/4AlpoBDRnB-160.jpeg" alt="Michael Rose" itemprop="image" class="u-photo" width="160" height="160"></picture>
+        <picture><source type="image/png" srcset="/minimal-mistakes/img/4AlpoBDRnB-160.png 160w" sizes="100vw"><source type="image/webp" srcset="/minimal-mistakes/img/4AlpoBDRnB-160.webp 160w" sizes="100vw"><img loading="lazy" decoding="async" src="/minimal-mistakes/img/4AlpoBDRnB-160.jpeg" alt="Michael Rose" itemprop="image" class="u-photo" width="160" height="160"></picture>
       </a>
     </div>
   
@@ -323,8 +325,14 @@
           <aside class="sidebar__right ">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> Getting Started</h4></header>
-              <ul class="toc__menu"><li><a href="#step-1%3A-remove-theme-files">Step 1: Remove Theme Files</a></li><li><a href="#step-2%3A-update-gemfile">Step 2: Update Gemfile</a></li><li><a href="#step-3%3A-run-bundler">Step 3: Run Bundler</a></li><li><a href="#step-4%3A-install-the-theme">Step 4: Install the Theme</a></li><li><a href="#step-5%3A-jekyll-new-tweaks">Step 5: jekyll new Tweaks</a></li></ul>
-            </nav>
+              <ul class="toc__menu"><li><a href="#step-1%3A-remove-theme-files">Step 1: Remove Theme Files</a></li><li><a href="#step-2%3A-update-gemfile">Step 2: Update Gemfile</a></li><li><a href="#step-3%3A-run-bundler">Step 3: Run Bundler</a></li><li><a href="#step-4%3A-install-the-theme">Step 4: Install the Theme</a></li><li><a href="#step-5%3A-jekyll-new-tweaks">Step 5: jekyll new Tweaks</a></li><li><a href="#fn1">
+
+
+You could also run bundle update jekyll to update Jekyll. ↩︎
+
+
+</a>
+            </li></ul></nav>
           </aside>
         
         <p>Hot on the heels of Jekyll v3.3.0 is a beta release of Minimal Mistakes... as a gemified theme.</p>
@@ -335,8 +343,7 @@
 <p>Remove <code>_includes</code>, <code>_layouts</code>, <code>_sass</code>, <code>assets</code> folders and files within. You won't need these anymore as they're bundled in the theme.</p>
 <p>If you customized any of these then leave them alone and only remove the untouched ones. If setup correctly your modified versions should act as <a href="http://jekyllrb.com/docs/themes/#overriding-theme-defaults">overrides</a> to the versions bundled with the theme.</p>
 <h2 id="step-2%3A-update-gemfile" tabindex="-1">Step 2: Update <code>Gemfile</code></h2>
-<p>Replace <code>gem &quot;github-pages</code> or <code>gem &quot;jekyll&quot;</code> with <code>gem &quot;jekyll&quot;, &quot;~&gt; 3.3.0&quot;</code>. You'll need the latest version of Jekyll[^update-jekyll] for Minimal Mistakes to work and load all of the /assets/ properly.</p>
-<p>[^update-jekyll]: You could also run <code>bundle update jekyll</code> to update Jekyll.</p>
+<p>Replace <code>gem &quot;github-pages</code> or <code>gem &quot;jekyll&quot;</code> with <code>gem &quot;jekyll&quot;, &quot;~&gt; 3.3.0&quot;</code>. You'll need the latest version of Jekyll<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup> for Minimal Mistakes to work and load all of the /assets/ properly.</p>
 <p>Add the Minimal Mistakes theme gem:</p>
 <pre class="language-ruby"><code class="language-ruby">gem <span class="token string-literal"><span class="token string">"minimal-mistakes-jekyll"</span></span></code></pre>
 <p>When finished your <code>Gemfile</code> should look something like this:</p>
@@ -365,6 +372,13 @@ gem <span class="token string-literal"><span class="token string">"minimal-mista
 <p>That's it! If all goes well running <code>bundle exec jekyll serve</code> should spin-up your site. If you encounter any bumps please file an issue on GitHub and make sure to indicate you're testing the pre-release Ruby gem version.</p>
 <p><a href="https://github.com/mmistakes/minimal-mistakes/issues/new" class="btn btn--info btn--large">File an issue</a></p>
 <p>Thanks!</p>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>You could also run <code>bundle update jekyll</code> to update Jekyll. <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
 
         
       </section>
@@ -467,7 +481,7 @@ gem <span class="token string-literal"><span class="token string">"minimal-mista
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-        <picture><source type="image/webp" srcset="/minimal-mistakes/img/j8nA1SMfYm-400.webp 400w, /minimal-mistakes/img/j8nA1SMfYm-500.webp 500w" sizes="100vw"><img loading="lazy" decoding="async" src="/minimal-mistakes/img/j8nA1SMfYm-400.jpeg" alt="" width="500" height="300" srcset="/minimal-mistakes/img/j8nA1SMfYm-400.jpeg 400w, /minimal-mistakes/img/j8nA1SMfYm-500.jpeg 500w" sizes="100vw"></picture>
+        <picture><source type="image/png" srcset="/minimal-mistakes/img/j8nA1SMfYm-400.png 400w, /minimal-mistakes/img/j8nA1SMfYm-500.png 500w" sizes="100vw"><source type="image/webp" srcset="/minimal-mistakes/img/j8nA1SMfYm-400.webp 400w, /minimal-mistakes/img/j8nA1SMfYm-500.webp 500w" sizes="100vw"><img loading="lazy" decoding="async" src="/minimal-mistakes/img/j8nA1SMfYm-400.jpeg" alt="" width="500" height="300" srcset="/minimal-mistakes/img/j8nA1SMfYm-400.jpeg 400w, /minimal-mistakes/img/j8nA1SMfYm-500.jpeg 500w" sizes="100vw"></picture>
       </div>
     
     <h2 class="archive__item-title no_toc" itemprop="headline">

@@ -91,6 +91,8 @@
 <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
 <noscript><link rel="stylesheet" href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" as="style"></noscript>
 
+<meta name="generator" content="Eleventy v3.0.0">
+
 
 
     <!-- start custom head snippets -->
@@ -319,7 +321,7 @@
       <section class="page__content" itemprop="text">
         
         <p>Text for UI elements, <code>_layouts</code>, and <code>_includes</code> grouped together as a set of translation keys. This is by no means a full-on i18n solution, but it does help make customizing theme text a bit easier.</p>
-<p>The English[^yaml-anchors] main keys in <a href="https://github.com/mmistakes/minimal-mistakes/blob/master/_data/ui-text.yml"><code>_data/ui-text.yml</code></a> are translated in the following languages:</p>
+<p>The English<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup> main keys in <a href="https://github.com/mmistakes/minimal-mistakes/blob/master/_data/ui-text.yml"><code>_data/ui-text.yml</code></a> are translated in the following languages:</p>
 <ul>
 <li>Arabic (عربي)</li>
 <li>Brazilian Portuguese (Português brasileiro)</li>
@@ -356,10 +358,16 @@
 <li>Vietnamese</li>
 </ul>
 <p>If you're are interested in localizing them into other languages feel free to submit a pull request and I will be happy to look it over.</p>
-<p>[^yaml-anchors]: <code>en-US</code>, and <code>en-GB</code> use <a href="http://www.yaml.org/spec/1.2/spec.html#id2785586">YAML anchors</a> to reference the values in <code>en</code> as to not repeat them.</p>
 <p>Many of the label based keys like <code>meta_label</code>, <code>categories_label</code>, <code>tags_label</code>, <code>share_on_label</code>, and <code>follow_label</code> can be left blank if you'd like to omit them from view. It really depends on you and if you want an even more minimal look to your site.</p>
-<p><picture><source type="image/webp" srcset="/minimal-mistakes/img/_OryyvmW_F-400.webp 400w, /minimal-mistakes/img/_OryyvmW_F-800.webp 800w, /minimal-mistakes/img/_OryyvmW_F-900.webp 900w" sizes="100vw"><img loading="lazy" decoding="async" src="/minimal-mistakes/img/_OryyvmW_F-400.jpeg" alt="UI text labels" width="900" height="717" srcset="/minimal-mistakes/img/_OryyvmW_F-400.jpeg 400w, /minimal-mistakes/img/_OryyvmW_F-800.jpeg 800w, /minimal-mistakes/img/_OryyvmW_F-900.jpeg 900w" sizes="100vw"></picture></p>
+<p><picture><source type="image/png" srcset="/minimal-mistakes/img/_OryyvmW_F-400.png 400w, /minimal-mistakes/img/_OryyvmW_F-800.png 800w, /minimal-mistakes/img/_OryyvmW_F-900.png 900w" sizes="100vw"><source type="image/webp" srcset="/minimal-mistakes/img/_OryyvmW_F-400.webp 400w, /minimal-mistakes/img/_OryyvmW_F-800.webp 800w, /minimal-mistakes/img/_OryyvmW_F-900.webp 900w" sizes="100vw"><img loading="lazy" decoding="async" src="/minimal-mistakes/img/_OryyvmW_F-400.jpeg" alt="UI text labels" width="900" height="717" srcset="/minimal-mistakes/img/_OryyvmW_F-400.jpeg 400w, /minimal-mistakes/img/_OryyvmW_F-800.jpeg 800w, /minimal-mistakes/img/_OryyvmW_F-900.jpeg 900w" sizes="100vw"></picture></p>
 <p class="notice--warning"><strong>Note:</strong> The theme comes with localized text in English (<code>en</code>, <code>en-US</code>, <code>en-GB</code>). If you change <code>locale</code> in <code>_config.yml</code> to something else, most of the UI text will go blank. Be sure to add the corresponding locale key and translated text to <code>_data/ui-text.yml</code> to avoid this.</p>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p><code>en-US</code>, and <code>en-GB</code> use <a href="http://www.yaml.org/spec/1.2/spec.html#id2785586">YAML anchors</a> to reference the values in <code>en</code> as to not repeat them. <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
 
         
       </section>

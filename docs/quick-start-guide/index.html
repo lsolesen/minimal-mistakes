@@ -91,6 +91,8 @@
 <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
 <noscript><link rel="stylesheet" href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" as="style"></noscript>
 
+<meta name="generator" content="Eleventy v3.0.0">
+
 
 
     <!-- start custom head snippets -->
@@ -321,21 +323,28 @@
           <aside class="sidebar__right sticky">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
-              <ul class="toc__menu"><li><a href="#documentation-has-not-been-rewritten-for-11ty">Documentation has NOT been rewritten for 11ty</a></li><li><a href="#installing-the-theme">Installing the theme</a><ul><li><a href="#gem-based-method">Gem-based method</a></li><li><a href="#remote-theme-method">Remote theme method</a></li><li><a href="#remove-the-unnecessary">Remove the Unnecessary</a></li></ul></li><li><a href="#setup-your-site">Setup Your Site</a><ul><li><a href="#starting-fresh">Starting Fresh</a></li><li><a href="#starting-from-jekyll-new">Starting from jekyll new</a></li><li><a href="#migrating-to-gem-version">Migrating to Gem Version</a><ul><li><a href="#update-gemfile">Update Gemfile</a></li></ul></li></ul></li></ul>
-            </nav>
+              <ul class="toc__menu"><li><a href="#documentation-has-not-been-rewritten-for-11ty">Documentation has NOT been rewritten for 11ty</a></li><li><a href="#installing-the-theme">Installing the theme</a><ul><li><a href="#gem-based-method">Gem-based method</a></li><li><a href="#remote-theme-method">Remote theme method</a></li><li><a href="#remove-the-unnecessary">Remove the Unnecessary</a></li></ul></li><li><a href="#setup-your-site">Setup Your Site</a><ul><li><a href="#starting-fresh">Starting Fresh</a></li><li><a href="#starting-from-jekyll-new">Starting from jekyll new</a></li><li><a href="#migrating-to-gem-version">Migrating to Gem Version</a><ul><li><a href="#update-gemfile">Update Gemfile</a></li><li><a href="#fn1">
+
+
+See Structure page for a list of theme files and what they do. ↩︎
+
+You could also run bundle update jekyll to update Jekyll. ↩︎
+
+
+</a>
+            </li></ul></li></ul></li></ul></nav>
           </aside>
         
         <p>Minimal Mistakes has been developed by Michael Rose for Jekyll. This is a port of that theme to use for 11ty. You can deploy it to Github Pages with Github Actions.</p>
 <p>You can sponsor Michael Rose on the links below.</p>
 <p><strong>If you enjoy this theme, please consider <a href="https://github.com/sponsors/mmistakes">sponsoring me</a> to continue developing and maintaining it.</strong></p>
-<p><a href="https://www.buymeacoffee.com/mmistakes"><picture><source type="image/webp" srcset="/minimal-mistakes/docs/quick-start-guide/QtXQ8lZKv5-142.webp 142w" sizes="100vw"><img loading="lazy" decoding="async" src="/minimal-mistakes/docs/quick-start-guide/QtXQ8lZKv5-142.jpeg" alt="&quot;Buy Me A Coffee&quot;" width="142" height="40"></picture></a></p>
-<p><a href="https://www.paypal.me/mmistakes"><picture><source type="image/webp" srcset="/minimal-mistakes/docs/quick-start-guide/8TIRH1l-nd-184.webp 184w, /minimal-mistakes/docs/quick-start-guide/8TIRH1l-nd-400.webp 400w, /minimal-mistakes/docs/quick-start-guide/8TIRH1l-nd-800.webp 800w" sizes="100vw"><img loading="lazy" decoding="async" src="/minimal-mistakes/docs/quick-start-guide/8TIRH1l-nd-184.jpeg" alt="Support via PayPal" width="800" height="178" srcset="/minimal-mistakes/docs/quick-start-guide/8TIRH1l-nd-184.jpeg 184w, /minimal-mistakes/docs/quick-start-guide/8TIRH1l-nd-400.jpeg 400w, /minimal-mistakes/docs/quick-start-guide/8TIRH1l-nd-800.jpeg 800w" sizes="100vw"></picture></a></p>
+<p><a href="https://www.buymeacoffee.com/mmistakes"><picture><source type="image/png" srcset="/minimal-mistakes/docs/quick-start-guide/QtXQ8lZKv5-142.png 142w" sizes="100vw"><source type="image/webp" srcset="/minimal-mistakes/docs/quick-start-guide/QtXQ8lZKv5-142.webp 142w" sizes="100vw"><img loading="lazy" decoding="async" src="/minimal-mistakes/docs/quick-start-guide/QtXQ8lZKv5-142.jpeg" alt="&quot;Buy Me A Coffee&quot;" width="142" height="40"></picture></a></p>
+<p><a href="https://www.paypal.me/mmistakes"><picture><source type="image/png" srcset="/minimal-mistakes/docs/quick-start-guide/8TIRH1l-nd-184.png 184w, /minimal-mistakes/docs/quick-start-guide/8TIRH1l-nd-400.png 400w, /minimal-mistakes/docs/quick-start-guide/8TIRH1l-nd-800.png 800w" sizes="100vw"><source type="image/webp" srcset="/minimal-mistakes/docs/quick-start-guide/8TIRH1l-nd-184.webp 184w, /minimal-mistakes/docs/quick-start-guide/8TIRH1l-nd-400.webp 400w, /minimal-mistakes/docs/quick-start-guide/8TIRH1l-nd-800.webp 800w" sizes="100vw"><img loading="lazy" decoding="async" src="/minimal-mistakes/docs/quick-start-guide/8TIRH1l-nd-184.jpeg" alt="Support via PayPal" width="800" height="178" srcset="/minimal-mistakes/docs/quick-start-guide/8TIRH1l-nd-184.jpeg 184w, /minimal-mistakes/docs/quick-start-guide/8TIRH1l-nd-400.jpeg 400w, /minimal-mistakes/docs/quick-start-guide/8TIRH1l-nd-800.jpeg 800w" sizes="100vw"></picture></a></p>
 <h2 id="documentation-has-not-been-rewritten-for-11ty" tabindex="-1">Documentation has NOT been rewritten for 11ty</h2>
 <p>The docs has NOT been rewritten for 11ty yet.</p>
 <hr>
 <h2 id="installing-the-theme" tabindex="-1">Installing the theme</h2>
 <p>If you're running Jekyll v3.7+ and self-hosting you can quickly install the theme as a Ruby gem.</p>
-<p>[^structure]: See <a href="/minimal-mistakes/docs/structure/"><strong>Structure</strong> page</a> for a list of theme files and what they do.</p>
 <p class="notice--info"><strong>ProTip:</strong> Be sure to remove <code>/docs</code> and <code>/test</code> if you forked Minimal Mistakes. These folders contain documentation and test pages for the theme and you probably don't want them littering up your repo.</p>
 <p class="notice--warning"><strong>Note:</strong> The theme uses the <a href="https://github.com/benbalter/jekyll-include-cache">jekyll-include-cache</a> plugin which will need to be installed in your <code>Gemfile</code> and added to the <code>plugins</code> array of <code>_config.yml</code>. Otherwise you'll throw <code>Unknown tag 'include_cached'</code> errors at build.</p>
 <h3 id="gem-based-method" tabindex="-1">Gem-based method</h3>
@@ -383,12 +392,12 @@ gem <span class="token string-literal"><span class="token string">"jekyll-includ
 <p class="notice--warning"><strong>Note:</strong> Your Jekyll site should be viewable immediately at <a href="http://USERNAME.github.io">http://USERNAME.github.io</a>. If it's not, you can force a rebuild by <strong>Customizing Your Site</strong> (see below for more details).</p>
 <p>If you're hosting several Jekyll based sites under the same GitHub username you will have to use Project Pages instead of User Pages. Essentially you rename the repo to something other than <strong><a href="http://USERNAME.github.io">USERNAME.github.io</a></strong> and create a <code>gh-pages</code> branch off of <code>master</code>. For more details on how to set things up check <a href="https://help.github.com/articles/user-organization-and-project-pages/">GitHub's documentation</a>.</p>
 <figure>
-  <picture><source type="image/webp" srcset="/minimal-mistakes/img/eOC2VSmHxp-400.webp 400w, /minimal-mistakes/img/eOC2VSmHxp-800.webp 800w, /minimal-mistakes/img/eOC2VSmHxp-978.webp 978w" sizes="100vw"><img loading="lazy" decoding="async" src="/minimal-mistakes/img/eOC2VSmHxp-400.jpeg" alt="creating a new branch on GitHub" width="978" height="422" srcset="/minimal-mistakes/img/eOC2VSmHxp-400.jpeg 400w, /minimal-mistakes/img/eOC2VSmHxp-800.jpeg 800w, /minimal-mistakes/img/eOC2VSmHxp-978.jpeg 978w" sizes="100vw"></picture>
+  <picture><source type="image/png" srcset="/minimal-mistakes/img/eOC2VSmHxp-400.png 400w, /minimal-mistakes/img/eOC2VSmHxp-800.png 800w, /minimal-mistakes/img/eOC2VSmHxp-978.png 978w" sizes="100vw"><source type="image/webp" srcset="/minimal-mistakes/img/eOC2VSmHxp-400.webp 400w, /minimal-mistakes/img/eOC2VSmHxp-800.webp 800w, /minimal-mistakes/img/eOC2VSmHxp-978.webp 978w" sizes="100vw"><img loading="lazy" decoding="async" src="/minimal-mistakes/img/eOC2VSmHxp-400.jpeg" alt="creating a new branch on GitHub" width="978" height="422" srcset="/minimal-mistakes/img/eOC2VSmHxp-400.jpeg 400w, /minimal-mistakes/img/eOC2VSmHxp-800.jpeg 800w, /minimal-mistakes/img/eOC2VSmHxp-978.jpeg 978w" sizes="100vw"></picture>
 </figure>
-<p>You can also install the theme by copying all of the theme files[^structure] into your project.</p>
+<p>You can also install the theme by copying all of the theme files<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup> into your project.</p>
 <p>To do so fork the <a href="https://github.com/mmistakes/minimal-mistakes/fork">Minimal Mistakes theme</a>, then rename the repo to <strong><a href="http://USERNAME.github.io">USERNAME.github.io</a></strong> --- replacing <strong>USERNAME</strong> with your GitHub username.</p>
 <figure>
-  <picture><source type="image/webp" srcset="/minimal-mistakes/img/9E26WcrYtx-400.webp 400w, /minimal-mistakes/img/9E26WcrYtx-800.webp 800w, /minimal-mistakes/img/9E26WcrYtx-966.webp 966w" sizes="100vw"><img loading="lazy" decoding="async" src="/minimal-mistakes/img/9E26WcrYtx-400.jpeg" alt="fork Minimal Mistakes" width="966" height="325" srcset="/minimal-mistakes/img/9E26WcrYtx-400.jpeg 400w, /minimal-mistakes/img/9E26WcrYtx-800.jpeg 800w, /minimal-mistakes/img/9E26WcrYtx-966.jpeg 966w" sizes="100vw"></picture>
+  <picture><source type="image/png" srcset="/minimal-mistakes/img/9E26WcrYtx-400.png 400w, /minimal-mistakes/img/9E26WcrYtx-800.png 800w, /minimal-mistakes/img/9E26WcrYtx-966.png 966w" sizes="100vw"><source type="image/webp" srcset="/minimal-mistakes/img/9E26WcrYtx-400.webp 400w, /minimal-mistakes/img/9E26WcrYtx-800.webp 800w, /minimal-mistakes/img/9E26WcrYtx-966.webp 966w" sizes="100vw"><img loading="lazy" decoding="async" src="/minimal-mistakes/img/9E26WcrYtx-400.jpeg" alt="fork Minimal Mistakes" width="966" height="325" srcset="/minimal-mistakes/img/9E26WcrYtx-400.jpeg 400w, /minimal-mistakes/img/9E26WcrYtx-800.jpeg 800w, /minimal-mistakes/img/9E26WcrYtx-966.jpeg 966w" sizes="100vw"></picture>
 </figure>
 <p class="notice--info"><strong>GitHub Pages Alternatives:</strong> Looking to host your site for free and install/update the theme painlessly? <a href="https://www.netlify.com/blog/2015/10/28/a-step-by-step-guide-jekyll-3.0-on-netlify/">Netlify</a>, <a href="https://about.gitlab.com/2016/04/07/gitlab-pages-setup/">GitLab Pages</a>, and <a href="https://jekyllrb.com/docs/deployment/automated/#continuous-integration-service">Continuous Integration (CI) services</a> have you covered. In most cases all you need to do is connect your repository to them, create a simple configuration file, and install the theme following the <a href="#ruby-gem-method">Ruby Gem Method</a> above.</p>
 <h3 id="remove-the-unnecessary" tabindex="-1">Remove the Unnecessary</h3>
@@ -446,8 +455,7 @@ If you're hosting on GitHub Pages, you can copy the <a href="https://github.com/
 <p>From <code>v4.5.0</code> onwards, the default language files are read-in automatically via the <a href="https://github.com/ashmaroli/jekyll-data"><code>jekyll-data</code></a> plugin if it's installed. For sites hosted with GitHub Pages, you still need to copy the <a href="https://github.com/mmistakes/minimal-mistakes/blob/master/_data/ui-text.yml"><code>_data/ui-text.yml</code></a> file because the <code>jekyll-data</code> plugin <a href="https://docs.github.com/en/github/working-with-github-pages/about-github-pages-and-jekyll#plugins">is unsupported on GitHub Pages</a>.</p>
 <p>If you customized any of these files leave them alone, and only remove the untouched ones. If done correctly your modified versions should <a href="https://jekyllrb.com/docs/themes/#overriding-theme-defaults">override</a> the versions bundled with the theme and be used by Jekyll instead.</p>
 <h4 id="update-gemfile" tabindex="-1">Update Gemfile</h4>
-<p>Replace <code>gem &quot;github-pages</code> or <code>gem &quot;jekyll&quot;</code> with <code>gem &quot;jekyll&quot;, &quot;~&gt; 3.5&quot;</code>. You'll need the latest version of Jekyll[^update-jekyll] for Minimal Mistakes to work and load all of the theme's assets properly, this line forces Bundler to do that.</p>
-<p>[^update-jekyll]: You could also run <code>bundle update jekyll</code> to update Jekyll.</p>
+<p>Replace <code>gem &quot;github-pages</code> or <code>gem &quot;jekyll&quot;</code> with <code>gem &quot;jekyll&quot;, &quot;~&gt; 3.5&quot;</code>. You'll need the latest version of Jekyll<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup> for Minimal Mistakes to work and load all of the theme's assets properly, this line forces Bundler to do that.</p>
 <p>Add the Minimal Mistakes theme gem:</p>
 <pre class="language-ruby"><code class="language-ruby">gem <span class="token string-literal"><span class="token string">"minimal-mistakes-jekyll"</span></span></code></pre>
 <p>When finished your <code>Gemfile</code> should look something like this:</p>
@@ -459,6 +467,15 @@ gem <span class="token string-literal"><span class="token string">"minimal-mista
 <p class="notice--danger"><strong>v4 Breaking Change:</strong> Paths for image headers, overlays, teasers, <a href="/minimal-mistakes/docs/helpers/#gallery">galleries</a>, and <a href="/minimal-mistakes/docs/helpers/#feature-row">feature rows</a> have changed and now require a full path. Instead of just <code>image: filename.jpg</code> you'll need to use the full path eg: <code>image: /assets/images/filename.jpg</code>. The preferred location is now <code>/assets/images/</code> but can be placed elsewhere or externally hosted. This applies to image references in <code>_config.yml</code> and <code>author.yml</code> as well.</p>
 <hr>
 <p>That's it! If all goes well running <code>bundle exec jekyll serve</code> should spin-up your site.</p>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>See <a href="/minimal-mistakes/docs/structure/"><strong>Structure</strong> page</a> for a list of theme files and what they do. <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn2" class="footnote-item"><p>You could also run <code>bundle update jekyll</code> to update Jekyll. <a href="#fnref2" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
 
         
       </section>
