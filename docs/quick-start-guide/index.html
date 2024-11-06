@@ -323,7 +323,20 @@
           <aside class="sidebar__right sticky">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
-              <ul class="toc__menu"><li><a href="#documentation-has-not-been-rewritten-for-11ty">Documentation has NOT been rewritten for 11ty</a></li><li><a href="#installing-the-theme">Installing the theme</a><ul><li><a href="#gem-based-method">Gem-based method</a></li><li><a href="#remote-theme-method">Remote theme method</a></li><li><a href="#remove-the-unnecessary">Remove the Unnecessary</a></li></ul></li><li><a href="#setup-your-site">Setup Your Site</a><ul><li><a href="#starting-fresh">Starting Fresh</a></li><li><a href="#starting-from-jekyll-new">Starting from jekyll new</a></li><li><a href="#migrating-to-gem-version">Migrating to Gem Version</a><ul><li><a href="#update-gemfile">Update Gemfile</a></li><li><a href="#fn1">
+              <ul class="toc__menu"><li><a href="#installing-the-theme">Installing the theme</a></li><li><a href="#fnref1">
+Looking for an example? Use the Minimal Mistakes remote theme starter for the quickest method of getting a GitHub Pages hosted site up and running. Generate a new repository from the starter, replace sample content with your own, and configure as needed.
+Note: Your Jekyll site should be viewable immediately at http://USERNAME.github.io. If it's not, you can force a rebuild by Customizing Your Site (see below for more details).
+If you're hosting several Jekyll based sites under the same GitHub username you will have to use Project Pages instead of User Pages. Essentially you rename the repo to something other than USERNAME.github.io and create a gh-pages branch off of master. For more details on how to set things up check GitHub's documentation.
+
+  
+
+You can also install the theme by copying all of the theme files[1] into your project.
+To do so fork the Minimal Mistakes theme, then rename the repo to USERNAME.github.io --- replacing USERNAME with your GitHub username.
+
+  
+
+GitHub Pages Alternatives: Looking to host your site for free and install/update the theme painlessly? Netlify, GitLab Pages, and Continuous Integration (CI) services have you covered. In most cases all you need to do is connect your repository to them, create a simple configuration file, and install the theme following the Ruby Gem Method above.
+</a></li><li><a href="#remove-the-unnecessary">Remove the Unnecessary</a></li></ul><li><a href="#setup-your-site">Setup Your Site</a><ul><li><a href="#starting-fresh">Starting Fresh</a></li><li><a href="#starting-from-jekyll-new">Starting from jekyll new</a></li><li><a href="#migrating-to-gem-version">Migrating to Gem Version</a><ul><li><a href="#update-gemfile">Update Gemfile</a></li><li><a href="#fn1">
 
 
 See Structure page for a list of theme files and what they do. ↩︎
@@ -332,7 +345,7 @@ You could also run bundle update jekyll to update Jekyll. ↩︎
 
 
 </a>
-            </li></ul></li></ul></li></ul></nav>
+            </li></ul></li></ul></li></nav>
           </aside>
         
         <p>Minimal Mistakes has been developed by Michael Rose for Jekyll. This is a port of that theme to use for 11ty. You can deploy it to Github Pages with Github Actions.</p>
@@ -340,54 +353,12 @@ You could also run bundle update jekyll to update Jekyll. ↩︎
 <p><strong>If you enjoy this theme, please consider <a href="https://github.com/sponsors/mmistakes">sponsoring me</a> to continue developing and maintaining it.</strong></p>
 <p><a href="https://www.buymeacoffee.com/mmistakes"><picture><source type="image/png" srcset="/minimal-mistakes/docs/quick-start-guide/QtXQ8lZKv5-142.png 142w" sizes="100vw"><source type="image/webp" srcset="/minimal-mistakes/docs/quick-start-guide/QtXQ8lZKv5-142.webp 142w" sizes="100vw"><img loading="lazy" decoding="async" src="/minimal-mistakes/docs/quick-start-guide/QtXQ8lZKv5-142.jpeg" alt="&quot;Buy Me A Coffee&quot;" width="142" height="40"></picture></a></p>
 <p><a href="https://www.paypal.me/mmistakes"><picture><source type="image/png" srcset="/minimal-mistakes/docs/quick-start-guide/8TIRH1l-nd-184.png 184w, /minimal-mistakes/docs/quick-start-guide/8TIRH1l-nd-400.png 400w, /minimal-mistakes/docs/quick-start-guide/8TIRH1l-nd-800.png 800w" sizes="100vw"><source type="image/webp" srcset="/minimal-mistakes/docs/quick-start-guide/8TIRH1l-nd-184.webp 184w, /minimal-mistakes/docs/quick-start-guide/8TIRH1l-nd-400.webp 400w, /minimal-mistakes/docs/quick-start-guide/8TIRH1l-nd-800.webp 800w" sizes="100vw"><img loading="lazy" decoding="async" src="/minimal-mistakes/docs/quick-start-guide/8TIRH1l-nd-184.jpeg" alt="Support via PayPal" width="800" height="178" srcset="/minimal-mistakes/docs/quick-start-guide/8TIRH1l-nd-184.jpeg 184w, /minimal-mistakes/docs/quick-start-guide/8TIRH1l-nd-400.jpeg 400w, /minimal-mistakes/docs/quick-start-guide/8TIRH1l-nd-800.jpeg 800w" sizes="100vw"></picture></a></p>
-<h2 id="documentation-has-not-been-rewritten-for-11ty" tabindex="-1">Documentation has NOT been rewritten for 11ty</h2>
-<p>The docs has NOT been rewritten for 11ty yet.</p>
-<hr>
 <h2 id="installing-the-theme" tabindex="-1">Installing the theme</h2>
-<p>If you're running Jekyll v3.7+ and self-hosting you can quickly install the theme as a Ruby gem.</p>
+<p>You clone this repository, and then you are ready to add your own spin to the template.</p>
 <p class="notice--info"><strong>ProTip:</strong> Be sure to remove <code>/docs</code> and <code>/test</code> if you forked Minimal Mistakes. These folders contain documentation and test pages for the theme and you probably don't want them littering up your repo.</p>
-<p class="notice--warning"><strong>Note:</strong> The theme uses the <a href="https://github.com/benbalter/jekyll-include-cache">jekyll-include-cache</a> plugin which will need to be installed in your <code>Gemfile</code> and added to the <code>plugins</code> array of <code>_config.yml</code>. Otherwise you'll throw <code>Unknown tag 'include_cached'</code> errors at build.</p>
-<h3 id="gem-based-method" tabindex="-1">Gem-based method</h3>
-<p>With Gem-based themes, directories such as the <code>assets</code>, <code>_layouts</code>, <code>_includes</code>, and <code>_sass</code> are stored in the theme’s gem, hidden from your immediate view. This allows for easier installation and updating as you don't have to manage any of the theme files.</p>
-<p>To install as a Gem-based theme:</p>
-<ol>
-<li>
-<p>Add the following to your <code>Gemfile</code>:</p>
-<pre class="language-ruby"><code class="language-ruby">gem <span class="token string-literal"><span class="token string">"minimal-mistakes-jekyll"</span></span></code></pre>
-</li>
-<li>
-<p>Fetch and update bundled gems by running the following <a href="https://bundler.io/">Bundler</a> command:</p>
-<pre class="language-bash"><code class="language-bash">bundle</code></pre>
-</li>
-<li>
-<p>Set the <code>theme</code> in your project's Jekyll <code>_config.yml</code> file:</p>
-<pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">theme</span><span class="token punctuation">:</span> minimal<span class="token punctuation">-</span>mistakes<span class="token punctuation">-</span>jekyll</code></pre>
-</li>
-</ol>
-<p>To update the theme run <code>bundle update</code>.</p>
-<h3 id="remote-theme-method" tabindex="-1">Remote theme method</h3>
-<p>Remote themes are similar to Gem-based themes, but do not require <code>Gemfile</code> changes or whitelisting making them ideal for sites hosted with GitHub Pages.</p>
-<p>To install as a remote theme:</p>
-<ol>
-<li>
-<p>Create/replace the contents of your <code>Gemfile</code> with the following:</p>
-<pre class="language-ruby"><code class="language-ruby">source <span class="token string-literal"><span class="token string">"https://rubygems.org"</span></span>
-
-gem <span class="token string-literal"><span class="token string">"github-pages"</span></span><span class="token punctuation">,</span> <span class="token symbol">group</span><span class="token operator">:</span> <span class="token symbol">:jekyll_plugins</span>
-gem <span class="token string-literal"><span class="token string">"jekyll-include-cache"</span></span><span class="token punctuation">,</span> <span class="token symbol">group</span><span class="token operator">:</span> <span class="token symbol">:jekyll_plugins</span></code></pre>
-</li>
-<li>
-<p>Add <code>jekyll-include-cache</code> to the <code>plugins</code> array of your <code>_config.yml</code>.</p>
-</li>
-<li>
-<p>Fetch and update bundled gems by running the following <a href="https://bundler.io/">Bundler</a> command:</p>
-<pre class="language-bash"><code class="language-bash">bundle</code></pre>
-</li>
-<li>
-<p>Add <code>remote_theme: &quot;mmistakes/minimal-mistakes@&quot;</code> to your <code>_config.yml</code> file. Remove any other <code>theme:</code> or <code>remote_theme:</code> entry.</p>
-</li>
-</ol>
-<p>You may also optionally specify a branch, <a href="https://github.com/mmistakes/minimal-mistakes/tags">tag</a>, or commit to use by appending an @ and the Git ref (e.g., <code>mmistakes/minimal-mistakes@4.9.0</code> or <code>mmistakes/minimal-mistakes@bbf3cbc5fd64a3e1885f3f99eb90ba92af84063d</code>). This is useful when rolling back to older versions of the theme. If you don't specify a Git ref, the latest on <code>master</code> will be used.</p>
+<hr>
+<p>NOT UPDATED FURTER...</p>
+<hr>
 <p class="notice--info"><strong>Looking for an example?</strong> Use the <a href="https://github.com/mmistakes/mm-github-pages-starter/generate">Minimal Mistakes remote theme starter</a> for the quickest method of getting a GitHub Pages hosted site up and running. Generate a new repository from the starter, replace sample content with your own, and configure as needed.</p>
 <p class="notice--warning"><strong>Note:</strong> Your Jekyll site should be viewable immediately at <a href="http://USERNAME.github.io">http://USERNAME.github.io</a>. If it's not, you can force a rebuild by <strong>Customizing Your Site</strong> (see below for more details).</p>
 <p>If you're hosting several Jekyll based sites under the same GitHub username you will have to use Project Pages instead of User Pages. Essentially you rename the repo to something other than <strong><a href="http://USERNAME.github.io">USERNAME.github.io</a></strong> and create a <code>gh-pages</code> branch off of <code>master</code>. For more details on how to set things up check <a href="https://help.github.com/articles/user-organization-and-project-pages/">GitHub's documentation</a>.</p>
