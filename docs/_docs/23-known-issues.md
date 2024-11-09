@@ -22,3 +22,5 @@ Do search and replace on site.posts and other collections and replace it with co
 where filter does not work
 
 tags page and categories pages are not sorted by most items in the collection.
+
+No way to render future posts. They have been removed in `_data/eleventyComputed.js`

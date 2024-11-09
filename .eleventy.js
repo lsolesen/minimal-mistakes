@@ -1,21 +1,5 @@
+// Prepare to use image transformations
 const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
-
-// Collections
-const getPosts = collection => {
-  return collection.getFilteredByGlob('docs/_posts/**/*.md');
-};
-const getDocs = collection => {
-  return collection.getFilteredByGlob('docs/_docs/**/*.md');
-};
-const getPets = collection => {
-  return collection.getFilteredByGlob('docs/_pets/**/*.md');
-};
-const getRecipes = collection => {
-  return collection.getFilteredByGlob('docs/_recipes/**/*.md');
-};
-const getPortfolio = collection => {
-  return collection.getFilteredByGlob('docs/_portfolio/**/*.md');
-};
 
 // Setting up Markdownify
 const markdownIt = require("markdown-it");
@@ -45,8 +29,8 @@ const yaml = require("js-yaml");
 
 module.exports = async function (eleventyConfig) {
 
-    // Tags
-    eleventyConfig.addCollection('tagList', collection => {
+  // Tags
+  eleventyConfig.addCollection('tagList', collection => {
       const tagsSet = new Set();
       collection.getAll().forEach(item => {
           if (!item.data.tags) return;
@@ -100,6 +84,23 @@ module.exports = async function (eleventyConfig) {
       });
   });
 
+  // Collections
+  eleventyConfig.addCollection('posts', function(collection) {
+      return collection.getFilteredByGlob('docs/_posts/**/*.md');
+  });
+  eleventyConfig.addCollection('docs', function(collection) {
+      return collection.getFilteredByGlob('docs/_docs/**/*.md');
+  });
+  eleventyConfig.addCollection('pets', function(collection) {
+      return collection.getFilteredByGlob('docs/_pets/**/*.md');
+  });
+  eleventyConfig.addCollection('recipes', function(collection) {
+      return collection.getFilteredByGlob('docs/_recipes/**/*.md');
+  });
+  eleventyConfig.addCollection('portfolio', function(collection) {
+      return collection.getFilteredByGlob('docs/_portfolio/**/*.md');
+  });
+
   // Make it possible to have the site served in a sub directory
   const { EleventyHtmlBasePlugin } = await import("@11ty/eleventy");
   eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
@@ -123,13 +124,6 @@ module.exports = async function (eleventyConfig) {
   // Syntax highlighting with prism
   // TODO Missing copy button
   eleventyConfig.addPlugin(syntaxHighlight);
-
-  // Collections
-  eleventyConfig.addCollection('posts', getPosts);
-  eleventyConfig.addCollection('docs', getDocs);
-  eleventyConfig.addCollection('pets', getPets);
-  eleventyConfig.addCollection('recipes', getRecipes);
-  eleventyConfig.addCollection('portfolio', getPortfolio);
 
   // Pass through
   eleventyConfig.addPassthroughCopy("assets/css");
@@ -159,6 +153,11 @@ module.exports = async function (eleventyConfig) {
     }
 
     return words.join(' ');
+  });
+
+  // Configure excerpt
+  eleventyConfig.setFrontMatterParsingOptions({
+    excerpt: true
   });
 
   // Create computed excerpts per page if none has been explicitly set
@@ -276,11 +275,6 @@ module.exports = async function (eleventyConfig) {
 
   // Make it possible to use yaml as settings
   eleventyConfig.addDataExtension("yaml, yml", (contents) => yaml.load(contents));
-
-  // Configure excerpt
-  eleventyConfig.setFrontMatterParsingOptions({
-    excerpt: true
-  });
 
   return {
     dir: {
