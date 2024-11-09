@@ -45,7 +45,7 @@ const loadSearch = function() {
       instantsearch.widgets.searchBox({
         container: '.search-searchbar',
         {% unless site.algolia.powered_by == false %}poweredBy: true,{% endunless %}
-        placeholder: '{{ site.data.ui-text[site.locale].search_placeholder_text | default: "Enter your search term..." }}'
+        placeholder: '{{ ui-text[site.locale].search_placeholder_text | default: "Enter your search term..." }}'
       })
     );
     search.addWidget(
@@ -53,7 +53,7 @@ const loadSearch = function() {
         container: '.search-hits',
         templates: {
           item: hitTemplate,
-          empty: '{{ site.data.ui-text[site.locale].search_algolia_no_results | default: "No results" }}',
+          empty: '{{ ui-text[site.locale].search_algolia_no_results | default: "No results" }}',
         }
       })
     );

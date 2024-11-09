@@ -13,7 +13,7 @@ If you use id="" with gallery or feature_row, then you need to rewrite the front
 
 Do search and replace on site.posts and other collections and replace it with collections.posts and the like.
 
-site.data. has to be removed.
+ has to be removed.
 
 ## Known issues
 

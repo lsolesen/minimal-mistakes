@@ -19,7 +19,7 @@
 {%- endif -%}
 
 {%- assign author = author | default: authors[0] | default: site.author -%}
-{%- assign author = site.data.authors[author] | default: author -%}
+{%- assign author = authors[author] | default: author -%}
 
 {%- if author.twitter -%}
   {%- assign author_twitter = author.twitter | replace: "@", "" -%}
@@ -35,7 +35,7 @@
   {%- assign og_type = "website" -%}
 {%- endif -%}
 
-<title>{{ seo_title }}{% if paginator %}{% unless paginator.page == 1 %} {{ title_separator }} {{ site.data.ui-text[site.locale].page | default: "Page" }} {{ paginator.page }}{% endunless %}{% endif %}</title>
+<title>{{ seo_title }}{% if paginator %}{% unless paginator.page == 1 %} {{ title_separator }} {{ ui-text[site.locale].page | default: "Page" }} {{ paginator.page }}{% endunless %}{% endif %}</title>
 <meta name="description" content="{{ seo_description }}">
 
 {% if author.name %}

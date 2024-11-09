@@ -1,7 +1,7 @@
 {% assign posts = include.posts | where_exp: "post", "post.hidden != true" %}
 <div class="page__related">
   {% include before-related.html %}
-  <h2 class="page__related-title">{{ site.data.ui-text[site.locale].related_label | default: "You May Also Enjoy" }}</h2>
+  <h2 class="page__related-title">{{ ui-text[site.locale].related_label | default: "You May Also Enjoy" }}</h2>
   <div class="grid__wrapper">
     {% for post in posts limit:4 %}
       {% include archive-single.html type="grid" %}
