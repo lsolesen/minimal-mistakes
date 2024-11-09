@@ -45,19 +45,31 @@ const yaml = require("js-yaml");
 
 module.exports = async function (eleventyConfig) {
 
-  // Return the keys used in an object
-  eleventyConfig.addFilter("getKeys", target => {
-    return Object.keys(target);
+    // Tags
+    eleventyConfig.addCollection('tagList', collection => {
+      const tagsSet = new Set();
+      collection.getAll().forEach(item => {
+          if (!item.data.tags) return;
+          item.data.tags.filter(tag => !['posts', 'all'].includes(tag)).forEach(tag => tagsSet.add(tag));
+      });
+      return Array.from(tagsSet).sort();
   });
 
-  eleventyConfig.addFilter("filterTagList", function filterTagList(tags) {
-    return (tags || []).filter(tag => ["all", "posts"].indexOf(tag) === -1);
-  });
-
-  // Does not work with categories
-  // TODO Fix that we can have a list with categories
-  eleventyConfig.addFilter("filterCategoriesList", function filterCategoriesList(categories) {
-    return (categories || []).filter(category => ["all", "posts"].indexOf(category) === -1);
+  // Categories
+  eleventyConfig.addCollection('categoryList', collection => {
+      let catSet = {};
+      collection.getAll().forEach(item => {
+          if (!item.data.categories) return;
+          item.data.categories.filter(
+              cat => !['posts', 'all'].includes(cat)
+          ).forEach(
+              cat => {
+                  if (!catSet[cat]) { catSet[cat] = []; }
+                  catSet[cat].push(item)
+              }
+          );
+      });
+      return catSet;
   });
 
   // https://saadbess.com/blog/creating-a-content-recommendation-plugin-in-11ty/

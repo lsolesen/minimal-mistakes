@@ -1,4 +1,5 @@
-{% assign posts = site.categories[include.taxonomy] | where_exp: "post", "post.hidden != true" %}
+{% comment %}TODO - not working like this {% endcomment %}
+{% assign posts = collections.categories[include.taxonomy] | where_exp: "post", "post.hidden != true" %}
 {%- for post in posts -%}
   {% include archive-single.html %}
 {%- endfor -%}

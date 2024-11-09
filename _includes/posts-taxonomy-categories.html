@@ -1,8 +1,8 @@
 <ul class="taxonomy__index">
     {% for item in include.taxonomies %}
         <li>
-          <a href="#{{ item | slugify }}">
-            <strong>{{ item }}</strong> <span class="taxonomy__count">{{ collections[item].size }}</span>
+          <a href="#{{ item[0] | slugify }}">
+            <strong>{{ item[0] }}</strong> <span class="taxonomy__count">{{ item[1].size }}</span>
           </a>
         </li>
     {% endfor %}
@@ -10,10 +10,10 @@
 
 {% assign entries_layout = entries_layout | default: 'list' %}
 {% for taxonomy in include.taxonomies %}
-    <section id="{{ taxonomy | slugify }}" class="taxonomy__section">
-        <h2 class="archive__subtitle">{{ taxonomy }}</h2>
+    <section id="{{ taxonomy[0] | slugify }}" class="taxonomy__section">
+        <h2 class="archive__subtitle">{{ taxonomy[0] }}</h2>
         <div class="entries-{{ entries_layout }}">
-          {% for post in collections[taxonomy] %}
+          {% for post in collections.categoryList[taxonomy[0]] %}
             {% include archive-single.html type=entries_layout %}
           {% endfor %}
         </div>

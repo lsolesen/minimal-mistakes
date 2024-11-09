@@ -20,3 +20,5 @@ Do search and replace on site.posts and other collections and replace it with co
 --- does not render to en-dash
 
 where filter does not work
+
+tags page and categories pages are not sorted by most items in the collection.
