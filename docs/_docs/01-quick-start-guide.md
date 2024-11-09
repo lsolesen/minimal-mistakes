@@ -28,11 +28,7 @@ You clone this repository, and then you are ready to add your own spin to the te
 **ProTip:** Be sure to remove `/docs` and `/test` if you forked Minimal Mistakes. These folders contain documentation and test pages for the theme and you probably don't want them littering up your repo.
 {: .notice--info}
 
-***
-
-NOT UPDATED FURTER...
-
-***
+## NOT UPDATED FURTER
 
 **Looking for an example?** Use the [Minimal Mistakes remote theme starter](https://github.com/mmistakes/mm-github-pages-starter/generate) for the quickest method of getting a GitHub Pages hosted site up and running. Generate a new repository from the starter, replace sample content with your own, and configure as needed.
 {: .notice--info}

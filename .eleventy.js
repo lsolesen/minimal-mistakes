@@ -151,6 +151,11 @@ module.exports = async function (eleventyConfig) {
 
   // Create computed excerpts per page if none has been explicitly set
   eleventyConfig.addGlobalData("eleventyComputed.excerpt", () => (data) => {
+
+    if (JSON.stringify(data) === '{}') {
+      return "";
+    }
+
     // If property is explicitly set, use that
     if (data.excerpt) {
       return data.excerpt;
