@@ -270,7 +270,8 @@ module.exports = async function (eleventyConfig) {
   eleventyConfig.setLiquidOptions({
     jekyllInclude: true, // allow to use jekyll style include
     extname: ".liquid", // Use .liquid if not specified
-    dynamicPartials: false // allow to use feature_row without quotes
+    dynamicPartials: false, // allow to use feature_row without quotes
+    strictFilters: true
   });
 
   // Make it possible to use yaml as settings

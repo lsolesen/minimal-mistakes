@@ -2,8 +2,9 @@
 const isPageFromFuture = ({ date }) =>
     //process.env.ELEVENTY_ENV === "production" && date.getTime() > Date.now();
     date.getTime() > Date.now();
-  
-  module.exports = {
+const POST_DATE_RE = /(?<prefix>^.*\/)(?<date>\d{4}-(?:[0]\d|1[0-2])-(?:[0-2]\d|3[01]))-(?<suffix>.+)/;
+    
+module.exports = {
     permalink: (data) => {
       const { permalink, page } = data;
       if (isPageFromFuture(page)) return false;
@@ -16,4 +17,14 @@ const isPageFromFuture = ({ date }) =>
   
       return eleventyExcludeFromCollections;
     },
-  };
+    date({ datePublished, page }) {
+      if (page.date) {
+        return page.date;
+      }
+      const { date } = page.inputPath?.match(POST_DATE_RE)?.groups ?? {};
+      if (!datePublished && date)
+        return new Date(date);
+      else
+        return datePublished;
+    },
+};
