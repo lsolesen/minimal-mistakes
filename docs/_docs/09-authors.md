@@ -5,11 +5,11 @@ excerpt: "Instructions and settings for working with multiple site authors."
 last_modified_at: 2018-09-10T12:33:24-04:00
 ---
 
-Sites that may have content authored from various individuals can be accommodated by using [data files](https://jekyllrb.com/docs/datafiles/).
+Sites that may have content authored from various individuals can be accommodated by using .
 
-To assign an author to a post or page that is different from the site author specified in `_config.yml`:
+To assign an author to a post or page that is different from the site author specified in `_data/site.yml`:
 
-**Step 1.** Create `_data/authors.yml` and add authors using the following format. Any variables found under `author:` in `_config.yml` can be used (e.g. `name`, `bio`, `avatar`, author `links`, etc.).
+**Step 1.** Create `_data/authors.yml` and add authors using the following format. Any variables found under `author:` in `_data/site.yml` can be used (e.g. `name`, `bio`, `avatar`, author `links`, etc.).
 
 ```yaml
 # /_data/authors.yml
