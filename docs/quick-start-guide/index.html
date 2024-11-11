@@ -50,7 +50,7 @@
 
 
 
-  <meta property="article:published_time" content="2024-11-11T21:31:13+00:00">
+  <meta property="article:published_time" content="2024-11-11T21:52:23+00:00">
 
 
 
@@ -304,7 +304,7 @@
   <article class="page h-entry" itemscope="" itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Quick-Start Guide">
     <meta itemprop="description" content="How to quickly install and setup Minimal Mistakes for use with GitHub Pages.">
-    <meta itemprop="datePublished" content="2024-11-11T21:31:13+00:00">
+    <meta itemprop="datePublished" content="2024-11-11T21:52:23+00:00">
     <meta itemprop="dateModified" content="2021-06-07T12:48:05+00:00">
 
     <div class="page__inner-wrap">
@@ -359,9 +359,8 @@ See Structure page for a list of theme files and what they do. ↩︎
 <figure>
   <picture><source type="image/png" srcset="/minimal-mistakes/img/9E26WcrYtx-400.png 400w, /minimal-mistakes/img/9E26WcrYtx-800.png 800w, /minimal-mistakes/img/9E26WcrYtx-966.png 966w" sizes="100vw"><source type="image/webp" srcset="/minimal-mistakes/img/9E26WcrYtx-400.webp 400w, /minimal-mistakes/img/9E26WcrYtx-800.webp 800w, /minimal-mistakes/img/9E26WcrYtx-966.webp 966w" sizes="100vw"><img loading="lazy" decoding="async" src="/minimal-mistakes/img/9E26WcrYtx-400.jpeg" alt="fork Minimal Mistakes" width="966" height="325" srcset="/minimal-mistakes/img/9E26WcrYtx-400.jpeg 400w, /minimal-mistakes/img/9E26WcrYtx-800.jpeg 800w, /minimal-mistakes/img/9E26WcrYtx-966.jpeg 966w" sizes="100vw"></picture>
 </figure>
-<p class="notice--info"><strong>GitHub Pages Alternatives:</strong> Looking to host your site for free and install/update the theme painlessly? <a href="https://www.netlify.com/blog/2015/10/28/a-step-by-step-guide-jekyll-3.0-on-netlify/">Netlify</a>, <a href="https://about.gitlab.com/2016/04/07/gitlab-pages-setup/">GitLab Pages</a>, and <a href="https://jekyllrb.com/docs/deployment/automated/#continuous-integration-service">Continuous Integration (CI) services</a> have you covered. In most cases all you need to do is connect your repository to them, create a simple configuration file, and install the theme following the <a href="#ruby-gem-method">Ruby Gem Method</a> above.</p>
 <h3 id="remove-the-unnecessary" tabindex="-1">Remove the Unnecessary</h3>
-<p>If you forked or downloaded the <code>minimal-mistakes-jekyll</code> repo you can safely remove the following folders and files:</p>
+<p>If you forked or downloaded the <code>minimal-mistakes-11ty</code> repo you can safely remove the following folders and files:</p>
 <ul>
 <li><code>.editorconfig</code></li>
 <li><code>.gitattributes</code></li>
@@ -369,20 +368,16 @@ See Structure page for a list of theme files and what they do. ↩︎
 <li><code>/docs</code></li>
 <li><code>/test</code></li>
 <li><code>CHANGELOG.md</code></li>
-<li><code>minimal-mistakes-jekyll.gemspec</code></li>
 <li><code>README.md</code></li>
 <li><code>screenshot-layouts.png</code></li>
 <li><code>screenshot.png</code></li>
 </ul>
-<p class="notice--warning"><strong>Note:</strong> If forking the theme be sure to update <code>Gemfile</code> as well. The one found at the root of the project is for building the theme's Ruby gem and is missing dependencies. To properly setup a <a href="https://github.com/mmistakes/minimal-mistakes/blob/master/docs/Gemfile"><code>Gemfile</code></a> with the theme, consult the &quot;<a href="https://mmistakes.github.io/minimal-mistakes/docs/installation/#install-dependencies">Install Dependencies</a>&quot; section.</p>
 <h2 id="setup-your-site" tabindex="-1">Setup Your Site</h2>
 <p>Depending on the path you took installing Minimal Mistakes you'll setup things a little differently.</p>
 <p class="notice--info"><strong>ProTip:</strong> The source code and content files for this site can be found in the <a href="https://github.com/mmistakes/minimal-mistakes/tree/master/docs"><code>/docs</code> folder</a> if you want to copy or learn from them.</p>
 <h3 id="starting-fresh" tabindex="-1">Starting Fresh</h3>
-<p>Starting with an empty folder and <code>Gemfile</code> you'll need to copy or re-create this <a href="https://github.com/mmistakes/minimal-mistakes/blob/master/_config.yml">default <code>_config.yml</code></a> file. For a full explanation of every setting be sure to read the <a href="/minimal-mistakes/docs/configuration/"><strong>Configuration</strong></a> section.</p>
-<p>From <code>v4.5.0</code> onwards, Minimal Mistakes theme-gem comes bundled with the necessary data files for localization.<br>
-They will be picked up automatically if you have the <a href="https://github.com/ashmaroli/jekyll-data"><code>jekyll-data</code></a> plugin installed.<br>
-If you're hosting on GitHub Pages, you can copy the <a href="https://github.com/mmistakes/minimal-mistakes/blob/master/_data/ui-text.yml"><code>_data/ui-text.yml</code></a> file into your repository for the localization feature to work.</p>
+<p>Starting with an empty folder and <code>package.json</code> you'll need to copy or re-create this <a href="https://github.com/mmistakes/minimal-mistakes/blob/master/_config.yml">default <code>_data/site.yml</code></a> file. For a full explanation of every setting be sure to read the <a href="/minimal-mistakes/docs/configuration/"><strong>Configuration</strong></a> section.</p>
+<p>If you're hosting on GitHub Pages, you can copy the <a href="https://github.com/mmistakes/minimal-mistakes/blob/master/_data/ui-text.yml"><code>_data/ui-text.yml</code></a> file into your repository for the localization feature to work.</p>
 <p>You'll need to create and edit these data files to customize them:</p>
 <ul>
 <li>
