@@ -1,7 +1,7 @@
 
 <!doctype html>
 <!--
-  Minimal Mistakes Jekyll Theme 4.26.2 by Michael Rose
+  Minimal Mistakes 11ty Theme 4.26.2 based on Michael Rose's Jekyll theme
   Copyright 2013-2024 Michael Rose - mademistakes.com | @mmistakes
   Free for personal and commercial use under the MIT license
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
@@ -50,7 +50,7 @@
 
 
 
-  <meta property="article:published_time" content="2024-11-11T13:06:50+00:00">
+  <meta property="article:published_time" content="2024-11-11T19:59:32+00:00">
 
 
 
@@ -304,7 +304,7 @@
   <article class="page h-entry" itemscope="" itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Upgrading">
     <meta itemprop="description" content="Instructions and suggestions for upgrading the theme.">
-    <meta itemprop="datePublished" content="2024-11-11T13:06:50+00:00">
+    <meta itemprop="datePublished" content="2024-11-11T19:59:32+00:00">
     <meta itemprop="dateModified" content="2024-04-22T16:43:19+00:00">
 
     <div class="page__inner-wrap">
@@ -329,32 +329,22 @@
           <aside class="sidebar__right sticky">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
-              <ul class="toc__menu"><li><a href="#ruby-gem">Ruby Gem</a></li><li><a href="#remote-theme">Remote theme</a></li><li><a href="#use-git">Use Git</a><ul><li><a href="#pull-down-updates">Pull down updates</a></li></ul></li><li><a href="#update-files-manually">Update files manually</a></li></ul>
+              <ul class="toc__menu"><li><a href="#use-git">Use Git</a><ul><li><a href="#pull-down-updates">Pull down updates</a></li></ul></li><li><a href="#update-files-manually">Update files manually</a></li></ul>
             </nav>
           </aside>
         
-        <p>If you're using the <a href="/minimal-mistakes/docs/quick-start-guide/#gem-based-method">Ruby Gem</a> or <a href="/minimal-mistakes/docs/quick-start-guide/#remote-theme-method">remote theme</a> versions of Minimal Mistakes, upgrading is fairly painless.</p>
-<p>To check which version you are currently using, view the source of your built site and you should see something similar to:</p>
+        <p>To check which version you are currently using, view the source of your built site and you should see something similar to:</p>
 <pre class="language-text"><code class="language-text"><!--
-  Minimal Mistakes Jekyll Theme 4.26.2 by Michael Rose
+  Minimal Mistakes 11ty Theme 4.26.2 based on Michael Rose's Jekyll theme
   Copyright 2013-2024 Michael Rose - mademistakes.com | @mmistakes
   Free for personal and commercial use under the MIT license
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
 -->
 </code></pre>
 <p>At the top of every <code>.html</code> file, <code>/assets/css/main.css</code>, and <code>/assets/js/main.min.js</code>.</p>
-<h2 id="ruby-gem" tabindex="-1">Ruby Gem</h2>
-<p>Simply run <code>bundle update</code> if you're using Bundler (have a <code>Gemfile</code>) or <code>gem update minimal-mistakes-jekyll</code> if you're not.</p>
-<p>When using Bundler you can downgrade or lock the theme to a specific release (<a href="https://github.com/mmistakes/minimal-mistakes/tags">tag</a>), branch, or commit. Instead of <code>gem &quot;minimal-mistakes-jekyll&quot;</code> you'd add the following to your <code>Gemfile</code>:</p>
-<pre class="language-ruby"><code class="language-ruby">gem <span class="token string-literal"><span class="token string">"minimal-mistakes-jekyll"</span></span><span class="token punctuation">,</span> <span class="token symbol">:git</span> <span class="token operator">=></span> <span class="token string-literal"><span class="token string">"https://github.com/mmistakes/minimal-mistakes.git"</span></span><span class="token punctuation">,</span> <span class="token symbol">:tag</span> <span class="token operator">=></span> <span class="token string-literal"><span class="token string">"4.26.2"</span></span></code></pre>
-<p>For more information on <a href="https://bundler.io/guides/git.html">installing gems from Git repositories</a> consult Bundler's documentation.</p>
-<h2 id="remote-theme" tabindex="-1">Remote theme</h2>
-<p>When setting <code>remote_theme: &quot;mmistakes/minimal-mistakes@4.26.2&quot;</code> in your <code>_config.yml</code> you may also optionally specify a branch, <a href="https://github.com/mmistakes/minimal-mistakes/tags">tag</a>, or commit to use by appending an @ and the Git ref.</p>
-<p>For example, you can roll back to release 4.8.1 with <code>mmistakes/minimal-mistakes@4.8.1</code> or a specific commit with <code>mmistakes/minimal-mistakes@bbf3cbc5fd64a3e1885f3f99eb90ba92af84063d</code>). For a complete list of theme versions consult the <a href="https://github.com/mmistakes/minimal-mistakes/releases">releases page</a>.</p>
-<p>To update the theme on GitHub Pages you'll need to push up a commit to force a rebuild. An empty commit works well if you don't have anything to push at the moment:</p>
-<pre class="language-terminal"><code class="language-terminal">git commit --allow-empty -m "Force rebuild of site"</code></pre>
+<p>If a new version has been released, then it might be worth your while to upgrade. You can do this using git.</p>
 <h2 id="use-git" tabindex="-1">Use Git</h2>
-<p>If you want to get the most out of the Jekyll + GitHub Pages workflow, then you'll need to utilize Git. To pull down theme updates you must first ensure there's an upstream remote. If you forked the theme's repo then you're likely good to go.</p>
+<p>If you want to get the most out of the 11ty + GitHub Pages workflow, then you'll need to utilize Git. To pull down theme updates you must first ensure there's an upstream remote. If you forked the theme's repo then you're likely good to go.</p>
 <p>To double check, run <code>git remote -v</code> and verify that you can fetch from <code>origin https://github.com/lsolesen/minimal-mistakes.git</code>.</p>
 <p>To add it you can do the following:</p>
 <pre class="language-terminal"><code class="language-terminal">git remote add upstream https://github.com/lsolesen/minimal-mistakes.git</code></pre>
