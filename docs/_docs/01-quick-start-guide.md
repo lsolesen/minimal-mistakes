@@ -52,16 +52,9 @@ To do so fork the [Minimal Mistakes theme](https://github.com/mmistakes/minimal-
   <img src="{{ '/assets/images/mm-theme-fork-repo.png' | relative_url }}" alt="fork Minimal Mistakes">
 </figure>
 
-**GitHub Pages Alternatives:** Looking to host your site for free and install/update the theme painlessly? [Netlify][netlify-jekyll], [GitLab Pages][gitlab-jekyll], and [Continuous Integration (CI) services][ci-jekyll] have you covered. In most cases all you need to do is connect your repository to them, create a simple configuration file, and install the theme following the [Ruby Gem Method](#ruby-gem-method) above.
-{: .notice--info}
-
-[netlify-jekyll]: https://www.netlify.com/blog/2015/10/28/a-step-by-step-guide-jekyll-3.0-on-netlify/
-[gitlab-jekyll]: https://about.gitlab.com/2016/04/07/gitlab-pages-setup/
-[ci-jekyll]: https://jekyllrb.com/docs/deployment/automated/#continuous-integration-service
-
 ### Remove the Unnecessary
 
-If you forked or downloaded the `minimal-mistakes-jekyll` repo you can safely remove the following folders and files:
+If you forked or downloaded the `minimal-mistakes-11ty` repo you can safely remove the following folders and files:
 
 - `.editorconfig`
 - `.gitattributes`
@@ -69,13 +62,9 @@ If you forked or downloaded the `minimal-mistakes-jekyll` repo you can safely re
 - `/docs`
 - `/test`
 - `CHANGELOG.md`
-- `minimal-mistakes-jekyll.gemspec`
 - `README.md`
 - `screenshot-layouts.png`
 - `screenshot.png`
-
-**Note:** If forking the theme be sure to update `Gemfile` as well. The one found at the root of the project is for building the theme's Ruby gem and is missing dependencies. To properly setup a [`Gemfile`](https://github.com/mmistakes/minimal-mistakes/blob/master/docs/Gemfile) with the theme, consult the "[Install Dependencies](https://mmistakes.github.io/minimal-mistakes/docs/installation/#install-dependencies)" section.
-{: .notice--warning}
 
 ## Setup Your Site
 
@@ -86,10 +75,8 @@ Depending on the path you took installing Minimal Mistakes you'll setup things a
 
 ### Starting Fresh
 
-Starting with an empty folder and `Gemfile` you'll need to copy or re-create this [default `_config.yml`](https://github.com/mmistakes/minimal-mistakes/blob/master/_config.yml) file. For a full explanation of every setting be sure to read the [**Configuration**]({{ "/docs/configuration/" | relative_url }}) section.
+Starting with an empty folder and `package.json` you'll need to copy or re-create this [default `_data/site.yml`](https://github.com/mmistakes/minimal-mistakes/blob/master/_config.yml) file. For a full explanation of every setting be sure to read the [**Configuration**]({{ "/docs/configuration/" | relative_url }}) section.
 
-From `v4.5.0` onwards, Minimal Mistakes theme-gem comes bundled with the necessary data files for localization.
-They will be picked up automatically if you have the [`jekyll-data`](https://github.com/ashmaroli/jekyll-data) plugin installed.
 If you're hosting on GitHub Pages, you can copy the [`_data/ui-text.yml`][ui-text.yml] file into your repository for the localization feature to work.
 
 You'll need to create and edit these data files to customize them:

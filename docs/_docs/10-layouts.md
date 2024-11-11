@@ -756,7 +756,7 @@ The `single` layout has an option to enable social links at the bottom of posts 
 
 ![default social share link buttons]({{ "/assets/images/mm-social-share-links-default.png" | relative_url }})
 
-To enable these links add `share: true` to a post or page's YAML Front Matter or use a [default](https://jekyllrb.com/docs/configuration/#front-matter-defaults) in your `_config.yml` to apply more globally.
+To enable these links add `share: true` to a post or page's YAML Front Matter or use a default in the directory configuration file to apply them more globally.
 
 If you'd like to add, remove, or change the order of these default links you can do so by editing [`_includes/social-share.html`](https://github.com/mmistakes/minimal-mistakes/blob/master/_includes/social-share.html).
 
