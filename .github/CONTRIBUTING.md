@@ -2,7 +2,7 @@
 
 Found a typo in the documentation or interested in [fixing a bug](https://github.com/mmistakes/minimal-mistakes/issues)? Then by all means [submit an issue](https://github.com/mmistakes/minimal-mistakes/issues/new) or [pull request](https://help.github.com/articles/using-pull-requests/). If this is your first pull request, it may be helpful to read up on the [GitHub Flow](https://guides.github.com/introduction/flow/) first.
 
-For help with using the theme or general Jekyll support questions, please use the [Jekyll Talk forums](https://talk.jekyllrb.com/).
+For help with using the theme or general 11ty support questions, please use the [11ty Community](https://www.11ty.dev/docs/community/).
 
 Minimal Mistakes has been designed as a base for you to customize and fit your 
 site's unique needs. Please keep this in mind when requesting features and/or 

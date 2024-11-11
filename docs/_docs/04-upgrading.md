@@ -6,8 +6,6 @@ last_modified_at: 2024-04-23T00:43:19+08:00
 toc: true
 ---
 
-If you're using the [Ruby Gem]({{ "/docs/quick-start-guide/#gem-based-method" | relative_url }}) or [remote theme]({{ "/docs/quick-start-guide/#remote-theme-method" | relative_url }}) versions of Minimal Mistakes, upgrading is fairly painless.
-
 To check which version you are currently using, view the source of your built site and you should see something similar to:
 
 ```text
@@ -16,35 +14,11 @@ To check which version you are currently using, view the source of your built si
 
 At the top of every `.html` file, `/assets/css/main.css`, and `/assets/js/main.min.js`.
 
-## Ruby Gem
-
-Simply run `bundle update` if you're using Bundler (have a `Gemfile`) or `gem update minimal-mistakes-jekyll` if you're not.
-
-When using Bundler you can downgrade or lock the theme to a specific release ([tag][tag]), branch, or commit. Instead of `gem "minimal-mistakes-jekyll"` you'd add the following to your `Gemfile`:
-
-```ruby
-gem "minimal-mistakes-jekyll", :git => "https://github.com/mmistakes/minimal-mistakes.git", :tag => "{{ theme.version }}"
-```
-
-  [tag]: https://github.com/mmistakes/minimal-mistakes/tags
-
-For more information on [installing gems from Git repositories](https://bundler.io/guides/git.html) consult Bundler's documentation.
-
-## Remote theme
-
-When setting `remote_theme: "mmistakes/minimal-mistakes@{{ theme.version }}"` in your `_config.yml` you may also optionally specify a branch, [tag][tag], or commit to use by appending an @ and the Git ref.
-
-For example, you can roll back to release 4.8.1 with `mmistakes/minimal-mistakes@4.8.1` or a specific commit with `mmistakes/minimal-mistakes@bbf3cbc5fd64a3e1885f3f99eb90ba92af84063d`). For a complete list of theme versions consult the [releases page](https://github.com/mmistakes/minimal-mistakes/releases).
-
-To update the theme on GitHub Pages you'll need to push up a commit to force a rebuild. An empty commit works well if you don't have anything to push at the moment:
-
-```terminal
-git commit --allow-empty -m "Force rebuild of site"
-```
+If a new version has been released, then it might be worth your while to upgrade. You can do this using git.
 
 ## Use Git
 
-If you want to get the most out of the Jekyll + GitHub Pages workflow, then you'll need to utilize Git. To pull down theme updates you must first ensure there's an upstream remote. If you forked the theme's repo then you're likely good to go.
+If you want to get the most out of the 11ty + GitHub Pages workflow, then you'll need to utilize Git. To pull down theme updates you must first ensure there's an upstream remote. If you forked the theme's repo then you're likely good to go.
 
 To double check, run `git remote -v` and verify that you can fetch from `origin https://github.com/{{ site.repository }}.git`.
 

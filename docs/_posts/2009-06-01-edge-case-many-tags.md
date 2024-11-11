@@ -23,7 +23,6 @@ tags:
   - gallery
   - html
   - image
-  - Jekyll
   - layout
   - link
   - Love

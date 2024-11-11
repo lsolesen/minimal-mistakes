@@ -279,7 +279,7 @@ module.exports = async function (eleventyConfig) {
 
   return {
     dir: {
-      input: "docs",
+      input: "./docs",
       includes: "../_includes",
       layouts: "../_layouts",
       htmlTemplateEngine: "liquid",

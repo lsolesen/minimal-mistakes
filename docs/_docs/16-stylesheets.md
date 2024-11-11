@@ -40,26 +40,8 @@ minimal-mistakes
 
 ## Customizing
 
-To override the default [Sass](http://sass-lang.com/guide) (located in theme's
-`_sass` directory), do one of the following:
-
-1. Copy directly from the Minimal Mistakes theme gem
-
-   - Go to your local Minimal Mistakes gem installation directory (run
-     `bundle show minimal-mistakes-jekyll` to get the path to it).
-   - Copy the contents of `/assets/css/main.scss` from there to
-     `<your_project>`.
-   - Customize what you want inside `<your_project>/assets/css/main.scss`.
-
-2. Copy from this repo.
-
-   - Copy the contents of [assets/css/main.scss](https://github.com/mmistakes/minimal-mistakes/blob/master/assets/css/main.scss)
-     to `<your_project>`.
-   - Customize what you want inside `<your_project/assets/css/main.scss`.
-
-**Note:** To make more extensive changes and customize the Sass partials bundled
-in the gem. You will need to copy the complete contents of the `_sass` directory
-to `<your_project>` due to the way Jekyll currently reads those files.
+To override the default [Sass](http://sass-lang.com/guide), customize what you want 
+inside `<your_project/assets/css/main.scss`.
 
 To make basic tweaks to theme's style Sass variables can be overridden by adding
 to `<your_project>/assets/css/main.scss`. For instance, to change the
