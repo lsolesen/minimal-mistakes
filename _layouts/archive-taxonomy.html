@@ -17,9 +17,9 @@ author_profile: false
 
   {% include "sidebar.html" %}
 
-  <div class="archive">
+  <div class="archive h-feed">
     {% unless header.overlay_color or header.overlay_image %}
-      <h1 id="page-title" class="page__title"{% if locale %} lang="{{ locale }}"{% endif %}>{{ title }}</h1>
+      <h1 id="page-title" class="page__title p-name"{% if locale %} lang="{{ locale }}"{% endif %}>{{ title }}</h1>
     {% endunless %}
     {% for post in posts %}
       {% include archive-single.html %}
