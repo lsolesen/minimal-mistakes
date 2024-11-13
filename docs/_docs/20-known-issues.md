@@ -36,3 +36,7 @@ Feed.xml not created.
 ## Tags and category pages could probably be improved
 
 Right now there is a lot of room for improvement on the tags and category pages.
+
+## Skin
+
+You have to set skin directly in `css/main.scss`. Found no way where I could just have it in site-configuration.
