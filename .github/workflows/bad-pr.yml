@@ -24,7 +24,7 @@ jobs:
         with:
           # Optional. Post an issue comment just before closing a pull request.
           comment: |
-            **You have created a Pull Request to the wrong repository.** This is the repository for [Minimal Mistakes][1], the free Jekyll theme. See [GitHub Docs: About pull requests][2] if you need help.
+            **You have created a Pull Request to the wrong repository.** This is the repository for [Minimal Mistakes][1], the free 11ty theme. See [GitHub Docs: About pull requests][2] if you need help.
 
               [1]: https://mmistakes.github.io/minimal-mistakes/
               [2]: https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests

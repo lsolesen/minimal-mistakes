@@ -28,3 +28,7 @@ No way to render future posts. They have been removed in `_data/eleventyComputed
 You have to set skin directly in css/main.scss. Found no way where I could just have it in site-configuration.
 
 Does not pull the date from the file-name at the moment.
+
+Pagination not setup.
+
+Feed.xml not created.

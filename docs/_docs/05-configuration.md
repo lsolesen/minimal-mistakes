@@ -25,32 +25,26 @@ skins:
     description: Oranges and red.
 ---
 
-Settings that affect your entire site can be changed in [Jekyll's configuration file](https://jekyllrb.com/docs/configuration/): `_config.yml`, found in the root of your project. If you don't have this file you'll need to copy or create one using the theme's [default `_config.yml`](https://github.com/mmistakes/minimal-mistakes/blob/master/_config.yml) as a base.
-
-**Note:** for technical reasons, `_config.yml` is NOT reloaded automatically when used with `jekyll serve`. If you make any changes to this file, please restart the server process for them to be applied.
-{: .notice--warning}
+Settings that affect your entire site can be changed in [11ty's configuration file](https://www.11ty.dev/docs/config/): `eleventy.js` found in the root of your project, and in `_data/site.yml`. If you don't have this file you'll need to copy or create one using the theme's [default `eleventy.js`](https://github.com/mmistakes/minimal-mistakes/blob/master/eleventy.js) as a base and the [default `site.yml`](https://github.com/mmistakes/minimal-mistakes/blob/master/_data/site.yml).
 
 Take a moment to look over the configuration file included with the theme. Comments have been added to provide examples and default values for most settings. Detailed explanations of each can be found below.
 
 ## Site settings
 
-### Theme
-
-If you're using the Ruby gem version of the theme you'll need this line to activate it:
-
-```yaml
-theme: minimal-mistakes-jekyll
-```
+Most of these settings are found in `_data/site.yml`.
 
 ### Skin
 
-Easily change the color scheme of the theme using one of the provided "skins":
+To change the "skin", you need to edit `/assets/css/main.css`:
 
-```yaml
-minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+```scss
+@import "../../_sass/minimal-mistakes/skins/default"; // skin
+@import "../../_sass/minimal-mistakes"; // main partials
 ```
 
-**Note:** If you have made edits to the theme's CSS files be sure to update [`/assets/css/main.scss`](https://github.com/mmistakes/minimal-mistakes/blob/master/assets/css/main.scss) to include {% raw %}`@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin`{% endraw %} before the `minimal-mistakes` import.
+Here you change `default` to another skin. You can choose between "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise".
+
+**Note:** If you have made edits to the theme's CSS files be sure to update [`/assets/css/main.scss`](https://github.com/mmistakes/minimal-mistakes/blob/master/assets/css/main.scss) to include {% raw %}`@import "minimal-mistakes/skins/default"; // skin`{% endraw %} before the `minimal-mistakes` import.
 {: .notice--warning}
 
 {% for skin in page.skins %}
@@ -82,7 +76,7 @@ _Example:_ `locale: "en-US"` sets the `lang` attribute for the site to the _Unit
 
 Properly setting the locale is important for associating localized text found in the [**UI Text**]({{ "/docs/ui-text/" | relative_url }}) data file. An improper match will cause parts of the UI to disappear (eg. button labels, section headings, etc).
 
-**Note:** The theme comes with localized text in English (`en`, `en-US`, `en-GB`). If you change `locale` in `_config.yml` to something else, most of the UI text will go blank. Be sure to add the corresponding locale key and translated text to `_data/ui-text.yml` to avoid this.
+**Note:** The theme comes with localized text in English (`en`, `en-US`, `en-GB`). If you change `locale` in `_data/site.yml` to something else, most of the UI text will go blank. Be sure to add the corresponding locale key and translated text to `_data/ui-text.yml` to avoid this.
 {: .notice--warning}
 
 ### Site title
@@ -110,14 +104,14 @@ Used to assign a site author. Don't worry, you can override the site author with
 
 _Example:_ `name: "Michael Rose"`.
 
-**ProTip:** If you want to get crafty with your YAML you can use [anchors](http://www.yaml.org/spec/1.2/spec.html#id2785586) to reuse values. For example `foo: &var "My String"` allows you to reuse `"My String"` elsewhere in `_config.yml` like so... `bar: *var`. You'll see a few examples of this in the provided Jekyll config.
+**ProTip:** If you want to get crafty with your YAML you can use [anchors](http://www.yaml.org/spec/1.2/spec.html#id2785586) to reuse values. For example `foo: &var "My String"` allows you to reuse `"My String"` elsewhere in `_data/site.yml` like so... `bar: *var`. You'll see a few examples of this in the provided config.
 {: .notice--info}
 
 ### Site description
 
 Fairly obvious. `site.description` describes the site. Used predominantly in meta descriptions for improving SEO.
 
-_Example:_ `description: "A flexible Jekyll theme for your blog or site with a minimalist aesthetic."`
+_Example:_ `description: "A flexible 11ty theme for your blog or site with a minimalist aesthetic."`
 
 ### Site URL
 
@@ -125,38 +119,13 @@ The base hostname and protocol for your site. If you're hosting on GitHub Pages 
 
 GitHub Pages now [forces `https://` for new sites](https://help.github.com/articles/securing-your-github-pages-site-with-https/) so be mindful of that when setting your URL to avoid mixed-content warnings.
 
-**Note:** Jekyll 3.3 overrides this value with `url: http://localhost:4000` when running `jekyll serve` locally in development. If you want to avoid this behavior set `JEKYLL_ENV=production` to [force the environment](https://jekyllrb.com/docs/configuration/environments/) to production.
-{: .notice--warning}
+### Site base URL and pathPrefix
 
-### Site base URL
+This little option causes all kinds of confusion in the 11ty community. If you're not hosting your site as a GitHub Pages Project or in a subfolder (eg: `/blog`), then don't mess with it.
 
-This little option causes all kinds of confusion in the Jekyll community. If you're not hosting your site as a GitHub Pages Project or in a subfolder (eg: `/blog`), then don't mess with it.
+***
 
-In the case of the Minimal Mistakes demo site it's hosted on GitHub at <https://mmistakes.github.io/minimal-mistakes>. To correctly set this base path I'd use `url: "https://mmistakes.github.io"` and `baseurl: "/minimal-mistakes"`.
-
-For more information on how to properly use `site.url` and `site.baseurl` as intended by the Jekyll maintainers, check [Parker Moore's post on the subject](https://byparker.com/blog/2014/clearing-up-confusion-around-baseurl/).
-
-**Note:** When using `baseurl` remember to include it as part of your path when testing your site locally. Values of `url:` and `baseurl: "/blog"` would make your local site visible at `http://localhost:4000/blog` and not `http://localhost:4000`.
-{: .notice--warning}
-
-### Site repository
-
-Add your repository name with organization to your site's configuration file, `_config.yml`.
-
-```yaml
-repository: "username/repo-name"
-```
-
-"NWO" stands for "**n**ame **w**ith **o**wner." It is GitHub lingo for the username of the owner of the repository plus a forward slash plus the name of the repository, e.g. `mmistakes/minimal-mistakes`, where **mmistakes** is the owner and **minimal-mistakes** is the repository name.
-
-Your `site.github.*` fields should be filled in like normal. If you run Jekyll with the `--verbose` flag, you should be able to see all the API calls made.
-
-If you don't set `repository` correctly you may see the following error when trying to `serve` or `build` your Jekyll site:
-
-**Liquid Exceptions:** No repo name found. Specify using `PAGES_REPO_NWO` environment variables, `repository` in your configuration, or set up `origin` git remote pointing to your github.com repository.
-{: .notice--danger}
-
-For more information on how `site.github` data can be used with Jekyll check out [`github-metadata`'s documentation](https://github.com/jekyll/github-metadata).
+In the case of the Minimal Mistakes demo site it's hosted on GitHub at <https://mmistakes.github.io/minimal-mistakes>. To correctly set this base path I'd use `url: "https://mmistakes.github.io"` and `pathPrefix: "/minimal-mistakes"` setting in `eleventy.js` or use it as a parameter on runtime..
 
 ### Site scripts
 
@@ -175,7 +144,7 @@ Consult the [JavaScript documentation]({% link collections.docs, "17-javascript.
 
 ### Site default teaser image
 
-To assign a fallback teaser image used in the "**Related Posts**" module, place a graphic in the `/assets/images/` directory and add the filename to `_config.yml` like so:
+To assign a fallback teaser image used in the "**Related Posts**" module, place a graphic in the `/assets/images/` directory and add the filename to `_data/site.yml` like so:
 
 ```yaml
 teaser: /assets/images/500x300.png
@@ -195,7 +164,7 @@ header:
 
 ### Site masthead logo
 
-To insert a logo before the site title, place a graphic in the `/assets/images/` directory and add the filename to `_config.yml`:
+To insert a logo before the site title, place a graphic in the `/assets/images/` directory and add the filename to `_data/site.yml`:
 
 ```yaml
 logo: "/assets/images/88x88.png"
@@ -208,7 +177,7 @@ logo: "/assets/images/88x88.png"
 
 ### Site masthead title
 
-By default your site title is used in the masthead. You can override this text by adding the following to your `_config.yml`:
+By default your site title is used in the masthead. You can override this text by adding the following to your `_data/site.yml`:
 
 ```yaml
 masthead_title: "My Custom Title"
@@ -225,7 +194,7 @@ _Example:_ `rtl: true` sets the direction of the page to right to left. By defau
 Enable breadcrumb links to help visitors better navigate deep sites. Because of the fragile method of implementing them they don't always produce accurate links reliably. For best results:
 
 1. Use a category based permalink structure e.g. `permalink: /:categories/:title/`
-2. Manually create pages for each category or use a plugin like [jekyll-archives][jekyll-archives] to auto-generate them. If these pages don't exist breadcrumb links to them will be broken.
+2. Manually create pages for each category or use a [Zero Maintenance Tag Pages for your Blog](https://www.11ty.dev/docs/quicktips/tag-pages/) to auto-generate them. If these pages don't exist breadcrumb links to them will be broken.
 
 ![breadcrumb navigation example]({{ "/assets/images/mm-breadcrumbs-example.jpg" | relative_url }})
 
@@ -241,7 +210,7 @@ Enable post date snippets with `show_date: true` in YAML Front Matter.
 
 ![post date example]({{ "/assets/images/mm-post-date-example.png" | relative_url }})
 
-Instead of adding `show_date: true` to each post, apply as a default in `_config.yml` like so:
+Instead of adding `show_date: true` to each post, apply as a default in `_data/site.yml` like so:
 
 ```yaml
 defaults:
@@ -253,9 +222,9 @@ defaults:
       show_date: true
 ```
 
-To disable post date for a post, add `show_date: false` to its YAML Front Matter, overriding what was set in `_config.yml`.
+To disable post date for a post, add `show_date: false` to its YAML Front Matter, overriding what was set in `_data/site.yml`.
 
-When dates are shown on blog posts or pages, a date format will be chosen to format the date string. The default format is `"%B %-d, %Y"`, which will be displayed like "February 24, 2016". You can choose your date format by referencing this [cheat sheet](https://www.shortcutfoo.com/app/dojos/ruby-date-format-strftime/cheatsheet). For example, use your date format in `_config.yml`.
+When dates are shown on blog posts or pages, a date format will be chosen to format the date string. The default format is `"%B %-d, %Y"`, which will be displayed like "February 24, 2016". You can choose your date format by referencing this [cheat sheet](https://www.shortcutfoo.com/app/dojos/ruby-date-format-strftime/cheatsheet). For example, use your date format in `_data/site.yml`.
 
 ```yaml
 date_format: "%Y-%m-%d"
@@ -263,11 +232,11 @@ date_format: "%Y-%m-%d"
 
 ### Reading time
 
-Enable estimated reading time snippets with `read_time: true` in YAML Front Matter. `200` has been set as the default words per minute value --- which can be changed by adjusting `words_per_minute:` in `_config.yml`.
+Enable estimated reading time snippets with `read_time: true` in YAML Front Matter. `200` has been set as the default words per minute value --- which can be changed by adjusting `words_per_minute:` in `_data/site.yml`.
 
 ![reading time example]({{ "/assets/images/mm-read-time-example.jpg" | relative_url }})
 
-Instead of adding `read_time: true` to each post, apply as a default in `_config.yml` like so:
+Instead of adding `read_time: true` to each post, apply as a default in `_data/site.yml` like so:
 
 ```yaml
 defaults:
@@ -279,7 +248,7 @@ defaults:
       read_time: true
 ```
 
-To disable reading time for a post, add `read_time: false` to its YAML Front Matter to override what was set in `_config.yml`.
+To disable reading time for a post, add `read_time: false` to its YAML Front Matter to override what was set in `_data/site.yml`.
 
 `words_per_minute` can also be adjusted on a per-page basis by adding to its YAML Front Matter. This is useful for sites with multi-lingual content where you'd like specify a different value from the site config.
 
@@ -305,7 +274,7 @@ For example,
 
 *New in v4.26.0*
 
-To enable a copy button on code blocks, add the following to `_config.yml`:
+To enable a copy button on code blocks, add the following to `_data/site.yml`:
 
 ```yaml
 enable_copy_code_button: true
@@ -344,7 +313,7 @@ But I don't have one.
 
 Then add `comments: true` to each document you want comments visible on.
 
-Instead of adding YAML Front Matter to each document, apply as a default in `_config.yml`. To enable comments for all posts:
+Instead of adding YAML Front Matter to each document, apply as a default in `_data/site.yml`. To enable comments for all posts:
 
 ```yaml
 defaults:
@@ -359,12 +328,12 @@ defaults:
 If you add `comments: false` to a post's YAML Front Matter it will override the default and disable comments for just that post.
 
 **Note:** Comments are disabled in `development`. To enable when testing/building locally be sure to set
-`JEKYLL_ENV=production` to [force the environment](http://jekyllrb.com/docs/configuration/#specifying-a-jekyll-environment-at-build-time) to production.
+`ELEVENTY_ENV=production` to [force the environment](https://www.11ty.dev/docs/environment-vars/) to production.
 {: .notice--info}
 
 #### Disqus
 
-To use Disqus you'll need to create an account and [shortname](https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-). Once you have both update `_config.yml` to:
+To use Disqus you'll need to create an account and [shortname](https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-). Once you have both update `_data/site.yml` to:
 
 ```yaml
 comments:
@@ -402,7 +371,7 @@ comments:
 
 #### utterances comments
 
-To use utterances you will need to [install the app](https://github.com/apps/utterances) to your GitHub repository by adding the following to `_config.yml`:
+To use utterances you will need to [install the app](https://github.com/apps/utterances) to your GitHub repository by adding the following to `_data/site.yml`:
 
 ```yaml
 repository: # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -428,7 +397,7 @@ To use giscus you will need to [install the app](https://github.com/apps/giscus)
 
 The next step is to go to <https://giscus.app> and fill out the desired settings. This will generate JavaScript that will provide you with the settings you will need to configure things below.
 
-You'll need to ensure you've added the following to `_config.yml`:
+You'll need to ensure you've added the following to `_data/site.yml`:
 
 ```yaml
 repository: # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -455,9 +424,6 @@ comments:
 
 Transform user comments into `_data` files that live inside of your GitHub repository by enabling Staticman.
 
-**Note:** Looking to migrate comments from a WordPress based site? Give [this tool](https://github.com/arthurlacoste/wordpress-comments-jekyll-staticman) a try.
-{: .notice--info}
-
 **Note:** Please note that as of September 2018, Staticman is reaching GitHub API limits due to its popularity, and it is recommended by its maintainer that users deploy their own instances for production (use `site.staticman.endpoint`).  Consult the Staticman "[Get Started](https://staticman.net/docs/index.html)" guide for more info.
 {: .notice--warning}
 
@@ -478,7 +444,7 @@ Due to the [support for GitLab](https://github.com/eduardoboucas/staticman/pull/
     https://{your Staticman v3 API}/v3/entry/github/{your Git username}/{your repository name}/...
 
 ```yaml
-# _config.yml (defaults)
+# _data/site.yml (defaults)
 repository  : # Git username/repo-name e.g. "mmistakes/minimal-mistakes"
 comments:
   provider  : "staticman_v2"
@@ -511,10 +477,10 @@ comments:
     email            : md5
 ```
 
-These settings need to be added to your `_config.yml` file as well:
+These settings need to be added to your `_data/site.yml` file as well:
 
 ```yaml
-# _config.yml (defaults)
+# _data/site.yml (defaults)
 repository  : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 comments:
   provider  : "staticman_v2"
@@ -530,10 +496,10 @@ comments:
 
 ###### Staticman v1 (deprecated)
 
-Default settings have been provided in `_config.yml`. The important ones to set are `provider: "staticman"`, `branch`, and `path`. View the [full list of configurations](https://staticman.net/docs/configuration).
+Default settings have been provided in `_data/site.yml`. The important ones to set are `provider: "staticman"`, `branch`, and `path`. View the [full list of configurations](https://staticman.net/docs/configuration).
 
 ```yaml
-# _config.yml (defaults)
+# _data/site.yml (defaults)
 comments:
   provider: "staticman"
 staticman:
@@ -570,7 +536,7 @@ To skip this moderation step simply set `moderation: false`.
 To enable Google's reCAPTCHA to aid in spam detection you'll need to:
 
 1. Apply for [reCAPTCHA API](https://www.google.com/recaptcha) keys and register your site using the reCAPTCHA V2 type.
-2. Add your site and secret keys to `staticman.yml` and `_config.yml`. Be sure to properly encrypt your secret key using [Staticman's encrypt endpoint](https://staticman.net/docs/encryption).
+2. Add your site and secret keys to `staticman.yml` and `_data/site.yml`. Be sure to properly encrypt your secret key using [Staticman's encrypt endpoint](https://staticman.net/docs/encryption).
 
 ```yaml
 reCaptcha:
@@ -585,7 +551,9 @@ To use another provider not included with the theme set `provider: "custom"` the
 
 ### Custom feed URL
 
-By default the theme links to `feed.xml` generated in the root of your site by the **jekyll-feed** plugin. To link to an externally hosted feed update `atom_feed` in `_config.yml` like so:
+There is no builtin feed for the theme at the moment. 
+
+To link to an externally hosted feed update `atom_feed` in `_data/site.yml` like so:
 
 ```yaml
 atom_feed:
@@ -597,7 +565,7 @@ atom_feed:
 
 ### Disable Feed Icons
 
-By default the theme links to `feed.xml` generated in the root of your site by the **jekyll-feed** plugin. To remove the RSS icon in the header and footer, update `atom_feed` in `_config.yml` like so:
+To remove the RSS icon in the header and footer, update `atom_feed` in `_data/site.yml` like so:
 
 ```yaml
 atom_feed:
@@ -606,7 +574,7 @@ atom_feed:
 
 ### Site search
 
-To enable site-wide search add `search: true` to your `_config.yml`.
+To enable site-wide search add `search: true` to your `_data/site.yml`.
 
 ![masthead search example]({{ "/assets/images/masthead-search.gif" | relative_url }})
 
@@ -614,42 +582,27 @@ To enable site-wide search add `search: true` to your `_config.yml`.
 
 The default search uses [**Lunr**](https://lunrjs.com/) to build a search index of all post and your documents in collections. This method is 100% compatible with sites hosted on GitHub Pages.
 
-To have it index all pages, update `lunr` in `_config.yml` like so:
+To have it index all pages, update `lunr` in `_data/site.yml` like so:
 
 ```yaml
 lunr:
   search_within_pages: true
 ```
 
-**Note:** Only the first 50 words of a post or page's body content is added to the Lunr search index. Setting `search_full_content` to `true` in your `_config.yml` will override this and could impact page load performance.
+**Note:** Only the first 50 words of a post or page's body content is added to the Lunr search index. Setting `search_full_content` to `true` in your `_data/site.yml` will override this and could impact page load performance.
 {: .notice--warning}
 
 #### Algolia
 
-For faster and more relevant search ([see demo](https://mmistakes.github.io/minimal-mistakes-algolia-search/)):
+If you want to use Algolia, you can checkout [this guide](https://www.algolia.com/blog/engineering/building-server-rendered-search-for-static-sites-with-11ty-serverless-netlify-and-algolia/).
 
-1. Add the [`jekyll-algolia`](https://github.com/algolia/jekyll-algolia) gem to your `Gemfile`, in the `:jekyll_plugins` section.
-
-   ```ruby
-   group :jekyll_plugins do
-     gem "jekyll-feed"
-     gem "jekyll-seo-tag"
-     gem "jekyll-sitemap"
-     gem "jekyll-paginate"
-     gem "jekyll-include-cache"
-     gem "jekyll-algolia"
-   end
-   ```
-
-   Once this is done, download all dependencies by running `bundle install`.
-
-2. Switch search providers from `lunr` to `algolia` in your `_config.yml` file:
+1. Switch search providers from `lunr` to `algolia` in your `_data/site.yml` file:
 
    ```yaml
    search_provider: algolia
    ```
 
-3. Add the following Algolia credentials to your `_config.yml` file. *If you don't have an Algolia account, you can open a free [Community plan](https://www.algolia.com/users/sign_up/hacker). Once signed in, you can grab your credentials from [your dashboard](https://www.algolia.com/licensing).*
+2. Add the following Algolia credentials to your `_data/site.yml` file. *If you don't have an Algolia account, you can open a free [Community plan](https://www.algolia.com/users/sign_up/hacker). Once signed in, you can grab your credentials from [your dashboard](https://www.algolia.com/licensing).*
 
    ```yaml
    algolia:
@@ -659,25 +612,7 @@ For faster and more relevant search ([see demo](https://mmistakes.github.io/mini
      powered_by: # true (default), false
    ```
 
-4. Once your credentials are setup, you can run the indexing with the following command:
-
-   ```
-   ALGOLIA_API_KEY=your_admin_api_key bundle exec jekyll algolia
-   ```
-
-   For Windows users you will have to use `set` to assigned the `ALGOLIA_API_KEY` environment variable.
-
-   ```
-   set ALGOLIA_API_KEY=your_admin_api_key
-   bundle exec jekyll algolia
-   ```
-
-   Note that `ALGOLIA_API_KEY` should be set to your admin API key.
-
-To use the Algolia search with GitHub Pages hosted sites follow [this deployment guide](https://community.algolia.com/jekyll-algolia/github-pages.html). Or this guide for [deploying on Netlify](https://community.algolia.com/jekyll-algolia/netlify.html).
-
-**Note:** The Jekyll Algolia plugin can be configured in several ways. Be sure to check out [their full documentation](https://community.algolia.com/jekyll-algolia/options.html "Algolia configuration") on how to exclude files and other valuable settings.
-{: .notice--info}
+Please help expand these docs, if you get Algolia running on your own site.
 
 #### Google Custom Search Engine
 
@@ -691,7 +626,7 @@ Add a Google search box to your site.
 
 3. Select "Save & Get Code" and grab your search engine ID from the line that begins with `var cx = 'YOUR_SEARCH_ENGINE_ID'`.
 
-4. Add your search engine ID to `_config.yml` like so:
+4. Add your search engine ID to `_data/site.yml` like so:
 
    ```yaml
    google:
@@ -722,7 +657,7 @@ Copy and paste the string inside of `content`:
 <meta name="msvalidate.01" content="0FC3FD70512616B052E755A56F8952D" />
 ```
 
-Into `_config.yml`
+Into `_data/site.yml`
 
 ```yaml
 bing_site_verification: "0FC3FD70512616B052E755A56F8952D"
@@ -738,7 +673,7 @@ Much like Google and Bing you'll be provided with a meta description:
 <meta name="naver-site-verification" content="6BF5A01C0E650B479B612AC5A2184144">`
 ```
 
-Which you can add to your `_config.yml` like so:
+Which you can add to your `_data/site.yml` like so:
 
 ```yaml
 naver_site_verification: "6BF5A01C0E650B479B612AC5A2184144"
@@ -752,7 +687,7 @@ To verify site ownership copy and paste the string inside of `content`:
 <meta name='yandex-verification' content='2132801JL' />
 ```
 
-Into `_config.yml`
+Into `_data/site.yml`
 
 ```yaml
 yandex_site_verification: "2132801JL"
@@ -768,7 +703,7 @@ Copy and paste the string inside of `content`:
 <meta name="baidu-site-verification" content="code-iA0wScWXN1" />
 ```
 
-Into `_config.yml`
+Into `_data/site.yml`
 
 ```yaml
 baidu_site_verification: "code-iA0wScWXN1"
@@ -782,7 +717,7 @@ To improve the appearance of links shared from your site to social networks like
 
 Twitter username for the site. For pages that have custom author Twitter accounts assigned in their YAML Front Matter or data file, they will be attributed as a **creator** in the Twitter Card.
 
-For example if my site's Twitter account is `@mmistakes-theme` I would add the following to `_config.yml`
+For example if my site's Twitter account is `@mmistakes-theme` I would add the following to `_data/site.yml`
 
 ```yaml
 twitter:
@@ -869,7 +804,7 @@ analytics:
 To use another provider not included with the theme set `provider: "custom"` then add their embed code to `_includes/analytics-providers/custom.html`.
 
 **Note:** Analytics are disabled in `development`. To enable when testing/building locally be sure to set
-`JEKYLL_ENV=production` to [force the environment](http://jekyllrb.com/docs/configuration/#specifying-a-jekyll-environment-at-build-time) to production.
+`ELEVENTY_ENV=production` to [force the environment](https://www.11ty.dev/docs/environment-vars/) to production.
 {: .notice--info}
 
 ## Site author
@@ -951,151 +886,45 @@ To change "Follow:" text that precedes footer links, edit the `follow_label` key
 
 ## Reading files
 
-Nothing out of the ordinary here. `include` and `exclude` may be the only things you need to alter.
+In `eleventy.js` you can pass files through for the main site. Check out the demo.
 
-## Conversion and Markdown processing
-
-Again nothing out of the ordinary here as the theme adheres to the defaults used by GitHub Pages. [**Kramdown**](http://kramdown.gettalong.org/) for Markdown conversion, [**Rouge**](https://rouge.jneen.net/) syntax highlighting, and incremental building disabled. Change them if you need to.
+in `.eleventyignore` you can write which files to ignore when building the site.
 
 ## Front Matter Defaults
 
-To save yourself time setting [Front Matter Defaults](https://jekyllrb.com/docs/configuration/front-matter-defaults/) for posts, pages, and collections is the way to go. Sure you can assign layouts and toggle settings like **reading time**, **comments**, and **social sharing** in each file, but that's not ideal.
+To save yourself time setting [Front Matter Defaults](https://www.11ty.dev/docs/data-template-dir/) for posts, pages, and collections is the way to go. Sure you can assign layouts and toggle settings like **reading time**, **comments**, and **social sharing** in each file, but that's not ideal.
 
-Using the `default` key in `_config.yml` you could set the layout and enable author profiles, reading time, comments, social sharing, and related posts for all posts --- in one shot.
+Using directory specific datafiles, you can set layout layout and enable author profiles, reading time, comments, social sharing, and related posts for all posts --- in one shot. Like this in `_posts/_posts.json`.
 
-```yaml
-defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
+```json
+{
+  "layout": "single",
+  "author_profile": true,
+  "read_time": true,
+  "comments": true,
+  "share": true,
+  "related": true
+
+}
 ```
 
-Pages Front Matter defaults can be scoped like this:
+Pages Front Matter defaults can be scoped like this in `_pages/_pages.json`:
 
-```yaml
-defaults:
-  # _pages
-  - scope:
-      path: ""
-      type: pages
-    values:
-      layout: single
+```json
+{
+  "layout": "single"
+}
 ```
 
-And collections like this:
-
-```yaml
-defaults:
-  # _foo
-  - scope:
-      path: ""
-      type: foo
-    values:
-      layout: single
-```
-
-And of course any default value can be overridden by settings in a post, page, or collection file. All you need to do is specify the settings in the YAML Front Matter. For more examples be sure to check out the demo site's [`_config.yml`](https://github.com/mmistakes/minimal-mistakes/blob/master/_config.yml).
+And of course any default value can be overridden by settings in a post, page, or collection file. All you need to do is specify the settings in the YAML Front Matter. For more examples be sure to check out the demo site's [`_posts/_posts.json`](https://github.com/mmistakes/minimal-mistakes/blob/master/docs/_posts/_posts.json).
 
 ## Outputting
 
-The default permalink style used by the theme is `permalink: /:categories/:title/`. If you have a post named `2016-01-01-my-post.md` with `categories: foo` in the YAML Front Matter, Jekyll will generate `_site/foo/my-post/index.html`.
-
-**Note:** If you plan on enabling breadcrumb links --- including category names in permalinks is a big part of how those are created.
-{: .notice--warning}
+You control the outputting via permalinks. Dive into the [11ty documentation on permalinks](https://www.11ty.dev/docs/permalinks/).
 
 ### Paginate
 
-If [using pagination](https://github.com/jekyll/jekyll-paginate) on the homepage you can change the amount of posts shown with:
-
-```yaml
-paginate: 5
-```
-
-You'll also need to include some Liquid and HTML to properly use the paginator, which you can find in the **Layouts** section under [Home Page]({{ "/docs/layouts/#home-page" | relative_url }}).
-
-The paginator only works on files with name `index.html`. To use pagination in a subfolder --- for example `/recent/`, create `/recent/index.html` and set the `paginate_path` in `_config.yml` to this:
-
-```yaml
-paginate_path: /recent/page:num/
-```
-
-**Please note:** When using Jekyll's default [pagination plugin](https://jekyllrb.com/docs/pagination/) `paginator.posts` can only be called once. If you're looking for something more powerful that can paginate category, tag, and collection pages I suggest **[jekyll-paginate-v2][jekyll-paginate-v2]**.
-{: .notice--info}
-
-  [jekyll-paginate-v2]: https://github.com/sverrirs/jekyll-paginate-v2
-
-### Paginate V2
-
-*New in v4.26.0*
-
-If you're using [Jekyll Paginate V2][jekyll-paginate-v2], you can enjoy its powerful features by removing `paginate` and `paginate_path` and adding the following configuration to your `_config.yml`:
-
-```yaml
-pagination:
-  enabled: true
-  collection: 'posts'
-  per_page: 5
-  permalink: '/page/:num/'  # Pages are index.html inside this folder (default)
-  title: ':title - page :num'
-  limit: 0
-  sort_field: 'date'
-  sort_reverse: true
-  trail:
-    before: 2
-    after: 2
-```
-
-Then, create `/posts/index.html` with the following content:
-
-```html
----
-title: "Posts"
-layout: home
-permalink: /posts/
-pagination:
-  enabled: true
----
-```
-
-Your posts will be paginated at `/posts/`, `/posts/page/2/` and `/posts/page/3/` etc.
-
-Similarly, if you want to paginate a collection or a tag, you can create another `index.html` at an appropriate location, and add configuration to the `pagination` key in the front matter, like this:
-
-```html
----
-title: "Lovely pets"
-layout: home
-permalink: /pets/
-pagination:
-  enabled: true
-  collection:
-    - cat
-    - dog
----
-```
-
-<div class="notice--danger" markdown="1">
-**Note:** There are two more configuration options from Jekyll Paginate V2 that this theme doesn't support yet. You should either leave them out or use their default values as shown below. Changing them may lead to unexpected results and you're on your own.
-
-```yaml
-pagination:
-  # Optional, the default file extension for generated pages (e.g html, json, xml).
-  # Internally this is set to html by default
-  extension: html
-
-  # Optional, the default name of the index file for generated pages (e.g. 'index.html')
-  # Without file extension
-  indexpage: 'index'
-```
-</div>
+Everything about pagination has not been setup by default. Please help set it up and expand on these docs.
 
 ### Timezone
 
@@ -1105,131 +934,24 @@ This sets the timezone environment variable, which Ruby uses to handle time and 
 timezone: America/New_York
 ```
 
-## Plugins
-
-When hosting with GitHub Pages a small [set of gems](https://pages.github.com/versions/) have been whitelisted for use. The theme uses a few of them which can be found under `gems`. Additional settings and configurations are documented in the links below.
-
-| Plugin | Description                                                                               |
-| --- | --- |
-| [jekyll-paginate][jekyll-paginate] | Pagination Generator for Jekyll. |
-| [jekyll-sitemap][jekyll-sitemap] | Jekyll plugin to silently generate a sitemaps.org compliant sitemap for your Jekyll site. |
-| [jekyll-gist][jekyll-gist] | Liquid tag for displaying GitHub Gists in Jekyll sites. |
-| [jekyll-feed][jekyll-feed] | A Jekyll plugin to generate an Atom (RSS-like) feed of your Jekyll posts. |
-| [jekyll-include-cache][jekyll-include-cache] | Liquid tag that caches Liquid includes. |
-
-[jekyll-paginate]: https://github.com/jekyll/jekyll-paginate
-[jekyll-sitemap]: https://github.com/jekyll/jekyll-sitemap
-[jekyll-gist]: https://github.com/jekyll/jekyll-gist
-[jekyll-feed]: https://github.com/jekyll/jekyll-feed
-[jekyll-include-cache]: https://github.com/benbalter/jekyll-include-cache
-
-If you're hosting elsewhere then you don't really have to worry about what is whitelisted as you are free to include whatever [Jekyll plugins](https://jekyllrb.com/docs/plugins/) you desire.
-
-**Note:** The [jekyll-include-cache](https://github.com/benbalter/jekyll-include-cache) plugin needs to be installed in your `Gemfile` and added to the `plugins` array of `_config.yml`. Otherwise you'll throw `Unknown tag 'include_cached'` errors at build.
-{: .notice--warning}
-
 ## Archive settings
 
-The theme ships with support for taxonomy (category and tag) pages. GitHub Pages hosted sites need to use a _Liquid only_ approach while those hosted elsewhere can use plugins like [**jekyll-archives**][jekyll-archives] to generate these pages automatically.
-
-[jekyll-archives]: https://github.com/jekyll/jekyll-archives
+The theme ships with support for taxonomy (category and tag) pages. GitHub Pages hosted sites need to use a _Liquid only_ approach.
 
 The default `type` is set to use Liquid.
 
-**Note:** `category_archive` and `tag_archive` were previously named `categories` and `tags`. Names were changed to avoid possible conflicts with `site.categories` and `site.tags`.
-{: .notice--danger}
-
-```yaml
-category_archive:
-  type: liquid
-  path: /categories/
-tag_archive:
-  type: liquid
-  path: /tags/
-```
-
-Which would create category and tag links in the breadcrumbs and page meta like: `/categories/#foo` and `/tags/#foo`.
+This would create category and tag links in the breadcrumbs and page meta like: `/categories/#foo` and `/tags/#foo`.
 
 **Note:** these are simply hash (fragment) links into the full taxonomy index pages. For them to resolve properly, the category and tag index pages need to exist at [`/categories/index.html`](https://github.com/{{ site.repository }}/blob/master/docs/_pages/category-archive.md) (copy to `_pages/category-archive.md`) and [`/tags/index.html`](https://github.com/{{ site.repository }}/blob/master/docs/_pages/tag-archive.md) (copy to `_pages/tag-archive.md`).
 {: .notice--warning}
 
-If you have the luxury of using Jekyll Plugins, then [**jekyll-archives**][jekyll-archives] will create a better experience as discrete taxonomy pages would be generated, and their corresponding links would be "real" (not just hash/fragment links into a larger index). However, the plugin will not generate the taxonomy index pages (`category-archive.md` and `tag-archive.md`) so you'd still need to manually create them if you'd like to have them (see note above).
-
-First, you'll need to make sure that the `jekyll-archives` plugin is installed. Either run `gem install jekyll-archives` or add the following to your `Gemfile`:
-
-```
-group :jekyll_plugins do
-  gem "jekyll-archives"
-end
-```
-
-Then run `bundle install`.
-
-Now that the plugin is installed, change `type` to `jekyll-archives` and apply the following [configurations](https://github.com/jekyll/jekyll-archives/blob/master/docs/configuration.md):
-
-```yaml
-category_archive:
-  type: jekyll-archives
-  path: /categories/
-tag_archive:
-  type: jekyll-archives
-  path: /tags/
-jekyll-archives:
-  enabled:
-    - categories
-    - tags
-  layouts:
-    category: archive-taxonomy
-    tag: archive-taxonomy
-  permalinks:
-    category: /categories/:name/
-    tag: /tags/:name/
-```
-
-**Note:** The `archive-taxonomy` layout used by jekyll-archives is provided with the theme and can be found in the `_layouts` folder.
-{: .notice--info}
-
-<div class="notice--success" markdown="1">
-
-<h4 class="no_toc"><i class="fas fa-lightbulb"></i> Tip</h4>
-
-To apply [Front Matter defaults](https://jekyllrb.com/docs/configuration/front-matter-defaults/) to pages generated by the `jekyll-archives` plugin, you can specify a scope of an empty `path` and a `type` of either `tag` or `category`.
-
-For example, the following configuration enables author profile on tag archives and disables comments on category archives.
-
-```yaml
-defaults:
-  - scope:
-      path: ""
-      type: tag
-    values:
-      author_profile: true
-  - scope:
-      path: ""
-      type: category
-    values:
-      comments: false
-```
-
-</div>
+You can also look into [**Zero Maintenance Tag Pages for your Blog**](https://www.11ty.dev/docs/quicktips/tag-pages/) to generate these pages automatically.
 
 ## HTML compression
 
-If you care at all about performance (and really who doesn't) compressing the HTML files generated by Jekyll is a good thing to do.
+If you care at all about performance (and really who doesn't) compressing the HTML files is a good thing to do.
 
-If you're hosting with GitHub Pages there aren't many options afforded to you for optimizing the HTML Jekyll generates. Thankfully there is some Liquid wizardry you can use to strip whitespace and comments to reduce file size.
-
-There's a variety of configurations and caveats to using the `compress` layout, so be sure to read through the [documentation](http://jch.penibelst.de/) if you decide to make change the defaults set in the theme's `_config.yml`.
-
-```yaml
-compress_html:
-  clippings: all
-  ignore:
-    envs: development  # disable compression in dev environment
-```
-
-**Caution:** Inline JavaScript comments can cause problems with `compress.html`, so be sure to `/* comment this way */` and avoid `// these sorts of comments`.
-{: .notice--warning}
+Please help expand this documentation, if you know how to do this with `npm` or 11ty directly.
 
 **Note:** CDN services such as CloudFlare provide optional automatic minification for HTML, CSS, and JavaScript. If you are serving your site via such a service and have minification enabled, this configuration might be redundant.
 {: .notice--info}

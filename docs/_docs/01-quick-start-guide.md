@@ -75,49 +75,36 @@ Depending on the path you took installing Minimal Mistakes you'll setup things a
 
 ### Starting Fresh
 
-Starting with an empty folder and `package.json` you'll need to copy or re-create this [default `_data/site.yml`](https://github.com/mmistakes/minimal-mistakes/blob/master/_config.yml) file. For a full explanation of every setting be sure to read the [**Configuration**]({{ "/docs/configuration/" | relative_url }}) section.
+Starting with an empty folder you need to copy the entire contents of the repository to get started. 
+
+For a full explanation of every setting be sure to read the [**Configuration**]({{ "/docs/configuration/" | relative_url }}) section.
 
 If you're hosting on GitHub Pages, you can copy the [`_data/ui-text.yml`][ui-text.yml] file into your repository for the localization feature to work.
 
 You'll need to create and edit these data files to customize them:
 
+- [`_data/site.yml`][site.yml] - UI text [documentation]({{ "/docs/configuration/" | relative_url }})
 - [`_data/ui-text.yml`][ui-text.yml] - UI text [documentation]({{ "/docs/ui-text/" | relative_url }})
 - [`_data/navigation.yml`][navigation.yml] - navigation [documentation]({{ "/docs/navigation/" | relative_url }})
 
+  [site.yml]: https://github.com/mmistakes/minimal-mistakes/blob/master/_data/site.yml
   [ui-text.yml]: https://github.com/mmistakes/minimal-mistakes/blob/master/_data/ui-text.yml
   [navigation.yml]: https://github.com/mmistakes/minimal-mistakes/blob/master/_data/navigation.yml
 
-### Starting from `jekyll new`
+Then you might want to clear out some of the stuff in the repository.
 
-Scaffolding out a site with the `jekyll new` command requires you to modify a few files that it creates.
-
-Edit `_config.yml`. Then:
-
-- Replace `<site root>/index.md` with a modified [Minimal Mistakes `index.html`](https://github.com/mmistakes/minimal-mistakes/blob/master/index.html). Be sure to enable pagination if using the [`home` layout]({{ "/docs/layouts/#home-page" | relative_url }}) by adding the necessary lines to **_config.yml**.
-- Change `layout: post` in `_posts/0000-00-00-welcome-to-jekyll.markdown` to `layout: single`.
-- Remove `about.md`, or at the very least change `layout: page` to `layout: single` and remove references to `icon-github.html` (or [copy to your `_includes`](https://github.com/jekyll/minima/tree/master/_includes) if using it).
-
-### Migrating to Gem Version
-
-If you're migrating a site already using Minimal Mistakes and haven't customized any of the theme files things upgrading will be easier for you.
-
-Start by removing the following folders and any files within them: 
-
-```terminal
-├── _includes
-├── _layouts
-├── _sass
-├── assets
-|  ├── css
-|  ├── fonts
-|  └── js
 ```
-
-You won't need these anymore as they're bundled with the theme gem --- unless you intend to [override them](https://jekyllrb.com/docs/themes/#overriding-theme-defaults).
+├── docs (clear out everything)
+```
 
 **Note:** When clearing out the `assets` folder be sure to leave any files you've added and need. This includes images, CSS, or JavaScript that aren't already [bundled in the theme](https://github.com/mmistakes/minimal-mistakes/tree/master/assets). 
 {: .notice--warning}
 
 ---
 
-That's it! If all goes well running `npm run watch:eleventy` should spin-up your site.
+That's it! If all goes well the following should spin-up your site:
+
+```bash
+npm run watch:eleventy
+npm run watch:sass
+```

@@ -1,7 +1,7 @@
 ---
 title: "Helpers"
 permalink: /docs/helpers/
-excerpt: "Jekyll `_includes` and other helpers to use as shortcuts for creating archives, galleries, table of contents, and more."
+excerpt: "11ty `_includes` and other helpers to use as shortcuts for creating archives, galleries, table of contents, and more."
 gallery:
   - url: /assets/images/unsplash-gallery-image-1.jpg
     image_path: /assets/images/unsplash-gallery-image-1-th.jpg
@@ -36,13 +36,15 @@ toc_label: "Helpers"
 toc_icon: "cogs"
 ---
 
-You can think of these Jekyll helpers as little shortcuts. Since GitHub Pages doesn't allow most plugins --- [custom tags](https://jekyllrb.com/docs/plugins/#tags) are out. Instead the theme leverages [**includes**](https://jekyllrb.com/docs/templates/#includes) to do something similar.
+You can think of these helpers as little shortcuts. This theme leverages [**includes**](https://www.11ty.dev/docs/layouts/) to do something similar.
 
 ## Group by array
 
 [Jekyll Group-By-Array](https://github.com/mushishi78/jekyll-group-by-array) by Max White.
 
 A liquid include file for Jekyll that allows an object to be grouped by an array.
+
+This might also work in 11ty. I have not tested it.
 
 ## Figure
 
@@ -403,10 +405,10 @@ sidebar:
   nav: "foo"
 ```
 
-**ProTip:** If you're applying the same navigation list to several pages setting it as a [Front Matter default](https://jekyllrb.com/docs/configuration/#front-matter-defaults) is the better option.
+**ProTip:** If you're applying the same navigation list to several pages setting it as a [Front Matter defaults in datafiles](https://www.11ty.dev/docs/data-template-dir/) is the better option.
 {: .notice--info}
 
-The theme's documentation is built with the `nav_list` helper so if you'd like an example to dissect take a look at `navigation.yml`, `_config.yml` and `_doc` collection in the [`/docs/` folder](https://github.com/{{ site.repository }}/tree/master/docs/) of this repo.
+The theme's documentation is built with the `nav_list` helper so if you'd like an example to dissect take a look at `navigation.yml`, `_data/site.yml` and `_doc` collection in the [`/docs/` folder](https://github.com/{{ site.repository }}/tree/master/docs/) of this repo.
 
 To add a navigation list to a post or page's main content instead of the sidebar use the include this way:
 

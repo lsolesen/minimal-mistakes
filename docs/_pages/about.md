@@ -27,7 +27,6 @@ Minimal Mistakes is a flexible two-column 11ty theme. Perfect for hosting your p
 
 - Bundled as a "theme gem" for easier install/upgrading.
 - Compatible with GitHub Pages.
-- Support for Jekyll's built-in Sass/SCSS preprocessor.
 - Nine different skins (color variations).
 - Several responsive layout options (single, archive index, search, splash, and paginated home page).
 - Optimized for search engines with support for [Twitter Cards](https://dev.twitter.com/cards/overview) and [Open Graph](http://ogp.me/) data
@@ -62,7 +61,7 @@ For even more demo pages check the [posts archive]({{ "/year-archive/" | relativ
 
 ### Other:
 
-- [Jekyll](https://jekyllrb.com/)
+- [11ty](https://www.11ty.dev/)
 - [jQuery](https://jquery.com/)
 - [Susy](http://susy.oddbird.net/)
 - [Breakpoint](http://breakpoint-sass.com/)

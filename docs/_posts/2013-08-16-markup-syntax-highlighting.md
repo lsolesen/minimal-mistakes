@@ -84,9 +84,9 @@ Indentation matters. Be sure the indent of the code block aligns with the first 
         
 3. Now you can do this.
 
-### Jekyll Highlight Tag
+### Highlight Tag
 
-An example of a code blocking using Jekyll's [`{% raw %}{% highlight %}{% endraw %}` tag](https://jekyllrb.com/docs/templates/#code-snippet-highlighting).
+An example of a code blocking using [`{% raw %}{% highlight %}{% endraw %}` tag](https://www.11ty.dev/docs/plugins/syntaxhighlight/).
 
 {% highlight javascript linenos %}
 // 'gulp html' -- does nothing

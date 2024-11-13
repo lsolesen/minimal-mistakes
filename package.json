@@ -9,7 +9,7 @@
     "build:eleventy": "eleventy",
     "start": "npm-run-all build:sass --parallel watch:*",
     "build": "npm-run-all build:*",
-    "build-gh-pages": "eleventy --pathprefix=/minimal-mistakes/"
+    "build-gh-pages": "ELEVENTY_ENV=production eleventy --pathprefix=/minimal-mistakes/"
   },
   "keywords": [],
   "author": "",

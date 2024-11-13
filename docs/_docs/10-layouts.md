@@ -229,11 +229,11 @@ header:
 
 ## Taxonomy archives
 
-If you have the luxury of using Jekyll plugins, the creation of category and tag archives is greatly simplified. Simply enable support for the [`jekyll-archives`](https://github.com/jekyll/jekyll-archives) plugin with a few `_config.yml` settings as noted in the [**Configuration**]({{ "/docs/configuration/#archive-settings" | relative_url }}) section and you're good to go.
+You might be able to simplify the creation of tags and categories pages using [**Zero Maintenance Tag Pages for your Blog**](https://www.11ty.dev/docs/quicktips/tag-pages/).
 
 ![archive taxonomy layout example]({{ "/assets/images/mm-layout-archive-taxonomy.png" | relative_url }})
 
-If you're not using the `jekyll-archives` plugin then you need to create archive pages yourself. Sample taxonomy archives can be found by grabbing the Markdown sources below and adding to your site.
+If you're not using any magic, you need to create archive pages yourself. Sample taxonomy archives can be found by grabbing the Markdown sources below and adding to your site.
 
 | Name                 | Layout | Example |
 | -------------------- | ------ | ------ |
@@ -340,25 +340,7 @@ layout: home
 ---
 ```
 
-Then configure pagination in `_config.yml`.
-
-```yaml
-paginate: 5 # amount of posts to show
-paginate_path: /page:num/
-```
-
-If you'd rather have a paginated page of posts reside in a subfolder instead of acting as your homepage make the following adjustments.
-
-Create `index.html` in the location you'd like. For example if I wanted it to live at **/blog** I'd create `/blog/index.html` with `layout: home` in its YAML Front Matter.
-
-Then adjust the `paginate_path` in **_config.yml** to match.
-
-```yaml
-paginate_path: /blog/page:num
-```
-
-**Note:** The default Jekyll Paginate plugin can only paginate a single `index.html` file. If you'd like to paginate more pages (e.g. category indexes) you'll need the help of a custom plugin. For more pagination-related settings check the [**Configuration**]({{ "/docs/configuration/#paginate" | relative_url }}) section, including settings for [Jekyll Paginate V2](https://github.com/sverrirs/jekyll-paginate-v2).
-{: .notice--info}
+Pagination has not been setup. Help fix that and the docs.
 
 **Note:** By default, documents are shown in a list view. To change to a grid view add `entries_layout: grid` to the page's front matter. To increase the width of the main container, giving more space to the grid items also add `classes: wide` to the home page's YAML Front Matter.
 {: .notice--info}

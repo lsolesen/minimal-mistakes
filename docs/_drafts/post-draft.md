@@ -4,7 +4,8 @@ title:  "Draft Post"
 header:
   teaser: "unsplash-gallery-image-2-th.jpg"
 categories: 
-  - Jekyll
+  - Theme
+  - 11ty
 tags:
   - edge case
 ---

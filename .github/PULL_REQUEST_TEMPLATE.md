@@ -26,5 +26,5 @@
 -->
 
 <!--
-  Please confirm that you want to submit this Pull Request to Minimal Mistakes, the free Jekyll theme by Michael Rose, by deleting this comment block.
+  Please confirm that you want to submit this Pull Request to Minimal Mistakes, the free 11ty theme based on the Jekyll theme by Michael Rose, by deleting this comment block.
 -->
