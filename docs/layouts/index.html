@@ -50,7 +50,7 @@
 
 
 
-  <meta property="article:published_time" content="2024-11-11T21:52:23+00:00">
+  <meta property="article:published_time" content="2024-11-13T09:49:34+00:00">
 
 
 
@@ -304,7 +304,7 @@
   <article class="page h-entry" itemscope="" itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Layouts">
     <meta itemprop="description" content="Descriptions and samples of all layouts included with the theme and how to best use them.">
-    <meta itemprop="datePublished" content="2024-11-11T21:52:23+00:00">
+    <meta itemprop="datePublished" content="2024-11-13T09:49:34+00:00">
     <meta itemprop="dateModified" content="2020-08-31T01:27:40+00:00">
 
     <div class="page__inner-wrap">
@@ -542,9 +542,9 @@ Sidebar menu supports 1 level of nested links. ↩︎
   <span class="token key atrule">teaser</span><span class="token punctuation">:</span> path<span class="token punctuation">-</span>to<span class="token punctuation">-</span>teaser<span class="token punctuation">-</span>image.jpg</code></pre>
 <p class="notice--info"><strong>Note:</strong> More information on using this <code>_include</code> can be found under <a href="/minimal-mistakes/docs/helpers/"><strong>Helpers</strong></a>.</p>
 <h2 id="taxonomy-archives" tabindex="-1">Taxonomy archives</h2>
-<p>If you have the luxury of using Jekyll plugins, the creation of category and tag archives is greatly simplified. Simply enable support for the <a href="https://github.com/jekyll/jekyll-archives"><code>jekyll-archives</code></a> plugin with a few <code>_config.yml</code> settings as noted in the <a href="/minimal-mistakes/docs/configuration/#archive-settings"><strong>Configuration</strong></a> section and you're good to go.</p>
+<p>You might be able to simplify the creation of tags and categories pages using <a href="https://www.11ty.dev/docs/quicktips/tag-pages/"><strong>Zero Maintenance Tag Pages for your Blog</strong></a>.</p>
 <p><picture><source type="image/png" srcset="/minimal-mistakes/img/q2kLPICh-t-400.png 400w, /minimal-mistakes/img/q2kLPICh-t-800.png 800w, /minimal-mistakes/img/q2kLPICh-t-900.png 900w" sizes="100vw"><source type="image/webp" srcset="/minimal-mistakes/img/q2kLPICh-t-400.webp 400w, /minimal-mistakes/img/q2kLPICh-t-800.webp 800w, /minimal-mistakes/img/q2kLPICh-t-900.webp 900w" sizes="100vw"><img loading="lazy" decoding="async" src="/minimal-mistakes/img/q2kLPICh-t-400.jpeg" alt="archive taxonomy layout example" width="900" height="675" srcset="/minimal-mistakes/img/q2kLPICh-t-400.jpeg 400w, /minimal-mistakes/img/q2kLPICh-t-800.jpeg 800w, /minimal-mistakes/img/q2kLPICh-t-900.jpeg 900w" sizes="100vw"></picture></p>
-<p>If you're not using the <code>jekyll-archives</code> plugin then you need to create archive pages yourself. Sample taxonomy archives can be found by grabbing the Markdown sources below and adding to your site.</p>
+<p>If you're not using any magic, you need to create archive pages yourself. Sample taxonomy archives can be found by grabbing the Markdown sources below and adding to your site.</p>
 <table>
 <thead>
 <tr>
@@ -636,14 +636,7 @@ You can also use any metadata key that is present in the documents. For example,
 <pre class="language-yaml"><code class="language-yaml"><span class="token punctuation">---</span>
 <span class="token key atrule">layout</span><span class="token punctuation">:</span> home
 <span class="token punctuation">---</span></code></pre>
-<p>Then configure pagination in <code>_config.yml</code>.</p>
-<pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">paginate</span><span class="token punctuation">:</span> <span class="token number">5</span> <span class="token comment"># amount of posts to show</span>
-<span class="token key atrule">paginate_path</span><span class="token punctuation">:</span> /page<span class="token punctuation">:</span>num/</code></pre>
-<p>If you'd rather have a paginated page of posts reside in a subfolder instead of acting as your homepage make the following adjustments.</p>
-<p>Create <code>index.html</code> in the location you'd like. For example if I wanted it to live at <strong>/blog</strong> I'd create <code>/blog/index.html</code> with <code>layout: home</code> in its YAML Front Matter.</p>
-<p>Then adjust the <code>paginate_path</code> in <strong>_config.yml</strong> to match.</p>
-<pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">paginate_path</span><span class="token punctuation">:</span> /blog/page<span class="token punctuation">:</span>num</code></pre>
-<p class="notice--info"><strong>Note:</strong> The default Jekyll Paginate plugin can only paginate a single <code>index.html</code> file. If you'd like to paginate more pages (e.g. category indexes) you'll need the help of a custom plugin. For more pagination-related settings check the <a href="/minimal-mistakes/docs/configuration/#paginate"><strong>Configuration</strong></a> section, including settings for <a href="https://github.com/sverrirs/jekyll-paginate-v2">Jekyll Paginate V2</a>.</p>
+<p>Pagination has not been setup. Help fix that and the docs.</p>
 <p class="notice--info"><strong>Note:</strong> By default, documents are shown in a list view. To change to a grid view add <code>entries_layout: grid</code> to the page's front matter. To increase the width of the main container, giving more space to the grid items also add <code>classes: wide</code> to the home page's YAML Front Matter.</p>
 <h2 id="splash-page-layout" tabindex="-1">Splash page layout</h2>
 <p>For full-width landing pages that need a little something extra add <code>layout: splash</code> to the YAML Front Matter.</p>
@@ -1167,8 +1160,6 @@ $(document).ready(function() {
   });
 });
 </script>
-
-
 
 
 

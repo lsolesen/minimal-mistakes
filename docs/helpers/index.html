@@ -12,7 +12,7 @@
     <meta charset="utf-8">
 
 <!-- begin _includes/seo.html --><title>Helpers - Minimal Mistakes</title>
-<meta name="description" content="Jekyll _includes and other helpers to use as shortcuts for creating archives, galleries, table of contents, and more.">
+<meta name="description" content="11ty _includes and other helpers to use as shortcuts for creating archives, galleries, table of contents, and more.">
 
 
   <meta name="author" content="Michael Rose">
@@ -28,7 +28,7 @@
 <meta property="og:url" content="">
 
 
-  <meta property="og:description" content="Jekyll _includes and other helpers to use as shortcuts for creating archives, galleries, table of contents, and more.">
+  <meta property="og:description" content="11ty _includes and other helpers to use as shortcuts for creating archives, galleries, table of contents, and more.">
 
 
 
@@ -38,7 +38,7 @@
 
   <meta name="twitter:site" content="@mmistakes">
   <meta name="twitter:title" content="Helpers">
-  <meta name="twitter:description" content="Jekyll _includes and other helpers to use as shortcuts for creating archives, galleries, table of contents, and more.">
+  <meta name="twitter:description" content="11ty _includes and other helpers to use as shortcuts for creating archives, galleries, table of contents, and more.">
   <meta name="twitter:url" content="">
 
   
@@ -50,7 +50,7 @@
 
 
 
-  <meta property="article:published_time" content="2024-11-11T21:52:23+00:00">
+  <meta property="article:published_time" content="2024-11-13T09:49:34+00:00">
 
 
 
@@ -303,8 +303,8 @@
 
   <article class="page h-entry" itemscope="" itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Helpers">
-    <meta itemprop="description" content="Jekyll _includes and other helpers to use as shortcuts for creating archives, galleries, table of contents, and more.">
-    <meta itemprop="datePublished" content="2024-11-11T21:52:23+00:00">
+    <meta itemprop="description" content="11ty _includes and other helpers to use as shortcuts for creating archives, galleries, table of contents, and more.">
+    <meta itemprop="datePublished" content="2024-11-13T09:49:34+00:00">
     <meta itemprop="dateModified" content="2020-05-01T14:22:56+00:00">
 
     <div class="page__inner-wrap">
@@ -333,10 +333,11 @@
             </nav>
           </aside>
         
-        <p>You can think of these Jekyll helpers as little shortcuts. Since GitHub Pages doesn't allow most plugins  <a href="https://jekyllrb.com/docs/plugins/#tags">custom tags</a> are out. Instead the theme leverages <a href="https://jekyllrb.com/docs/templates/#includes"><strong>includes</strong></a> to do something similar.</p>
+        <p>You can think of these helpers as little shortcuts. This theme leverages <a href="https://www.11ty.dev/docs/layouts/"><strong>includes</strong></a> to do something similar.</p>
 <h2 id="group-by-array" tabindex="-1">Group by array</h2>
 <p><a href="https://github.com/mushishi78/jekyll-group-by-array">Jekyll Group-By-Array</a> by Max White.</p>
 <p>A liquid include file for Jekyll that allows an object to be grouped by an array.</p>
+<p>This might also work in 11ty. I have not tested it.</p>
 <h2 id="figure" tabindex="-1">Figure</h2>
 <p>Generate a <code>&lt;figure&gt;</code> element with a single image and caption.</p>
 <table>
@@ -832,8 +833,8 @@
 <p><strong>2:</strong> On the page(s) you'd like the <code>foo</code> sidebar nav add the following YAML Front Matter, referencing the same key name.</p>
 <pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">sidebar</span><span class="token punctuation">:</span>
   <span class="token key atrule">nav</span><span class="token punctuation">:</span> <span class="token string">"foo"</span></code></pre>
-<p class="notice--info"><strong>ProTip:</strong> If you're applying the same navigation list to several pages setting it as a <a href="https://jekyllrb.com/docs/configuration/#front-matter-defaults">Front Matter default</a> is the better option.</p>
-<p>The theme's documentation is built with the <code>nav_list</code> helper so if you'd like an example to dissect take a look at <code>navigation.yml</code>, <code>_config.yml</code> and <code>_doc</code> collection in the <a href="https://github.com/lsolesen/minimal-mistakes/tree/master/docs/"><code>/docs/</code> folder</a> of this repo.</p>
+<p class="notice--info"><strong>ProTip:</strong> If you're applying the same navigation list to several pages setting it as a <a href="https://www.11ty.dev/docs/data-template-dir/">Front Matter defaults in datafiles</a> is the better option.</p>
+<p>The theme's documentation is built with the <code>nav_list</code> helper so if you'd like an example to dissect take a look at <code>navigation.yml</code>, <code>_data/site.yml</code> and <code>_doc</code> collection in the <a href="https://github.com/lsolesen/minimal-mistakes/tree/master/docs/"><code>/docs/</code> folder</a> of this repo.</p>
 <p>To add a navigation list to a post or page's main content instead of the sidebar use the include this way:</p>
 <pre class="language-liquid"><code class="language-liquid"><span class="token liquid language-liquid"><span class="token delimiter punctuation">{%</span> <span class="token keyword">include</span> nav_list nav<span class="token operator">=</span><span class="token string">"foo"</span> <span class="token delimiter punctuation">%}</span></span></code></pre>
 <nav class="nav__list">
@@ -1038,8 +1039,6 @@ $(document).ready(function() {
   });
 });
 </script>
-
-
 
 
 
