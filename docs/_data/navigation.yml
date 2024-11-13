@@ -78,14 +78,14 @@ docs:
         url: /docs/javascript/
   - title: Meta
     children:
+      - title: "Switch from Jekyll"
+        url: /docs/switch-from-jekyll/
+      - title: "Known issues"
+        url: /docs/known-issues/
       - title: "FAQ"
         url: /docs/faq/
-      - title: "History"
-        url: /docs/history/
       - title: "Contributing"
         url: /docs/contributing/
-      - title: "Old 2.2 Docs"
-        url: /docs/docs-2-2/
       - title: "License"
         url: /docs/license/
       - title: "Terms &amp; Privacy Policy"
