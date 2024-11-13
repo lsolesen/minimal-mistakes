@@ -1,9 +1,7 @@
-
 ---
 title: "Switch from Minimal Mistakes on Jekyll"
 permalink: /docs/switch-from-jekyll/
 excerpt: "Instructions for switching from Minimal Mistakes on Jekyll to the 11ty port."
-last_modified_at: 2024-11-13T09:33:35-04:00
 ---
 
 If you like the Minimal Mistakes theme, but want to use it with 11ty. This is your chance.

@@ -2,7 +2,7 @@
 title: "Known issues"
 permalink: /docs/known-issues/
 excerpt: "These are known issues with this port of the Minimal Mistakes theme, that does not work correctly."
-last_modified_at: 2024-11-13T09:33:35-04:00
+last_modified_at: 2024-11-12T09:33:35-04:00
 ---
 
 This is a port of Michael Rose's Jekyll theme. There are still quite a few known issues which hopefully will be improved soon.

@@ -82,8 +82,6 @@ docs:
         url: /docs/switch-from-jekyll/
       - title: "Known issues"
         url: /docs/known-issues/
-      - title: "FAQ"
-        url: /docs/faq/
       - title: "Contributing"
         url: /docs/contributing/
       - title: "License"
