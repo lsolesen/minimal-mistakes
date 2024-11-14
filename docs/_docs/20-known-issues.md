@@ -29,10 +29,6 @@ No way to render future posts. They have been removed in `_data/eleventyComputed
 
 Pagination not setup.
 
-## Feeds are not automatically created
-
-Feed.xml not created.
-
 ## Tags and category pages could probably be improved
 
 Right now there is a lot of room for improvement on the tags and category pages.
