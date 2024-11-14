@@ -1,5 +1,6 @@
 // Prepare to use image transformations
 const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
+const pluginRss = require("@11ty/eleventy-plugin-rss");
 
 // Setting up Markdownify
 const markdownIt = require("markdown-it");
@@ -28,6 +29,26 @@ md.use(markdownItFootnote);
 const yaml = require("js-yaml");
 
 module.exports = async function (eleventyConfig) {
+
+  // RSS-feed
+  eleventyConfig.addPlugin(pluginRss, {
+    type: "atom", // or "rss", "json"
+		outputPath: "/feed.xml",
+		collection: {
+			name: "posts", // iterate over `collections.posts`
+			limit: 10,     // 0 means no limit
+		},
+		metadata: {
+			language: "en",
+			title: "Blog Title",
+			subtitle: "This is a longer description about your blog.",
+			base: "https://example.com/",
+			author: {
+				name: "Your Name",
+				email: "", // Optional
+			}
+		}
+  });
 
   // Tags
   eleventyConfig.addCollection('tagList', collection => {

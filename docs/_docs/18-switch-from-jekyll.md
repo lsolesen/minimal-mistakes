@@ -35,5 +35,6 @@ Like this:
 ```
 
 13. Go through the `.eleventy.js`-file. In the bottom change `input`, `includes`, `layouts` to the proper directories compared to your setup.
+14. Make sure to copy the `assets/js` directory.
 
 There might be more things you need to do. Follow the prompt.
