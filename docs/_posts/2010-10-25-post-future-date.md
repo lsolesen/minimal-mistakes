@@ -7,4 +7,4 @@ categories:
 
 This post lives in the future and is dated {{ page.date | date: "%c" }}. 
 
-As of writing this can not be shown in 11ty in the current setup. If you have an idea, please share it through a pull request.
+This should be hidden when building via `build`, but be shown in `watch` and development mode.

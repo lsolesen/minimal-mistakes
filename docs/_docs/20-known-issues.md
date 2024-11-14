@@ -21,10 +21,6 @@ Here is a list:
 
 Tags page and categories pages are not sorted by most items in the collection.
 
-## No way to render future posts
-
-No way to render future posts. They have been removed in `_data/eleventyComputed.js`
-
 ## Pagination is not setup
 
 Pagination not setup.
