@@ -14,7 +14,7 @@
     {% include masthead.html %}
 
     <div class="initial-content">
-      {{ content }}
+      {{ content | safe }}
       {% include after-content.html %}
     </div>
 

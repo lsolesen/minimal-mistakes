@@ -164,7 +164,6 @@ module.exports = async function (eleventyConfig) {
     md.render(markdownString),
   );
 
-
   eleventyConfig.addFilter('where2', function where(array, key, value) {
     return array.filter(item => {
       let itemValue;

@@ -48,7 +48,7 @@ layout: default
             </nav>
           </aside>
         {% endif %}
-        {{ content }}
+        {{ content | safe }}
         {% if link %}<div><a href="{{ link }}" class="btn btn--primary">{{ ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
       </section>
 
