@@ -36,5 +36,6 @@ Like this:
 
 13. Go through the `.eleventy.js`-file. In the bottom change `input`, `includes`, `layouts` to the proper directories compared to your setup.
 14. Make sure to copy the `assets/js` directory.
+15. If you use `where` to filter stuff and it needs to find stuff in an array, you need to switch to `where2`, that will handle both strings and arrays. Here you do not need to prepend `data.`, as that is implied.
 
 There might be more things you need to do. Follow the prompt.

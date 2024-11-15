@@ -163,6 +163,40 @@ module.exports = async function (eleventyConfig) {
   eleventyConfig.addFilter("markdownify", (markdownString) =>
     md.render(markdownString),
   );
+
+
+  eleventyConfig.addFilter('where2', function where(array, key, value) {
+    return array.filter(item => {
+      let itemValue;
+      
+      // Check if the key is in item.data
+      if (item.data && key in item.data) {
+        itemValue = item.data[key];
+      } 
+      // Check if the key is directly in item
+      else if (key in item) {
+        itemValue = item[key];
+      } 
+      // If key is not found, return false to filter out this item
+      else {
+        return false;
+      }
+
+      // Handle undefined value (check for key existence)
+      if (typeof value === 'undefined') {
+        return true;
+      }
+
+      // Handle array values
+      if (Array.isArray(itemValue)) {
+        return itemValue.includes(value);
+      } 
+      // Handle string and other types
+      else {
+        return itemValue === value;
+      }
+    });
+  });
   
   // Create titles for posts without a title in frontmatter
   eleventyConfig.addGlobalData("eleventyComputed.title", () => (data) => {
