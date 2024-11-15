@@ -21,6 +21,6 @@ layout: default
     {% unless header.overlay_color or header.overlay_image %}
       <h1 id="page-title" class="page__title"{% if locale %} lang="{{ locale }}"{% endif %}>{{ title }}</h1>
     {% endunless %}
-    {{ content | safe }}
+    {{ content }}
   </div>
 </div>

@@ -16,7 +16,7 @@ layout: default
     {% if last_modified_at %}<meta itemprop="dateModified" content="{{ last_modified_at | date_to_xmlschema }}">{% endif %}
 
     <section class="page__content" itemprop="text">
-      {{ content | safe }}
+      {{ content }}
     </section>
   </article>
 </div>
