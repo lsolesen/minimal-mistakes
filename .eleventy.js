@@ -113,6 +113,7 @@ module.exports = async function (eleventyConfig) {
   // Make it possible to have the site served in a sub directory
   const { EleventyHtmlBasePlugin } = await import("@11ty/eleventy");
   eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
+  eleventyConfig.addPlugin(futurePosts);
 
   // Automatically improve images
   eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
