@@ -7,6 +7,16 @@
     <description>This is a longer description about your blog.</description>
     <language>en</language>
     <item>
+      <title>Post: Future Date</title>
+      <link>https://example.com/minimal-mistakes/post/post-future-date/</link>
+      <description>&lt;p&gt;This post lives in the future and is dated 12/31/9999, 12:00:00 AM.&lt;/p&gt;
+&lt;p&gt;This should be hidden when building via &lt;code&gt;build&lt;/code&gt;, but be shown in &lt;code&gt;watch&lt;/code&gt; and development mode.&lt;/p&gt;
+</description>
+      <pubDate>Fri, 31 Dec 9999 24:00:00 GMT</pubDate>
+      <dc:creator>Your Name</dc:creator>
+      <guid>https://example.com/minimal-mistakes/post/post-future-date/</guid>
+    </item>
+    <item>
       <title>Exclude Post from Search Index</title>
       <link>https://example.com/minimal-mistakes/theme/post-exclude-search/</link>
       <description>&lt;p&gt;This post should not appear in the search index because it has the following YAML Front Matter:&lt;/p&gt;
