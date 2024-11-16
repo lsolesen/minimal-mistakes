@@ -2,28 +2,20 @@
 const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
 const { feedPlugin } = require("@11ty/eleventy-plugin-rss");
 
-// Setting up Markdownify
-const markdownIt = require("markdown-it");
-const markdownItAttrs = require('markdown-it-attrs');
-const markdownItAnchor = require('markdown-it-anchor');
+// Collections
+const { getPosts, getDocs, getPortfolio, getPets, getRecipes } = require('./config/11ty/collections.js');
+
+// Markdown
+const md = require('./config/markdown/core.js');
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-const markdownItFootnote = require("markdown-it-footnote");
 
-let markdownitOptions = {
-  html: true,
-  breaks: true,
-  linkify: true,
-};
-const md = new markdownIt(markdownitOptions);
+// Shortcodes
+const { postUrl, link } = require("./config/11ty/shortcodes.js");
 
-md.use(markdownItAttrs, {
-  // optional, these are default options
-  leftDelimiter: '{',
-  rightDelimiter: '}',
-  allowedAttributes: ["class", "rel"]  // empty array = all attributes are allowed
-});
-md.use(markdownItAnchor);
-md.use(markdownItFootnote);
+// Filters
+const { where } = require('./config/11ty/filters.js');
+
+const futurePosts = require('./config/11ty/future-posts.js');
 
 // Allow for data files to be in yaml
 const yaml = require("js-yaml");
@@ -31,7 +23,7 @@ const yaml = require("js-yaml");
 module.exports = async function (eleventyConfig) {
 
   eleventyConfig.addPreprocessor("drafts", "*", (data, content) => {
-		if(data.draft && process.env.ELEVENTY_RUN_MODE === "build") {
+		if (data.draft && process.env.ELEVENTY_RUN_MODE === "build") {
 			return false;
 		}
 	});
@@ -112,21 +104,11 @@ module.exports = async function (eleventyConfig) {
   });
 
   // Collections
-  eleventyConfig.addCollection('posts', function(collection) {
-      return collection.getFilteredByGlob('docs/_posts/**/*.md');
-  });
-  eleventyConfig.addCollection('docs', function(collection) {
-      return collection.getFilteredByGlob('docs/_docs/**/*.md');
-  });
-  eleventyConfig.addCollection('pets', function(collection) {
-      return collection.getFilteredByGlob('docs/_pets/**/*.md');
-  });
-  eleventyConfig.addCollection('recipes', function(collection) {
-      return collection.getFilteredByGlob('docs/_recipes/**/*.md');
-  });
-  eleventyConfig.addCollection('portfolio', function(collection) {
-      return collection.getFilteredByGlob('docs/_portfolio/**/*.md');
-  });
+  eleventyConfig.addCollection('posts', getPosts);
+  eleventyConfig.addCollection('docs', getDocs);
+  eleventyConfig.addCollection('pets', getPets);
+  eleventyConfig.addCollection('recipes', getRecipes);
+  eleventyConfig.addCollection('portfolio', getPortfolio);
 
   // Make it possible to have the site served in a sub directory
   const { EleventyHtmlBasePlugin } = await import("@11ty/eleventy");
@@ -148,10 +130,6 @@ module.exports = async function (eleventyConfig) {
     },
   });
 
-  // Syntax highlighting with prism
-  // TODO Missing copy button
-  eleventyConfig.addPlugin(syntaxHighlight);
-
   // Pass through
   eleventyConfig.addPassthroughCopy("assets/css");
   eleventyConfig.addPassthroughCopy("assets/js");
@@ -163,39 +141,11 @@ module.exports = async function (eleventyConfig) {
   eleventyConfig.addFilter("markdownify", (markdownString) =>
     md.render(markdownString),
   );
+  // Syntax highlighting with prism
+  // TODO Missing copy button
+  eleventyConfig.addPlugin(syntaxHighlight);
 
-  eleventyConfig.addFilter('where2', function where(array, key, value) {
-    return array.filter(item => {
-      let itemValue;
-      
-      // Check if the key is in item.data
-      if (item.data && key in item.data) {
-        itemValue = item.data[key];
-      } 
-      // Check if the key is directly in item
-      else if (key in item) {
-        itemValue = item[key];
-      } 
-      // If key is not found, return false to filter out this item
-      else {
-        return false;
-      }
-
-      // Handle undefined value (check for key existence)
-      if (typeof value === 'undefined') {
-        return true;
-      }
-
-      // Handle array values
-      if (Array.isArray(itemValue)) {
-        return itemValue.includes(value);
-      } 
-      // Handle string and other types
-      else {
-        return itemValue === value;
-      }
-    });
-  });
+  eleventyConfig.addFilter('where2', where);
   
   // Create titles for posts without a title in frontmatter
   eleventyConfig.addGlobalData("eleventyComputed.title", () => (data) => {
@@ -265,65 +215,9 @@ module.exports = async function (eleventyConfig) {
     }
   );
 
-  /**
-   * Define a post_url Liquid tag for cross-referencing
-   * 
-   * Original creator: https://rusingh.com/articles/2020/04/24/implement-jekyll-post-url-tag-11ty-shortcode/
-   * Adapted by me to work with filename instead of slug.
-   * 
-   * @param {*} collection 
-   * @param {*} filename 
-   * @returns 
-   */
-  eleventyConfig.addShortcode("post_url", (collection, filename) => {
-    if (collection.length < 1) {
-      throw "Collection appears to be empty";
-    }
-    if (!Array.isArray(collection)) {
-      throw "Collection is an invalid type - it must be an array!";
-    }
-    if (typeof filename !== "string") {
-      throw "Filename is an invalid type - it must be a string!";
-    }
-    const found = collection.find(p => p.template.inputPath.indexOf(filename) > -1);
-    if (found === 0 || found === undefined) {
-      // When nothing was found, throw an error to break the build.
-      // Broken links should not be allowed!
-      throw new Error(`File ${this.page.inputPath} wants to link to ${filename}, but it does not exist.`);
-    } else {
-      return found.url;
-    }
-  });
-
-  /**
-   * Define a post_url Liquid tag for cross-referencing
-   * 
-   * Original creator: https://rusingh.com/articles/2020/04/24/implement-jekyll-post-url-tag-11ty-shortcode/
-   * Adapted by me to work with filename instead of slug.
-   * 
-   * @param {*} collection 
-   * @param {*} filename 
-   * @returns 
-   */
-  eleventyConfig.addShortcode("link", (collection, filename) => {
-    if (collection.length < 1) {
-      throw "Collection appears to be empty";
-    }
-    if (!Array.isArray(collection)) {
-      throw "Collection is an invalid type - it must be an array!";
-    }
-    if (typeof filename !== "string") {
-      throw "Filename is an invalid type - it must be a string!";
-    }
-    const found = collection.find(p => p.template.inputPath.indexOf(filename) > -1);
-    if (found === 0 || found === undefined) {
-      // When nothing was found, throw an error to break the build.
-      // Broken links should not be allowed!
-      throw new Error(`File ${this.page.inputPath} wants to link to ${filename}, but it does not exist.`);
-    } else {
-      return found.url;
-    }
-  });
+  // Short codes
+  eleventyConfig.addShortcode("post_url", postUrl);
+  eleventyConfig.addShortcode("link", link);
 
   // @source https://24ways.org/2018/turn-jekyll-up-to-eleventy/
   // TODO: Might be better to turn off in the future, but for now this makes i way easier

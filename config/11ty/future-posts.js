@@ -4,6 +4,7 @@ const isPageFromFuture = ({ date }) =>
 const POST_DATE_RE = /(?<prefix>^.*\/)(?<date>\d{4}-(?:[0]\d|1[0-2])-(?:[0-2]\d|3[01]))-(?<suffix>.+)/;
     
 module.exports = {
+  eleventyComputed: {
     permalink: (data) => {
       const { permalink, page } = data;
       if (isPageFromFuture(page)) return false;
@@ -26,4 +27,5 @@ module.exports = {
       else
         return datePublished;
     },
+  }
 };
