@@ -1,37 +1,47 @@
 // Prepare to use image transformations
-const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
-const { feedPlugin } = require("@11ty/eleventy-plugin-rss");
+import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
+import { feedPlugin } from "@11ty/eleventy-plugin-rss";
 
 // Collections
-const { getPosts } = require('./config/11ty/collections.cjs');
-const { getDocs, getPortfolio, getPets, getRecipes } = require('./config/11ty/collections-custom.cjs');
-const { getRelatedPosts } = require('./config/11ty/related-posts.cjs');
-const { getCategoryList } = require('./config/11ty/categories.cjs');
-const { getTagList } = require('./config/11ty/tags.cjs');
+import { getPosts } from './config/11ty/collections.cjs';
+import { getDocs, getPortfolio, getPets, getRecipes } from './config/11ty/collections-custom.cjs';
+import { getRelatedPosts } from './config/11ty/related-posts.cjs';
+import { getCategoryList } from './config/11ty/categories.cjs';
+import { getTagList } from './config/11ty/tags.cjs';
 
 // Markdown
-const md = require('./config/markdown/core.cjs');
-const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+import md from './config/markdown/core.mjs';
+import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 
 // Shortcodes
-const { postUrl, link } = require("./config/11ty/shortcodes.cjs");
+import { postUrl, link } from "./config/11ty/shortcodes.cjs";
 
 // Filters
-const { where } = require('./config/11ty/filters.cjs');
+import { where } from './config/11ty/filters.cjs';
 
 // Future posts
-const futurePosts = require('./config/11ty/future-posts.cjs');
+import futurePosts from './config/11ty/future-posts.cjs';
 
 // Excerpt and title in eleventyComputed
-const eleventyComputedTitle = require('./config/11ty/title.cjs');
+import eleventyComputedTitle from './config/11ty/title.cjs';
 
 // Allow for data files to be in yaml
-const yaml = require("js-yaml");
+import yaml from "js-yaml";
+import { EleventyHtmlBasePlugin } from "@11ty/eleventy";
 
-module.exports = async function (eleventyConfig) {
+// To avoid circular dependency in excerpts.
+// Should probably fix the root cause, but cannot figure it out.
+const replacer = function (key, value) {
+  if(key === 'itself') {
+    return null
+  }
+
+  return value
+}
+
+export default function (eleventyConfig) {
 
   // Make it possible to have the site served in a sub directory
-  const { EleventyHtmlBasePlugin } = await import("@11ty/eleventy");
   eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
 
   // RSS-feed
@@ -129,7 +139,10 @@ module.exports = async function (eleventyConfig) {
   // Create computed excerpts per page if none has been explicitly set
   eleventyConfig.addGlobalData("eleventyComputed.excerpt", () => (data) => {
 
-    if (JSON.stringify(data) === '{}') {
+    // TODO
+    // Need to use replacer function to avoid circular dependency
+    // Should probably fix the underlying cause of this happening instead.
+    if (JSON.stringify(data, replacer) === '{}') {
       return "";
     }
 
