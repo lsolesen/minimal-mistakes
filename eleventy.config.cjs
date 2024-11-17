@@ -3,27 +3,27 @@ const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
 const { feedPlugin } = require("@11ty/eleventy-plugin-rss");
 
 // Collections
-const { getPosts } = require('./config/11ty/collections.js');
-const { getDocs, getPortfolio, getPets, getRecipes } = require('./config/11ty/collections-custom.js');
-const { getRelatedPosts } = require('./config/11ty/related-posts.js');
-const { getCategoryList } = require('./config/11ty/categories.js');
-const { getTagList } = require('./config/11ty/tags.js');
+const { getPosts } = require('./config/11ty/collections.cjs');
+const { getDocs, getPortfolio, getPets, getRecipes } = require('./config/11ty/collections-custom.cjs');
+const { getRelatedPosts } = require('./config/11ty/related-posts.cjs');
+const { getCategoryList } = require('./config/11ty/categories.cjs');
+const { getTagList } = require('./config/11ty/tags.cjs');
 
 // Markdown
-const md = require('./config/markdown/core.js');
+const md = require('./config/markdown/core.cjs');
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
 // Shortcodes
-const { postUrl, link } = require("./config/11ty/shortcodes.js");
+const { postUrl, link } = require("./config/11ty/shortcodes.cjs");
 
 // Filters
-const { where } = require('./config/11ty/filters.js');
+const { where } = require('./config/11ty/filters.cjs');
 
 // Future posts
-const futurePosts = require('./config/11ty/future-posts.js');
+const futurePosts = require('./config/11ty/future-posts.cjs');
 
 // Excerpt and title in eleventyComputed
-const eleventyComputedTitle = require('./config/11ty/title.js');
+const eleventyComputedTitle = require('./config/11ty/title.cjs');
 
 // Allow for data files to be in yaml
 const yaml = require("js-yaml");
