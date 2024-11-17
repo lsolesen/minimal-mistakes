@@ -9,13 +9,11 @@ This is a port of Michael Rose's Jekyll theme. There are still quite a few known
 
 Here is a list:
 
-## Does not render en-dash
-
---- does not render to en-dash
-
 ## Where filer does not work
 
-`where` filter does not work. Everytime it is used it just returns en empty collection after filtering.
+`where` filter does not work for arrays like tags and categories. Everytime it is used it just returns en empty collection after filtering.
+
+Right now you can use `where2` to use with arrays.
 
 ## Tags and categories pages are not sorted.
 

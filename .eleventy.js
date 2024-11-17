@@ -3,7 +3,11 @@ const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
 const { feedPlugin } = require("@11ty/eleventy-plugin-rss");
 
 // Collections
-const { getPosts, getDocs, getPortfolio, getPets, getRecipes } = require('./config/11ty/collections.js');
+const { getPosts } = require('./config/11ty/collections.js');
+const { getDocs, getPortfolio, getPets, getRecipes } = require('./config/11ty/collections-custom.js');
+const { getRelatedPosts } = require('./config/11ty/related-posts.js');
+const { getCategoryList } = require('./config/11ty/categories.js');
+const { getTagList } = require('./config/11ty/tags.js');
 
 // Markdown
 const md = require('./config/markdown/core.js');
@@ -15,18 +19,20 @@ const { postUrl, link } = require("./config/11ty/shortcodes.js");
 // Filters
 const { where } = require('./config/11ty/filters.js');
 
+// Future posts
 const futurePosts = require('./config/11ty/future-posts.js');
+
+// Excerpt and title in eleventyComputed
+const eleventyComputedTitle = require('./config/11ty/title.js');
 
 // Allow for data files to be in yaml
 const yaml = require("js-yaml");
 
 module.exports = async function (eleventyConfig) {
 
-  eleventyConfig.addPreprocessor("drafts", "*", (data, content) => {
-		if (data.draft && process.env.ELEVENTY_RUN_MODE === "build") {
-			return false;
-		}
-	});
+  // Make it possible to have the site served in a sub directory
+  const { EleventyHtmlBasePlugin } = await import("@11ty/eleventy");
+  eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
 
   // RSS-feed
   eleventyConfig.addPlugin(feedPlugin, {
@@ -49,71 +55,31 @@ module.exports = async function (eleventyConfig) {
   });
 
   // Tags
-  eleventyConfig.addCollection('tagList', collection => {
-      const tagsSet = new Set();
-      collection.getAll().forEach(item => {
-          if (!item.data.tags) return;
-          item.data.tags.filter(tag => !['posts', 'all'].includes(tag)).forEach(tag => tagsSet.add(tag));
-      });
-      return Array.from(tagsSet).sort();
-  });
+  eleventyConfig.addCollection('tagList', getTagList);
 
   // Categories
-  eleventyConfig.addCollection('categoryList', collection => {
-      let catSet = {};
-      collection.getAll().forEach(item => {
-          if (!item.data.categories) return;
-          item.data.categories.filter(
-              cat => !['posts', 'all'].includes(cat)
-          ).forEach(
-              cat => {
-                  if (!catSet[cat]) { catSet[cat] = []; }
-                  catSet[cat].push(item)
-              }
-          );
-      });
-      return catSet;
-  });
+  eleventyConfig.addCollection('categoryList', getCategoryList);
 
-  // https://saadbess.com/blog/creating-a-content-recommendation-plugin-in-11ty/
-  eleventyConfig.addCollection("relatedPosts", function (collection) {
-    return collection
-      .getAll()
-      .filter((item) => !item.data.draft)
-      .map((post) => {
-        let related = [];
-
-        if (post.data.tags) {
-          post.data.tags.forEach((tag) => {
-            collection.getFilteredByTag(tag).forEach((item) => {
-              if (
-                item.url !== post.url &&
-                !related.includes(item) &&
-                !item.data.draft
-              ) {
-                related.push(item);
-              }
-            });
-          });
-        }
-        // Remove duplicates and limit to a specific number of related posts, for instance, 3
-        related = [...new Set(related)].slice(0, 4);
-        post.data.relatedPosts = related;
-        return post;
-      });
-  });
+  eleventyConfig.addCollection("relatedPosts", getRelatedPosts);
 
   // Collections
   eleventyConfig.addCollection('posts', getPosts);
+
+  // Custom Collections
   eleventyConfig.addCollection('docs', getDocs);
   eleventyConfig.addCollection('pets', getPets);
   eleventyConfig.addCollection('recipes', getRecipes);
   eleventyConfig.addCollection('portfolio', getPortfolio);
 
-  // Make it possible to have the site served in a sub directory
-  const { EleventyHtmlBasePlugin } = await import("@11ty/eleventy");
-  eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
+  // Hide future posts in build
   eleventyConfig.addPlugin(futurePosts);
+
+  // Handle drafts
+  eleventyConfig.addPreprocessor("drafts", "*", (data, content) => {
+		if (data.draft && process.env.ELEVENTY_RUN_MODE === "build") {
+			return false;
+		}
+	});
 
   // Automatically improve images
   eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
@@ -137,40 +103,29 @@ module.exports = async function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("assets/images/");
   eleventyConfig.addPassthroughCopy({ "docs/assets/images": "assets/images" });
 
-  // Setup shortcodes and filters
+  // Setup Mardown
   eleventyConfig.setLibrary("md", md);
   eleventyConfig.addFilter("markdownify", (markdownString) =>
     md.render(markdownString),
   );
+
+  // @source https://24ways.org/2018/turn-jekyll-up-to-eleventy/
+  // TODO: Might be better to turn off in the future, but for now this makes i way easier
+  eleventyConfig.setLiquidOptions({
+    jekyllInclude: true, // allow to use jekyll style include
+    extname: ".liquid", // Use .liquid if not specified
+    dynamicPartials: false, // allow to use feature_row without quotes
+    strictFilters: true
+  });
+
   // Syntax highlighting with prism
   // TODO Missing copy button
   eleventyConfig.addPlugin(syntaxHighlight);
 
-  eleventyConfig.addFilter('where2', where);
-  
-  // Create titles for posts without a title in frontmatter
-  eleventyConfig.addGlobalData("eleventyComputed.title", () => (data) => {
-    // If property is explicitly set, use that
-    if (data.title) {
-      return data.title;
-    }
-
-    let slug = data.page.fileSlug;
-    let words = slug.split('-');
-
-    for (let i = 0; i < words.length; i++) {
-      let word = words[i];
-      words[i] = word.charAt(0).toUpperCase() + word.slice(1);
-    }
-
-    return words.join(' ');
-  });
+  // Handle titles for posts without a title
+  eleventyConfig.addPlugin(eleventyComputedTitle);
 
   // Configure excerpt
-  eleventyConfig.setFrontMatterParsingOptions({
-    excerpt: true
-  });
-
   // Create computed excerpts per page if none has been explicitly set
   eleventyConfig.addGlobalData("eleventyComputed.excerpt", () => (data) => {
 
@@ -202,6 +157,13 @@ module.exports = async function (eleventyConfig) {
     return null;
   });
 
+  eleventyConfig.setFrontMatterParsingOptions({
+    excerpt: true
+  });
+
+  // Setups filters
+  eleventyConfig.addFilter('where2', where);
+
   // absolute_url is deprecated - hardcode to your liking
   // @deprecated
   eleventyConfig.addFilter("absolute_url", (url) => {
@@ -219,15 +181,6 @@ module.exports = async function (eleventyConfig) {
   // Short codes
   eleventyConfig.addShortcode("post_url", postUrl);
   eleventyConfig.addShortcode("link", link);
-
-  // @source https://24ways.org/2018/turn-jekyll-up-to-eleventy/
-  // TODO: Might be better to turn off in the future, but for now this makes i way easier
-  eleventyConfig.setLiquidOptions({
-    jekyllInclude: true, // allow to use jekyll style include
-    extname: ".liquid", // Use .liquid if not specified
-    dynamicPartials: false, // allow to use feature_row without quotes
-    strictFilters: true
-  });
 
   // Make it possible to use yaml as settings
   eleventyConfig.addDataExtension("yaml, yml", (contents) => yaml.load(contents));
