@@ -12,9 +12,9 @@
   {% endif %}
 
   <div class="author__content">
-    <h3 class="author__name p-name" itemprop="name">
+    <p class="author__name p-name" itemprop="name">
       <a class="u-url" rel="author" href="{{ author.home | default: '/' | absolute_url }}" itemprop="url">{{ author.name }}</a>
-    </h3>
+    </p>
     {% if author.bio %}
       <div class="author__bio p-note" itemprop="description">
         {{ author.bio | markdownify }}
@@ -34,7 +34,11 @@
       {% if author.links %}
         {% for link in author.links %}
           {% if link.label and link.url %}
-            <li><a href="{{ link.url }}" rel="nofollow noopener noreferrer author{% if item.rel %} {{ item.rel }}{% endif %}"{% if link.url contains 'http' %} itemprop="sameAs"{% endif %}><i class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></i><span class="label">{{ link.label }}</span></a></li>
+            <li>
+              <a href="{{ link.url }}" rel="nofollow noopener noreferrer author{% if item.rel %} {{ item.rel }}{% endif %}"{% if link.url contains 'http' %} itemprop="sameAs"{% endif %}>
+                <i class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></i><span class="label">{{ link.label }}</span>
+              </a>
+            </li>
           {% endif %}
         {% endfor %}
       {% endif %}

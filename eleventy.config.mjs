@@ -29,16 +29,6 @@ import eleventyComputedTitle from './config/11ty/title.cjs';
 import yaml from "js-yaml";
 import { EleventyHtmlBasePlugin } from "@11ty/eleventy";
 
-// To avoid circular dependency in excerpts.
-// Should probably fix the root cause, but cannot figure it out.
-const replacer = function (key, value) {
-  if(key === 'itself') {
-    return null
-  }
-
-  return value
-}
-
 export default function (eleventyConfig) {
 
   // Make it possible to have the site served in a sub directory
@@ -138,13 +128,6 @@ export default function (eleventyConfig) {
   // Configure excerpt
   // Create computed excerpts per page if none has been explicitly set
   eleventyConfig.addGlobalData("eleventyComputed.excerpt", () => (data) => {
-
-    // TODO
-    // Need to use replacer function to avoid circular dependency
-    // Should probably fix the underlying cause of this happening instead.
-    if (JSON.stringify(data, replacer) === '{}') {
-      return "";
-    }
 
     // If property is explicitly set, use that
     if (data.excerpt) {
