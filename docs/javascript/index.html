@@ -12,7 +12,7 @@
     <meta charset="utf-8">
 
 <!-- begin _includes/seo.html --><title>JavaScript - Minimal Mistakes</title>
-<meta name="description" content="Instructions for customizing and building the theme&#39;s scripts.">
+<meta name="description" content="Instructions for customizing and building the theme’s scripts.">
 
 
   <meta name="author" content="Michael Rose">
@@ -26,7 +26,7 @@
 <meta property="og:url" content="">
 
 
-  <meta property="og:description" content="Instructions for customizing and building the theme&#39;s scripts.">
+  <meta property="og:description" content="Instructions for customizing and building the theme’s scripts.">
 
 
 
@@ -36,7 +36,7 @@
 
   <meta name="twitter:site" content="@mmistakes">
   <meta name="twitter:title" content="JavaScript">
-  <meta name="twitter:description" content="Instructions for customizing and building the theme&#39;s scripts.">
+  <meta name="twitter:description" content="Instructions for customizing and building the theme’s scripts.">
   <meta name="twitter:url" content="">
 
   
@@ -295,7 +295,7 @@
 
   <article class="page h-entry" itemscope="" itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="JavaScript">
-    <meta itemprop="description" content="Instructions for customizing and building the theme&#39;s scripts.">
+    <meta itemprop="description" content="Instructions for customizing and building the theme’s scripts.">
     
     <meta itemprop="dateModified" content="2021-07-23T13:33:35+00:00">
 
@@ -318,7 +318,7 @@
 
       <section class="page__content e-content" itemprop="text">
         
-        <p>The theme's <code>assets/js/main.min.js</code> script is built from several vendor, jQuery plugins, and other scripts found in <a href="https://github.com/mmistakes/minimal-mistakes/tree/master/assets/js"><code>assets/js/</code></a>.</p>
+        <p>The theme’s <code>assets/js/main.min.js</code> script is built from several vendor, jQuery plugins, and other scripts found in <a href="https://github.com/mmistakes/minimal-mistakes/tree/master/assets/js"><code>assets/js/</code></a>.</p>
 <pre class="language-bash"><code class="language-bash">minimal mistakes
 ├── assets
 <span class="token operator">|</span>  ├── js
@@ -346,7 +346,7 @@
   <span class="token punctuation">-</span> /assets/js/your<span class="token punctuation">-</span>custom<span class="token punctuation">-</span>footer<span class="token punctuation">-</span>script.js
 <span class="token key atrule">after_footer_scripts</span><span class="token punctuation">:</span>
   <span class="token punctuation">-</span> /assets/js/custom<span class="token punctuation">-</span>script<span class="token punctuation">-</span>loads<span class="token punctuation">-</span>after<span class="token punctuation">-</span>footer.js</code></pre>
-<p class="notice--warning"><strong>Note:</strong> If you assign <code>footer_scripts</code> the theme's <code>/assets/js/main.min.js</code> file will be deactivated. This script includes jQuery and various other plugins that you'll need to find replacements for and include separately.</p>
+<p class="notice--warning"><strong>Note:</strong> If you assign <code>footer_scripts</code> the theme’s <code>/assets/js/main.min.js</code> file will be deactivated. This script includes jQuery and various other plugins that you’ll need to find replacements for and include separately.</p>
 <h2 id="build-process" tabindex="-1">Build process</h2>
 <p>In an effort to reduce dependencies a set of <a href="https://css-tricks.com/why-npm-scripts/"><strong>npm scripts</strong></a> are used to build <code>main.min.js</code> instead of task runners like <a href="http://gulpjs.com/">Gulp</a> or <a href="http://gruntjs.com/">Grunt</a>. If those tools are more your style then by all means use them instead :wink:.</p>
 <p>To get started:</p>
@@ -358,7 +358,7 @@
 <p class="notice--warning"><strong>Note:</strong> If you upgraded from a previous version of the theme be sure you copied over <a href="https://github.com/lsolesen/minimal-mistakes/blob/master/package.json"><code>package.json</code></a> prior to running <code>npm install</code>.</p>
 <p>If all goes well, running <code>npm run build:js</code> will compress/concatenate <code>_main.js</code> and all plugin scripts into <code>main.min.js</code>.</p>
 <h2 id="debugging" tabindex="-1">Debugging</h2>
-<p>The minified JavaScript is harder to debug in the browser than the raw source. To stop the minification and bundle all the JavaScript as-is --- open up <code>package.json</code> and edit the value <code>scripts.uglify</code> from:</p>
+<p>The minified JavaScript is harder to debug in the browser than the raw source. To stop the minification and bundle all the JavaScript as-is — open up <code>package.json</code> and edit the value <code>scripts.uglify</code> from:</p>
 <pre class="language-json"><code class="language-json">  <span class="token property">"scripts"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
     <span class="token property">"uglify"</span><span class="token operator">:</span> <span class="token string">"uglifyjs [...] -c -m -o assets/js/main.min.js"</span><span class="token punctuation">,</span></code></pre>
 <p>To the following:</p>

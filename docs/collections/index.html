@@ -318,17 +318,17 @@
 
       <section class="page__content e-content" itemprop="text">
         
-        <p>Collections like posts and pages work as you'd expect. If you're new to them be sure to read <a href="https://www.11ty.dev/docs/collections/">11ty's documentation</a>.</p>
+        <p>Collections like posts and pages work as you’d expect. If you’re new to them be sure to read <a href="https://www.11ty.dev/docs/collections/">11ty’s documentation</a>.</p>
 <p>The theme has been built with collections in mind and you will find <a href="/minimal-mistakes/collection-archive/">several examples</a> on the demo site (<a href="/minimal-mistakes/portfolio/">portfolio</a>, <a href="/minimal-mistakes/recipes/">recipes</a>, <a href="/minimal-mistakes/pets/">pets</a>).</p>
-<p class="notice--info"><strong>Collections in the Wild:</strong> This set of documentation is also <a href="https://github.com/lsolesen/minimal-mistakes/blob/master/docs/_docs/">built as a collection</a> if you're looking for a fully fleshed out example to inspect.</p>
-<p>A popular use case for collections is to build a portfolio section as part of one's personal site. Let's quickly walk through the steps to do that.</p>
+<p class="notice--info"><strong>Collections in the Wild:</strong> This set of documentation is also <a href="https://github.com/lsolesen/minimal-mistakes/blob/master/docs/_docs/">built as a collection</a> if you’re looking for a fully fleshed out example to inspect.</p>
+<p>A popular use case for collections is to build a portfolio section as part of one’s personal site. Let’s quickly walk through the steps to do that.</p>
 <p><strong>Step 1:</strong> Configure the portfolio collection by adding the following to <code>_config.yml</code>.</p>
 <pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">collections</span><span class="token punctuation">:</span>
   <span class="token key atrule">portfolio</span><span class="token punctuation">:</span>
     <span class="token key atrule">output</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
     <span class="token key atrule">permalink</span><span class="token punctuation">:</span> /<span class="token punctuation">:</span>collection/<span class="token punctuation">:</span>path/</code></pre>
 <p>These settings essentially say output <code>index.html</code> files for each portfolio document in <code>_portfolio</code> at <code>_site/portfolio/&lt;document-filename&gt;/</code>.</p>
-<p>Just like posts and pages you'll probably want to set some defaults for the Front Matter:</p>
+<p>Just like posts and pages you’ll probably want to set some defaults for the Front Matter:</p>
 <pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">defaults</span><span class="token punctuation">:</span>
   <span class="token comment"># _portfolio</span>
   <span class="token punctuation">-</span> <span class="token key atrule">scope</span><span class="token punctuation">:</span>
@@ -338,7 +338,7 @@
       <span class="token key atrule">layout</span><span class="token punctuation">:</span> single
       <span class="token key atrule">author_profile</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
       <span class="token key atrule">share</span><span class="token punctuation">:</span> <span class="token boolean important">true</span></code></pre>
-<p>Now make a <a href="http://portfolio.md">portfolio.md</a> file in the '_pages' folder.</p>
+<p>Now make a <a href="http://portfolio.md">portfolio.md</a> file in the ‘_pages’ folder.</p>
 <pre class="language-yaml"><code class="language-yaml"><span class="token punctuation">---</span>
 <span class="token key atrule">title</span><span class="token punctuation">:</span> Portfolio
 <span class="token key atrule">layout</span><span class="token punctuation">:</span> collection

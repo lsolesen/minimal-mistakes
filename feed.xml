@@ -7,6 +7,116 @@
     <description>This is a longer description about your blog.</description>
     <language>en</language>
     <item>
+      <title>Markup: All markup</title>
+      <link>https://example.com/minimal-mistakes/markup-all/</link>
+      <description>&lt;p&gt;A lot of markdown packages are installed to help you write your posts.&lt;br&gt;
+You can configure them in &lt;code&gt;config/plugins/markdown.js&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;h2-heading&quot; tabindex=&quot;-1&quot;&gt;h2 Heading&lt;/h2&gt;
+&lt;h3 id=&quot;h3-heading&quot; tabindex=&quot;-1&quot;&gt;h3 Heading&lt;/h3&gt;
+&lt;h4 id=&quot;h4-heading&quot; tabindex=&quot;-1&quot;&gt;h4 Heading&lt;/h4&gt;
+&lt;p&gt;Muffin bonbon jujubes cheesecake chupa chups shortbread ice cream cotton candy cake. Jelly-o biscuit dessert danish dessert pastry tootsie roll lemon drops gingerbread. Cheesecake donut marzipan sweet roll icing muffin halvah. Dragée donut cake biscuit pie carrot cake sesame snaps jelly-o gummi bears.&lt;/p&gt;
+&lt;p&gt;Soufflé topping shortbread lemon.&lt;/p&gt;
+&lt;h2 id=&quot;hr&quot; tabindex=&quot;-1&quot;&gt;hr&lt;/h2&gt;
+&lt;h2 id=&quot;typographic-replacements&quot; tabindex=&quot;-1&quot;&gt;Typographic replacements&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;The replacement converts this input:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre class=&quot;language-markdown&quot;&gt;&lt;code class=&quot;language-markdown&quot;&gt;(c) (C) (r) (R) (tm) (TM) +-
+and so on.. and so on... and so on..... AND SO ON???????.....
+WTF!!!!!! How many exclamation marks are you going to use????????????
+,, -- ---
+&quot;double quotes&quot; and &#39;single quotes&#39;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;To this:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;© © ® ® ™ ™ ±&lt;br&gt;
+and so on… and so on… and so on… AND SO ON???..&lt;br&gt;
+WTF!!! How many exclamation marks are you going to use???&lt;br&gt;
+, – —&lt;br&gt;
+“double quotes” and ‘single quotes’&lt;/p&gt;
+&lt;h2 id=&quot;emphasis&quot; tabindex=&quot;-1&quot;&gt;Emphasis&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;This is bold text&lt;/strong&gt;&lt;br&gt;
+&lt;em&gt;This is italic text&lt;/em&gt;&lt;br&gt;
+&lt;s&gt;Strikethrough&lt;/s&gt;&lt;/p&gt;
+&lt;h2 id=&quot;blockquote&quot; tabindex=&quot;-1&quot;&gt;Blockquote&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Cheesecake donut marzipan sweet roll icing muffin halvah. Dragée donut cake biscuit pie carrot cake sesame snaps jelly-o gummi bears. Cotton candy cookie croissant fruitcake.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;lists&quot; tabindex=&quot;-1&quot;&gt;Lists&lt;/h2&gt;
+&lt;h3 id=&quot;unordered-lists&quot; tabindex=&quot;-1&quot;&gt;Unordered lists&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Create a list by starting a line with &lt;code&gt;+&lt;/code&gt;, &lt;code&gt;-&lt;/code&gt;, or &lt;code&gt;*&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Another item&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;ordered-lists&quot; tabindex=&quot;-1&quot;&gt;Ordered lists&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Lorem ipsum dolor sit amet&lt;/li&gt;
+&lt;li&gt;Consectetur adipiscing elit&lt;/li&gt;
+&lt;li&gt;Integer molestie lorem at massa&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;code&quot; tabindex=&quot;-1&quot;&gt;Code&lt;/h2&gt;
+&lt;p&gt;Syntax highlighting&lt;/p&gt;
+&lt;pre class=&quot;language-css&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token selector&quot;&gt;.back-top-top&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 10px&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; white&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;margin-top&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 110vh&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; sticky&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;bottom&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 0&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;/* by David Darnes */&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;tables&quot; tabindex=&quot;-1&quot;&gt;Tables&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Technology&lt;/th&gt;
+&lt;th&gt;Fun fact&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;HTML&lt;/td&gt;
+&lt;td&gt;HTML (Hypertext Markup Language) was created by Sir Tim Berners-Lee in 1991 as a way to structure and link documents on the World Wide Web.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;CSS&lt;/td&gt;
+&lt;td&gt;It’s called “cascading” because styles can cascade down from parent elements to their children, allowing for inheritance and overriding.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;JavaScript&lt;/td&gt;
+&lt;td&gt;TypeError: null is not an object&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&quot;links&quot; tabindex=&quot;-1&quot;&gt;Links&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://moderncss.dev/&quot;&gt;Read all those articles&lt;/a&gt;&lt;br&gt;
+Autoconverted link &lt;a href=&quot;https://every-layout.dev/&quot;&gt;https://every-layout.dev/&lt;/a&gt; (enabled via linkify)&lt;/p&gt;
+&lt;h2 id=&quot;emojis&quot; tabindex=&quot;-1&quot;&gt;Emojis&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Literal:&lt;/strong&gt;&lt;br&gt;
+🤩 💯 💚 👻 👾&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Classic markup:&lt;/strong&gt;&lt;br&gt;
+:cry: :poop: :fire: :laughing: :christmas_tree:&lt;br&gt;
+(&lt;a href=&quot;https://gist.github.com/rxaviers/7360908&quot;&gt;A reference for emoji markup&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Shortcuts (emoticons)&lt;/strong&gt;:&lt;br&gt;
+:-) :-( 8-) ;) :-P&lt;/p&gt;
+&lt;h2 id=&quot;mark&quot; tabindex=&quot;-1&quot;&gt;mark&lt;/h2&gt;
+&lt;p&gt;&lt;mark&gt;Marked text&lt;/mark&gt;&lt;/p&gt;
+&lt;h2 id=&quot;footnotes&quot; tabindex=&quot;-1&quot;&gt;Footnotes&lt;/h2&gt;
+&lt;p&gt;Footnote 1 link&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://example.com/minimal-mistakes/markup-all/#fn1&quot; id=&quot;fnref1&quot;&gt;[1]&lt;/a&gt;&lt;/sup&gt;.&lt;br&gt;
+Footnote 2 link&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://example.com/minimal-mistakes/markup-all/#fn2&quot; id=&quot;fnref2&quot;&gt;[2]&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;*[HTML]: Hyper Text Markup Language&lt;/p&gt;
+&lt;hr class=&quot;footnotes-sep&quot;&gt;
+&lt;section class=&quot;footnotes&quot;&gt;
+&lt;ol class=&quot;footnotes-list&quot;&gt;
+&lt;li id=&quot;fn1&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;Footnote &lt;strong&gt;can have markup&lt;/strong&gt;&lt;br&gt;
+and multiple paragraphs. &lt;a href=&quot;https://example.com/minimal-mistakes/markup-all/#fnref1&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&quot;fn2&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;Footnote text. &lt;a href=&quot;https://example.com/minimal-mistakes/markup-all/#fnref2&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+      <pubDate>Sat, 16 Nov 2024 24:00:00 GMT</pubDate>
+      <dc:creator>Your Name</dc:creator>
+      <guid>https://example.com/minimal-mistakes/markup-all/</guid>
+    </item>
+    <item>
       <title>Exclude Post from Search Index</title>
       <link>https://example.com/minimal-mistakes/theme/post-exclude-search/</link>
       <description>&lt;p&gt;This post should not appear in the search index because it has the following YAML Front Matter:&lt;/p&gt;
@@ -53,25 +163,25 @@
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h3 id=&quot;youtube&quot; tabindex=&quot;-1&quot;&gt;YouTube&lt;/h3&gt;
-&lt;p&gt;To embed the following YouTube video at url &lt;code&gt;https://www.youtube.com/watch?v=-PVofD2A9t8&lt;/code&gt; (long version) or &lt;code&gt;https://youtu.be/-PVofD2A9t8&lt;/code&gt; (short version) into a post or page&#39;s main content you&#39;d use:&lt;/p&gt;
+&lt;p&gt;To embed the following YouTube video at url &lt;code&gt;https://www.youtube.com/watch?v=-PVofD2A9t8&lt;/code&gt; (long version) or &lt;code&gt;https://youtu.be/-PVofD2A9t8&lt;/code&gt; (short version) into a post or page’s main content you’d use:&lt;/p&gt;
 &lt;pre class=&quot;language-liquid&quot;&gt;&lt;code class=&quot;language-liquid&quot;&gt;&lt;span class=&quot;token liquid language-liquid&quot;&gt;&lt;span class=&quot;token delimiter punctuation&quot;&gt;{%&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;token object&quot;&gt;video&lt;/span&gt; id&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;-PVofD2A9t8&quot;&lt;/span&gt; provider&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;youtube&quot;&lt;/span&gt; &lt;span class=&quot;token delimiter punctuation&quot;&gt;%}&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- Courtesy of embedresponsively.com --&gt;
   &lt;div class=&quot;responsive-video-container&quot;&gt;
     &lt;iframe src=&quot;https://www.youtube-nocookie.com/embed/-PVofD2A9t8&quot; frameborder=&quot;0&quot; webkitAllowFullScreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
   &lt;/div&gt;
-&lt;p&gt;To embed it as a video header you&#39;d use the following YAML Front Matter&lt;/p&gt;
+&lt;p&gt;To embed it as a video header you’d use the following YAML Front Matter&lt;/p&gt;
 &lt;pre class=&quot;language-yaml&quot;&gt;&lt;code class=&quot;language-yaml&quot;&gt;&lt;span class=&quot;token key atrule&quot;&gt;header&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
   &lt;span class=&quot;token key atrule&quot;&gt;video&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
     &lt;span class=&quot;token key atrule&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;PVofD2A9t8
     &lt;span class=&quot;token key atrule&quot;&gt;provider&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; youtube&lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id=&quot;vimeo&quot; tabindex=&quot;-1&quot;&gt;Vimeo&lt;/h3&gt;
-&lt;p&gt;To embed the following Vimeo video at url &lt;code&gt;https://vimeo.com/212731897&lt;/code&gt; into a post or page&#39;s main content you&#39;d use:&lt;/p&gt;
+&lt;p&gt;To embed the following Vimeo video at url &lt;code&gt;https://vimeo.com/212731897&lt;/code&gt; into a post or page’s main content you’d use:&lt;/p&gt;
 &lt;pre class=&quot;language-liquid&quot;&gt;&lt;code class=&quot;language-liquid&quot;&gt;&lt;span class=&quot;token liquid language-liquid&quot;&gt;&lt;span class=&quot;token delimiter punctuation&quot;&gt;{%&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;token object&quot;&gt;video&lt;/span&gt; id&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;212731897&quot;&lt;/span&gt; provider&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;vimeo&quot;&lt;/span&gt; &lt;span class=&quot;token delimiter punctuation&quot;&gt;%}&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- Courtesy of embedresponsively.com --&gt;
   &lt;div class=&quot;responsive-video-container&quot;&gt;
     &lt;iframe src=&quot;https://player.vimeo.com/video/212731897?dnt=true&quot; frameborder=&quot;0&quot; webkitAllowFullScreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
   &lt;/div&gt;
-&lt;p&gt;To embed it as a video header you&#39;d use the following YAML Front Matter&lt;/p&gt;
+&lt;p&gt;To embed it as a video header you’d use the following YAML Front Matter&lt;/p&gt;
 &lt;pre class=&quot;language-yaml&quot;&gt;&lt;code class=&quot;language-yaml&quot;&gt;&lt;span class=&quot;token key atrule&quot;&gt;header&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
   &lt;span class=&quot;token key atrule&quot;&gt;video&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
     &lt;span class=&quot;token key atrule&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;212731897&lt;/span&gt;
@@ -84,7 +194,7 @@
     <item>
       <title>Welcome to 11ty!</title>
       <link>https://example.com/minimal-mistakes/11ty/welcome-to-jekyll/</link>
-      <description>&lt;p&gt;You&#39;ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code&gt;npm run watch:eleventy&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+      <description>&lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code&gt;npm run watch:eleventy&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
 &lt;p&gt;To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
 &lt;p&gt;11ty also offers powerful support for code snippets:&lt;/p&gt;
 &lt;pre class=&quot;language-ruby&quot;&gt;&lt;code class=&quot;language-ruby&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token method-definition&quot;&gt;&lt;span class=&quot;token function&quot;&gt;print_hi&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;name&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
@@ -92,7 +202,7 @@
 &lt;span class=&quot;token keyword&quot;&gt;end&lt;/span&gt;
 print_hi&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string-literal&quot;&gt;&lt;span class=&quot;token string&quot;&gt;&#39;Tom&#39;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;token comment&quot;&gt;#=&gt; prints &#39;Hi, Tom&#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Check out the &lt;a href=&quot;https://www.11ty.dev/docs/&quot;&gt;Eleventy docs&lt;/a&gt; for more info on how to get the most out of 11ty. File all bugs/feature requests at &lt;a href=&quot;https://github.com/11ty/eleventy/&quot;&gt;11ty&#39;s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on [11ty Community]11ty-talk].&lt;/p&gt;
+&lt;p&gt;Check out the &lt;a href=&quot;https://www.11ty.dev/docs/&quot;&gt;Eleventy docs&lt;/a&gt; for more info on how to get the most out of 11ty. File all bugs/feature requests at &lt;a href=&quot;https://github.com/11ty/eleventy/&quot;&gt;11ty’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on [11ty Community]11ty-talk].&lt;/p&gt;
 </description>
       <pubDate>Wed, 24 Feb 2016 24:00:00 GMT</pubDate>
       <dc:creator>Your Name</dc:creator>
@@ -219,7 +329,7 @@ print_hi&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span c
     &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;a&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;href&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;/assets/images/image-filename-2-large.jpg&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;img&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;/assets/images/image-filename-2.jpg&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;a&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
     &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;figcaption&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;Caption describing these two images.&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;figcaption&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
 &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;figure&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;And you&#39;ll get something that looks like this:&lt;/p&gt;
+&lt;p&gt;And you’ll get something that looks like this:&lt;/p&gt;
 &lt;figure class=&quot;half&quot;&gt;
 	&lt;a href=&quot;https://example.com/minimal-mistakes/assets/images/placeholder/1200x600.png&quot;&gt;&lt;picture&gt;&lt;source type=&quot;image/png&quot; srcset=&quot;https://example.com/minimal-mistakes/img/OANzED48AH-400.png 400w, https://example.com/minimal-mistakes/img/OANzED48AH-600.png 600w&quot; sizes=&quot;100vw&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://example.com/minimal-mistakes/img/OANzED48AH-400.webp 400w, https://example.com/minimal-mistakes/img/OANzED48AH-600.webp 600w&quot; sizes=&quot;100vw&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://example.com/minimal-mistakes/img/OANzED48AH-400.jpeg&quot; alt=&quot;&quot; width=&quot;600&quot; height=&quot;300&quot; srcset=&quot;https://example.com/minimal-mistakes/img/OANzED48AH-400.jpeg 400w, https://example.com/minimal-mistakes/img/OANzED48AH-600.jpeg 600w&quot; sizes=&quot;100vw&quot;&gt;&lt;/picture&gt;&lt;/a&gt;
 	&lt;a href=&quot;https://example.com/minimal-mistakes/assets/images/placeholder/1200x600.png&quot;&gt;&lt;picture&gt;&lt;source type=&quot;image/png&quot; srcset=&quot;https://example.com/minimal-mistakes/img/OANzED48AH-400.png 400w, https://example.com/minimal-mistakes/img/OANzED48AH-600.png 600w&quot; sizes=&quot;100vw&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://example.com/minimal-mistakes/img/OANzED48AH-400.webp 400w, https://example.com/minimal-mistakes/img/OANzED48AH-600.webp 600w&quot; sizes=&quot;100vw&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://example.com/minimal-mistakes/img/OANzED48AH-400.jpeg&quot; alt=&quot;&quot; width=&quot;600&quot; height=&quot;300&quot; srcset=&quot;https://example.com/minimal-mistakes/img/OANzED48AH-400.jpeg 400w, https://example.com/minimal-mistakes/img/OANzED48AH-600.jpeg 600w&quot; sizes=&quot;100vw&quot;&gt;&lt;/picture&gt;&lt;/a&gt;
@@ -233,7 +343,7 @@ print_hi&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span c
 	&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;img&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;/images/image-filename-3.jpg&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
 	&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;figcaption&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;Caption describing these three images.&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;figcaption&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
 &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;figure&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;And you&#39;ll get something that looks like this:&lt;/p&gt;
+&lt;p&gt;And you’ll get something that looks like this:&lt;/p&gt;
 &lt;figure class=&quot;third&quot;&gt;
 	&lt;picture&gt;&lt;source type=&quot;image/png&quot; srcset=&quot;https://example.com/minimal-mistakes/img/OANzED48AH-400.png 400w, https://example.com/minimal-mistakes/img/OANzED48AH-600.png 600w&quot; sizes=&quot;100vw&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://example.com/minimal-mistakes/img/OANzED48AH-400.webp 400w, https://example.com/minimal-mistakes/img/OANzED48AH-600.webp 600w&quot; sizes=&quot;100vw&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://example.com/minimal-mistakes/img/OANzED48AH-400.jpeg&quot; alt=&quot;&quot; width=&quot;600&quot; height=&quot;300&quot; srcset=&quot;https://example.com/minimal-mistakes/img/OANzED48AH-400.jpeg 400w, https://example.com/minimal-mistakes/img/OANzED48AH-600.jpeg 600w&quot; sizes=&quot;100vw&quot;&gt;&lt;/picture&gt;
 	&lt;picture&gt;&lt;source type=&quot;image/png&quot; srcset=&quot;https://example.com/minimal-mistakes/img/OANzED48AH-400.png 400w, https://example.com/minimal-mistakes/img/OANzED48AH-600.png 600w&quot; sizes=&quot;100vw&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://example.com/minimal-mistakes/img/OANzED48AH-400.webp 400w, https://example.com/minimal-mistakes/img/OANzED48AH-600.webp 600w&quot; sizes=&quot;100vw&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://example.com/minimal-mistakes/img/OANzED48AH-400.jpeg&quot; alt=&quot;&quot; width=&quot;600&quot; height=&quot;300&quot; srcset=&quot;https://example.com/minimal-mistakes/img/OANzED48AH-400.jpeg 400w, https://example.com/minimal-mistakes/img/OANzED48AH-600.jpeg 600w&quot; sizes=&quot;100vw&quot;&gt;&lt;/picture&gt;
@@ -261,9 +371,9 @@ print_hi&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span c
 &lt;/blockquote&gt;
 &lt;p&gt;Multi line blockquote with a cite reference:&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;People think focus means saying yes to the thing you&#39;ve got to focus on. But that&#39;s not what it means at all. It means saying no to the hundred other good ideas that there are. You have to pick carefully. I&#39;m actually as proud of the things we haven&#39;t done as the things I have done. Innovation is saying no to 1,000 things.&lt;/p&gt;
+&lt;p&gt;People think focus means saying yes to the thing you’ve got to focus on. But that’s not what it means at all. It means saying no to the hundred other good ideas that there are. You have to pick carefully. I’m actually as proud of the things we haven’t done as the things I have done. Innovation is saying no to 1,000 things.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p class=&quot;small&quot;&gt;&lt;cite&gt;Steve Jobs&lt;/cite&gt;  Apple Worldwide Developers&#39; Conference, 1997&lt;/p&gt;
+&lt;p class=&quot;small&quot;&gt;&lt;cite&gt;Steve Jobs&lt;/cite&gt;  Apple Worldwide Developers’ Conference, 1997&lt;/p&gt;
 &lt;h2 id=&quot;tables&quot; tabindex=&quot;-1&quot;&gt;Tables&lt;/h2&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -277,7 +387,7 @@ print_hi&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span c
 &lt;tr&gt;
 &lt;td&gt;&lt;a href=&quot;https://example.com/minimal-mistakes/markup/markup-html-tags-and-formatting/&quot;&gt;John Doe&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;$1&lt;/td&gt;
-&lt;td&gt;Because that&#39;s all Steve Jobs needed for a salary.&lt;/td&gt;
+&lt;td&gt;Because that’s all Steve Jobs needed for a salary.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;a href=&quot;https://example.com/minimal-mistakes/markup/markup-html-tags-and-formatting/&quot;&gt;Jane Doe&lt;/a&gt;&lt;/td&gt;
@@ -348,9 +458,9 @@ print_hi&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span c
 &lt;p&gt;Startup&lt;br&gt;
 :   A startup company or startup is a company or temporary organization designed to search for a repeatable and scalable business model.&lt;/p&gt;
 &lt;p&gt;#dowork&lt;br&gt;
-:   Coined by Rob Dyrdek and his personal body guard Christopher &amp;quot;Big Black&amp;quot; Boykins, &amp;quot;Do Work&amp;quot; works as a self motivator, to motivating your friends.&lt;/p&gt;
+:   Coined by Rob Dyrdek and his personal body guard Christopher “Big Black” Boykins, “Do Work” works as a self motivator, to motivating your friends.&lt;/p&gt;
 &lt;p&gt;Do It Live&lt;br&gt;
-:   I&#39;ll let Bill O&#39;Reilly &lt;a href=&quot;https://www.youtube.com/watch?v=O_HyZ5aW76c&quot; title=&quot;We&#39;ll Do It Live&quot;&gt;explain&lt;/a&gt; this one.&lt;/p&gt;
+:   I’ll let Bill O’Reilly &lt;a href=&quot;https://www.youtube.com/watch?v=O_HyZ5aW76c&quot; title=&quot;We&#39;ll Do It Live&quot;&gt;explain&lt;/a&gt; this one.&lt;/p&gt;
 &lt;h2 id=&quot;unordered-lists-(nested)&quot; tabindex=&quot;-1&quot;&gt;Unordered Lists (Nested)&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;List item one
@@ -444,10 +554,9 @@ print_hi&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span c
 &lt;h3 id=&quot;anchor-tag-(aka.-link)&quot; tabindex=&quot;-1&quot;&gt;Anchor Tag (aka. Link)&lt;/h3&gt;
 &lt;p&gt;This is an example of a &lt;a href=&quot;http://apple.com&quot; title=&quot;Apple&quot;&gt;link&lt;/a&gt;.&lt;/p&gt;
 &lt;h3 id=&quot;abbreviation-tag&quot; tabindex=&quot;-1&quot;&gt;Abbreviation Tag&lt;/h3&gt;
-&lt;p&gt;The abbreviation CSS stands for &amp;quot;Cascading Style Sheets&amp;quot;.&lt;/p&gt;
-&lt;p&gt;*[CSS]: Cascading Style Sheets&lt;/p&gt;
+&lt;p&gt;The abbreviation &lt;abbr title=&quot;Cascading Style Sheets&quot;&gt;CSS&lt;/abbr&gt; stands for “Cascading Style Sheets”.&lt;/p&gt;
 &lt;h3 id=&quot;cite-tag&quot; tabindex=&quot;-1&quot;&gt;Cite Tag&lt;/h3&gt;
-&lt;p&gt;&amp;quot;Code is poetry.&amp;quot; ---&lt;cite&gt;Automattic&lt;/cite&gt;&lt;/p&gt;
+&lt;p&gt;“Code is poetry.” —&lt;cite&gt;Automattic&lt;/cite&gt;&lt;/p&gt;
 &lt;h3 id=&quot;code-tag&quot; tabindex=&quot;-1&quot;&gt;Code Tag&lt;/h3&gt;
 &lt;p&gt;You will learn later on in these tests that &lt;code&gt;word-wrap: break-word;&lt;/code&gt; will be your best friend.&lt;/p&gt;
 &lt;h3 id=&quot;strike-tag&quot; tabindex=&quot;-1&quot;&gt;Strike Tag&lt;/h3&gt;
@@ -474,9 +583,9 @@ print_hi&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span c
 &lt;h3 id=&quot;strong-tag&quot; tabindex=&quot;-1&quot;&gt;Strong Tag&lt;/h3&gt;
 &lt;p&gt;This tag shows &lt;strong&gt;bold text&lt;/strong&gt;.&lt;/p&gt;
 &lt;h3 id=&quot;subscript-tag&quot; tabindex=&quot;-1&quot;&gt;Subscript Tag&lt;/h3&gt;
-&lt;p&gt;Getting our science styling on with H&lt;sub&gt;2&lt;/sub&gt;O, which should push the &amp;quot;2&amp;quot; down.&lt;/p&gt;
+&lt;p&gt;Getting our science styling on with H&lt;sub&gt;2&lt;/sub&gt;O, which should push the “2” down.&lt;/p&gt;
 &lt;h3 id=&quot;superscript-tag&quot; tabindex=&quot;-1&quot;&gt;Superscript Tag&lt;/h3&gt;
-&lt;p&gt;Still sticking with science and Albert Einstein&#39;s E = MC&lt;sup&gt;2&lt;/sup&gt;, which should lift the 2 up.&lt;/p&gt;
+&lt;p&gt;Still sticking with science and Albert Einstein’s E = MC&lt;sup&gt;2&lt;/sup&gt;, which should lift the 2 up.&lt;/p&gt;
 &lt;h3 id=&quot;variable-tag&quot; tabindex=&quot;-1&quot;&gt;Variable Tag&lt;/h3&gt;
 &lt;p&gt;This allows you to denote &lt;var&gt;variables&lt;/var&gt;.&lt;/p&gt;
 </description>
@@ -487,18 +596,18 @@ print_hi&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span c
     <item>
       <title>Markup: Image Alignment</title>
       <link>https://example.com/minimal-mistakes/markup/markup-image-alignment/</link>
-      <description>&lt;p&gt;Welcome to image alignment! The best way to demonstrate the ebb and flow of the various image positioning options is to nestle them snuggly among an ocean of words. Grab a paddle and let&#39;s get started.&lt;/p&gt;
+      <description>&lt;p&gt;Welcome to image alignment! The best way to demonstrate the ebb and flow of the various image positioning options is to nestle them snuggly among an ocean of words. Grab a paddle and let’s get started.&lt;/p&gt;
 &lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/png&quot; srcset=&quot;https://example.com/minimal-mistakes/markup/markup-image-alignment/sin4CJ9BF--400.png 400w, https://example.com/minimal-mistakes/markup/markup-image-alignment/sin4CJ9BF--580.png 580w&quot; sizes=&quot;100vw&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://example.com/minimal-mistakes/markup/markup-image-alignment/sin4CJ9BF--400.webp 400w, https://example.com/minimal-mistakes/markup/markup-image-alignment/sin4CJ9BF--580.webp 580w&quot; sizes=&quot;100vw&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://example.com/minimal-mistakes/markup/markup-image-alignment/sin4CJ9BF--400.jpeg&quot; alt=&quot;image-center&quot; class=&quot;align-center&quot; width=&quot;580&quot; height=&quot;300&quot; srcset=&quot;https://example.com/minimal-mistakes/markup/markup-image-alignment/sin4CJ9BF--400.jpeg 400w, https://example.com/minimal-mistakes/markup/markup-image-alignment/sin4CJ9BF--580.jpeg 580w&quot; sizes=&quot;100vw&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
 &lt;p&gt;The image above happens to be &lt;strong&gt;centered&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/png&quot; srcset=&quot;https://example.com/minimal-mistakes/markup/markup-image-alignment/ITDwJ2gYgy-150.png 150w&quot; sizes=&quot;100vw&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://example.com/minimal-mistakes/markup/markup-image-alignment/ITDwJ2gYgy-150.webp 150w&quot; sizes=&quot;100vw&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://example.com/minimal-mistakes/markup/markup-image-alignment/ITDwJ2gYgy-150.jpeg&quot; alt=&quot;image-left&quot; class=&quot;align-left&quot; width=&quot;150&quot; height=&quot;150&quot;&gt;&lt;/picture&gt; The rest of this paragraph is filler for the sake of seeing the text wrap around the 150×150 image, which is &lt;strong&gt;left aligned&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;As you can see there should be some space above, below, and to the right of the image. The text should not be creeping on the image. Creeping is just not right. Images need breathing room too. Let them speak like you words. Let them do their jobs without any hassle from the text. In about one more sentence here, we&#39;ll see that the text moves from the right of the image down below the image in seamless transition. Again, letting the do it&#39;s thing. Mission accomplished!&lt;/p&gt;
+&lt;p&gt;As you can see there should be some space above, below, and to the right of the image. The text should not be creeping on the image. Creeping is just not right. Images need breathing room too. Let them speak like you words. Let them do their jobs without any hassle from the text. In about one more sentence here, we’ll see that the text moves from the right of the image down below the image in seamless transition. Again, letting the do it’s thing. Mission accomplished!&lt;/p&gt;
 &lt;p&gt;And now for a &lt;strong&gt;massively large image&lt;/strong&gt;. It also has &lt;strong&gt;no alignment&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/png&quot; srcset=&quot;https://example.com/minimal-mistakes/markup/markup-image-alignment/mcuMaWnSkD-400.png 400w, https://example.com/minimal-mistakes/markup/markup-image-alignment/mcuMaWnSkD-800.png 800w, https://example.com/minimal-mistakes/markup/markup-image-alignment/mcuMaWnSkD-1200.png 1200w&quot; sizes=&quot;100vw&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://example.com/minimal-mistakes/markup/markup-image-alignment/mcuMaWnSkD-400.webp 400w, https://example.com/minimal-mistakes/markup/markup-image-alignment/mcuMaWnSkD-800.webp 800w, https://example.com/minimal-mistakes/markup/markup-image-alignment/mcuMaWnSkD-1200.webp 1200w&quot; sizes=&quot;100vw&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://example.com/minimal-mistakes/markup/markup-image-alignment/mcuMaWnSkD-400.jpeg&quot; alt=&quot;no-alignment&quot; width=&quot;1200&quot; height=&quot;400&quot; srcset=&quot;https://example.com/minimal-mistakes/markup/markup-image-alignment/mcuMaWnSkD-400.jpeg 400w, https://example.com/minimal-mistakes/markup/markup-image-alignment/mcuMaWnSkD-800.jpeg 800w, https://example.com/minimal-mistakes/markup/markup-image-alignment/mcuMaWnSkD-1200.jpeg 1200w&quot; sizes=&quot;100vw&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
 &lt;p&gt;The image above, though 1200px wide, should not overflow the content area. It should remain contained with no visible disruption to the flow of content.&lt;/p&gt;
 &lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/png&quot; srcset=&quot;https://example.com/minimal-mistakes/markup/markup-image-alignment/GoPKa6pbVV-300.png 300w&quot; sizes=&quot;100vw&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://example.com/minimal-mistakes/markup/markup-image-alignment/GoPKa6pbVV-300.webp 300w&quot; sizes=&quot;100vw&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://example.com/minimal-mistakes/markup/markup-image-alignment/GoPKa6pbVV-300.jpeg&quot; alt=&quot;image-right&quot; class=&quot;align-right&quot; width=&quot;300&quot; height=&quot;200&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
-&lt;p&gt;And now we&#39;re going to shift things to the &lt;strong&gt;right align&lt;/strong&gt;. Again, there should be plenty of room above, below, and to the left of the image. Just look at him there  Hey guy! Way to rock that right side. I don&#39;t care what the left aligned image says, you look great. Don&#39;t let anyone else tell you differently.&lt;/p&gt;
-&lt;p&gt;In just a bit here, you should see the text start to wrap below the right aligned image and settle in nicely. There should still be plenty of room and everything should be sitting pretty. Yeah --- Just like that. It never felt so good to be right.&lt;/p&gt;
-&lt;p&gt;And just when you thought we were done, we&#39;re going to do them all over again with captions!&lt;/p&gt;
+&lt;p&gt;And now we’re going to shift things to the &lt;strong&gt;right align&lt;/strong&gt;. Again, there should be plenty of room above, below, and to the left of the image. Just look at him there  Hey guy! Way to rock that right side. I don’t care what the left aligned image says, you look great. Don’t let anyone else tell you differently.&lt;/p&gt;
+&lt;p&gt;In just a bit here, you should see the text start to wrap below the right aligned image and settle in nicely. There should still be plenty of room and everything should be sitting pretty. Yeah — Just like that. It never felt so good to be right.&lt;/p&gt;
+&lt;p&gt;And just when you thought we were done, we’re going to do them all over again with captions!&lt;/p&gt;
 &lt;figure class=&quot;align-center&quot;&gt;
   &lt;picture&gt;&lt;source type=&quot;image/png&quot; srcset=&quot;https://example.com/minimal-mistakes/markup/markup-image-alignment/sin4CJ9BF--400.png 400w, https://example.com/minimal-mistakes/markup/markup-image-alignment/sin4CJ9BF--580.png 580w&quot; sizes=&quot;100vw&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://example.com/minimal-mistakes/markup/markup-image-alignment/sin4CJ9BF--400.webp 400w, https://example.com/minimal-mistakes/markup/markup-image-alignment/sin4CJ9BF--580.webp 580w&quot; sizes=&quot;100vw&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://example.com/minimal-mistakes/markup/markup-image-alignment/sin4CJ9BF--400.jpeg&quot; alt=&quot;&quot; width=&quot;580&quot; height=&quot;300&quot; srcset=&quot;https://example.com/minimal-mistakes/markup/markup-image-alignment/sin4CJ9BF--400.jpeg 400w, https://example.com/minimal-mistakes/markup/markup-image-alignment/sin4CJ9BF--580.jpeg 580w&quot; sizes=&quot;100vw&quot;&gt;&lt;/picture&gt;
   &lt;figcaption&gt;Look at 580 x 300 getting some love.&lt;/figcaption&gt;
@@ -509,7 +618,7 @@ print_hi&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span c
   &lt;figcaption&gt;Itty-bitty caption.&lt;/figcaption&gt;
 &lt;/figure&gt; 
 &lt;p&gt;The rest of this paragraph is filler for the sake of seeing the text wrap around the 150×150 image, which is &lt;strong&gt;left aligned&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;As you can see there should be some space above, below, and to the right of the image. The text should not be creeping on the image. Creeping is just not right. Images need breathing room too. Let them speak like you words. Let them do their jobs without any hassle from the text. In about one more sentence here, we&#39;ll see that the text moves from the right of the image down below the image in seamless transition. Again, letting the do it&#39;s thing. Mission accomplished!&lt;/p&gt;
+&lt;p&gt;As you can see there should be some space above, below, and to the right of the image. The text should not be creeping on the image. Creeping is just not right. Images need breathing room too. Let them speak like you words. Let them do their jobs without any hassle from the text. In about one more sentence here, we’ll see that the text moves from the right of the image down below the image in seamless transition. Again, letting the do it’s thing. Mission accomplished!&lt;/p&gt;
 &lt;p&gt;And now for a &lt;strong&gt;massively large image&lt;/strong&gt;. It also has &lt;strong&gt;no alignment&lt;/strong&gt;.&lt;/p&gt;
 &lt;figure style=&quot;width: 1200px&quot;&gt;
   &lt;picture&gt;&lt;source type=&quot;image/png&quot; srcset=&quot;https://example.com/minimal-mistakes/markup/markup-image-alignment/mcuMaWnSkD-400.png 400w, https://example.com/minimal-mistakes/markup/markup-image-alignment/mcuMaWnSkD-800.png 800w, https://example.com/minimal-mistakes/markup/markup-image-alignment/mcuMaWnSkD-1200.png 1200w&quot; sizes=&quot;100vw&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://example.com/minimal-mistakes/markup/markup-image-alignment/mcuMaWnSkD-400.webp 400w, https://example.com/minimal-mistakes/markup/markup-image-alignment/mcuMaWnSkD-800.webp 800w, https://example.com/minimal-mistakes/markup/markup-image-alignment/mcuMaWnSkD-1200.webp 1200w&quot; sizes=&quot;100vw&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://example.com/minimal-mistakes/markup/markup-image-alignment/mcuMaWnSkD-400.jpeg&quot; alt=&quot;&quot; width=&quot;1200&quot; height=&quot;400&quot; srcset=&quot;https://example.com/minimal-mistakes/markup/markup-image-alignment/mcuMaWnSkD-400.jpeg 400w, https://example.com/minimal-mistakes/markup/markup-image-alignment/mcuMaWnSkD-800.jpeg 800w, https://example.com/minimal-mistakes/markup/markup-image-alignment/mcuMaWnSkD-1200.jpeg 1200w&quot; sizes=&quot;100vw&quot;&gt;&lt;/picture&gt;
@@ -520,9 +629,9 @@ print_hi&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span c
   &lt;picture&gt;&lt;source type=&quot;image/png&quot; srcset=&quot;https://example.com/minimal-mistakes/markup/markup-image-alignment/GoPKa6pbVV-300.png 300w&quot; sizes=&quot;100vw&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://example.com/minimal-mistakes/markup/markup-image-alignment/GoPKa6pbVV-300.webp 300w&quot; sizes=&quot;100vw&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://example.com/minimal-mistakes/markup/markup-image-alignment/GoPKa6pbVV-300.jpeg&quot; alt=&quot;&quot; width=&quot;300&quot; height=&quot;200&quot;&gt;&lt;/picture&gt;
   &lt;figcaption&gt;Feels good to be right all the time.&lt;/figcaption&gt;
 &lt;/figure&gt; 
-&lt;p&gt;And now we&#39;re going to shift things to the &lt;strong&gt;right align&lt;/strong&gt;. Again, there should be plenty of room above, below, and to the left of the image. Just look at him there --- Hey guy! Way to rock that right side. I don&#39;t care what the left aligned image says, you look great. Don&#39;t let anyone else tell you differently.&lt;/p&gt;
-&lt;p&gt;In just a bit here, you should see the text start to wrap below the right aligned image and settle in nicely. There should still be plenty of room and everything should be sitting pretty. Yeah --- Just like that. It never felt so good to be right.&lt;/p&gt;
-&lt;p&gt;And that&#39;s a wrap, yo! You survived the tumultuous waters of alignment. Image alignment achievement unlocked!&lt;/p&gt;
+&lt;p&gt;And now we’re going to shift things to the &lt;strong&gt;right align&lt;/strong&gt;. Again, there should be plenty of room above, below, and to the left of the image. Just look at him there — Hey guy! Way to rock that right side. I don’t care what the left aligned image says, you look great. Don’t let anyone else tell you differently.&lt;/p&gt;
+&lt;p&gt;In just a bit here, you should see the text start to wrap below the right aligned image and settle in nicely. There should still be plenty of room and everything should be sitting pretty. Yeah — Just like that. It never felt so good to be right.&lt;/p&gt;
+&lt;p&gt;And that’s a wrap, yo! You survived the tumultuous waters of alignment. Image alignment achievement unlocked!&lt;/p&gt;
 </description>
       <pubDate>Thu, 10 Jan 2013 24:00:00 GMT</pubDate>
       <dc:creator>Your Name</dc:creator>
@@ -534,13 +643,13 @@ print_hi&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span c
       <description>&lt;h3 id=&quot;default&quot; tabindex=&quot;-1&quot;&gt;Default&lt;/h3&gt;
 &lt;p&gt;This is a paragraph. It should not have any alignment of any kind. It should just flow like you would normally expect. Nothing fancy. Just straight up text, free flowing, with love. Completely neutral and not picking a side or sitting on the fence. It just is. It just freaking is. It likes where it is. It does not feel compelled to pick a side. Leave him be. It will just be better that way. Trust me.&lt;/p&gt;
 &lt;h3 id=&quot;left-align&quot; tabindex=&quot;-1&quot;&gt;Left Align&lt;/h3&gt;
-&lt;p&gt;This is a paragraph. It is left aligned. Because of this, it is a bit more liberal in it&#39;s views. It&#39;s favorite color is green. Left align tends to be more eco-friendly, but it provides no concrete evidence that it really is. Even though it likes share the wealth evenly, it leaves the equal distribution up to justified alignment.&lt;/p&gt;
+&lt;p&gt;This is a paragraph. It is left aligned. Because of this, it is a bit more liberal in it’s views. It’s favorite color is green. Left align tends to be more eco-friendly, but it provides no concrete evidence that it really is. Even though it likes share the wealth evenly, it leaves the equal distribution up to justified alignment.&lt;/p&gt;
 &lt;h3 id=&quot;center-align&quot; tabindex=&quot;-1&quot;&gt;Center Align&lt;/h3&gt;
 &lt;p&gt;This is a paragraph. It is center aligned. Center is, but nature, a fence sitter. A flip flopper. It has a difficult time making up its mind. It wants to pick a side. Really, it does. It has the best intentions, but it tends to complicate matters more than help. The best you can do is try to win it over and hope for the best. I hear center align does take bribes.&lt;/p&gt;
 &lt;h3 id=&quot;right-align&quot; tabindex=&quot;-1&quot;&gt;Right Align&lt;/h3&gt;
-&lt;p&gt;This is a paragraph. It is right aligned. It is a bit more conservative in it&#39;s views. It&#39;s prefers to not be told what to do or how to do it. Right align totally owns a slew of guns and loves to head to the range for some practice. Which is cool and all. I mean, it&#39;s a pretty good shot from at least four or five football fields away. Dead on. So boss.&lt;/p&gt;
+&lt;p&gt;This is a paragraph. It is right aligned. It is a bit more conservative in it’s views. It’s prefers to not be told what to do or how to do it. Right align totally owns a slew of guns and loves to head to the range for some practice. Which is cool and all. I mean, it’s a pretty good shot from at least four or five football fields away. Dead on. So boss.&lt;/p&gt;
 &lt;h3 id=&quot;justify-align&quot; tabindex=&quot;-1&quot;&gt;Justify Align&lt;/h3&gt;
-&lt;p&gt;This is a paragraph. It is justify aligned. It gets really mad when people associate it with Justin Timberlake. Typically, justified is pretty straight laced. It likes everything to be in it&#39;s place and not all cattywampus like the rest of the aligns. I am not saying that makes it better than the rest of the aligns, but it does tend to put off more of an elitist attitude.&lt;/p&gt;
+&lt;p&gt;This is a paragraph. It is justify aligned. It gets really mad when people associate it with Justin Timberlake. Typically, justified is pretty straight laced. It likes everything to be in it’s place and not all cattywampus like the rest of the aligns. I am not saying that makes it better than the rest of the aligns, but it does tend to put off more of an elitist attitude.&lt;/p&gt;
 </description>
       <pubDate>Wed, 09 Jan 2013 24:00:00 GMT</pubDate>
       <dc:creator>Your Name</dc:creator>
@@ -876,7 +985,7 @@ z&lt;br&gt;
       <link>https://example.com/minimal-mistakes/markdown/markup-title-with-markup/</link>
       <description>&lt;p&gt;Verify that:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;The post title renders the word &amp;quot;with&amp;quot; in &lt;em&gt;italics&lt;/em&gt; and the word &amp;quot;Markdown&amp;quot; in &lt;strong&gt;bold&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;The post title renders the word “with” in &lt;em&gt;italics&lt;/em&gt; and the word “Markdown” in &lt;strong&gt;bold&lt;/strong&gt;.&lt;/li&gt;
 &lt;li&gt;The post title markup should be removed from the browser window / tab.&lt;/li&gt;
 &lt;/ul&gt;
 </description>
@@ -887,10 +996,10 @@ z&lt;br&gt;
     <item>
       <title>Markup: Text Readability Test</title>
       <link>https://example.com/minimal-mistakes/markup-text-readability/</link>
-      <description>&lt;p&gt;Portland in shoreditch Vice, labore typewriter pariatur hoodie fap sartorial Austin. Pinterest literally occupy Schlitz forage. Odio ad blue bottle vinyl, 90&#39;s narwhal commodo bitters pour-over nostrud. Ugh est hashtag in, fingerstache adipisicing laboris esse Pinterest shabby chic Portland. Shoreditch bicycle rights anim, flexitarian laboris put a bird on it vinyl cupidatat narwhal. Hashtag artisan skateboard, flannel Bushwick nesciunt salvia aute fixie do plaid post-ironic dolor McSweeney&#39;s. Cliche pour-over chambray nulla four loko skateboard sapiente hashtag.&lt;/p&gt;
+      <description>&lt;p&gt;Portland in shoreditch Vice, labore typewriter pariatur hoodie fap sartorial Austin. Pinterest literally occupy Schlitz forage. Odio ad blue bottle vinyl, 90’s narwhal commodo bitters pour-over nostrud. Ugh est hashtag in, fingerstache adipisicing laboris esse Pinterest shabby chic Portland. Shoreditch bicycle rights anim, flexitarian laboris put a bird on it vinyl cupidatat narwhal. Hashtag artisan skateboard, flannel Bushwick nesciunt salvia aute fixie do plaid post-ironic dolor McSweeney’s. Cliche pour-over chambray nulla four loko skateboard sapiente hashtag.&lt;/p&gt;
 &lt;p&gt;Vero laborum commodo occupy. Semiotics voluptate mumblecore pug. Cosby sweater ullamco quinoa ennui assumenda, sapiente occupy delectus lo-fi. Ea fashion axe Marfa cillum aliquip. Retro Bushwick keytar cliche. Before they sold out sustainable gastropub Marfa readymade, ethical Williamsburg skateboard brunch qui consectetur gentrify semiotics. Mustache cillum irony, fingerstache magna pour-over keffiyeh tousled selfies.&lt;/p&gt;
-&lt;h2 id=&quot;cupidatat-90&#39;s-lo-fi-authentic-try-hard&quot; tabindex=&quot;-1&quot;&gt;Cupidatat 90&#39;s lo-fi authentic try-hard&lt;/h2&gt;
-&lt;p&gt;In pug Portland incididunt mlkshk put a bird on it vinyl quinoa. Terry Richardson shabby chic +1, scenester Tonx excepteur tempor fugiat voluptate fingerstache aliquip nisi next level. Farm-to-table hashtag Truffaut, Odd Future ex meggings gentrify single-origin coffee try-hard 90&#39;s.&lt;/p&gt;
+&lt;h2 id=&quot;cupidatat-90%E2%80%99s-lo-fi-authentic-try-hard&quot; tabindex=&quot;-1&quot;&gt;Cupidatat 90’s lo-fi authentic try-hard&lt;/h2&gt;
+&lt;p&gt;In pug Portland incididunt mlkshk put a bird on it vinyl quinoa. Terry Richardson shabby chic +1, scenester Tonx excepteur tempor fugiat voluptate fingerstache aliquip nisi next level. Farm-to-table hashtag Truffaut, Odd Future ex meggings gentrify single-origin coffee try-hard 90’s.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Sartorial hoodie&lt;/li&gt;
 &lt;li&gt;Labore viral forage&lt;/li&gt;
@@ -898,18 +1007,18 @@ z&lt;br&gt;
 &lt;li&gt;DIY exercitation et id ugh tumblr church-key&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Incididunt umami sriracha, ethical fugiat VHS ex assumenda yr irure direct trade. Marfa Truffaut bicycle rights, kitsch placeat Etsy kogi asymmetrical. Beard locavore flexitarian, kitsch photo booth hoodie plaid ethical readymade leggings yr.&lt;/p&gt;
-&lt;p&gt;Aesthetic odio dolore, meggings disrupt qui readymade stumptown brunch Terry Richardson pour-over gluten-free. Banksy american apparel in selfies, biodiesel flexitarian organic meh wolf quinoa gentrify banjo kogi. Readymade tofu ex, scenester dolor umami fingerstache occaecat fashion axe Carles jean shorts minim. Keffiyeh fashion axe nisi Godard mlkshk dolore. Lomo you probably haven&#39;t heard of them eu non, Odd Future Truffaut pug keytar meggings McSweeney&#39;s Pinterest cred. Etsy literally aute esse, eu bicycle rights qui meggings fanny pack. Gentrify leggings pug flannel duis.&lt;/p&gt;
+&lt;p&gt;Aesthetic odio dolore, meggings disrupt qui readymade stumptown brunch Terry Richardson pour-over gluten-free. Banksy american apparel in selfies, biodiesel flexitarian organic meh wolf quinoa gentrify banjo kogi. Readymade tofu ex, scenester dolor umami fingerstache occaecat fashion axe Carles jean shorts minim. Keffiyeh fashion axe nisi Godard mlkshk dolore. Lomo you probably haven’t heard of them eu non, Odd Future Truffaut pug keytar meggings McSweeney’s Pinterest cred. Etsy literally aute esse, eu bicycle rights qui meggings fanny pack. Gentrify leggings pug flannel duis.&lt;/p&gt;
 &lt;h2 id=&quot;forage-occaecat-cardigan-qui&quot; tabindex=&quot;-1&quot;&gt;Forage occaecat cardigan qui&lt;/h2&gt;
-&lt;p&gt;Fashion axe hella gastropub lo-fi kogi 90&#39;s aliquip +1 veniam delectus tousled. Cred sriracha locavore gastropub kale chips, iPhone mollit sartorial. Anim dolore 8-bit, pork belly dolor photo booth aute flannel small batch. Dolor disrupt ennui, tattooed whatever salvia Banksy sartorial roof party selfies raw denim sint meh pour-over. Ennui eu cardigan sint, gentrify iPhone cornhole.&lt;/p&gt;
+&lt;p&gt;Fashion axe hella gastropub lo-fi kogi 90’s aliquip +1 veniam delectus tousled. Cred sriracha locavore gastropub kale chips, iPhone mollit sartorial. Anim dolore 8-bit, pork belly dolor photo booth aute flannel small batch. Dolor disrupt ennui, tattooed whatever salvia Banksy sartorial roof party selfies raw denim sint meh pour-over. Ennui eu cardigan sint, gentrify iPhone cornhole.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Whatever velit occaecat quis deserunt gastropub, leggings elit tousled roof party 3 wolf moon kogi pug blue bottle ea. Fashion axe shabby chic Austin quinoa pickled laborum bitters next level, disrupt deep v accusamus non fingerstache.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;Tote bag asymmetrical elit sunt. Occaecat authentic Marfa, hella McSweeney&#39;s next level irure veniam master cleanse. Sed hoodie letterpress artisan wolf leggings, 3 wolf moon commodo ullamco. Anim occupy ea labore Terry Richardson. Tofu ex master cleanse in whatever pitchfork banh mi, occupy fugiat fanny pack Austin authentic. Magna fugiat 3 wolf moon, labore McSweeney&#39;s sustainable vero consectetur. Gluten-free disrupt enim, aesthetic fugiat jean shorts trust fund keffiyeh magna try-hard.&lt;/p&gt;
+&lt;p&gt;Tote bag asymmetrical elit sunt. Occaecat authentic Marfa, hella McSweeney’s next level irure veniam master cleanse. Sed hoodie letterpress artisan wolf leggings, 3 wolf moon commodo ullamco. Anim occupy ea labore Terry Richardson. Tofu ex master cleanse in whatever pitchfork banh mi, occupy fugiat fanny pack Austin authentic. Magna fugiat 3 wolf moon, labore McSweeney’s sustainable vero consectetur. Gluten-free disrupt enim, aesthetic fugiat jean shorts trust fund keffiyeh magna try-hard.&lt;/p&gt;
 &lt;h2 id=&quot;hoodie-duis&quot; tabindex=&quot;-1&quot;&gt;Hoodie Duis&lt;/h2&gt;
-&lt;p&gt;Actually salvia consectetur, hoodie duis lomo YOLO sunt sriracha. Aute pop-up brunch farm-to-table odio, salvia irure occaecat. Sriracha small batch literally skateboard. Echo Park nihil hoodie, aliquip forage artisan laboris. Trust fund reprehenderit nulla locavore. Stumptown raw denim kitsch, keffiyeh nulla twee dreamcatcher fanny pack ullamco 90&#39;s pop-up est culpa farm-to-table. Selfies 8-bit do pug odio.&lt;/p&gt;
+&lt;p&gt;Actually salvia consectetur, hoodie duis lomo YOLO sunt sriracha. Aute pop-up brunch farm-to-table odio, salvia irure occaecat. Sriracha small batch literally skateboard. Echo Park nihil hoodie, aliquip forage artisan laboris. Trust fund reprehenderit nulla locavore. Stumptown raw denim kitsch, keffiyeh nulla twee dreamcatcher fanny pack ullamco 90’s pop-up est culpa farm-to-table. Selfies 8-bit do pug odio.&lt;/p&gt;
 &lt;h3 id=&quot;thundercats-ho!&quot; tabindex=&quot;-1&quot;&gt;Thundercats Ho!&lt;/h3&gt;
-&lt;p&gt;Fingerstache thundercats Williamsburg, deep v scenester Banksy ennui vinyl selfies mollit biodiesel duis odio pop-up. Banksy 3 wolf moon try-hard, sapiente enim stumptown deep v ad letterpress. Squid beard brunch, exercitation raw denim yr sint direct trade. Raw denim narwhal id, flannel DIY McSweeney&#39;s seitan. Letterpress artisan bespoke accusamus, meggings laboris consequat Truffaut qui in seitan. Sustainable cornhole Schlitz, twee Cosby sweater banh mi deep v forage letterpress flannel whatever keffiyeh. Sartorial cred irure, semiotics ethical sed blue bottle nihil letterpress.&lt;/p&gt;
-&lt;p&gt;Occupy et selvage squid, pug brunch blog nesciunt hashtag mumblecore skateboard yr kogi. Ugh small batch swag four loko. Fap post-ironic qui tote bag farm-to-table american apparel scenester keffiyeh vero, swag non pour-over gentrify authentic pitchfork. Schlitz scenester lo-fi voluptate, tote bag irony bicycle rights pariatur vero Vice freegan wayfarers exercitation nisi shoreditch. Chambray tofu vero sed. Street art swag literally leggings, Cosby sweater mixtape PBR lomo Banksy non in pitchfork ennui McSweeney&#39;s selfies. Odd Future Banksy non authentic.&lt;/p&gt;
+&lt;p&gt;Fingerstache thundercats Williamsburg, deep v scenester Banksy ennui vinyl selfies mollit biodiesel duis odio pop-up. Banksy 3 wolf moon try-hard, sapiente enim stumptown deep v ad letterpress. Squid beard brunch, exercitation raw denim yr sint direct trade. Raw denim narwhal id, flannel DIY McSweeney’s seitan. Letterpress artisan bespoke accusamus, meggings laboris consequat Truffaut qui in seitan. Sustainable cornhole Schlitz, twee Cosby sweater banh mi deep v forage letterpress flannel whatever keffiyeh. Sartorial cred irure, semiotics ethical sed blue bottle nihil letterpress.&lt;/p&gt;
+&lt;p&gt;Occupy et selvage squid, pug brunch blog nesciunt hashtag mumblecore skateboard yr kogi. Ugh small batch swag four loko. Fap post-ironic qui tote bag farm-to-table american apparel scenester keffiyeh vero, swag non pour-over gentrify authentic pitchfork. Schlitz scenester lo-fi voluptate, tote bag irony bicycle rights pariatur vero Vice freegan wayfarers exercitation nisi shoreditch. Chambray tofu vero sed. Street art swag literally leggings, Cosby sweater mixtape PBR lomo Banksy non in pitchfork ennui McSweeney’s selfies. Odd Future Banksy non authentic.&lt;/p&gt;
 &lt;p&gt;Aliquip enim artisan dolor post-ironic. Pug tote bag Marfa, deserunt pour-over Portland wolf eu odio intelligentsia american apparel ugh ea. Sunt viral et, 3 wolf moon gastropub pug id. Id fashion axe est typewriter, mlkshk Portland art party aute brunch. Sint pork belly Cosby sweater, deep v mumblecore kitsch american apparel. Try-hard direct trade tumblr sint skateboard. Adipisicing bitters excepteur biodiesel, pickled gastropub aute veniam.&lt;/p&gt;
 </description>
       <pubDate>Tue, 22 May 2012 24:00:00 GMT</pubDate>
@@ -921,10 +1030,10 @@ z&lt;br&gt;
       <link>https://example.com/minimal-mistakes/markup-text-readability-wide-page/</link>
       <description>&lt;p&gt;When using &lt;code&gt;layout: single&lt;/code&gt; add the following front matter to a page or post to widen the main content:&lt;/p&gt;
 &lt;pre class=&quot;language-yaml&quot;&gt;&lt;code class=&quot;language-yaml&quot;&gt;&lt;span class=&quot;token key atrule&quot;&gt;classes&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; wide&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Portland in shoreditch Vice, labore typewriter pariatur hoodie fap sartorial Austin. Pinterest literally occupy Schlitz forage. Odio ad blue bottle vinyl, 90&#39;s narwhal commodo bitters pour-over nostrud. Ugh est hashtag in, fingerstache adipisicing laboris esse Pinterest shabby chic Portland. Shoreditch bicycle rights anim, flexitarian laboris put a bird on it vinyl cupidatat narwhal. Hashtag artisan skateboard, flannel Bushwick nesciunt salvia aute fixie do plaid post-ironic dolor McSweeney&#39;s. Cliche pour-over chambray nulla four loko skateboard sapiente hashtag.&lt;/p&gt;
+&lt;p&gt;Portland in shoreditch Vice, labore typewriter pariatur hoodie fap sartorial Austin. Pinterest literally occupy Schlitz forage. Odio ad blue bottle vinyl, 90’s narwhal commodo bitters pour-over nostrud. Ugh est hashtag in, fingerstache adipisicing laboris esse Pinterest shabby chic Portland. Shoreditch bicycle rights anim, flexitarian laboris put a bird on it vinyl cupidatat narwhal. Hashtag artisan skateboard, flannel Bushwick nesciunt salvia aute fixie do plaid post-ironic dolor McSweeney’s. Cliche pour-over chambray nulla four loko skateboard sapiente hashtag.&lt;/p&gt;
 &lt;p&gt;Vero laborum commodo occupy. Semiotics voluptate mumblecore pug. Cosby sweater ullamco quinoa ennui assumenda, sapiente occupy delectus lo-fi. Ea fashion axe Marfa cillum aliquip. Retro Bushwick keytar cliche. Before they sold out sustainable gastropub Marfa readymade, ethical Williamsburg skateboard brunch qui consectetur gentrify semiotics. Mustache cillum irony, fingerstache magna pour-over keffiyeh tousled selfies.&lt;/p&gt;
-&lt;h2 id=&quot;cupidatat-90&#39;s-lo-fi-authentic-try-hard&quot; tabindex=&quot;-1&quot;&gt;Cupidatat 90&#39;s lo-fi authentic try-hard&lt;/h2&gt;
-&lt;p&gt;In pug Portland incididunt mlkshk put a bird on it vinyl quinoa. Terry Richardson shabby chic +1, scenester Tonx excepteur tempor fugiat voluptate fingerstache aliquip nisi next level. Farm-to-table hashtag Truffaut, Odd Future ex meggings gentrify single-origin coffee try-hard 90&#39;s.&lt;/p&gt;
+&lt;h2 id=&quot;cupidatat-90%E2%80%99s-lo-fi-authentic-try-hard&quot; tabindex=&quot;-1&quot;&gt;Cupidatat 90’s lo-fi authentic try-hard&lt;/h2&gt;
+&lt;p&gt;In pug Portland incididunt mlkshk put a bird on it vinyl quinoa. Terry Richardson shabby chic +1, scenester Tonx excepteur tempor fugiat voluptate fingerstache aliquip nisi next level. Farm-to-table hashtag Truffaut, Odd Future ex meggings gentrify single-origin coffee try-hard 90’s.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Sartorial hoodie&lt;/li&gt;
 &lt;li&gt;Labore viral forage&lt;/li&gt;
@@ -932,18 +1041,18 @@ z&lt;br&gt;
 &lt;li&gt;DIY exercitation et id ugh tumblr church-key&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Incididunt umami sriracha, ethical fugiat VHS ex assumenda yr irure direct trade. Marfa Truffaut bicycle rights, kitsch placeat Etsy kogi asymmetrical. Beard locavore flexitarian, kitsch photo booth hoodie plaid ethical readymade leggings yr.&lt;/p&gt;
-&lt;p&gt;Aesthetic odio dolore, meggings disrupt qui readymade stumptown brunch Terry Richardson pour-over gluten-free. Banksy american apparel in selfies, biodiesel flexitarian organic meh wolf quinoa gentrify banjo kogi. Readymade tofu ex, scenester dolor umami fingerstache occaecat fashion axe Carles jean shorts minim. Keffiyeh fashion axe nisi Godard mlkshk dolore. Lomo you probably haven&#39;t heard of them eu non, Odd Future Truffaut pug keytar meggings McSweeney&#39;s Pinterest cred. Etsy literally aute esse, eu bicycle rights qui meggings fanny pack. Gentrify leggings pug flannel duis.&lt;/p&gt;
+&lt;p&gt;Aesthetic odio dolore, meggings disrupt qui readymade stumptown brunch Terry Richardson pour-over gluten-free. Banksy american apparel in selfies, biodiesel flexitarian organic meh wolf quinoa gentrify banjo kogi. Readymade tofu ex, scenester dolor umami fingerstache occaecat fashion axe Carles jean shorts minim. Keffiyeh fashion axe nisi Godard mlkshk dolore. Lomo you probably haven’t heard of them eu non, Odd Future Truffaut pug keytar meggings McSweeney’s Pinterest cred. Etsy literally aute esse, eu bicycle rights qui meggings fanny pack. Gentrify leggings pug flannel duis.&lt;/p&gt;
 &lt;h2 id=&quot;forage-occaecat-cardigan-qui&quot; tabindex=&quot;-1&quot;&gt;Forage occaecat cardigan qui&lt;/h2&gt;
-&lt;p&gt;Fashion axe hella gastropub lo-fi kogi 90&#39;s aliquip +1 veniam delectus tousled. Cred sriracha locavore gastropub kale chips, iPhone mollit sartorial. Anim dolore 8-bit, pork belly dolor photo booth aute flannel small batch. Dolor disrupt ennui, tattooed whatever salvia Banksy sartorial roof party selfies raw denim sint meh pour-over. Ennui eu cardigan sint, gentrify iPhone cornhole.&lt;/p&gt;
+&lt;p&gt;Fashion axe hella gastropub lo-fi kogi 90’s aliquip +1 veniam delectus tousled. Cred sriracha locavore gastropub kale chips, iPhone mollit sartorial. Anim dolore 8-bit, pork belly dolor photo booth aute flannel small batch. Dolor disrupt ennui, tattooed whatever salvia Banksy sartorial roof party selfies raw denim sint meh pour-over. Ennui eu cardigan sint, gentrify iPhone cornhole.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Whatever velit occaecat quis deserunt gastropub, leggings elit tousled roof party 3 wolf moon kogi pug blue bottle ea. Fashion axe shabby chic Austin quinoa pickled laborum bitters next level, disrupt deep v accusamus non fingerstache.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;Tote bag asymmetrical elit sunt. Occaecat authentic Marfa, hella McSweeney&#39;s next level irure veniam master cleanse. Sed hoodie letterpress artisan wolf leggings, 3 wolf moon commodo ullamco. Anim occupy ea labore Terry Richardson. Tofu ex master cleanse in whatever pitchfork banh mi, occupy fugiat fanny pack Austin authentic. Magna fugiat 3 wolf moon, labore McSweeney&#39;s sustainable vero consectetur. Gluten-free disrupt enim, aesthetic fugiat jean shorts trust fund keffiyeh magna try-hard.&lt;/p&gt;
+&lt;p&gt;Tote bag asymmetrical elit sunt. Occaecat authentic Marfa, hella McSweeney’s next level irure veniam master cleanse. Sed hoodie letterpress artisan wolf leggings, 3 wolf moon commodo ullamco. Anim occupy ea labore Terry Richardson. Tofu ex master cleanse in whatever pitchfork banh mi, occupy fugiat fanny pack Austin authentic. Magna fugiat 3 wolf moon, labore McSweeney’s sustainable vero consectetur. Gluten-free disrupt enim, aesthetic fugiat jean shorts trust fund keffiyeh magna try-hard.&lt;/p&gt;
 &lt;h2 id=&quot;hoodie-duis&quot; tabindex=&quot;-1&quot;&gt;Hoodie Duis&lt;/h2&gt;
-&lt;p&gt;Actually salvia consectetur, hoodie duis lomo YOLO sunt sriracha. Aute pop-up brunch farm-to-table odio, salvia irure occaecat. Sriracha small batch literally skateboard. Echo Park nihil hoodie, aliquip forage artisan laboris. Trust fund reprehenderit nulla locavore. Stumptown raw denim kitsch, keffiyeh nulla twee dreamcatcher fanny pack ullamco 90&#39;s pop-up est culpa farm-to-table. Selfies 8-bit do pug odio.&lt;/p&gt;
+&lt;p&gt;Actually salvia consectetur, hoodie duis lomo YOLO sunt sriracha. Aute pop-up brunch farm-to-table odio, salvia irure occaecat. Sriracha small batch literally skateboard. Echo Park nihil hoodie, aliquip forage artisan laboris. Trust fund reprehenderit nulla locavore. Stumptown raw denim kitsch, keffiyeh nulla twee dreamcatcher fanny pack ullamco 90’s pop-up est culpa farm-to-table. Selfies 8-bit do pug odio.&lt;/p&gt;
 &lt;h3 id=&quot;thundercats-ho!&quot; tabindex=&quot;-1&quot;&gt;Thundercats Ho!&lt;/h3&gt;
-&lt;p&gt;Fingerstache thundercats Williamsburg, deep v scenester Banksy ennui vinyl selfies mollit biodiesel duis odio pop-up. Banksy 3 wolf moon try-hard, sapiente enim stumptown deep v ad letterpress. Squid beard brunch, exercitation raw denim yr sint direct trade. Raw denim narwhal id, flannel DIY McSweeney&#39;s seitan. Letterpress artisan bespoke accusamus, meggings laboris consequat Truffaut qui in seitan. Sustainable cornhole Schlitz, twee Cosby sweater banh mi deep v forage letterpress flannel whatever keffiyeh. Sartorial cred irure, semiotics ethical sed blue bottle nihil letterpress.&lt;/p&gt;
-&lt;p&gt;Occupy et selvage squid, pug brunch blog nesciunt hashtag mumblecore skateboard yr kogi. Ugh small batch swag four loko. Fap post-ironic qui tote bag farm-to-table american apparel scenester keffiyeh vero, swag non pour-over gentrify authentic pitchfork. Schlitz scenester lo-fi voluptate, tote bag irony bicycle rights pariatur vero Vice freegan wayfarers exercitation nisi shoreditch. Chambray tofu vero sed. Street art swag literally leggings, Cosby sweater mixtape PBR lomo Banksy non in pitchfork ennui McSweeney&#39;s selfies. Odd Future Banksy non authentic.&lt;/p&gt;
+&lt;p&gt;Fingerstache thundercats Williamsburg, deep v scenester Banksy ennui vinyl selfies mollit biodiesel duis odio pop-up. Banksy 3 wolf moon try-hard, sapiente enim stumptown deep v ad letterpress. Squid beard brunch, exercitation raw denim yr sint direct trade. Raw denim narwhal id, flannel DIY McSweeney’s seitan. Letterpress artisan bespoke accusamus, meggings laboris consequat Truffaut qui in seitan. Sustainable cornhole Schlitz, twee Cosby sweater banh mi deep v forage letterpress flannel whatever keffiyeh. Sartorial cred irure, semiotics ethical sed blue bottle nihil letterpress.&lt;/p&gt;
+&lt;p&gt;Occupy et selvage squid, pug brunch blog nesciunt hashtag mumblecore skateboard yr kogi. Ugh small batch swag four loko. Fap post-ironic qui tote bag farm-to-table american apparel scenester keffiyeh vero, swag non pour-over gentrify authentic pitchfork. Schlitz scenester lo-fi voluptate, tote bag irony bicycle rights pariatur vero Vice freegan wayfarers exercitation nisi shoreditch. Chambray tofu vero sed. Street art swag literally leggings, Cosby sweater mixtape PBR lomo Banksy non in pitchfork ennui McSweeney’s selfies. Odd Future Banksy non authentic.&lt;/p&gt;
 &lt;p&gt;Aliquip enim artisan dolor post-ironic. Pug tote bag Marfa, deserunt pour-over Portland wolf eu odio intelligentsia american apparel ugh ea. Sunt viral et, 3 wolf moon gastropub pug id. Id fashion axe est typewriter, mlkshk Portland art party aute brunch. Sint pork belly Cosby sweater, deep v mumblecore kitsch american apparel. Try-hard direct trade tumblr sint skateboard. Adipisicing bitters excepteur biodiesel, pickled gastropub aute veniam.&lt;/p&gt;
 </description>
       <pubDate>Tue, 22 May 2012 24:00:00 GMT</pubDate>
@@ -953,7 +1062,7 @@ z&lt;br&gt;
     <item>
       <title>Layout: Sidebar with Navigation List</title>
       <link>https://example.com/minimal-mistakes/layout-sidebar-nav-list/</link>
-      <description>&lt;p&gt;This post has a custom navigation list set in the post&#39;s YAML Front Matter.&lt;/p&gt;
+      <description>&lt;p&gt;This post has a custom navigation list set in the post’s YAML Front Matter.&lt;/p&gt;
 &lt;pre class=&quot;language-yaml&quot;&gt;&lt;code class=&quot;language-yaml&quot;&gt;&lt;span class=&quot;token key atrule&quot;&gt;sidebar&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
   &lt;span class=&quot;token key atrule&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Sample Title&quot;&lt;/span&gt;
   &lt;span class=&quot;token key atrule&quot;&gt;nav&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; sidebar&lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;sample&lt;/code&gt;&lt;/pre&gt;
@@ -1007,7 +1116,7 @@ z&lt;br&gt;
     <item>
       <title>Layout: Sidebar Custom</title>
       <link>https://example.com/minimal-mistakes/layout-sidebar-custom/</link>
-      <description>&lt;p&gt;This post has a custom sidebar set in the post&#39;s YAML Front Matter.&lt;/p&gt;
+      <description>&lt;p&gt;This post has a custom sidebar set in the post’s YAML Front Matter.&lt;/p&gt;
 &lt;p&gt;An example of how that YAML could look is:&lt;/p&gt;
 &lt;pre class=&quot;language-yaml&quot;&gt;&lt;code class=&quot;language-yaml&quot;&gt;&lt;span class=&quot;token key atrule&quot;&gt;sidebar&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
   &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Title&quot;&lt;/span&gt;
@@ -1106,10 +1215,10 @@ z&lt;br&gt;
     <item>
       <title>Layout: Header Image and Text Readability</title>
       <link>https://example.com/minimal-mistakes/layout-header-image-text-readability/</link>
-      <description>&lt;p&gt;This is a sample post with a large feature image&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://example.com/minimal-mistakes/layout-header-image-text-readability/#fn1&quot; id=&quot;fnref1&quot;&gt;[1]&lt;/a&gt;&lt;/sup&gt; up top and tons of text. Odio ad blue bottle vinyl, 90&#39;s narwhal commodo bitters pour-over nostrud. Ugh est hashtag in, fingerstache adipisicing laboris esse Pinterest shabby chic Portland. Shoreditch bicycle rights anim, flexitarian laboris put a bird on it vinyl cupidatat narwhal. Hashtag artisan skateboard, flannel Bushwick nesciunt salvia aute fixie do plaid post-ironic dolor McSweeney&#39;s. Cliche pour-over chambray nulla four loko skateboard sapiente hashtag.&lt;/p&gt;
+      <description>&lt;p&gt;This is a sample post with a large feature image&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://example.com/minimal-mistakes/layout-header-image-text-readability/#fn1&quot; id=&quot;fnref1&quot;&gt;[1]&lt;/a&gt;&lt;/sup&gt; up top and tons of text. Odio ad blue bottle vinyl, 90’s narwhal commodo bitters pour-over nostrud. Ugh est hashtag in, fingerstache adipisicing laboris esse Pinterest shabby chic Portland. Shoreditch bicycle rights anim, flexitarian laboris put a bird on it vinyl cupidatat narwhal. Hashtag artisan skateboard, flannel Bushwick nesciunt salvia aute fixie do plaid post-ironic dolor McSweeney’s. Cliche pour-over chambray nulla four loko skateboard sapiente hashtag.&lt;/p&gt;
 &lt;p&gt;Vero laborum commodo occupy. Semiotics voluptate mumblecore pug. Cosby sweater ullamco quinoa ennui assumenda, sapiente occupy delectus lo-fi. &lt;em&gt;Ea fashion axe &lt;a href=&quot;https://example.com/minimal-mistakes/layout-header-image-text-readability/&quot;&gt;Marfa cillum aliquip&lt;/a&gt;. Retro Bushwick keytar cliche.&lt;/em&gt; Before they sold out sustainable gastropub Marfa readymade, ethical Williamsburg skateboard brunch qui consectetur gentrify semiotics. Mustache cillum irony, fingerstache magna pour-over keffiyeh tousled selfies.&lt;/p&gt;
-&lt;h2 id=&quot;cupidatat-90&#39;s-lo-fi-authentic-try-hard&quot; tabindex=&quot;-1&quot;&gt;Cupidatat 90&#39;s lo-fi authentic try-hard&lt;/h2&gt;
-&lt;p&gt;In pug Portland incididunt mlkshk put a bird on it vinyl quinoa. &lt;strong&gt;&lt;a href=&quot;https://example.com/minimal-mistakes/layout-header-image-text-readability/&quot;&gt;Terry Richardson&lt;/a&gt; shabby chic +1&lt;/strong&gt;, scenester Tonx excepteur tempor fugiat voluptate fingerstache aliquip nisi next level. Farm-to-table hashtag Truffaut, Odd Future ex meggings gentrify single-origin coffee try-hard 90&#39;s.&lt;/p&gt;
+&lt;h2 id=&quot;cupidatat-90%E2%80%99s-lo-fi-authentic-try-hard&quot; tabindex=&quot;-1&quot;&gt;Cupidatat 90’s lo-fi authentic try-hard&lt;/h2&gt;
+&lt;p&gt;In pug Portland incididunt mlkshk put a bird on it vinyl quinoa. &lt;strong&gt;&lt;a href=&quot;https://example.com/minimal-mistakes/layout-header-image-text-readability/&quot;&gt;Terry Richardson&lt;/a&gt; shabby chic +1&lt;/strong&gt;, scenester Tonx excepteur tempor fugiat voluptate fingerstache aliquip nisi next level. Farm-to-table hashtag Truffaut, Odd Future ex meggings gentrify single-origin coffee try-hard 90’s.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Sartorial hoodie&lt;/li&gt;
 &lt;li&gt;Labore viral forage&lt;/li&gt;
@@ -1117,18 +1226,18 @@ z&lt;br&gt;
 &lt;li&gt;DIY exercitation et id ugh tumblr church-key&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Incididunt umami sriracha, ethical fugiat VHS ex assumenda yr irure direct trade. Marfa Truffaut bicycle rights, kitsch placeat Etsy kogi asymmetrical. Beard locavore flexitarian, kitsch photo booth hoodie plaid ethical readymade leggings yr.&lt;/p&gt;
-&lt;p&gt;Aesthetic odio dolore, meggings disrupt qui readymade stumptown brunch Terry Richardson pour-over gluten-free. Banksy american apparel in selfies, biodiesel flexitarian organic meh wolf quinoa gentrify banjo kogi. Readymade tofu ex, scenester dolor umami fingerstache occaecat fashion axe Carles jean shorts minim. Keffiyeh fashion axe nisi Godard mlkshk dolore. Lomo you probably haven&#39;t heard of them eu non, Odd Future Truffaut pug keytar meggings McSweeney&#39;s Pinterest cred. Etsy literally aute esse, eu bicycle rights qui meggings fanny pack. Gentrify leggings pug flannel duis.&lt;/p&gt;
+&lt;p&gt;Aesthetic odio dolore, meggings disrupt qui readymade stumptown brunch Terry Richardson pour-over gluten-free. Banksy american apparel in selfies, biodiesel flexitarian organic meh wolf quinoa gentrify banjo kogi. Readymade tofu ex, scenester dolor umami fingerstache occaecat fashion axe Carles jean shorts minim. Keffiyeh fashion axe nisi Godard mlkshk dolore. Lomo you probably haven’t heard of them eu non, Odd Future Truffaut pug keytar meggings McSweeney’s Pinterest cred. Etsy literally aute esse, eu bicycle rights qui meggings fanny pack. Gentrify leggings pug flannel duis.&lt;/p&gt;
 &lt;h2 id=&quot;forage-occaecat-cardigan-qui&quot; tabindex=&quot;-1&quot;&gt;Forage occaecat cardigan qui&lt;/h2&gt;
-&lt;p&gt;Fashion axe hella gastropub lo-fi kogi 90&#39;s aliquip +1 veniam delectus tousled. Cred sriracha locavore gastropub kale chips, iPhone mollit sartorial. Anim dolore 8-bit, pork belly dolor photo booth aute flannel small batch. Dolor disrupt ennui, tattooed whatever salvia Banksy sartorial roof party selfies raw denim sint meh pour-over. Ennui eu cardigan sint, gentrify iPhone cornhole.&lt;/p&gt;
+&lt;p&gt;Fashion axe hella gastropub lo-fi kogi 90’s aliquip +1 veniam delectus tousled. Cred sriracha locavore gastropub kale chips, iPhone mollit sartorial. Anim dolore 8-bit, pork belly dolor photo booth aute flannel small batch. Dolor disrupt ennui, tattooed whatever salvia Banksy sartorial roof party selfies raw denim sint meh pour-over. Ennui eu cardigan sint, gentrify iPhone cornhole.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Whatever velit occaecat quis deserunt gastropub, leggings elit tousled roof party 3 wolf moon kogi pug blue bottle ea. Fashion axe shabby chic Austin quinoa pickled laborum bitters next level, disrupt deep v accusamus non fingerstache.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;Tote bag asymmetrical elit sunt. Occaecat authentic Marfa, hella McSweeney&#39;s next level irure veniam master cleanse. Sed hoodie letterpress artisan wolf leggings, 3 wolf moon commodo ullamco. Anim occupy ea labore Terry Richardson. Tofu ex master cleanse in whatever pitchfork banh mi, occupy fugiat fanny pack Austin authentic. Magna fugiat 3 wolf moon, labore McSweeney&#39;s sustainable vero consectetur. Gluten-free disrupt enim, aesthetic fugiat jean shorts trust fund keffiyeh magna try-hard.&lt;/p&gt;
+&lt;p&gt;Tote bag asymmetrical elit sunt. Occaecat authentic Marfa, hella McSweeney’s next level irure veniam master cleanse. Sed hoodie letterpress artisan wolf leggings, 3 wolf moon commodo ullamco. Anim occupy ea labore Terry Richardson. Tofu ex master cleanse in whatever pitchfork banh mi, occupy fugiat fanny pack Austin authentic. Magna fugiat 3 wolf moon, labore McSweeney’s sustainable vero consectetur. Gluten-free disrupt enim, aesthetic fugiat jean shorts trust fund keffiyeh magna try-hard.&lt;/p&gt;
 &lt;h2 id=&quot;hoodie-duis&quot; tabindex=&quot;-1&quot;&gt;Hoodie Duis&lt;/h2&gt;
-&lt;p&gt;Actually salvia consectetur, hoodie duis lomo YOLO sunt sriracha. Aute pop-up brunch farm-to-table odio, salvia irure occaecat. Sriracha small batch literally skateboard. Echo Park nihil hoodie, aliquip forage artisan laboris. Trust fund reprehenderit nulla locavore. Stumptown raw denim kitsch, keffiyeh nulla twee dreamcatcher fanny pack ullamco 90&#39;s pop-up est culpa farm-to-table. Selfies 8-bit do pug odio.&lt;/p&gt;
+&lt;p&gt;Actually salvia consectetur, hoodie duis lomo YOLO sunt sriracha. Aute pop-up brunch farm-to-table odio, salvia irure occaecat. Sriracha small batch literally skateboard. Echo Park nihil hoodie, aliquip forage artisan laboris. Trust fund reprehenderit nulla locavore. Stumptown raw denim kitsch, keffiyeh nulla twee dreamcatcher fanny pack ullamco 90’s pop-up est culpa farm-to-table. Selfies 8-bit do pug odio.&lt;/p&gt;
 &lt;h3 id=&quot;thundercats-ho!&quot; tabindex=&quot;-1&quot;&gt;Thundercats Ho!&lt;/h3&gt;
-&lt;p&gt;Fingerstache thundercats Williamsburg, deep v scenester Banksy ennui vinyl selfies mollit biodiesel duis odio pop-up. Banksy 3 wolf moon try-hard, sapiente enim stumptown deep v ad letterpress. Squid beard brunch, exercitation raw denim yr sint direct trade. Raw denim narwhal id, flannel DIY McSweeney&#39;s seitan. Letterpress artisan bespoke accusamus, meggings laboris consequat Truffaut qui in seitan. Sustainable cornhole Schlitz, twee Cosby sweater banh mi deep v forage letterpress flannel whatever keffiyeh. Sartorial cred irure, semiotics ethical sed blue bottle nihil letterpress.&lt;/p&gt;
-&lt;p&gt;Occupy et selvage squid, pug brunch blog nesciunt hashtag mumblecore skateboard yr kogi. Ugh small batch swag four loko. Fap post-ironic qui tote bag farm-to-table american apparel scenester keffiyeh vero, swag non pour-over gentrify authentic pitchfork. Schlitz scenester lo-fi voluptate, tote bag irony bicycle rights pariatur vero Vice freegan wayfarers exercitation nisi shoreditch. Chambray tofu vero sed. Street art swag literally leggings, Cosby sweater mixtape PBR lomo Banksy non in pitchfork ennui McSweeney&#39;s selfies. Odd Future Banksy non authentic.&lt;/p&gt;
+&lt;p&gt;Fingerstache thundercats Williamsburg, deep v scenester Banksy ennui vinyl selfies mollit biodiesel duis odio pop-up. Banksy 3 wolf moon try-hard, sapiente enim stumptown deep v ad letterpress. Squid beard brunch, exercitation raw denim yr sint direct trade. Raw denim narwhal id, flannel DIY McSweeney’s seitan. Letterpress artisan bespoke accusamus, meggings laboris consequat Truffaut qui in seitan. Sustainable cornhole Schlitz, twee Cosby sweater banh mi deep v forage letterpress flannel whatever keffiyeh. Sartorial cred irure, semiotics ethical sed blue bottle nihil letterpress.&lt;/p&gt;
+&lt;p&gt;Occupy et selvage squid, pug brunch blog nesciunt hashtag mumblecore skateboard yr kogi. Ugh small batch swag four loko. Fap post-ironic qui tote bag farm-to-table american apparel scenester keffiyeh vero, swag non pour-over gentrify authentic pitchfork. Schlitz scenester lo-fi voluptate, tote bag irony bicycle rights pariatur vero Vice freegan wayfarers exercitation nisi shoreditch. Chambray tofu vero sed. Street art swag literally leggings, Cosby sweater mixtape PBR lomo Banksy non in pitchfork ennui McSweeney’s selfies. Odd Future Banksy non authentic.&lt;/p&gt;
 &lt;p&gt;Aliquip enim artisan dolor post-ironic. Pug tote bag Marfa, deserunt pour-over Portland wolf eu odio intelligentsia american apparel ugh ea. Sunt viral et, 3 wolf moon gastropub pug id. Id fashion axe est typewriter, mlkshk Portland art party aute brunch. Sint pork belly Cosby sweater, deep v mumblecore kitsch american apparel. Try-hard direct trade tumblr sint skateboard. Adipisicing bitters excepteur biodiesel, pickled gastropub aute veniam.&lt;/p&gt;
 &lt;hr class=&quot;footnotes-sep&quot;&gt;
 &lt;section class=&quot;footnotes&quot;&gt;
@@ -1220,7 +1329,7 @@ z&lt;br&gt;
       <link>https://example.com/minimal-mistakes/layout/uncategorized/layout-excerpt-generated/</link>
       <description>&lt;p&gt;This is the post content. Archive-index pages should display an auto-generated excerpt of this content.&lt;/p&gt;
 &lt;!--more--&gt;
-&lt;p&gt;Be sure to test the formatting of the auto-generated excerpt, to ensure that it doesn&#39;t create any layout problems.&lt;/p&gt;
+&lt;p&gt;Be sure to test the formatting of the auto-generated excerpt, to ensure that it doesn’t create any layout problems.&lt;/p&gt;
 </description>
       <pubDate>Wed, 14 Mar 2012 24:00:00 GMT</pubDate>
       <dc:creator>Your Name</dc:creator>
@@ -1240,7 +1349,7 @@ z&lt;br&gt;
       <title>Layout: Code Excerpt (Generated)</title>
       <link>https://example.com/minimal-mistakes/layout/uncategorized/layout-code-excerpt-generated/</link>
       <description>&lt;p&gt;This is the post content with inline code, (e.g. &lt;code&gt;&amp;lt;span style=&amp;quot;color: red;&amp;quot;&amp;gt;red&amp;lt;/span&amp;gt;&lt;/code&gt;. It should be displayed in place of the auto-generated excerpt in single-page views. Archive-index pages should display an auto-generated excerpt of this content.&lt;/p&gt;
-&lt;p&gt;Be sure to test the formatting of the auto-generated excerpt, to ensure that it doesn&#39;t create any layout problems.&lt;/p&gt;
+&lt;p&gt;Be sure to test the formatting of the auto-generated excerpt, to ensure that it doesn’t create any layout problems.&lt;/p&gt;
 </description>
       <pubDate>Wed, 14 Mar 2012 24:00:00 GMT</pubDate>
       <dc:creator>Your Name</dc:creator>
@@ -1249,12 +1358,12 @@ z&lt;br&gt;
     <item>
       <title>Layout: Post with Sticky Table of Contents</title>
       <link>https://example.com/minimal-mistakes/layout-table-of-contents-sticky/</link>
-      <description>&lt;p&gt;&amp;quot;Stick&amp;quot; table of contents to the top of a page by adding &lt;code&gt;toc_sticky: true&lt;/code&gt; to its YAML Front Matter.&lt;/p&gt;
+      <description>&lt;p&gt;“Stick” table of contents to the top of a page by adding &lt;code&gt;toc_sticky: true&lt;/code&gt; to its YAML Front Matter.&lt;/p&gt;
 &lt;pre class=&quot;language-yaml&quot;&gt;&lt;code class=&quot;language-yaml&quot;&gt;&lt;span class=&quot;token key atrule&quot;&gt;toc&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean important&quot;&gt;true&lt;/span&gt;
 &lt;span class=&quot;token key atrule&quot;&gt;toc_sticky&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean important&quot;&gt;true&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;---&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;h2 id=&quot;html-elements&quot; tabindex=&quot;-1&quot;&gt;HTML Elements&lt;/h2&gt;
-&lt;p&gt;Below is just about everything you&#39;ll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.&lt;/p&gt;
+&lt;p&gt;Below is just about everything you’ll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.&lt;/p&gt;
 &lt;h2 id=&quot;body-text&quot; tabindex=&quot;-1&quot;&gt;Body text&lt;/h2&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, test link adipiscing elit. &lt;strong&gt;This is strong&lt;/strong&gt;. Nullam dignissim convallis est. Quisque aliquam.&lt;/p&gt;
 &lt;p class=&quot;image-right&quot;&gt;&lt;picture&gt;&lt;source type=&quot;image/png&quot; srcset=&quot;https://example.com/minimal-mistakes/layout-table-of-contents-sticky/Ehm2-IMAHN-240.png 240w&quot; sizes=&quot;100vw&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://example.com/minimal-mistakes/layout-table-of-contents-sticky/Ehm2-IMAHN-240.webp 240w&quot; sizes=&quot;100vw&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://example.com/minimal-mistakes/layout-table-of-contents-sticky/Ehm2-IMAHN-240.jpeg&quot; alt=&quot;Smithsonian Image&quot; width=&quot;240&quot; height=&quot;195&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
@@ -1364,7 +1473,7 @@ z&lt;br&gt;
 &lt;span class=&quot;token key atrule&quot;&gt;toc_icon&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;heart&quot;&lt;/span&gt;  &lt;span class=&quot;token comment&quot;&gt;# corresponding Font Awesome icon name (without fa prefix)&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;---&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;h2 id=&quot;html-elements&quot; tabindex=&quot;-1&quot;&gt;HTML Elements&lt;/h2&gt;
-&lt;p&gt;Below is just about everything you&#39;ll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.&lt;/p&gt;
+&lt;p&gt;Below is just about everything you’ll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.&lt;/p&gt;
 &lt;h2 id=&quot;body-text&quot; tabindex=&quot;-1&quot;&gt;Body text&lt;/h2&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, test link adipiscing elit. &lt;strong&gt;This is strong&lt;/strong&gt;. Nullam dignissim convallis est. Quisque aliquam.&lt;/p&gt;
 &lt;p class=&quot;image-right&quot;&gt;&lt;picture&gt;&lt;source type=&quot;image/png&quot; srcset=&quot;https://example.com/minimal-mistakes/img/VPQNRCu1rj-240.png 240w&quot; sizes=&quot;100vw&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://example.com/minimal-mistakes/img/VPQNRCu1rj-240.webp 240w&quot; sizes=&quot;100vw&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://example.com/minimal-mistakes/img/VPQNRCu1rj-240.jpeg&quot; alt=&quot;Smithsonian Image&quot; width=&quot;240&quot; height=&quot;195&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
@@ -1543,8 +1652,7 @@ z&lt;br&gt;
       <title>Layout: Post with Nested Table of Contents via Helper</title>
       <link>https://example.com/minimal-mistakes/layout-table-of-contents-include-post/</link>
       <description>&lt;p&gt;Tests table of contents with multiple levels to verify indentation is readible via helper include (deprecated).&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;{% include toc %}
-&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&quot;language-plaintext&quot;&gt;&lt;code class=&quot;language-plaintext&quot;&gt;{% include toc %}&lt;/code&gt;&lt;/pre&gt;
 &lt;aside class=&quot;sidebar__right&quot;&gt;
 &lt;nav class=&quot;toc&quot; markdown=&quot;1&quot;&gt;
 &lt;header&gt;&lt;h4 class=&quot;nav__title&quot;&gt;&lt;i class=&quot;fas fa-file-alt&quot;&gt;&lt;/i&gt; &lt;/h4&gt;&lt;/header&gt;
@@ -1674,11 +1782,11 @@ z&lt;br&gt;
       <title>Layout: Read Time Enabled</title>
       <link>https://example.com/minimal-mistakes/layout-read-time/</link>
       <description>&lt;p&gt;This post has reading time enabled. The estimated time that it takes to read this post should show if also enabled in &lt;code&gt;_config.yml&lt;/code&gt; with &lt;code&gt;read_time: true&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;If you could keep awake (but of course you can&#39;t) you would see your own mother doing this, and you would find it very interesting to watch her. It is quite like tidying up drawers. You would see her on her knees, I expect, lingering humorously over some of your contents, wondering where on earth you had picked this thing up, making discoveries sweet and not so sweet, pressing this to her cheek as if it were as nice as a kitten, and hurriedly stowing that out of sight. When you wake in the morning, the naughtiness and evil passions with which you went to bed have been folded up small and placed at the bottom of your mind and on the top, beautifully aired, are spread out your prettier thoughts, ready for you to put on.&lt;/p&gt;
-&lt;p&gt;I don&#39;t know whether you have ever seen a map of a person&#39;s mind. Doctors sometimes draw maps of other parts of you, and your own map can become intensely interesting, but catch them trying to draw a map of a child&#39;s mind, which is not only confused, but keeps going round all the time. There are zigzag lines on it, just like your temperature on a card, and these are probably roads in the island, for the Neverland is always more or less an island, with astonishing splashes of colour here and there, and coral reefs and rakish-looking craft in the offing, and savages and lonely lairs, and gnomes who are mostly tailors, and caves through which a river runs, and princes with six elder brothers, and a hut fast going to decay, and one very small old lady with a hooked nose. It would be an easy map if that were all, but there is also first day at school, religion, fathers, the round pond, needle-work, murders, hangings, verbs that take the dative, chocolate pudding day, getting into braces, say ninety-nine, three-pence for pulling out your tooth yourself, and so on, and either these are part of the island or they are another map showing through, and it is all rather confusing, especially as nothing will stand still.&lt;/p&gt;
-&lt;p&gt;Of course the Neverlands vary a good deal. John&#39;s, for instance, had a lagoon with flamingoes flying over it at which John was shooting, while Michael, who was very small, had a flamingo with lagoons flying over it. John lived in a boat turned upside down on the sands, Michael in a wigwam, Wendy in a house of leaves deftly sewn together. John had no friends, Michael had friends at night, Wendy had a pet wolf forsaken by its parents, but on the whole the Neverlands have a family resemblance, and if they stood still in a row you could say of them that they have each other&#39;s nose, and so forth. On these magic shores children at play are for ever beaching their coracles [simple boat]. We too have been there; we can still hear the sound of the surf, though we shall land no more.&lt;/p&gt;
+&lt;p&gt;If you could keep awake (but of course you can’t) you would see your own mother doing this, and you would find it very interesting to watch her. It is quite like tidying up drawers. You would see her on her knees, I expect, lingering humorously over some of your contents, wondering where on earth you had picked this thing up, making discoveries sweet and not so sweet, pressing this to her cheek as if it were as nice as a kitten, and hurriedly stowing that out of sight. When you wake in the morning, the naughtiness and evil passions with which you went to bed have been folded up small and placed at the bottom of your mind and on the top, beautifully aired, are spread out your prettier thoughts, ready for you to put on.&lt;/p&gt;
+&lt;p&gt;I don’t know whether you have ever seen a map of a person’s mind. Doctors sometimes draw maps of other parts of you, and your own map can become intensely interesting, but catch them trying to draw a map of a child’s mind, which is not only confused, but keeps going round all the time. There are zigzag lines on it, just like your temperature on a card, and these are probably roads in the island, for the Neverland is always more or less an island, with astonishing splashes of colour here and there, and coral reefs and rakish-looking craft in the offing, and savages and lonely lairs, and gnomes who are mostly tailors, and caves through which a river runs, and princes with six elder brothers, and a hut fast going to decay, and one very small old lady with a hooked nose. It would be an easy map if that were all, but there is also first day at school, religion, fathers, the round pond, needle-work, murders, hangings, verbs that take the dative, chocolate pudding day, getting into braces, say ninety-nine, three-pence for pulling out your tooth yourself, and so on, and either these are part of the island or they are another map showing through, and it is all rather confusing, especially as nothing will stand still.&lt;/p&gt;
+&lt;p&gt;Of course the Neverlands vary a good deal. John’s, for instance, had a lagoon with flamingoes flying over it at which John was shooting, while Michael, who was very small, had a flamingo with lagoons flying over it. John lived in a boat turned upside down on the sands, Michael in a wigwam, Wendy in a house of leaves deftly sewn together. John had no friends, Michael had friends at night, Wendy had a pet wolf forsaken by its parents, but on the whole the Neverlands have a family resemblance, and if they stood still in a row you could say of them that they have each other’s nose, and so forth. On these magic shores children at play are for ever beaching their coracles [simple boat]. We too have been there; we can still hear the sound of the surf, though we shall land no more.&lt;/p&gt;
 &lt;p&gt;Of all delectable islands the Neverland is the snuggest and most compact, not large and sprawly, you know, with tedious distances between one adventure and another, but nicely crammed. When you play at it by day with the chairs and table-cloth, it is not in the least alarming, but in the two minutes before you go to sleep it becomes very real. That is why there are night-lights.&lt;/p&gt;
-&lt;p&gt;Occasionally in her travels through her children&#39;s minds Mrs. Darling found things she could not understand, and of these quite the most perplexing was the word Peter. She knew of no Peter, and yet he was here and there in John and Michael&#39;s minds, while Wendy&#39;s began to be scrawled all over with him. The name stood out in bolder letters than any of the other words, and as Mrs. Darling gazed she felt that it had an oddly cocky appearance.&lt;/p&gt;
+&lt;p&gt;Occasionally in her travels through her children’s minds Mrs. Darling found things she could not understand, and of these quite the most perplexing was the word Peter. She knew of no Peter, and yet he was here and there in John and Michael’s minds, while Wendy’s began to be scrawled all over with him. The name stood out in bolder letters than any of the other words, and as Mrs. Darling gazed she felt that it had an oddly cocky appearance.&lt;/p&gt;
 </description>
       <pubDate>Mon, 02 Jan 2012 24:00:00 GMT</pubDate>
       <dc:creator>Your Name</dc:creator>
@@ -1687,12 +1795,12 @@ z&lt;br&gt;
     <item>
       <title>Layout: Read Time Disabled</title>
       <link>https://example.com/minimal-mistakes/layout-read-time-disabled/</link>
-      <description>&lt;p&gt;This post has reading time disabled. The estimated time that it takes to read this post should not be showing if &lt;code&gt;read_time: false&lt;/code&gt; is set in &lt;code&gt;_config.yml&lt;/code&gt; or in this post&#39;s YAML Front Matter.&lt;/p&gt;
-&lt;p&gt;If you could keep awake (but of course you can&#39;t) you would see your own mother doing this, and you would find it very interesting to watch her. It is quite like tidying up drawers. You would see her on her knees, I expect, lingering humorously over some of your contents, wondering where on earth you had picked this thing up, making discoveries sweet and not so sweet, pressing this to her cheek as if it were as nice as a kitten, and hurriedly stowing that out of sight. When you wake in the morning, the naughtiness and evil passions with which you went to bed have been folded up small and placed at the bottom of your mind and on the top, beautifully aired, are spread out your prettier thoughts, ready for you to put on.&lt;/p&gt;
-&lt;p&gt;I don&#39;t know whether you have ever seen a map of a person&#39;s mind. Doctors sometimes draw maps of other parts of you, and your own map can become intensely interesting, but catch them trying to draw a map of a child&#39;s mind, which is not only confused, but keeps going round all the time. There are zigzag lines on it, just like your temperature on a card, and these are probably roads in the island, for the Neverland is always more or less an island, with astonishing splashes of colour here and there, and coral reefs and rakish-looking craft in the offing, and savages and lonely lairs, and gnomes who are mostly tailors, and caves through which a river runs, and princes with six elder brothers, and a hut fast going to decay, and one very small old lady with a hooked nose. It would be an easy map if that were all, but there is also first day at school, religion, fathers, the round pond, needle-work, murders, hangings, verbs that take the dative, chocolate pudding day, getting into braces, say ninety-nine, three-pence for pulling out your tooth yourself, and so on, and either these are part of the island or they are another map showing through, and it is all rather confusing, especially as nothing will stand still.&lt;/p&gt;
-&lt;p&gt;Of course the Neverlands vary a good deal. John&#39;s, for instance, had a lagoon with flamingoes flying over it at which John was shooting, while Michael, who was very small, had a flamingo with lagoons flying over it. John lived in a boat turned upside down on the sands, Michael in a wigwam, Wendy in a house of leaves deftly sewn together. John had no friends, Michael had friends at night, Wendy had a pet wolf forsaken by its parents, but on the whole the Neverlands have a family resemblance, and if they stood still in a row you could say of them that they have each other&#39;s nose, and so forth. On these magic shores children at play are for ever beaching their coracles [simple boat]. We too have been there; we can still hear the sound of the surf, though we shall land no more.&lt;/p&gt;
+      <description>&lt;p&gt;This post has reading time disabled. The estimated time that it takes to read this post should not be showing if &lt;code&gt;read_time: false&lt;/code&gt; is set in &lt;code&gt;_config.yml&lt;/code&gt; or in this post’s YAML Front Matter.&lt;/p&gt;
+&lt;p&gt;If you could keep awake (but of course you can’t) you would see your own mother doing this, and you would find it very interesting to watch her. It is quite like tidying up drawers. You would see her on her knees, I expect, lingering humorously over some of your contents, wondering where on earth you had picked this thing up, making discoveries sweet and not so sweet, pressing this to her cheek as if it were as nice as a kitten, and hurriedly stowing that out of sight. When you wake in the morning, the naughtiness and evil passions with which you went to bed have been folded up small and placed at the bottom of your mind and on the top, beautifully aired, are spread out your prettier thoughts, ready for you to put on.&lt;/p&gt;
+&lt;p&gt;I don’t know whether you have ever seen a map of a person’s mind. Doctors sometimes draw maps of other parts of you, and your own map can become intensely interesting, but catch them trying to draw a map of a child’s mind, which is not only confused, but keeps going round all the time. There are zigzag lines on it, just like your temperature on a card, and these are probably roads in the island, for the Neverland is always more or less an island, with astonishing splashes of colour here and there, and coral reefs and rakish-looking craft in the offing, and savages and lonely lairs, and gnomes who are mostly tailors, and caves through which a river runs, and princes with six elder brothers, and a hut fast going to decay, and one very small old lady with a hooked nose. It would be an easy map if that were all, but there is also first day at school, religion, fathers, the round pond, needle-work, murders, hangings, verbs that take the dative, chocolate pudding day, getting into braces, say ninety-nine, three-pence for pulling out your tooth yourself, and so on, and either these are part of the island or they are another map showing through, and it is all rather confusing, especially as nothing will stand still.&lt;/p&gt;
+&lt;p&gt;Of course the Neverlands vary a good deal. John’s, for instance, had a lagoon with flamingoes flying over it at which John was shooting, while Michael, who was very small, had a flamingo with lagoons flying over it. John lived in a boat turned upside down on the sands, Michael in a wigwam, Wendy in a house of leaves deftly sewn together. John had no friends, Michael had friends at night, Wendy had a pet wolf forsaken by its parents, but on the whole the Neverlands have a family resemblance, and if they stood still in a row you could say of them that they have each other’s nose, and so forth. On these magic shores children at play are for ever beaching their coracles [simple boat]. We too have been there; we can still hear the sound of the surf, though we shall land no more.&lt;/p&gt;
 &lt;p&gt;Of all delectable islands the Neverland is the snuggest and most compact, not large and sprawly, you know, with tedious distances between one adventure and another, but nicely crammed. When you play at it by day with the chairs and table-cloth, it is not in the least alarming, but in the two minutes before you go to sleep it becomes very real. That is why there are night-lights.&lt;/p&gt;
-&lt;p&gt;Occasionally in her travels through her children&#39;s minds Mrs. Darling found things she could not understand, and of these quite the most perplexing was the word Peter. She knew of no Peter, and yet he was here and there in John and Michael&#39;s minds, while Wendy&#39;s began to be scrawled all over with him. The name stood out in bolder letters than any of the other words, and as Mrs. Darling gazed she felt that it had an oddly cocky appearance.&lt;/p&gt;
+&lt;p&gt;Occasionally in her travels through her children’s minds Mrs. Darling found things she could not understand, and of these quite the most perplexing was the word Peter. She knew of no Peter, and yet he was here and there in John and Michael’s minds, while Wendy’s began to be scrawled all over with him. The name stood out in bolder letters than any of the other words, and as Mrs. Darling gazed she felt that it had an oddly cocky appearance.&lt;/p&gt;
 </description>
       <pubDate>Mon, 02 Jan 2012 24:00:00 GMT</pubDate>
       <dc:creator>Your Name</dc:creator>
@@ -1701,12 +1809,12 @@ z&lt;br&gt;
     <item>
       <title>Layout: Post Date Enabled</title>
       <link>https://example.com/minimal-mistakes/layout-post-date/</link>
-      <description>&lt;p&gt;This post has post date enabled. The date the post was published should show if &lt;code&gt;show_date: true&lt;/code&gt; is added to it&#39;s YAML Front Matter or as a default in &lt;code&gt;_config.yml&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;If you could keep awake (but of course you can&#39;t) you would see your own mother doing this, and you would find it very interesting to watch her. It is quite like tidying up drawers. You would see her on her knees, I expect, lingering humorously over some of your contents, wondering where on earth you had picked this thing up, making discoveries sweet and not so sweet, pressing this to her cheek as if it were as nice as a kitten, and hurriedly stowing that out of sight. When you wake in the morning, the naughtiness and evil passions with which you went to bed have been folded up small and placed at the bottom of your mind and on the top, beautifully aired, are spread out your prettier thoughts, ready for you to put on.&lt;/p&gt;
-&lt;p&gt;I don&#39;t know whether you have ever seen a map of a person&#39;s mind. Doctors sometimes draw maps of other parts of you, and your own map can become intensely interesting, but catch them trying to draw a map of a child&#39;s mind, which is not only confused, but keeps going round all the time. There are zigzag lines on it, just like your temperature on a card, and these are probably roads in the island, for the Neverland is always more or less an island, with astonishing splashes of colour here and there, and coral reefs and rakish-looking craft in the offing, and savages and lonely lairs, and gnomes who are mostly tailors, and caves through which a river runs, and princes with six elder brothers, and a hut fast going to decay, and one very small old lady with a hooked nose. It would be an easy map if that were all, but there is also first day at school, religion, fathers, the round pond, needle-work, murders, hangings, verbs that take the dative, chocolate pudding day, getting into braces, say ninety-nine, three-pence for pulling out your tooth yourself, and so on, and either these are part of the island or they are another map showing through, and it is all rather confusing, especially as nothing will stand still.&lt;/p&gt;
-&lt;p&gt;Of course the Neverlands vary a good deal. John&#39;s, for instance, had a lagoon with flamingoes flying over it at which John was shooting, while Michael, who was very small, had a flamingo with lagoons flying over it. John lived in a boat turned upside down on the sands, Michael in a wigwam, Wendy in a house of leaves deftly sewn together. John had no friends, Michael had friends at night, Wendy had a pet wolf forsaken by its parents, but on the whole the Neverlands have a family resemblance, and if they stood still in a row you could say of them that they have each other&#39;s nose, and so forth. On these magic shores children at play are for ever beaching their coracles [simple boat]. We too have been there; we can still hear the sound of the surf, though we shall land no more.&lt;/p&gt;
+      <description>&lt;p&gt;This post has post date enabled. The date the post was published should show if &lt;code&gt;show_date: true&lt;/code&gt; is added to it’s YAML Front Matter or as a default in &lt;code&gt;_config.yml&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;If you could keep awake (but of course you can’t) you would see your own mother doing this, and you would find it very interesting to watch her. It is quite like tidying up drawers. You would see her on her knees, I expect, lingering humorously over some of your contents, wondering where on earth you had picked this thing up, making discoveries sweet and not so sweet, pressing this to her cheek as if it were as nice as a kitten, and hurriedly stowing that out of sight. When you wake in the morning, the naughtiness and evil passions with which you went to bed have been folded up small and placed at the bottom of your mind and on the top, beautifully aired, are spread out your prettier thoughts, ready for you to put on.&lt;/p&gt;
+&lt;p&gt;I don’t know whether you have ever seen a map of a person’s mind. Doctors sometimes draw maps of other parts of you, and your own map can become intensely interesting, but catch them trying to draw a map of a child’s mind, which is not only confused, but keeps going round all the time. There are zigzag lines on it, just like your temperature on a card, and these are probably roads in the island, for the Neverland is always more or less an island, with astonishing splashes of colour here and there, and coral reefs and rakish-looking craft in the offing, and savages and lonely lairs, and gnomes who are mostly tailors, and caves through which a river runs, and princes with six elder brothers, and a hut fast going to decay, and one very small old lady with a hooked nose. It would be an easy map if that were all, but there is also first day at school, religion, fathers, the round pond, needle-work, murders, hangings, verbs that take the dative, chocolate pudding day, getting into braces, say ninety-nine, three-pence for pulling out your tooth yourself, and so on, and either these are part of the island or they are another map showing through, and it is all rather confusing, especially as nothing will stand still.&lt;/p&gt;
+&lt;p&gt;Of course the Neverlands vary a good deal. John’s, for instance, had a lagoon with flamingoes flying over it at which John was shooting, while Michael, who was very small, had a flamingo with lagoons flying over it. John lived in a boat turned upside down on the sands, Michael in a wigwam, Wendy in a house of leaves deftly sewn together. John had no friends, Michael had friends at night, Wendy had a pet wolf forsaken by its parents, but on the whole the Neverlands have a family resemblance, and if they stood still in a row you could say of them that they have each other’s nose, and so forth. On these magic shores children at play are for ever beaching their coracles [simple boat]. We too have been there; we can still hear the sound of the surf, though we shall land no more.&lt;/p&gt;
 &lt;p&gt;Of all delectable islands the Neverland is the snuggest and most compact, not large and sprawly, you know, with tedious distances between one adventure and another, but nicely crammed. When you play at it by day with the chairs and table-cloth, it is not in the least alarming, but in the two minutes before you go to sleep it becomes very real. That is why there are night-lights.&lt;/p&gt;
-&lt;p&gt;Occasionally in her travels through her children&#39;s minds Mrs. Darling found things she could not understand, and of these quite the most perplexing was the word Peter. She knew of no Peter, and yet he was here and there in John and Michael&#39;s minds, while Wendy&#39;s began to be scrawled all over with him. The name stood out in bolder letters than any of the other words, and as Mrs. Darling gazed she felt that it had an oddly cocky appearance.&lt;/p&gt;
+&lt;p&gt;Occasionally in her travels through her children’s minds Mrs. Darling found things she could not understand, and of these quite the most perplexing was the word Peter. She knew of no Peter, and yet he was here and there in John and Michael’s minds, while Wendy’s began to be scrawled all over with him. The name stood out in bolder letters than any of the other words, and as Mrs. Darling gazed she felt that it had an oddly cocky appearance.&lt;/p&gt;
 </description>
       <pubDate>Mon, 02 Jan 2012 24:00:00 GMT</pubDate>
       <dc:creator>Your Name</dc:creator>
@@ -1715,12 +1823,12 @@ z&lt;br&gt;
     <item>
       <title>Layout: Post Date Disabled</title>
       <link>https://example.com/minimal-mistakes/layout-post-date-disabled/</link>
-      <description>&lt;p&gt;This post has the date disabled. The date this post was published should not be showing if &lt;code&gt;show_date: false&lt;/code&gt; is set in &lt;code&gt;_config.yml&lt;/code&gt; or in this post&#39;s YAML Front Matter.&lt;/p&gt;
-&lt;p&gt;If you could keep awake (but of course you can&#39;t) you would see your own mother doing this, and you would find it very interesting to watch her. It is quite like tidying up drawers. You would see her on her knees, I expect, lingering humorously over some of your contents, wondering where on earth you had picked this thing up, making discoveries sweet and not so sweet, pressing this to her cheek as if it were as nice as a kitten, and hurriedly stowing that out of sight. When you wake in the morning, the naughtiness and evil passions with which you went to bed have been folded up small and placed at the bottom of your mind and on the top, beautifully aired, are spread out your prettier thoughts, ready for you to put on.&lt;/p&gt;
-&lt;p&gt;I don&#39;t know whether you have ever seen a map of a person&#39;s mind. Doctors sometimes draw maps of other parts of you, and your own map can become intensely interesting, but catch them trying to draw a map of a child&#39;s mind, which is not only confused, but keeps going round all the time. There are zigzag lines on it, just like your temperature on a card, and these are probably roads in the island, for the Neverland is always more or less an island, with astonishing splashes of colour here and there, and coral reefs and rakish-looking craft in the offing, and savages and lonely lairs, and gnomes who are mostly tailors, and caves through which a river runs, and princes with six elder brothers, and a hut fast going to decay, and one very small old lady with a hooked nose. It would be an easy map if that were all, but there is also first day at school, religion, fathers, the round pond, needle-work, murders, hangings, verbs that take the dative, chocolate pudding day, getting into braces, say ninety-nine, three-pence for pulling out your tooth yourself, and so on, and either these are part of the island or they are another map showing through, and it is all rather confusing, especially as nothing will stand still.&lt;/p&gt;
-&lt;p&gt;Of course the Neverlands vary a good deal. John&#39;s, for instance, had a lagoon with flamingoes flying over it at which John was shooting, while Michael, who was very small, had a flamingo with lagoons flying over it. John lived in a boat turned upside down on the sands, Michael in a wigwam, Wendy in a house of leaves deftly sewn together. John had no friends, Michael had friends at night, Wendy had a pet wolf forsaken by its parents, but on the whole the Neverlands have a family resemblance, and if they stood still in a row you could say of them that they have each other&#39;s nose, and so forth. On these magic shores children at play are for ever beaching their coracles [simple boat]. We too have been there; we can still hear the sound of the surf, though we shall land no more.&lt;/p&gt;
+      <description>&lt;p&gt;This post has the date disabled. The date this post was published should not be showing if &lt;code&gt;show_date: false&lt;/code&gt; is set in &lt;code&gt;_config.yml&lt;/code&gt; or in this post’s YAML Front Matter.&lt;/p&gt;
+&lt;p&gt;If you could keep awake (but of course you can’t) you would see your own mother doing this, and you would find it very interesting to watch her. It is quite like tidying up drawers. You would see her on her knees, I expect, lingering humorously over some of your contents, wondering where on earth you had picked this thing up, making discoveries sweet and not so sweet, pressing this to her cheek as if it were as nice as a kitten, and hurriedly stowing that out of sight. When you wake in the morning, the naughtiness and evil passions with which you went to bed have been folded up small and placed at the bottom of your mind and on the top, beautifully aired, are spread out your prettier thoughts, ready for you to put on.&lt;/p&gt;
+&lt;p&gt;I don’t know whether you have ever seen a map of a person’s mind. Doctors sometimes draw maps of other parts of you, and your own map can become intensely interesting, but catch them trying to draw a map of a child’s mind, which is not only confused, but keeps going round all the time. There are zigzag lines on it, just like your temperature on a card, and these are probably roads in the island, for the Neverland is always more or less an island, with astonishing splashes of colour here and there, and coral reefs and rakish-looking craft in the offing, and savages and lonely lairs, and gnomes who are mostly tailors, and caves through which a river runs, and princes with six elder brothers, and a hut fast going to decay, and one very small old lady with a hooked nose. It would be an easy map if that were all, but there is also first day at school, religion, fathers, the round pond, needle-work, murders, hangings, verbs that take the dative, chocolate pudding day, getting into braces, say ninety-nine, three-pence for pulling out your tooth yourself, and so on, and either these are part of the island or they are another map showing through, and it is all rather confusing, especially as nothing will stand still.&lt;/p&gt;
+&lt;p&gt;Of course the Neverlands vary a good deal. John’s, for instance, had a lagoon with flamingoes flying over it at which John was shooting, while Michael, who was very small, had a flamingo with lagoons flying over it. John lived in a boat turned upside down on the sands, Michael in a wigwam, Wendy in a house of leaves deftly sewn together. John had no friends, Michael had friends at night, Wendy had a pet wolf forsaken by its parents, but on the whole the Neverlands have a family resemblance, and if they stood still in a row you could say of them that they have each other’s nose, and so forth. On these magic shores children at play are for ever beaching their coracles [simple boat]. We too have been there; we can still hear the sound of the surf, though we shall land no more.&lt;/p&gt;
 &lt;p&gt;Of all delectable islands the Neverland is the snuggest and most compact, not large and sprawly, you know, with tedious distances between one adventure and another, but nicely crammed. When you play at it by day with the chairs and table-cloth, it is not in the least alarming, but in the two minutes before you go to sleep it becomes very real. That is why there are night-lights.&lt;/p&gt;
-&lt;p&gt;Occasionally in her travels through her children&#39;s minds Mrs. Darling found things she could not understand, and of these quite the most perplexing was the word Peter. She knew of no Peter, and yet he was here and there in John and Michael&#39;s minds, while Wendy&#39;s began to be scrawled all over with him. The name stood out in bolder letters than any of the other words, and as Mrs. Darling gazed she felt that it had an oddly cocky appearance.&lt;/p&gt;
+&lt;p&gt;Occasionally in her travels through her children’s minds Mrs. Darling found things she could not understand, and of these quite the most perplexing was the word Peter. She knew of no Peter, and yet he was here and there in John and Michael’s minds, while Wendy’s began to be scrawled all over with him. The name stood out in bolder letters than any of the other words, and as Mrs. Darling gazed she felt that it had an oddly cocky appearance.&lt;/p&gt;
 </description>
       <pubDate>Mon, 02 Jan 2012 24:00:00 GMT</pubDate>
       <dc:creator>Your Name</dc:creator>
@@ -1955,7 +2063,7 @@ z&lt;br&gt;
     <item>
       <title>Post: Link</title>
       <link>https://example.com/minimal-mistakes/post-formats/post-link/</link>
-      <description>&lt;p&gt;This theme supports &lt;strong&gt;link posts&lt;/strong&gt;, made famous by John Gruber. To use, just add &lt;code&gt;link: http://url-you-want-linked&lt;/code&gt; to the post&#39;s YAML front matter and you&#39;re done.&lt;/p&gt;
+      <description>&lt;p&gt;This theme supports &lt;strong&gt;link posts&lt;/strong&gt;, made famous by John Gruber. To use, just add &lt;code&gt;link: http://url-you-want-linked&lt;/code&gt; to the post’s YAML front matter and you’re done.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;And this is how a quote looks.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -2030,67 +2138,67 @@ z&lt;br&gt;
       <link>https://example.com/minimal-mistakes/post-formats/post-chat/</link>
       <description>&lt;p&gt;Abbott: Strange as it may seem, they give ball players nowadays very peculiar names.&lt;/p&gt;
 &lt;p&gt;Costello: Funny names?&lt;/p&gt;
-&lt;p&gt;Abbott: Nicknames, nicknames. Now, on the St. Louis team we have Who&#39;s on first, What&#39;s on second, I Don&#39;t Know is on third--&lt;/p&gt;
-&lt;p&gt;Costello: That&#39;s what I want to find out. I want you to tell me the names of the fellows on the St. Louis team.&lt;/p&gt;
-&lt;p&gt;Abbott: I&#39;m telling you. Who&#39;s on first, What&#39;s on second, I Don&#39;t Know is on third--&lt;/p&gt;
-&lt;p&gt;Costello: You know the fellows&#39; names?&lt;/p&gt;
+&lt;p&gt;Abbott: Nicknames, nicknames. Now, on the St. Louis team we have Who’s on first, What’s on second, I Don’t Know is on third–&lt;/p&gt;
+&lt;p&gt;Costello: That’s what I want to find out. I want you to tell me the names of the fellows on the St. Louis team.&lt;/p&gt;
+&lt;p&gt;Abbott: I’m telling you. Who’s on first, What’s on second, I Don’t Know is on third–&lt;/p&gt;
+&lt;p&gt;Costello: You know the fellows’ names?&lt;/p&gt;
 &lt;p&gt;Abbott: Yes.&lt;/p&gt;
-&lt;p&gt;Costello: Well, then who&#39;s playing first?&lt;/p&gt;
+&lt;p&gt;Costello: Well, then who’s playing first?&lt;/p&gt;
 &lt;p&gt;Abbott: Yes.&lt;/p&gt;
-&lt;p&gt;Costello: I mean the fellow&#39;s name on first base.&lt;/p&gt;
+&lt;p&gt;Costello: I mean the fellow’s name on first base.&lt;/p&gt;
 &lt;p&gt;Abbott: Who.&lt;/p&gt;
-&lt;p&gt;Costello: The fellow playin&#39; first base.&lt;/p&gt;
+&lt;p&gt;Costello: The fellow playin’ first base.&lt;/p&gt;
 &lt;p&gt;Abbott: Who.&lt;/p&gt;
 &lt;p&gt;Costello: The guy on first base.&lt;/p&gt;
 &lt;p&gt;Abbott: Who is on first.&lt;/p&gt;
-&lt;p&gt;Costello: Well, what are you askin&#39; me for?&lt;/p&gt;
-&lt;p&gt;Abbott: I&#39;m not asking you--I&#39;m telling you. Who is on first.&lt;/p&gt;
-&lt;p&gt;Costello: I&#39;m asking you--who&#39;s on first?&lt;/p&gt;
-&lt;p&gt;Abbott: That&#39;s the man&#39;s name.&lt;/p&gt;
-&lt;p&gt;Costello: That&#39;s who&#39;s name?&lt;/p&gt;
+&lt;p&gt;Costello: Well, what are you askin’ me for?&lt;/p&gt;
+&lt;p&gt;Abbott: I’m not asking you–I’m telling you. Who is on first.&lt;/p&gt;
+&lt;p&gt;Costello: I’m asking you–who’s on first?&lt;/p&gt;
+&lt;p&gt;Abbott: That’s the man’s name.&lt;/p&gt;
+&lt;p&gt;Costello: That’s who’s name?&lt;/p&gt;
 &lt;p&gt;Abbott: Yes.&lt;/p&gt;
 &lt;p&gt;Costello: When you pay off the first baseman every month, who gets the money?&lt;/p&gt;
-&lt;p&gt;Abbott: Every dollar of it. And why not, the man&#39;s entitled to it.&lt;/p&gt;
+&lt;p&gt;Abbott: Every dollar of it. And why not, the man’s entitled to it.&lt;/p&gt;
 &lt;p&gt;Costello: Who is?&lt;/p&gt;
 &lt;p&gt;Abbott: Yes.&lt;/p&gt;
 &lt;p&gt;Costello: So who gets it?&lt;/p&gt;
-&lt;p&gt;Abbott: Why shouldn&#39;t he? Sometimes his wife comes down and collects it.&lt;/p&gt;
-&lt;p&gt;Costello: Who&#39;s wife?&lt;/p&gt;
+&lt;p&gt;Abbott: Why shouldn’t he? Sometimes his wife comes down and collects it.&lt;/p&gt;
+&lt;p&gt;Costello: Who’s wife?&lt;/p&gt;
 &lt;p&gt;Abbott: Yes. After all, the man earns it.&lt;/p&gt;
 &lt;p&gt;Costello: Who does?&lt;/p&gt;
 &lt;p&gt;Abbott: Absolutely.&lt;/p&gt;
-&lt;p&gt;Costello: Well, all I&#39;m trying to find out is what&#39;s the guy&#39;s name on first base?&lt;/p&gt;
+&lt;p&gt;Costello: Well, all I’m trying to find out is what’s the guy’s name on first base?&lt;/p&gt;
 &lt;p&gt;Abbott: Oh, no, no. What is on second base.&lt;/p&gt;
-&lt;p&gt;Costello: I&#39;m not asking you who&#39;s on second.&lt;/p&gt;
-&lt;p&gt;Abbott: Who&#39;s on first!&lt;/p&gt;
+&lt;p&gt;Costello: I’m not asking you who’s on second.&lt;/p&gt;
+&lt;p&gt;Abbott: Who’s on first!&lt;/p&gt;
 &lt;p&gt;Costello: St. Louis has a good outfield?&lt;/p&gt;
 &lt;p&gt;Abbott: Oh, absolutely.&lt;/p&gt;
-&lt;p&gt;Costello: The left fielder&#39;s name?&lt;/p&gt;
+&lt;p&gt;Costello: The left fielder’s name?&lt;/p&gt;
 &lt;p&gt;Abbott: Why.&lt;/p&gt;
-&lt;p&gt;Costello: I don&#39;t know, I just thought I&#39;d ask.&lt;/p&gt;
-&lt;p&gt;Abbott: Well, I just thought I&#39;d tell you.&lt;/p&gt;
-&lt;p&gt;Costello: Then tell me who&#39;s playing left field?&lt;/p&gt;
-&lt;p&gt;Abbott: Who&#39;s playing first.&lt;/p&gt;
-&lt;p&gt;Costello: Stay out of the infield! The left fielder&#39;s name?&lt;/p&gt;
+&lt;p&gt;Costello: I don’t know, I just thought I’d ask.&lt;/p&gt;
+&lt;p&gt;Abbott: Well, I just thought I’d tell you.&lt;/p&gt;
+&lt;p&gt;Costello: Then tell me who’s playing left field?&lt;/p&gt;
+&lt;p&gt;Abbott: Who’s playing first.&lt;/p&gt;
+&lt;p&gt;Costello: Stay out of the infield! The left fielder’s name?&lt;/p&gt;
 &lt;p&gt;Abbott: Why.&lt;/p&gt;
 &lt;p&gt;Costello: Because.&lt;/p&gt;
-&lt;p&gt;Abbott: Oh, he&#39;s center field.&lt;/p&gt;
+&lt;p&gt;Abbott: Oh, he’s center field.&lt;/p&gt;
 &lt;p&gt;Costello: Wait a minute. You got a pitcher on this team?&lt;/p&gt;
-&lt;p&gt;Abbott: Wouldn&#39;t this be a fine team without a pitcher?&lt;/p&gt;
-&lt;p&gt;Costello: Tell me the pitcher&#39;s name.&lt;/p&gt;
+&lt;p&gt;Abbott: Wouldn’t this be a fine team without a pitcher?&lt;/p&gt;
+&lt;p&gt;Costello: Tell me the pitcher’s name.&lt;/p&gt;
 &lt;p&gt;Abbott: Tomorrow.&lt;/p&gt;
-&lt;p&gt;Costello: Now, when the guy at bat bunts the ball--me being a good catcher--I want to throw the guy out at first base, so I pick up the ball and throw it to who?&lt;/p&gt;
-&lt;p&gt;Abbott: Now, that&#39;s he first thing you&#39;ve said right.&lt;/p&gt;
-&lt;p&gt;Costello: I DON&#39;T EVEN KNOW WHAT I&#39;M TALKING ABOUT!&lt;/p&gt;
-&lt;p&gt;Abbott: Don&#39;t get excited. Take it easy.&lt;/p&gt;
-&lt;p&gt;Costello: I throw the ball to first base, whoever it is grabs the ball, so the guy runs to second. Who picks up the ball and throws it to what. What throws it to I don&#39;t know. I don&#39;t know throws it back to tomorrow--a triple play.&lt;/p&gt;
+&lt;p&gt;Costello: Now, when the guy at bat bunts the ball–me being a good catcher–I want to throw the guy out at first base, so I pick up the ball and throw it to who?&lt;/p&gt;
+&lt;p&gt;Abbott: Now, that’s he first thing you’ve said right.&lt;/p&gt;
+&lt;p&gt;Costello: I DON’T EVEN KNOW WHAT I’M TALKING ABOUT!&lt;/p&gt;
+&lt;p&gt;Abbott: Don’t get excited. Take it easy.&lt;/p&gt;
+&lt;p&gt;Costello: I throw the ball to first base, whoever it is grabs the ball, so the guy runs to second. Who picks up the ball and throws it to what. What throws it to I don’t know. I don’t know throws it back to tomorrow–a triple play.&lt;/p&gt;
 &lt;p&gt;Abbott: Yeah, it could be.&lt;/p&gt;
-&lt;p&gt;Costello: Another guy gets up and it&#39;s a long ball to center.&lt;/p&gt;
+&lt;p&gt;Costello: Another guy gets up and it’s a long ball to center.&lt;/p&gt;
 &lt;p&gt;Abbott: Because.&lt;/p&gt;
-&lt;p&gt;Costello: Why? I don&#39;t know. And I don&#39;t care.&lt;/p&gt;
+&lt;p&gt;Costello: Why? I don’t know. And I don’t care.&lt;/p&gt;
 &lt;p&gt;Abbott: What was that?&lt;/p&gt;
-&lt;p&gt;Costello: I said, I DON&#39;T CARE!&lt;/p&gt;
-&lt;p&gt;Abbott: Oh, that&#39;s our shortstop!&lt;/p&gt;
+&lt;p&gt;Costello: I said, I DON’T CARE!&lt;/p&gt;
+&lt;p&gt;Abbott: Oh, that’s our shortstop!&lt;/p&gt;
 </description>
       <pubDate>Fri, 08 Jan 2010 24:00:00 GMT</pubDate>
       <dc:creator>Your Name</dc:creator>
@@ -2099,16 +2207,16 @@ z&lt;br&gt;
     <item>
       <title>Post: Standard</title>
       <link>https://example.com/minimal-mistakes/post-formats/post-standard/</link>
-      <description>&lt;p&gt;All children, except one, grow up. They soon know that they will grow up, and the way Wendy knew was this. One day when she was two years old she was playing in a garden, and she plucked another flower and ran with it to her mother. I suppose she must have looked rather delightful, for Mrs. Darling put her hand to her heart and cried, &amp;quot;Oh, why can&#39;t you remain like this for ever!&amp;quot; This was all that passed between them on the subject, but henceforth Wendy knew that she must grow up. You always know after you are two. Two is the beginning of the end.&lt;/p&gt;
-&lt;p&gt;Mrs. Darling first heard of Peter when she was tidying up her children&#39;s minds. It is the nightly custom of every good mother after her children are asleep to rummage in their minds and put things straight for next morning, repacking into their proper places the many articles that have wandered during the day.&lt;/p&gt;
+      <description>&lt;p&gt;All children, except one, grow up. They soon know that they will grow up, and the way Wendy knew was this. One day when she was two years old she was playing in a garden, and she plucked another flower and ran with it to her mother. I suppose she must have looked rather delightful, for Mrs. Darling put her hand to her heart and cried, “Oh, why can’t you remain like this for ever!” This was all that passed between them on the subject, but henceforth Wendy knew that she must grow up. You always know after you are two. Two is the beginning of the end.&lt;/p&gt;
+&lt;p&gt;Mrs. Darling first heard of Peter when she was tidying up her children’s minds. It is the nightly custom of every good mother after her children are asleep to rummage in their minds and put things straight for next morning, repacking into their proper places the many articles that have wandered during the day.&lt;/p&gt;
 &lt;!--more--&gt;
 &lt;p&gt;This post has a manual excerpt &lt;code&gt;&amp;lt;!--more--&amp;gt;&lt;/code&gt; set after the second paragraph. The following YAML Front Matter has also be applied:&lt;/p&gt;
 &lt;pre class=&quot;language-yaml&quot;&gt;&lt;code class=&quot;language-yaml&quot;&gt;&lt;span class=&quot;token key atrule&quot;&gt;excerpt_separator&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;&amp;lt;!--more--&gt;&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;If you could keep awake (but of course you can&#39;t) you would see your own mother doing this, and you would find it very interesting to watch her. It is quite like tidying up drawers. You would see her on her knees, I expect, lingering humorously over some of your contents, wondering where on earth you had picked this thing up, making discoveries sweet and not so sweet, pressing this to her cheek as if it were as nice as a kitten, and hurriedly stowing that out of sight. When you wake in the morning, the naughtiness and evil passions with which you went to bed have been folded up small and placed at the bottom of your mind and on the top, beautifully aired, are spread out your prettier thoughts, ready for you to put on.&lt;/p&gt;
-&lt;p&gt;I don&#39;t know whether you have ever seen a map of a person&#39;s mind. Doctors sometimes draw maps of other parts of you, and your own map can become intensely interesting, but catch them trying to draw a map of a child&#39;s mind, which is not only confused, but keeps going round all the time. There are zigzag lines on it, just like your temperature on a card, and these are probably roads in the island, for the Neverland is always more or less an island, with astonishing splashes of colour here and there, and coral reefs and rakish-looking craft in the offing, and savages and lonely lairs, and gnomes who are mostly tailors, and caves through which a river runs, and princes with six elder brothers, and a hut fast going to decay, and one very small old lady with a hooked nose. It would be an easy map if that were all, but there is also first day at school, religion, fathers, the round pond, needle-work, murders, hangings, verbs that take the dative, chocolate pudding day, getting into braces, say ninety-nine, three-pence for pulling out your tooth yourself, and so on, and either these are part of the island or they are another map showing through, and it is all rather confusing, especially as nothing will stand still.&lt;/p&gt;
-&lt;p&gt;Of course the Neverlands vary a good deal. John&#39;s, for instance, had a lagoon with flamingoes flying over it at which John was shooting, while Michael, who was very small, had a flamingo with lagoons flying over it. John lived in a boat turned upside down on the sands, Michael in a wigwam, Wendy in a house of leaves deftly sewn together. John had no friends, Michael had friends at night, Wendy had a pet wolf forsaken by its parents, but on the whole the Neverlands have a family resemblance, and if they stood still in a row you could say of them that they have each other&#39;s nose, and so forth. On these magic shores children at play are for ever beaching their coracles [simple boat]. We too have been there; we can still hear the sound of the surf, though we shall land no more.&lt;/p&gt;
+&lt;p&gt;If you could keep awake (but of course you can’t) you would see your own mother doing this, and you would find it very interesting to watch her. It is quite like tidying up drawers. You would see her on her knees, I expect, lingering humorously over some of your contents, wondering where on earth you had picked this thing up, making discoveries sweet and not so sweet, pressing this to her cheek as if it were as nice as a kitten, and hurriedly stowing that out of sight. When you wake in the morning, the naughtiness and evil passions with which you went to bed have been folded up small and placed at the bottom of your mind and on the top, beautifully aired, are spread out your prettier thoughts, ready for you to put on.&lt;/p&gt;
+&lt;p&gt;I don’t know whether you have ever seen a map of a person’s mind. Doctors sometimes draw maps of other parts of you, and your own map can become intensely interesting, but catch them trying to draw a map of a child’s mind, which is not only confused, but keeps going round all the time. There are zigzag lines on it, just like your temperature on a card, and these are probably roads in the island, for the Neverland is always more or less an island, with astonishing splashes of colour here and there, and coral reefs and rakish-looking craft in the offing, and savages and lonely lairs, and gnomes who are mostly tailors, and caves through which a river runs, and princes with six elder brothers, and a hut fast going to decay, and one very small old lady with a hooked nose. It would be an easy map if that were all, but there is also first day at school, religion, fathers, the round pond, needle-work, murders, hangings, verbs that take the dative, chocolate pudding day, getting into braces, say ninety-nine, three-pence for pulling out your tooth yourself, and so on, and either these are part of the island or they are another map showing through, and it is all rather confusing, especially as nothing will stand still.&lt;/p&gt;
+&lt;p&gt;Of course the Neverlands vary a good deal. John’s, for instance, had a lagoon with flamingoes flying over it at which John was shooting, while Michael, who was very small, had a flamingo with lagoons flying over it. John lived in a boat turned upside down on the sands, Michael in a wigwam, Wendy in a house of leaves deftly sewn together. John had no friends, Michael had friends at night, Wendy had a pet wolf forsaken by its parents, but on the whole the Neverlands have a family resemblance, and if they stood still in a row you could say of them that they have each other’s nose, and so forth. On these magic shores children at play are for ever beaching their coracles [simple boat]. We too have been there; we can still hear the sound of the surf, though we shall land no more.&lt;/p&gt;
 &lt;p&gt;Of all delectable islands the Neverland is the snuggest and most compact, not large and sprawly, you know, with tedious distances between one adventure and another, but nicely crammed. When you play at it by day with the chairs and table-cloth, it is not in the least alarming, but in the two minutes before you go to sleep it becomes very real. That is why there are night-lights.&lt;/p&gt;
-&lt;p&gt;Occasionally in her travels through her children&#39;s minds Mrs. Darling found things she could not understand, and of these quite the most perplexing was the word Peter. She knew of no Peter, and yet he was here and there in John and Michael&#39;s minds, while Wendy&#39;s began to be scrawled all over with him. The name stood out in bolder letters than any of the other words, and as Mrs. Darling gazed she felt that it had an oddly cocky appearance.&lt;/p&gt;
+&lt;p&gt;Occasionally in her travels through her children’s minds Mrs. Darling found things she could not understand, and of these quite the most perplexing was the word Peter. She knew of no Peter, and yet he was here and there in John and Michael’s minds, while Wendy’s began to be scrawled all over with him. The name stood out in bolder letters than any of the other words, and as Mrs. Darling gazed she felt that it had an oddly cocky appearance.&lt;/p&gt;
 </description>
       <pubDate>Thu, 07 Jan 2010 24:00:00 GMT</pubDate>
       <dc:creator>Your Name</dc:creator>
@@ -2118,7 +2226,7 @@ z&lt;br&gt;
       <title>Post: Modified Date</title>
       <link>https://example.com/minimal-mistakes/post-formats/post-modified/</link>
       <description>&lt;p&gt;This post has been updated and should show a modified date if used in a layout.&lt;/p&gt;
-&lt;p&gt;All children, except one, grow up. They soon know that they will grow up, and the way Wendy knew was this. One day when she was two years old she was playing in a garden, and she plucked another flower and ran with it to her mother. I suppose she must have looked rather delightful, for Mrs. Darling put her hand to her heart and cried, &amp;quot;Oh, why can&#39;t you remain like this for ever!&amp;quot; This was all that passed between them on the subject, but henceforth Wendy knew that she must grow up. You always know after you are two. Two is the beginning of the end.&lt;/p&gt;
+&lt;p&gt;All children, except one, grow up. They soon know that they will grow up, and the way Wendy knew was this. One day when she was two years old she was playing in a garden, and she plucked another flower and ran with it to her mother. I suppose she must have looked rather delightful, for Mrs. Darling put her hand to her heart and cried, “Oh, why can’t you remain like this for ever!” This was all that passed between them on the subject, but henceforth Wendy knew that she must grow up. You always know after you are two. Two is the beginning of the end.&lt;/p&gt;
 </description>
       <pubDate>Thu, 07 Jan 2010 24:00:00 GMT</pubDate>
       <dc:creator>Your Name</dc:creator>
@@ -2137,17 +2245,16 @@ z&lt;br&gt;
   &lt;span class=&quot;token keyword&quot;&gt;end&lt;/span&gt;
 &lt;span class=&quot;token keyword&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Good (but dumb) highlighting:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;str = ARGV.first
+&lt;pre class=&quot;language-plaintext&quot;&gt;&lt;code class=&quot;language-plaintext&quot;&gt;str = ARGV.first
 if str
   str = str.b[/&#92;A_(.*)_&#92;z/, 1]
   if str and Gem::Version.correct?(str)
     version = str
     ARGV.shift
   end
-end
-&lt;/code&gt;&lt;/pre&gt;
+end&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Bad highlighting:&lt;/p&gt;
-&lt;pre class=&quot;language-invalid&quot;&gt;&lt;code class=&quot;language-invalid&quot;&gt;str = ARGV.first
+&lt;pre class=&quot;language-plaintext&quot;&gt;&lt;code class=&quot;language-plaintext&quot;&gt;str = ARGV.first
 if str
   str = str.b[/&#92;A_(.*)_&#92;z/, 1]
   if str and Gem::Version.correct?(str)
@@ -2190,7 +2297,7 @@ end&lt;/code&gt;&lt;/pre&gt;
     <item>
       <title>Edge Case: Post with multiline excerpt</title>
       <link>https://example.com/minimal-mistakes/edge-case-multiline-excerpt/</link>
-      <description>&lt;p&gt;Et ex ullamco duis don&#39;t&lt;br&gt;
+      <description>&lt;p&gt;Et ex ullamco duis don’t&lt;br&gt;
 combine these words quis laborum sunt sint. Nisi et Lorem reprehenderit cupidatat. Aliqua fugiat aliquip officia culpa elit. Adipisicing do eu duis aute et aute amet anim ut cillum aliqua. Aliqua adipisicing occaecat et ullamco fugiat.&lt;/p&gt;
 </description>
       <pubDate>Mon, 05 Oct 2009 24:00:00 GMT</pubDate>
@@ -2235,12 +2342,12 @@ combine these words quis laborum sunt sint. Nisi et Lorem reprehenderit cupidata
     <item>
       <title>Edge Case: Nested and Mixed Lists</title>
       <link>https://example.com/minimal-mistakes/edge-case/edge-case-nested-and-mixed-lists/</link>
-      <description>&lt;p&gt;Nested and mixed lists are an interesting beast. It&#39;s a corner case to make sure that.&lt;/p&gt;
+      <description>&lt;p&gt;Nested and mixed lists are an interesting beast. It’s a corner case to make sure that.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Lists within lists do not break the ordered list numbering order&lt;/li&gt;
 &lt;li&gt;Your list styles go deep enough.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;ordered----unordered----ordered&quot; tabindex=&quot;-1&quot;&gt;Ordered -- Unordered -- Ordered&lt;/h3&gt;
+&lt;h3 id=&quot;ordered-%E2%80%93-unordered-%E2%80%93-ordered&quot; tabindex=&quot;-1&quot;&gt;Ordered – Unordered – Ordered&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;ordered item&lt;/li&gt;
 &lt;li&gt;ordered item
@@ -2257,7 +2364,7 @@ combine these words quis laborum sunt sint. Nisi et Lorem reprehenderit cupidata
 &lt;li&gt;ordered item&lt;/li&gt;
 &lt;li&gt;ordered item&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3 id=&quot;ordered----unordered----unordered&quot; tabindex=&quot;-1&quot;&gt;Ordered -- Unordered -- Unordered&lt;/h3&gt;
+&lt;h3 id=&quot;ordered-%E2%80%93-unordered-%E2%80%93-unordered&quot; tabindex=&quot;-1&quot;&gt;Ordered – Unordered – Unordered&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;ordered item&lt;/li&gt;
 &lt;li&gt;ordered item
@@ -2274,7 +2381,7 @@ combine these words quis laborum sunt sint. Nisi et Lorem reprehenderit cupidata
 &lt;li&gt;ordered item&lt;/li&gt;
 &lt;li&gt;ordered item&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3 id=&quot;unordered----ordered----unordered&quot; tabindex=&quot;-1&quot;&gt;Unordered -- Ordered -- Unordered&lt;/h3&gt;
+&lt;h3 id=&quot;unordered-%E2%80%93-ordered-%E2%80%93-unordered&quot; tabindex=&quot;-1&quot;&gt;Unordered – Ordered – Unordered&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;unordered item&lt;/li&gt;
 &lt;li&gt;unordered item
@@ -2291,7 +2398,7 @@ combine these words quis laborum sunt sint. Nisi et Lorem reprehenderit cupidata
 &lt;li&gt;unordered item&lt;/li&gt;
 &lt;li&gt;unordered item&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;unordered----unordered----ordered&quot; tabindex=&quot;-1&quot;&gt;Unordered -- Unordered -- Ordered&lt;/h3&gt;
+&lt;h3 id=&quot;unordered-%E2%80%93-unordered-%E2%80%93-ordered&quot; tabindex=&quot;-1&quot;&gt;Unordered – Unordered – Ordered&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;unordered item&lt;/li&gt;
 &lt;li&gt;unordered item

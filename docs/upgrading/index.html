@@ -336,17 +336,17 @@
 <p>At the top of every <code>.html</code> file, <code>/assets/css/main.css</code>, and <code>/assets/js/main.min.js</code>.</p>
 <p>If a new version has been released, then it might be worth your while to upgrade. You can do this using git.</p>
 <h2 id="use-git" tabindex="-1">Use Git</h2>
-<p>If you want to get the most out of the 11ty + GitHub Pages workflow, then you'll need to utilize Git. To pull down theme updates you must first ensure there's an upstream remote. If you forked the theme's repo then you're likely good to go.</p>
+<p>If you want to get the most out of the 11ty + GitHub Pages workflow, then you’ll need to utilize Git. To pull down theme updates you must first ensure there’s an upstream remote. If you forked the theme’s repo then you’re likely good to go.</p>
 <p>To double check, run <code>git remote -v</code> and verify that you can fetch from <code>origin https://github.com/lsolesen/minimal-mistakes.git</code>.</p>
 <p>To add it you can do the following:</p>
-<pre class="language-terminal"><code class="language-terminal">git remote add upstream https://github.com/lsolesen/minimal-mistakes.git</code></pre>
+<pre class="language-plaintext"><code class="language-plaintext">git remote add upstream https://github.com/lsolesen/minimal-mistakes.git</code></pre>
 <h3 id="pull-down-updates" tabindex="-1">Pull down updates</h3>
-<p>Now you can pull any commits made to theme's <code>master</code> branch with:</p>
-<pre class="language-terminal"><code class="language-terminal">git pull upstream master</code></pre>
-<p>Depending on the amount of customizations you've made after forking, there's likely to be merge conflicts. Work through any conflicting files Git flags, staging the changes you wish to keep, and then commit them.</p>
+<p>Now you can pull any commits made to theme’s <code>master</code> branch with:</p>
+<pre class="language-plaintext"><code class="language-plaintext">git pull upstream master</code></pre>
+<p>Depending on the amount of customizations you’ve made after forking, there’s likely to be merge conflicts. Work through any conflicting files Git flags, staging the changes you wish to keep, and then commit them.</p>
 <h2 id="update-files-manually" tabindex="-1">Update files manually</h2>
-<p>Another way of dealing with updates is <a href="https://github.com/lsolesen/minimal-mistakes/archive/master.zip">downloading the theme</a>  replacing your layouts, includes, and assets with the newer ones manually. To be sure that you don't miss any changes it's probably a good idea to review the theme's <a href="https://github.com/lsolesen/minimal-mistakes/commits/master">commit history</a> to see what's changed since.</p>
-<p>Here's a quick checklist of the important folders/files you'll want to be mindful of:</p>
+<p>Another way of dealing with updates is <a href="https://github.com/lsolesen/minimal-mistakes/archive/master.zip">downloading the theme</a>  replacing your layouts, includes, and assets with the newer ones manually. To be sure that you don’t miss any changes it’s probably a good idea to review the theme’s <a href="https://github.com/lsolesen/minimal-mistakes/commits/master">commit history</a> to see what’s changed since.</p>
+<p>Here’s a quick checklist of the important folders/files you’ll want to be mindful of:</p>
 <table>
 <thead>
 <tr>
@@ -386,7 +386,7 @@
 </tbody>
 </table>
 <hr>
-<p class="notice--info"><strong>Note:</strong> If you're not seeing the latest version, be sure to flush browser and CDN caches. Depending on your hosting environment older versions of <code>/assets/css/main.css</code>, <code>/assets/js/main.min.js</code>, or <code>*.html</code> may be cached.</p>
+<p class="notice--info"><strong>Note:</strong> If you’re not seeing the latest version, be sure to flush browser and CDN caches. Depending on your hosting environment older versions of <code>/assets/css/main.css</code>, <code>/assets/js/main.min.js</code>, or <code>*.html</code> may be cached.</p>
 
         
       </section>

@@ -330,7 +330,7 @@
 <li>Move <code>_config.yml</code> to <code>_data/site.yml</code>.</li>
 <li>In <code>.eleventy.js</code> create collections of all your collections, e.g. <code>_posts</code>, <code>_pages</code> etc. See an example in the current file.</li>
 <li>Add data files for the directories for your defaults. E.g. <code>_posts/_posts.json</code> and similar files to all of your collections to provide frontmatter defaults. You can see your current setup under defaults in your Jekyll <code>_config.yml</code>.</li>
-<li>All <code>link</code> and <code>post_url</code> you used in your current site, has to be rewritten to <code>{% link collections.posts, &quot;_filename.md&quot; %}</code>. You need to create a collection with the possible filenames, and you need to &quot;&quot; around the <code>_filename.md</code>. You might be able to just use collections.all, but that is untested.</li>
+<li>All <code>link</code> and <code>post_url</code> you used in your current site, has to be rewritten to <code>{% link collections.posts, &quot;_filename.md&quot; %}</code>. You need to create a collection with the possible filenames, and you need to “” around the <code>_filename.md</code>. You might be able to just use collections.all, but that is untested.</li>
 <li>Do search and replace on <code>site.posts</code> and other collections and replace it with <code>collections.posts</code> and the like.</li>
 <li>If you use <code>id=&quot;&quot;</code> with <code>gallery</code> or <code>feature_row</code>, then you need to rewrite the frontmatter to <code>feature_rows</code> and <code>galleries</code> and put the specific id in the frontematter under that tag.</li>
 <li>Do a search and replace on <code>page.</code> and replace it with nothing <code>&quot;&quot;</code>;</li>
@@ -338,9 +338,8 @@
 </ol>
 <p>Remove the dashes in the top of the file. If you added content below these lines, keep it. Add <code>../../_sass/</code> before minimal-mistakes.</p>
 <p>Like this:</p>
-<pre><code>@import &quot;../../_sass/minimal-mistakes/skins/default&quot;; // skin
-@import &quot;../../_sass/minimal-mistakes&quot;; // main partials
-</code></pre>
+<pre class="language-plaintext"><code class="language-plaintext">@import "../../_sass/minimal-mistakes/skins/default"; // skin
+@import "../../_sass/minimal-mistakes"; // main partials</code></pre>
 <ol start="13">
 <li>Go through the <code>.eleventy.js</code>-file. In the bottom change <code>input</code>, <code>includes</code>, <code>layouts</code> to the proper directories compared to your setup.</li>
 <li>Make sure to copy the <code>assets/js</code> directory.</li>

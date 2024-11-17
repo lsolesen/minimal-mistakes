@@ -326,7 +326,7 @@
           </aside>
         
         <h2 id="installation" tabindex="-1">Installation</h2>
-<p>Minimal Mistakes requires <a href="http://www.11ty.dev">11ty</a> 3.0. Make sure to run <code>npm install</code> if you aren't on the latest version to update all dependencies.</p>
+<p>Minimal Mistakes requires <a href="http://www.11ty.dev">11ty</a> 3.0. Make sure to run <code>npm install</code> if you aren’t on the latest version to update all dependencies.</p>
 <p>If you are creating a new 11ty site using Minimal Mistakes follow these steps:</p>
 <ol>
 <li>Fork the <a href="http://github.com/lsolesen/minimal-mistakes/fork">Minimal Mistakes repo</a>.</li>
@@ -341,17 +341,17 @@
 <li>Rename <code>minimal-mistakes-master</code> to something meaningful ie: <code>new-site</code></li>
 <li>Run <code>npm install</code> to install all dependencies.</li>
 <li>Remove demo posts/pages and replace with your own posts, pages, and any other content you want to move over.</li>
-<li>Update posts' and pages' YAML to match variables used by Minimal Mistakes. Full details below.</li>
+<li>Update posts’ and pages’ YAML to match variables used by Minimal Mistakes. Full details below.</li>
 <li>Update <code>_data/site.yml</code>, <code>_data/navigation.yml</code>, and replace demo posts and pages with your own. Full details below.</li>
 <li>Update <code>eleventy.js</code> and add your collections. Full details below.</li>
 </ol>
-<p class="notice"><strong>Pro-tip:</strong> Delete the <code>gh-pages</code> branch after cloning and start fresh by branching off <code>master</code>. There is a bunch of garbage in <code>gh-pages</code> used for the theme's demo site that I'm guessing you won't want.</p>
+<p class="notice"><strong>Pro-tip:</strong> Delete the <code>gh-pages</code> branch after cloning and start fresh by branching off <code>master</code>. There is a bunch of garbage in <code>gh-pages</code> used for the theme’s demo site that I’m guessing you won’t want.</p>
 <p><a href="https://github.com/mmistakes/minimal-mistakes/archive/master.zip" class="btn btn--success"><i class="fas fa-download"></i> Download Minimal Mistakes Theme</a></p>
-<p class="notice--info"><strong>ProTip:</strong> Be sure to remove <code>/docs</code> and <code>/test</code> if you forked or downloaded Minimal Mistakes. These folders contain documentation and test pages for the theme and you probably don't want them littering up in your repo.</p>
+<p class="notice--info"><strong>ProTip:</strong> Be sure to remove <code>/docs</code> and <code>/test</code> if you forked or downloaded Minimal Mistakes. These folders contain documentation and test pages for the theme and you probably don’t want them littering up in your repo.</p>
 <h2 id="theme-migration" tabindex="-1">Theme migration</h2>
-<p>To move over any existing content you'll want to copy the contents of your <code>_posts</code> folder to the new site. Along with any pages, collections, data files, images, or other assets you may have.</p>
-<p>Next you'll need to convert posts and pages to use the proper layouts and settings. In most cases you simply need to update <code>_data/site.yml</code> to your liking and set the correct <code>layout</code> in their YAML Front Matter.</p>
-<p><a href="https://www.11ty.dev/docs/data-template-dir/"><strong>Front Matter defaults</strong></a> are your friend and I encourage you to leverage them instead of setting a layout and other global options in each post/page's YAML Front Matter.</p>
+<p>To move over any existing content you’ll want to copy the contents of your <code>_posts</code> folder to the new site. Along with any pages, collections, data files, images, or other assets you may have.</p>
+<p>Next you’ll need to convert posts and pages to use the proper layouts and settings. In most cases you simply need to update <code>_data/site.yml</code> to your liking and set the correct <code>layout</code> in their YAML Front Matter.</p>
+<p><a href="https://www.11ty.dev/docs/data-template-dir/"><strong>Front Matter defaults</strong></a> are your friend and I encourage you to leverage them instead of setting a layout and other global options in each post/page’s YAML Front Matter.</p>
 <p>Posts can be configured to use the <code>single</code> layout  with reading time, comments, social sharing links, and related posts enabled.</p>
 <p>Adding the data file for the collection, e.g. <code>_posts/_posts.json</code> will set these defaults for all posts in that directory:</p>
 <pre class="language-json"><code class="language-json"><span class="token punctuation">{</span>
@@ -361,7 +361,7 @@
   <span class="token property">"share"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
   <span class="token property">"related"</span><span class="token operator">:</span> <span class="token boolean">true</span>
 <span class="token punctuation">}</span></code></pre>
-<p class="notice--info"><strong>Post/Page Settings</strong>: Be sure to read through the &quot;Working with...&quot; documentation to learn about all the options available to you. The theme has been designed to be flexible --- with numerous settings for each.</p>
+<p class="notice--info"><strong>Post/Page Settings</strong>: Be sure to read through the “Working with…” documentation to learn about all the options available to you. The theme has been designed to be flexible — with numerous settings for each.</p>
 <h2 id="install-dependencies" tabindex="-1">Install dependencies</h2>
 <p>If this is your first time using 11ty be sure to read through the <a href="https://www.11ty.dev/">official documentation</a> before jumping in. This guide assumes you have Node and npm installed and a basic understanding of how 11ty works.</p>
 <p>To keep your sanity and better manage dependencies I strongly urge you to use <code>package.json</code> to handle all dependencies.</p>
