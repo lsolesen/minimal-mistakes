@@ -1,5 +1,7 @@
 {% if include.id %}
   {% assign fr = feature_rows[include.id] %}
+{% elsif include.rows %}
+  {% assign fr = include.rows %}
 {% else %}
   {% assign fr = feature_row %}
 {% endif %}
@@ -31,7 +33,7 @@
           {%- endif -%}
 
           {%- if f.url -%}
-            <p><a href="{{ f.url | relative_url }}" class="btn {{ f.btn_class }}">{{ f.btn_label | default: ui-text[site.locale].more_label | default: "Learn More" }}</a></p>
+            <p><a href="{{ f.url | relative_url }}" class="btn {{ f.btn_class }}"{% if f.rel %} rel="{{ f.rel }}"{% endif %}>{{ f.btn_label | default: ui-text[site.locale].more_label | default: "Learn More" }}</a></p>
           {%- endif -%}
         </div>
       </div>

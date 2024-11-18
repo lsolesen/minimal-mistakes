@@ -1,4 +1,4 @@
-const where = function (array, key, value) {
+export const where = function (array, key, value) {
     return array.filter(item => {
       let itemValue;
       
@@ -30,7 +30,3 @@ const where = function (array, key, value) {
       }
     });
   }
-
-  module.exports = {
-    where
-  };

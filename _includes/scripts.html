@@ -23,6 +23,6 @@
 
 {% if site.after_footer_scripts %}
   {% for script in site.after_footer_scripts %}
-    <script src="{{ script | relative_url }}"></script>
+    <script src="{{ script | relative_url }}" defer></script>
   {% endfor %}
 {% endif %}

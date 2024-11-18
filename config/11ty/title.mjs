@@ -1,4 +1,4 @@
-module.exports = function (eleventyConfig) {
+export default function (eleventyConfig) {
     // Create titles for posts without a title in frontmatter
     eleventyConfig.addGlobalData("eleventyComputed.title", () => (data) => {
       // If property is explicitly set, use that

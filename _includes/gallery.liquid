@@ -1,5 +1,7 @@
 {% if include.id %}
   {% assign gallery = galleries[include.id] %}
+{% elsif include.images %}
+  {% assign gallery = include.images %}
 {% else %}
   {% assign gallery = gallery %}
 {% endif %}

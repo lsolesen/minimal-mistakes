@@ -9,7 +9,7 @@
    * @param {*} filename 
    * @returns 
    */
-const postUrl = function(collection, filename) {
+export const postUrl = function(collection, filename) {
     if (collection.length < 1) {
       throw "Collection appears to be empty";
     }
@@ -39,7 +39,7 @@ const postUrl = function(collection, filename) {
    * @param {*} filename 
    * @returns 
    */
-  const link = function (collection, filename) {
+  export const link = function (collection, filename) {
     if (collection.length < 1) {
       throw "Collection appears to be empty";
     }
@@ -58,8 +58,3 @@ const postUrl = function(collection, filename) {
       return found.url;
     }
   };
-
-  module.exports = {
-    postUrl,
-    link
-  }

@@ -1,4 +1,4 @@
-const getCategoryList = collection => {
+export const getCategoryList = collection => {
     let catSet = {};
     collection.getAll().forEach(item => {
         if (!item.data.categories) return;
@@ -13,7 +13,3 @@ const getCategoryList = collection => {
     });
     return catSet;
 }
-
-module.exports = {
-    getCategoryList
-};

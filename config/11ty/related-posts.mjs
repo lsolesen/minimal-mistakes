@@ -1,6 +1,6 @@
   // https://saadbess.com/blog/creating-a-content-recommendation-plugin-in-11ty/
 
-const getRelatedPosts = function (collection) {
+export const getRelatedPosts = function (collection) {
     return collection
       .getAll()
       .filter((item) => !item.data.draft)
@@ -25,9 +25,5 @@ const getRelatedPosts = function (collection) {
         post.data.relatedPosts = related;
         return post;
       });
-  };
-  
-  module.exports = {
-      getRelatedPosts
   };
   
