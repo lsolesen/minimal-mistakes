@@ -9,12 +9,6 @@ This is a port of Michael Rose's Jekyll theme. There are still quite a few known
 
 Here is a list:
 
-## Where filer does not work
-
-`where` filter does not work for arrays like tags and categories. Everytime it is used it just returns en empty collection after filtering.
-
-Right now you can use `where2` to use with arrays.
-
 ## Tags and categories pages are not sorted.
 
 Tags page and categories pages are not sorted by most items in the collection.

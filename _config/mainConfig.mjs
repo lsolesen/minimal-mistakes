@@ -2,7 +2,6 @@
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 
 // Collections
-import { getPosts } from './11ty/collections.mjs';
 import { getRelatedPosts } from './11ty/related-posts.mjs';
 import { getCategoryList } from './11ty/categories.mjs';
 import { getTagList } from './11ty/tags.mjs';
@@ -13,9 +12,6 @@ import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 
 // Shortcodes
 import { postUrl, link } from "./11ty/shortcodes.mjs";
-
-// Filters
-import { where } from './11ty/filters.mjs';
 
 // Future posts
 import futurePosts from './11ty/future-posts.mjs';
@@ -40,9 +36,6 @@ export default function (eleventyConfig) {
 
   // Related posts
   eleventyConfig.addCollection("relatedPosts", getRelatedPosts);
-
-  // Standard collection
-  eleventyConfig.addCollection('posts', getPosts);
 
   // Hide future posts in build
   eleventyConfig.addPlugin(futurePosts);
@@ -76,13 +69,15 @@ export default function (eleventyConfig) {
     md.render(markdownString),
   );
 
+  // This is for making the transition from Jekyll easier.
   // @source https://24ways.org/2018/turn-jekyll-up-to-eleventy/
   // TODO: Might be better to turn off in the future, but for now this makes i way easier
   eleventyConfig.setLiquidOptions({
     jekyllInclude: true, // allow to use jekyll style include
     extname: ".liquid", // Use .liquid if not specified
     dynamicPartials: false, // allow to use feature_row without quotes
-    strictFilters: true
+    strictFilters: true,
+    jekyllWhere: true
   });
 
   // Syntax highlighting with prism
@@ -123,9 +118,6 @@ export default function (eleventyConfig) {
   eleventyConfig.setFrontMatterParsingOptions({
     excerpt: true
   });
-
-  // Setups filters
-  eleventyConfig.addFilter('where2', where);
 
   // absolute_url is deprecated - hardcode to your liking
   // @deprecated

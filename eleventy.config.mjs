@@ -1,5 +1,5 @@
 // Import main config
-import mainConfig from './config/mainConfig.mjs';
+import mainConfig from './_config/mainConfig.mjs';
 
 // Rss feed has options to set
 import { feedPlugin } from "@11ty/eleventy-plugin-rss";
@@ -28,6 +28,11 @@ export default async function (eleventyConfig) {
 				email: "", // Optional
 			}
 		}
+  });
+
+  // Collections
+  eleventyConfig.addCollection('posts', function(collection) {
+    return collection.getFilteredByGlob('docs/_posts/**/*.md');
   });
 
   // Custom Collections
