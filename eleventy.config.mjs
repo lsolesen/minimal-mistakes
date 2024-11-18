@@ -1,19 +1,8 @@
+// Import main config
 import mainConfig from './config/mainConfig.mjs';
-import { feedPlugin } from "@11ty/eleventy-plugin-rss";
 
-// Custom collections
-const getDocs = collection => {
-  return collection.getFilteredByGlob('docs/_docs/**/*.md');
-};
-const getPets = collection => {
-  return collection.getFilteredByGlob('docs/_/pets/**/*.md');
-};
-const getRecipes = collection => {
-  return collection.getFilteredByGlob('docs/_/recipes/**/*.md');
-};  
-const getPortfolio = collection => {
-  return collection.getFilteredByGlob('docs/_/portfolio/**/*.md');
-};
+// Rss feed has options to set
+import { feedPlugin } from "@11ty/eleventy-plugin-rss";
 
 // Main config
 export default async function (eleventyConfig) {
@@ -42,10 +31,18 @@ export default async function (eleventyConfig) {
   });
 
   // Custom Collections
-  eleventyConfig.addCollection('docs', getDocs);
-  eleventyConfig.addCollection('pets', getPets);
-  eleventyConfig.addCollection('recipes', getRecipes);
-  eleventyConfig.addCollection('portfolio', getPortfolio);
+  eleventyConfig.addCollection('docs', function(collection) {
+    return collection.getFilteredByGlob('docs/_docs/**/*.md');
+  });
+  eleventyConfig.addCollection('pets', function(collection) {
+    return collection.getFilteredByGlob('docs/_/pets/**/*.md');
+  });
+  eleventyConfig.addCollection('recipes', function(collection) {
+    return collection.getFilteredByGlob('docs/_/recipes/**/*.md');
+  });
+  eleventyConfig.addCollection('portfolio', function(collection){
+    return collection.getFilteredByGlob('docs/_/portfolio/**/*.md');
+  });
 
   // Pass through
   eleventyConfig.addPassthroughCopy("assets/css");

@@ -1,7 +1,7 @@
 ---
 title:  "Welcome to 11ty!"
 header:
-  teaser: "/assets/images/500x300.png"
+  teaser: "/assets/images/placeholder/500x300.png"
 categories: 
   - 11ty
 tags:

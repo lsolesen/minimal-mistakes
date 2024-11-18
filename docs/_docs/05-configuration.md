@@ -147,7 +147,7 @@ Consult the [JavaScript documentation]({% link collections.docs, "17-javascript.
 To assign a fallback teaser image used in the "**Related Posts**" module, place a graphic in the `/assets/images/` directory and add the filename to `_data/site.yml` like so:
 
 ```yaml
-teaser: /assets/images/500x300.png
+teaser: /assets/images/placeholder/500x300.png
 ```
 
 This image can be overridden at anytime by applying the following to a document's YAML Front Matter.
