@@ -58,6 +58,20 @@ export default async function (eleventyConfig) {
   // USE if you want to override one of the layouts and use your own version
   // eleventyConfig.addLayoutAlias("single", "../_layouts/splash.html");
 
+  // Edit the files below. If you have your files in the root directory it should look like this:
+  /*
+  return {
+    dir: {
+      input: "./",
+      includes: "_includes",
+      layouts: "_layouts",
+      htmlTemplateEngine: "liquid",
+      dataTemplateEngine: "html",
+      output: "_site",
+      pathPrefix: "/"
+    },
+  };
+  */
   return {
     dir: {
       input: "./docs",

@@ -14,13 +14,14 @@ These are the steps I identified so far, but they may not be enough. Upgrades ar
 
 1. Make a new branch in your repository, e.g. `11ty`.
 2. Add dependencies for you `package.json`. Checkout the original `package.json` for what to add.
-3. Rename `_layouts` and `_includes` to `_layouts_old` and `_includes_old`.
-4. Add files to ignore to `.eleventyignore`. You can see them in your current Jekyll `_config.yml` under the `ignore`-tag.
-5. Move `_config.yml` to `_data/site.yml`.
-6. In `.eleventy.js` create collections of all your collections, e.g. `_posts`, `_pages` etc. See an example in the current file.
-7. Add data files for the directories for your defaults. E.g. `_posts/_posts.json` and similar files to all of your collections to provide frontmatter defaults. You can see your current setup under defaults in your Jekyll `_config.yml`.
+3. Rename `_layouts` and `_includes` to `_layouts_old` and `_includes_old` so you do not overwrite any changes you have made.
+4. Add files to ignore to `.eleventyignore`. You can see them in your current Jekyll `_config.yml` under the `ignore`-tag and the current file in the repository.
+5. Move `_config.yml` to `_data/site.yml` to preserve your current settings.
+5. Copy `eleventy.config.mjs` and the content from `_config` to your repository.
+6. In `eleventy.config.mjs` create collections of all your collections, e.g. `_posts` etc. See an example in the current file.
+7. Add data files for the directories for your defaults. E.g. `_posts/_posts.json` and similar files to all of your collections to provide frontmatter defaults. You can see your current setup under defaults in your old Jekyll `_config.yml`.
 8. All `link` and `post_url` you used in your current site, has to be rewritten to {% raw %}`{% link collections.posts, "_filename.md" %}`{% endraw %}. You need to create a collection with the possible filenames, and you need to "" around the `_filename.md`. You might be able to just use collections.all, but that is untested.
-9. Do search and replace on `site.posts` and other collections and replace it with `collections.posts` and the like.
+9. Do search and replace on `site.posts` and other collections and replace it with `collections.posts` and do the same for other collections, you might have.
 10. If you use `id=""` with `gallery` or `feature_row`, then you need to rewrite the frontmatter to `feature_rows` and `galleries` and put the specific id in the frontematter under that tag.
 11. Do a search and replace on `page.` and replace it with nothing `""`;
 12. Rewrite `css/main.scss`. This is also where you have to set your theme directly if you want to change it.
@@ -34,8 +35,7 @@ Like this:
 @import "../../_sass/minimal-mistakes"; // main partials
 ```
 
-13. Go through the `.eleventy.js`-file. In the bottom change `input`, `includes`, `layouts` to the proper directories compared to your setup.
+13. Go through the `eleventy.config.mjs`-file. In the bottom change `input`, `includes`, `layouts` to the proper directories compared to your setup.
 14. Make sure to copy the `assets/js` directory.
-15. If you use `where` to filter stuff and it needs to find stuff in an array, you need to switch to `where2`, that will handle both strings and arrays. Here you do not need to prepend `data.`, as that is implied.
 
-There might be more things you need to do. Follow the prompt.
+There might be more things you need to do. Follow error messages in the the prompt after doing `npm run watch:eleventy`.

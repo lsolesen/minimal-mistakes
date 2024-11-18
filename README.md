@@ -9,7 +9,7 @@ The theme is based on Michael Rose's Jekyll theme.
 ***
 
 First I rewrote package.json to include Eleventy specific stuff.
-Then I added .eleventy.js with configuration for the site.
+Then I added eleventy.config.mjs with configuration for the site.
 
 ***
 
