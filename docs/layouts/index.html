@@ -23,7 +23,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Minimal Mistakes">
 <meta property="og:title" content="Layouts">
-<meta property="og:url" content="/docs/layouts/">
+<meta property="og:url" content="https://lsolesen.github.io/minimal-mistakes/docs/layouts/">
 
 
   <meta property="og:description" content="Descriptions and samples of all layouts included with the theme and how to best use them.">
@@ -38,7 +38,7 @@
   <meta name="twitter:site" content="@mmistakes">
   <meta name="twitter:title" content="Layouts">
   <meta name="twitter:description" content="Descriptions and samples of all layouts included with the theme and how to best use them.">
-  <meta name="twitter:url" content="/docs/layouts/">
+  <meta name="twitter:url" content="https://lsolesen.github.io/minimal-mistakes/docs/layouts/">
 
   
     <meta name="twitter:card" content="summary_large_image">
@@ -58,7 +58,7 @@
   
 
 
-<link rel="canonical" href="/minimal-mistakes/minimal-mistakes/minimal-mistakes/docs/layouts/">
+<link rel="canonical" href="https://lsolesen.github.io/minimal-mistakes/docs/layouts/">
 
 
 
@@ -175,7 +175,7 @@
       <nav class="nav__list">
   
   <input id="ac-toc" name="accordion-toc" type="checkbox">
-  <label for="ac-toc">Toggle Menu</label>
+  <label for="ac-toc">Toggle menu</label>
   <ul class="nav__items">
     
       
@@ -963,7 +963,7 @@ You can also use any metadata key that is present in the documents. For example,
 <p>Add some Liquid tags for the new configuration to <code>_includes/head/custom.html</code>.</p>
 <pre class="language-html"><code class="language-html">{% if page.page_css %}
   {% for stylesheet in page.page_css %}
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>{{ stylesheet | relative_url }}<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>{{ stylesheet }}<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
   {% endfor %}
 {% endif %}</code></pre>
 <p>Next, add <code>page_css</code> to any page’s YAML Front Matter to have your CSS loaded for that page.</p>
@@ -974,7 +974,7 @@ You can also use any metadata key that is present in the documents. For example,
 <p>Add some Liquid tags for the new configuration to <code>_includes/footer/custom.html</code>.</p>
 <pre class="language-html"><code class="language-html">{% if page.page_js %}
   {% for script in page.page_js %}
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>{{ script | relative_url }}<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>{{ script }}<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
   {% endfor %}
 {% endif %}</code></pre>
 <p>Next, add <code>page_js</code> to any page’s YAML Front Matter to have your JavaScript loaded for that page.</p>
@@ -1038,6 +1038,8 @@ You can also use any metadata key that is present in the documents. For example,
 <!-- end custom footer snippets -->
         <div class="page__footer-follow">
   <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
     
 
     
