@@ -32,21 +32,21 @@ export default async function (eleventyConfig) {
 
   // Collections
   eleventyConfig.addCollection('posts', function(collection) {
-    return collection.getFilteredByGlob('docs/_posts/**/*.md');
+    return collection.getFilteredByGlob('_posts/**/*.md');
   });
 
   // Custom Collections
   eleventyConfig.addCollection('docs', function(collection) {
-    return collection.getFilteredByGlob('docs/_docs/**/*.md');
+    return collection.getFilteredByGlob('_docs/**/*.md');
   });
   eleventyConfig.addCollection('pets', function(collection) {
-    return collection.getFilteredByGlob('docs/_/pets/**/*.md');
+    return collection.getFilteredByGlob('_/pets/**/*.md');
   });
   eleventyConfig.addCollection('recipes', function(collection) {
-    return collection.getFilteredByGlob('docs/_/recipes/**/*.md');
+    return collection.getFilteredByGlob('_/recipes/**/*.md');
   });
   eleventyConfig.addCollection('portfolio', function(collection){
-    return collection.getFilteredByGlob('docs/_/portfolio/**/*.md');
+    return collection.getFilteredByGlob('_/portfolio/**/*.md');
   });
 
   // Pass through
@@ -59,7 +59,6 @@ export default async function (eleventyConfig) {
   // eleventyConfig.addLayoutAlias("single", "../_layouts/splash.html");
 
   // Edit the files below. If you have your files in the root directory it should look like this:
-  /*
   return {
     dir: {
       input: "./",
@@ -67,20 +66,7 @@ export default async function (eleventyConfig) {
       layouts: "_layouts",
       htmlTemplateEngine: "liquid",
       dataTemplateEngine: "html",
-      output: "_site",
-      pathPrefix: "/"
-    },
-  };
-  */
-  return {
-    dir: {
-      input: "./docs",
-      includes: "../_includes",
-      layouts: "../_layouts",
-      htmlTemplateEngine: "liquid",
-      dataTemplateEngine: "html",
-      output: "_site",
-      pathPrefix: "/minimal-mistakes"
+      output: "_site"
     },
   };
 };

@@ -23,7 +23,7 @@ You can sponsor Michael Rose on the links below.
 
 You clone this repository, and then you are ready to add your own spin to the template.
 
-[^structure]: See [**Structure** page]({{ "/docs/structure/" | relative_url }}) for a list of theme files and what they do.
+[^structure]: See [**Structure** page]({{ "/docs/structure/" }}) for a list of theme files and what they do.
 
 **ProTip:** Be sure to remove `/docs` and `/test` if you forked Minimal Mistakes. These folders contain documentation and test pages for the theme and you probably don't want them littering up your repo.
 {: .notice--info}
@@ -41,7 +41,7 @@ You clone this repository, and then you are ready to add your own spin to the te
 If you're hosting several sites under the same GitHub username you will have to use Project Pages instead of User Pages. Essentially you rename the repo to something other than **USERNAME.github.io** and create a `gh-pages` branch off of `master`. For more details on how to set things up check [GitHub's documentation](https://help.github.com/articles/user-organization-and-project-pages/).
 
 <figure>
-  <img src="{{ '/assets/images/mm-gh-pages.gif' | relative_url }}" alt="creating a new branch on GitHub">
+  <img src="{{ '/assets/images/mm-gh-pages.gif' }}" alt="creating a new branch on GitHub">
 </figure>
 
 You can also install the theme by copying all of the theme files[^structure] into your project.
@@ -49,7 +49,7 @@ You can also install the theme by copying all of the theme files[^structure] int
 To do so fork the [Minimal Mistakes theme](https://github.com/mmistakes/minimal-mistakes/fork), then rename the repo to **USERNAME.github.io** --- replacing **USERNAME** with your GitHub username.
 
 <figure>
-  <img src="{{ '/assets/images/mm-theme-fork-repo.png' | relative_url }}" alt="fork Minimal Mistakes">
+  <img src="{{ '/assets/images/mm-theme-fork-repo.png' }}" alt="fork Minimal Mistakes">
 </figure>
 
 ### Remove the Unnecessary
@@ -77,15 +77,15 @@ Depending on the path you took installing Minimal Mistakes you'll setup things a
 
 Starting with an empty folder you need to copy the entire contents of the repository to get started. 
 
-For a full explanation of every setting be sure to read the [**Configuration**]({{ "/docs/configuration/" | relative_url }}) section.
+For a full explanation of every setting be sure to read the [**Configuration**]({{ "/docs/configuration/" }}) section.
 
 If you're hosting on GitHub Pages, you can copy the [`_data/ui-text.yml`][ui-text.yml] file into your repository for the localization feature to work.
 
 You'll need to create and edit these data files to customize them:
 
-- [`_data/site.yml`][site.yml] - UI text [documentation]({{ "/docs/configuration/" | relative_url }})
-- [`_data/ui-text.yml`][ui-text.yml] - UI text [documentation]({{ "/docs/ui-text/" | relative_url }})
-- [`_data/navigation.yml`][navigation.yml] - navigation [documentation]({{ "/docs/navigation/" | relative_url }})
+- [`_data/site.yml`][site.yml] - UI text [documentation]({{ "/docs/configuration/" }})
+- [`_data/ui-text.yml`][ui-text.yml] - UI text [documentation]({{ "/docs/ui-text/" }})
+- [`_data/navigation.yml`][navigation.yml] - navigation [documentation]({{ "/docs/navigation/" }})
 
   [site.yml]: https://github.com/mmistakes/minimal-mistakes/blob/master/_data/site.yml
   [ui-text.yml]: https://github.com/mmistakes/minimal-mistakes/blob/master/_data/ui-text.yml

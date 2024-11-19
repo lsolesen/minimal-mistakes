@@ -52,15 +52,15 @@ Here you change `default` to another skin. You can choose between "default", "ai
 {:.no_toc}
 
 <figure class="half">
-  <a href="{{ skin.name | prepend: "/assets/images/" | append: "-skin-archive-large.png" | relative_url }}">
+  <a href="{{ skin.name | prepend: "/assets/images/" | append: "-skin-archive-large.png" }}">
     <img
-      src="{{ skin.name | prepend: "/assets/images/" | append: "-skin-archive.png" | relative_url }}"
+      src="{{ skin.name | prepend: "/assets/images/" | append: "-skin-archive.png" }}"
       alt="Archive page of {{ skin.name | capitalize }} skin"
       />
   </a>
-  <a href="{{ skin.name | prepend: "/assets/images/" | append: "-skin-post-large.png" | relative_url }}">
+  <a href="{{ skin.name | prepend: "/assets/images/" | append: "-skin-post-large.png" }}">
     <img
-      src="{{ skin.name | prepend: "/assets/images/" | append: "-skin-post.png" | relative_url }}"
+      src="{{ skin.name | prepend: "/assets/images/" | append: "-skin-post.png" }}"
       alt="Posts page of {{ skin.name | capitalize }} skin"
       />
   </a>
@@ -74,7 +74,7 @@ Here you change `default` to another skin. You can choose between "default", "ai
 
 _Example:_ `locale: "en-US"` sets the `lang` attribute for the site to the _United States_ flavor of English, while `en-GB` would be for the _United Kingdom_ style of English. Country codes are optional and the shorter variation `locale: "en"` is also acceptable. To find your language and country codes check this [reference table](<https://msdn.microsoft.com/en-us/library/ee825488(v=cs.20).aspx>).
 
-Properly setting the locale is important for associating localized text found in the [**UI Text**]({{ "/docs/ui-text/" | relative_url }}) data file. An improper match will cause parts of the UI to disappear (eg. button labels, section headings, etc).
+Properly setting the locale is important for associating localized text found in the [**UI Text**]({{ "/docs/ui-text/" }}) data file. An improper match will cause parts of the UI to disappear (eg. button labels, section headings, etc).
 
 **Note:** The theme comes with localized text in English (`en`, `en-US`, `en-GB`). If you change `locale` in `_data/site.yml` to something else, most of the UI text will go blank. Be sure to add the corresponding locale key and translated text to `_data/ui-text.yml` to avoid this.
 {: .notice--warning}
@@ -158,7 +158,7 @@ header:
 ```
 
 <figure>
-  <img src="{{ '/assets/images/mm-teaser-images-example.jpg' | relative_url }}" alt="teaser image example">
+  <img src="{{ '/assets/images/mm-teaser-images-example.jpg' }}" alt="teaser image example">
   <figcaption>Example of teaser images found in the related posts module.</figcaption>
 </figure>
 
@@ -171,7 +171,7 @@ logo: "/assets/images/88x88.png"
 ```
 
 <figure>
-  <img src="{{ '/assets/images/mm-masthead-logo.png' | relative_url }}" alt="masthead with logo and custom title">
+  <img src="{{ '/assets/images/mm-masthead-logo.png' }}" alt="masthead with logo and custom title">
   <figcaption>Example of masthead with logo and custom title.</figcaption>
 </figure>
 
@@ -196,19 +196,19 @@ Enable breadcrumb links to help visitors better navigate deep sites. Because of 
 1. Use a category based permalink structure e.g. `permalink: /:categories/:title/`
 2. Manually create pages for each category or use a [Zero Maintenance Tag Pages for your Blog](https://www.11ty.dev/docs/quicktips/tag-pages/) to auto-generate them. If these pages don't exist breadcrumb links to them will be broken.
 
-![breadcrumb navigation example]({{ "/assets/images/mm-breadcrumbs-example.jpg" | relative_url }})
+![breadcrumb navigation example]({{ "/assets/images/mm-breadcrumbs-example.jpg" }})
 
 ```yaml
 breadcrumbs: true  # disabled by default
 ```
 
-Breadcrumb start link text and separator character can both be changed in the [UI Text data file]({{ "/docs/ui-text/" | relative_url }}).
+Breadcrumb start link text and separator character can both be changed in the [UI Text data file]({{ "/docs/ui-text/" }}).
 
 ### Post dates
 
 Enable post date snippets with `show_date: true` in YAML Front Matter.
 
-![post date example]({{ "/assets/images/mm-post-date-example.png" | relative_url }})
+![post date example]({{ "/assets/images/mm-post-date-example.png" }})
 
 Instead of adding `show_date: true` to each post, apply as a default in `_data/site.yml` like so:
 
@@ -234,7 +234,7 @@ date_format: "%Y-%m-%d"
 
 Enable estimated reading time snippets with `read_time: true` in YAML Front Matter. `200` has been set as the default words per minute value --- which can be changed by adjusting `words_per_minute:` in `_data/site.yml`.
 
-![reading time example]({{ "/assets/images/mm-read-time-example.jpg" | relative_url }})
+![reading time example]({{ "/assets/images/mm-read-time-example.jpg" }})
 
 Instead of adding `read_time: true` to each post, apply as a default in `_data/site.yml` like so:
 
@@ -258,7 +258,7 @@ words_per_minute: 250
 
 ### Page meta separator
 
-To customise the separator between the page date and reading time (if both are enabled), edit `.page__meta-sep::before` in a [custom stylesheet]({{ "/docs/stylesheets/" | relative_url }}).
+To customise the separator between the page date and reading time (if both are enabled), edit `.page__meta-sep::before` in a [custom stylesheet]({{ "/docs/stylesheets/" }}).
 
 For example,
 
@@ -529,7 +529,7 @@ To skip this moderation step simply set `moderation: false`.
 **ProTip:** Create a GitHub webhook that sends a `POST` request to the following payload URL `https://{your Staticman API URL}/v2/webhook` and triggers a "Pull request" event to delete Staticman branches on merge.
 {: .notice--info}
 
-![pull-request webhook]({{ "/assets/images/mm-staticman-pr-webhook.jpg" | relative_url }})
+![pull-request webhook]({{ "/assets/images/mm-staticman-pr-webhook.jpg" }})
 
 ##### reCAPTCHA support (v2 only)
 
@@ -576,7 +576,7 @@ atom_feed:
 
 To enable site-wide search add `search: true` to your `_data/site.yml`.
 
-![masthead search example]({{ "/assets/images/masthead-search.gif" | relative_url }})
+![masthead search example]({{ "/assets/images/masthead-search.gif" }})
 
 #### Lunr (default)
 
@@ -622,7 +622,7 @@ Add a Google search box to your site.
 
 2. Under **Look and feel** choose the "Results only" layout and a theme (*Minimalist* is a good choice to match the default look of the Minimal Mistakes).
 
-   ![Google Custom Search Engine layout]({{ '/assets/images/google-custom-search-engine-layout.png' | relative_url }})
+   ![Google Custom Search Engine layout]({{ '/assets/images/google-custom-search-engine-layout.png' }})
 
 3. Select "Save & Get Code" and grab your search engine ID from the line that begins with `var cx = 'YOUR_SEARCH_ENGINE_ID'`.
 
@@ -811,7 +811,7 @@ To use another provider not included with the theme set `provider: "custom"` the
 
 Used as the defaults for defining what appears in the author sidebar.
 
-![author sidebar example]({{ "/assets/images/mm-author-sidebar-example.jpg" | relative_url }})
+![author sidebar example]({{ "/assets/images/mm-author-sidebar-example.jpg" }})
 
 **Note:** For sites with multiple authors these values can be overridden post by post with custom YAML Front Matter and a data file. For more information on how that works see below.
 {: .notice--info}
@@ -853,7 +853,7 @@ author:
       url: "https://instagram.com/mmistakes"
 ```
 
-To customize the author sidebar, read the full [layout documentation]({{ "/docs/layouts/#author-profile" | relative_url }}).
+To customize the author sidebar, read the full [layout documentation]({{ "/docs/layouts/#author-profile" }}).
 
 ## Site footer
 

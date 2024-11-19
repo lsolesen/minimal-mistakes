@@ -58,7 +58,7 @@ Before any `@import` lines.
 To mimic the look of type set in a printed book or manuscript you may want to enable paragraph indention. When `$paragraph-indent` is set to `true` indents are added to each sibling and the margin below each paragraph is removed.
 
 <figure>
-  <img src="{{ '/assets/images/mm-paragraph-indent-example.jpg' | relative_url }}" alt="indented paragraph example">
+  <img src="{{ '/assets/images/mm-paragraph-indent-example.jpg' }}" alt="indented paragraph example">
   <figcaption>Example of indented paragraphs.</figcaption>
 </figure>
 
@@ -139,7 +139,7 @@ Code block colors can easily be changed by overriding any of the following color
 
 ##### Default
 
-![default-code-block]({{ '/assets/images/default-code-block.jpg' | relative_url }})
+![default-code-block]({{ '/assets/images/default-code-block.jpg' }})
 
 ```scss
 /* default syntax highlighting (base16) */
@@ -163,7 +163,7 @@ $base0f: #ff5370;
 
 ##### Solarized light
 
-![solarized-light-code-block]({{ '/assets/images/solarized-light-code-block.jpg' | relative_url }})
+![solarized-light-code-block]({{ '/assets/images/solarized-light-code-block.jpg' }})
 
 ```scss
 /* solarized light syntax highlighting (base16) */
@@ -187,7 +187,7 @@ $base0f: #d33682 !default;
 
 ##### Contrast
 
-![contrast-code-block]({{ '/assets/images/contrast-code-block.jpg' | relative_url }})
+![contrast-code-block]({{ '/assets/images/contrast-code-block.jpg' }})
 
 ```scss
 /* contrast syntax highlighting (base16) */
@@ -211,7 +211,7 @@ $base0f: #b18a3d;
 
 ##### Dark
 
-![dark-code-block]({{ '/assets/images/dark-code-block.jpg' | relative_url }})
+![dark-code-block]({{ '/assets/images/dark-code-block.jpg' }})
 
 ```scss
 /* dark syntax highlighting (base16) */
@@ -235,7 +235,7 @@ $base0f: #cc6633;
 
 ##### Dirt
 
-![dirt-code-block]({{ '/assets/images/dirt-code-block.jpg' | relative_url }})
+![dirt-code-block]({{ '/assets/images/dirt-code-block.jpg' }})
 
 ```scss
 /* dirt syntax highlighting (base16) */
@@ -259,7 +259,7 @@ $base0f: #b49368;
 
 ##### Dracula
 
-![dracula-code-block]({{ '/assets/images/dracula-code-block.jpg' | relative_url }})
+![dracula-code-block]({{ '/assets/images/dracula-code-block.jpg' }})
 
 ```scss
 /* dracula syntax highlighting (base16) */
@@ -284,7 +284,7 @@ $base0f: #00f769;
 
 ##### Neon
 
-![neon-code-block]({{ '/assets/images/neon-code-block.jpg' | relative_url }})
+![neon-code-block]({{ '/assets/images/neon-code-block.jpg' }})
 
 ```scss
 /* neon syntax highlighting (base16) */
@@ -308,7 +308,7 @@ $base0f: #cc6633;
 
 ##### Plum
 
-![plum-code-block]({{ '/assets/images/plum-code-block.jpg' | relative_url }})
+![plum-code-block]({{ '/assets/images/plum-code-block.jpg' }})
 
 ```scss
 /* plum syntax highlighting (base16) */
@@ -332,7 +332,7 @@ $base0f: #cc6633;
 
 ##### Sunrise
 
-![sunrise-code-block]({{ '/assets/images/sunrise-code-block.jpg' | relative_url }})
+![sunrise-code-block]({{ '/assets/images/sunrise-code-block.jpg' }})
 
 ```scss
 /* sunrise syntax highlighting (base16) */
@@ -361,7 +361,7 @@ Probably won't need to touch these, but they're there if you need to. Width vari
 And `$susy` is used for setting [the grid](http://susy.oddbird.net/) the theme uses. Uncommenting the lines under `debug` can be useful if you want to show the columns when adjusting the layout.
 
 <figure>
-  <img src="{{ '/assets/images/mm-susy-grid-overlay.jpg' | relative_url }}" alt="Susy grid overlay for debugging">
+  <img src="{{ '/assets/images/mm-susy-grid-overlay.jpg' }}" alt="Susy grid overlay for debugging">
   <figcaption>Susy grid debug overlay enabled.</figcaption>
 </figure>
 

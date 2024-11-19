@@ -97,7 +97,7 @@ The layout you'll likely use the most --- sidebar and main content combo.
 
 {% include gallery id="single_layout_gallery" caption="Image header and meta info examples for `single` layout" %}
 
-Assign with `layout: single` , or better yet apply as a [Front Matter default]({{ "/docs/configuration/#front-matter-defaults" | relative_url }}) in `_config.yml`.
+Assign with `layout: single` , or better yet apply as a [Front Matter default]({{ "/docs/configuration/#front-matter-defaults" }}) in `_config.yml`.
 
 ### Wide page
 
@@ -114,7 +114,7 @@ classes: wide
 
 Auto-generated table of contents list for your posts and pages can be enabled by adding `toc: true` to the YAML Front Matter.
 
-![table of contents example]({{ "/assets/images/mm-toc-helper-example.jpg" | relative_url }})
+![table of contents example]({{ "/assets/images/mm-toc-helper-example.jpg" }})
 
 | Parameter   | Required | Description | Default |
 | ---------   | -------- | ----------- | ------- |
@@ -169,7 +169,7 @@ Essentially the same as `single` with markup adjustments and some modules remove
 * List and grid views
 
 <figure>
-  <img src="{{ '/assets/images/mm-layout-archive.png' | relative_url }}" alt="archive layout example">
+  <img src="{{ '/assets/images/mm-layout-archive.png' }}" alt="archive layout example">
   <figcaption>List view example.</figcaption>
 </figure>
 
@@ -224,14 +224,14 @@ header:
   teaser: path-to-teaser-image.jpg
 ```
 
-**Note:** More information on using this `_include` can be found under [**Helpers**]({{ "/docs/helpers/" | relative_url }}).
+**Note:** More information on using this `_include` can be found under [**Helpers**]({{ "/docs/helpers/" }}).
 {: .notice--info}
 
 ## Taxonomy archives
 
 You might be able to simplify the creation of tags and categories pages using [**Zero Maintenance Tag Pages for your Blog**](https://www.11ty.dev/docs/quicktips/tag-pages/).
 
-![archive taxonomy layout example]({{ "/assets/images/mm-layout-archive-taxonomy.png" | relative_url }})
+![archive taxonomy layout example]({{ "/assets/images/mm-layout-archive-taxonomy.png" }})
 
 If you're not using any magic, you need to create archive pages yourself. Sample taxonomy archives can be found by grabbing the Markdown sources below and adding to your site.
 
@@ -325,10 +325,10 @@ taxonomy: foo bar
 
 ## Home page layout
 
-A derivative archive page layout to be used as a simple home page. It is built to show a paginated list of recent posts based off of the [pagination settings]({{ "/docs/configuration/#paginate" | relative_url }}) in `_config.yml`.
+A derivative archive page layout to be used as a simple home page. It is built to show a paginated list of recent posts based off of the [pagination settings]({{ "/docs/configuration/#paginate" }}) in `_config.yml`.
 
 <figure>
-  <img src="{{ '/assets/images/mm-home-post-pagination-example.jpg' | relative_url }}" alt="paginated home page example">
+  <img src="{{ '/assets/images/mm-home-post-pagination-example.jpg' }}" alt="paginated home page example">
   <figcaption>Example of a paginated home page showing 5 recent posts.</figcaption>
 </figure>
 
@@ -355,17 +355,17 @@ For full-width landing pages that need a little something extra add `layout: spl
 * Optional header overlay (solid color/image) + text and optional "call to action" button
 * Feature blocks (`left`, `center`, and `right` alignment options)
 
-![splash page layout example]({{ "/assets/images/mm-layout-splash.png" | relative_url }})
+![splash page layout example]({{ "/assets/images/mm-layout-splash.png" }})
 
-Feature blocks can be assigned and aligned to the `left`, `right`, or `center` with a sprinkling of YAML. For full details on how to use the `feature_row` helper check the [**Content**]({{ "/docs/helpers/" | relative_url }}) section or review a [sample splash page](https://github.com/{{ site.repository }}/blob/master/docs/_pages/splash-page.md).
+Feature blocks can be assigned and aligned to the `left`, `right`, or `center` with a sprinkling of YAML. For full details on how to use the `feature_row` helper check the [**Content**]({{ "/docs/helpers/" }}) section or review a [sample splash page](https://github.com/{{ site.repository }}/blob/master/docs/_pages/splash-page.md).
 
 ## Search page layout
 
 A page with a search form. Add `layout: search` to the YAML Front Matter similar to [this example](https://github.com/mmistakes/minimal-mistakes/blob/master/test/_pages/search.md) on the test site.
 
-![search page layout example]({{ "/assets/images/search-layout-example.png" | relative_url }})
+![search page layout example]({{ "/assets/images/search-layout-example.png" }})
 
-**Note:** A page using the `layout: search` isn't compatible with the new [site search feature]({{ "/docs/configuration/#site-search" | relative_url }}) incorporated in the masthead.
+**Note:** A page using the `layout: search` isn't compatible with the new [site search feature]({{ "/docs/configuration/#site-search" }}) incorporated in the masthead.
 {: .notice--warning}
 
 ### Exclusions
@@ -387,10 +387,10 @@ To add some visual punch to a post or page, a large full-width header image can 
 
 Be sure to resize your header images. `~1280px` is a good width if you aren't [responsively serving up images](http://alistapart.com/article/responsive-images-in-practice). Through the magic of CSS they will scale up or down to fill the container. If you go with something too small it will look like garbage when upscaled, and something too large will hurt performance.
 
-**Please Note:** Paths for image headers, overlays, teasers, [galleries]({{ "/docs/helpers/#gallery" | relative_url }}), and [feature rows]({{ "/docs/helpers/#feature-row" | relative_url }}) have changed and require a full path. Instead of just `image: filename.jpg` you'll need to use the full path eg: `image: /assets/images/filename.jpg`. The preferred location is now `/assets/images/`, but can be placed elsewhere or external hosted. This all applies for image references in `_config.yml` and `author.yml` as well.
+**Please Note:** Paths for image headers, overlays, teasers, [galleries]({{ "/docs/helpers/#gallery" }}), and [feature rows]({{ "/docs/helpers/#feature-row" }}) have changed and require a full path. Instead of just `image: filename.jpg` you'll need to use the full path eg: `image: /assets/images/filename.jpg`. The preferred location is now `/assets/images/`, but can be placed elsewhere or external hosted. This all applies for image references in `_config.yml` and `author.yml` as well.
 {: .notice--danger}
 
-![single layout header image example]({{ "/assets/images/mm-single-header-example.jpg" | relative_url }})
+![single layout header image example]({{ "/assets/images/mm-single-header-example.jpg" }})
 
 Place your images in the `/assets/images/` folder and add the following YAML Front Matter:
 
@@ -454,11 +454,11 @@ header:
 
 You'd get a header image overlaid with text and a call to action button like this:
 
-![single layout header overlay example]({{ "/assets/images/mm-single-header-overlay-example.jpg" | relative_url }})
+![single layout header overlay example]({{ "/assets/images/mm-single-header-overlay-example.jpg" }})
 
 You also have the option of specifying a solid background-color to use instead of an image.
 
-![single layout header overlay with background fill]({{ "/assets/images/mm-single-header-overlay-fill-example.jpg" | relative_url }})
+![single layout header overlay with background fill]({{ "/assets/images/mm-single-header-overlay-fill-example.jpg" }})
 
 ```yaml
 excerpt: "This post should display a **header with a solid background color**, if the theme supports it."
@@ -468,7 +468,7 @@ header:
 
 You can also specifying the opacity (between `0` and `1`) of a black overlay like so:
 
-![transparent black overlay]({{ "/assets/images/mm-header-overlay-black-filter.jpg" | relative_url }})
+![transparent black overlay]({{ "/assets/images/mm-header-overlay-black-filter.jpg" }})
 
 ```yaml
 excerpt: "This post should [...]"
@@ -483,7 +483,7 @@ header:
 
 Or if you feel colorful, use full rgba:
 
-![transparent red overlay]({{ "/assets/images/mm-header-overlay-red-filter.jpg" | relative_url }})
+![transparent red overlay]({{ "/assets/images/mm-header-overlay-red-filter.jpg" }})
 
 ```yaml
 excerpt: "This post should [...]"
@@ -498,7 +498,7 @@ header:
 
 Or if you want to do more fancy things, go all the way to [linear-gradient][mdn-linear-gradient]:
 
-![transparent custom overlay]({{ "/assets/images/mm-header-overlay-custom-filter.jpg" | relative_url }})
+![transparent custom overlay]({{ "/assets/images/mm-header-overlay-custom-filter.jpg" }})
 
 ```yaml
 excerpt: "This post should [...]"
@@ -548,7 +548,7 @@ The space to the left of a page's main content is blank by default, but has the 
 
 Add `author_profile: true` to a post or page's YAML Front Matter.
 
-![single layout example]({{ "/assets/images/mm-layout-single.png" | relative_url }})
+![single layout example]({{ "/assets/images/mm-layout-single.png" }})
 
 Better yet, enable it with Front Matter Defaults set in `_config.yml`.
 
@@ -565,7 +565,7 @@ defaults:
 **Note:** To disable the author sidebar profile for a specific post or page, add `author_profile: false` to the YAML Front Matter instead.
 {: .notice--warning}
 
-To assign more author links, add to the `author.links` array  in [`_config.yml`]({{ "/docs/configuration/" | relative_url }}) link so. Any of [Font Awesome's icons](https://fontawesome.com/v6/search) are available for use.
+To assign more author links, add to the `author.links` array  in [`_config.yml`]({{ "/docs/configuration/" }}) link so. Any of [Font Awesome's icons](https://fontawesome.com/v6/search) are available for use.
 
 ```yaml
 author:
@@ -601,7 +601,7 @@ For example, to color a Reddit icon, simply add a `color` declaration and the co
 }
 ```
 
-![Reddit link in author profile with color]({{ "/assets/images/mm-author-profile-reddit-color.png" | relative_url }})
+![Reddit link in author profile with color]({{ "/assets/images/mm-author-profile-reddit-color.png" }})
 
 ### Custom sidebar content
 
@@ -627,7 +627,7 @@ sidebar:
 ```
 
 <figure>
-  <img src="{{ '/assets/images/mm-custom-sidebar-example.jpg' | relative_url }}" alt="custom sidebar content example">
+  <img src="{{ '/assets/images/mm-custom-sidebar-example.jpg' }}" alt="custom sidebar content example">
   <figcaption>Example of custom sidebar content added as YAML Front Matter.</figcaption>
 </figure>
 
@@ -641,7 +641,7 @@ To create a sidebar menu[^sidebar-menu] similar to the one found in the theme's 
 [^sidebar-menu]: Sidebar menu supports 1 level of nested links.
 
 <figure>
-  <img src="{{ '/assets/images/mm-custom-sidebar-nav.jpg' | relative_url }}" alt="sidebar navigation example">
+  <img src="{{ '/assets/images/mm-custom-sidebar-nav.jpg' }}" alt="sidebar navigation example">
   <figcaption>Custom sidebar navigation menu example.</figcaption>
 </figure>
 
@@ -736,7 +736,7 @@ sidebar:
 
 The `single` layout has an option to enable social links at the bottom of posts for sharing on Twitter, Facebook, and LinkedIn. Similar to the links found in the author sidebar, the theme ships with defaults for the most common social networks.
 
-![default social share link buttons]({{ "/assets/images/mm-social-share-links-default.png" | relative_url }})
+![default social share link buttons]({{ "/assets/images/mm-social-share-links-default.png" }})
 
 To enable these links add `share: true` to a post or page's YAML Front Matter or use a default in the directory configuration file to apply them more globally.
 
@@ -755,9 +755,9 @@ The important parts to change are:
 3. [Font Awesome icon](http://fontawesome.io/icons/) (`fa-` class)
 4. Link label
 
-![Reddit social share link button]({{ "/assets/images/mm-social-share-links-reddit-gs.png" | relative_url }})
+![Reddit social share link button]({{ "/assets/images/mm-social-share-links-reddit-gs.png" }})
 
-To change the color of the button use one of the built in [utility classes]({{ "/docs/utility-classes/#buttons" | relative_url }}). Or you can create a new button class to match whatever color you want.
+To change the color of the button use one of the built in [utility classes]({{ "/docs/utility-classes/#buttons" }}). Or you can create a new button class to match whatever color you want.
 
 Under the `$buttoncolors:` color map in `_sass/minimal-mistakes/_buttons.scss` simply add a name (this will be appended to `btn--`) that matches the new button class. In our case `reddit` ~> `.btn--reddit`.
 
@@ -772,13 +772,13 @@ $buttoncolors:
 **ProTip:** For bonus points you can modify the Sass variable `$reddit-color` that is set in `_variables.scss` [or use a different "brand" color](http://brandcolors.net/).
 {: .notice--info}
 
-Add the new `.btn--reddit` class to the `<a>` element from earlier, [compile `main.css`]({{ "/docs/stylesheets/" | relative_url }}) and away you go.
+Add the new `.btn--reddit` class to the `<a>` element from earlier, [compile `main.css`]({{ "/docs/stylesheets/" }}) and away you go.
 
 ```html
 {% raw %}<a href="https://www.reddit.com/submit?url={{ page.url | absolute_url | url_encode }}&title={{ page.title }}" class="btn btn--reddit" title="{{ ui-text[site.locale].share_on_label }} Reddit"><i class="fab fa-fw fa-reddit" aria-hidden="true"></i><span> Reddit</span></a>{% endraw %}
 ```
 
-![Reddit social share link button]({{ "/assets/images/mm-social-share-links-reddit-color.png" | relative_url }})
+![Reddit social share link button]({{ "/assets/images/mm-social-share-links-reddit-color.png" }})
 
 ---
 
@@ -794,7 +794,7 @@ Add some Liquid tags for the new configuration to `_includes/head/custom.html`.
 {% raw %}```html
 {% if page.page_css %}
   {% for stylesheet in page.page_css %}
-    <link rel="stylesheet" href="{{ stylesheet | relative_url }}">
+    <link rel="stylesheet" href="{{ stylesheet }}">
   {% endfor %}
 {% endif %}
 ```{% endraw %}
@@ -813,7 +813,7 @@ Add some Liquid tags for the new configuration to `_includes/footer/custom.html`
 {% raw %}```html
 {% if page.page_js %}
   {% for script in page.page_js %}
-    <script src="{{ script | relative_url }}"></script>
+    <script src="{{ script }}"></script>
   {% endfor %}
 {% endif %}
 ```{% endraw %}

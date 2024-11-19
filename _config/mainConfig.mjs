@@ -121,6 +121,7 @@ export default function (eleventyConfig) {
 
   // absolute_url is deprecated - hardcode to your liking
   // @deprecated
+  // replace with `htmlBaseUrl: site.url` in your files
   eleventyConfig.addFilter("absolute_url", (url) => {
       return url;
     }
@@ -128,6 +129,7 @@ export default function (eleventyConfig) {
 
   // Relative url is deprecated
   // @deprecated
+  // Replace with `htmlBaseUrl` in your files
   eleventyConfig.addFilter("relative_url", (url) => {
       return url;
     }

@@ -1,4 +1,4 @@
-{% capture overlay_img_path %}{{ header.overlay_image | relative_url }}{% endcapture %}
+{% capture overlay_img_path %}{{ header.overlay_image }}{% endcapture %}
 
 {% if header.overlay_filter contains "gradient" %}
   {% capture overlay_filter %}{{ header.overlay_filter }}{% endcapture %}
@@ -41,7 +41,7 @@ TODO FIX?
       {% if header.actions %}
         <p>
         {% for action in header.actions %}
-          <a href="{{ action.url | relative_url }}" class="btn btn--light-outline btn--large">{{ action.label | default: ui-text[site.locale].more_label | default: "Learn More" }}</a>
+          <a href="{{ action.url }}" class="btn btn--light-outline btn--large">{{ action.label | default: ui-text[site.locale].more_label | default: "Learn More" }}</a>
         {% endfor %}
         </p>
       {% endif %}
@@ -50,7 +50,7 @@ TODO FIX?
       <img src="{{ overlay_img_path }}" alt="" loading="eager" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0;">
     {% endif %}
   {% else %}
-    <img src="{{ header.image | relative_url }}" alt="{{ image_description }}" class="page__hero-image">
+    <img src="{{ header.image }}" alt="{{ image_description }}" class="page__hero-image">
   {% endif %}
   {% if header.caption %}
     <span class="page__hero-caption">{{ header.caption | markdownify | remove: "<p>" | remove: "</p>" }}</span>

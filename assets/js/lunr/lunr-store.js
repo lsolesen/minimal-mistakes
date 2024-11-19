@@ -42,8 +42,8 @@ var store = [
           {%- endif -%}
         "categories": {{ doc.categories | jsonify }},
         "tags": {{ doc.tags | jsonify }},
-        "url": {{ doc.url | relative_url | jsonify }},
-        "teaser": {{ teaser | relative_url | jsonify }}
+        "url": {{ doc.url | htmlBaseUrl | jsonify }},
+        "teaser": {{ teaser | htmlBaseUrl | jsonify }}
       }{%- unless forloop.last and l -%},{%- endunless -%}
     {%- endfor -%}
   {%- endfor -%}{%- if site.lunr.search_within_pages -%},

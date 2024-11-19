@@ -26,7 +26,7 @@ This post tests overlay header images.
 
 You can use it by specifying the opacity (between 0 and 1) of a black overlay like so:
 
-![transparent black overlay]({{ "/assets/images/mm-header-overlay-black-filter.jpg" | relative_url }})
+![transparent black overlay]({{ "/assets/images/mm-header-overlay-black-filter.jpg" }})
 
 ```yaml
 excerpt: "This post should [...]"
@@ -41,7 +41,7 @@ header:
 
 Or if you want to do more fancy things, go full rgba:
 
-![transparent red overlay]({{ "/assets/images/mm-header-overlay-red-filter.jpg" | relative_url }})
+![transparent red overlay]({{ "/assets/images/mm-header-overlay-red-filter.jpg" }})
 
 ```yaml
 excerpt: "This post should [...]"

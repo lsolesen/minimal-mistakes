@@ -5,7 +5,6 @@ pagination:
   alias: "post"
 layout: og-image
 permalink: "/opengraph{{ post.url }}"
-headimage: https://www.zachleat.com/og/default.jpeg
 image_type: "og"
 ---
 
@@ -98,7 +97,7 @@ image_type: "og"
 {% assign image_description = image_description | markdownify | strip_html | strip_newlines | escape_once %}
 
 <div class="page__hero--overlay"
-  style="height: 100% !important; background-size: 100% auto !important;position: static !important;{% if post.data.header.overlay_color %}background-color: {{ post.header.overlay_color | default: 'transparent' }};{% endif %}">
+  style="background: #ccc; height: 100% !important; background-size: 100% auto !important;position: absolute !important;{% if post.data.header.overlay_color %}background-color: {{ post.header.overlay_color | default: 'transparent' }};{% endif %}">
     <div style="padding: 0 2em; position: relative; z-index: 1;">
       <h1 id="page-title" class="page__title padded-multiline" itemprop="headline">
       <span>{{ post.data.title | default: site.title | markdownify | remove: "<p>" | remove: "</p>" }}</span>
@@ -110,8 +109,9 @@ image_type: "og"
       {% assign author = authors[post.data.author] | default: site.author %}
 
     </div>
-    <img src="{{ post.data.header.overlay_image | default: post.data.header.image | relative_url }}" alt="" loading="eager" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0;">
- 
+    {% if post.data.header.overlay_image OR post.data.header.image %}
+    <img src="{{ post.data.header.overlay_image | default: post.data.header.image }}" alt="" loading="eager" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0;">
+    {% endif %}
     <section id='author'>
       <img id='author-image' alt='' src='{{ author.avatar }}' width="120" height="120"  data-proofer-ignore>
       <p id='author-name'>{{ author.name }}</p>

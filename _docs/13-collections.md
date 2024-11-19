@@ -7,7 +7,7 @@ last_modified_at: 2018-03-20T16:00:02-04:00
 
 Collections like posts and pages work as you'd expect. If you're new to them be sure to read [11ty's documentation](https://www.11ty.dev/docs/collections/).
 
-The theme has been built with collections in mind and you will find [several examples]({{ "/collection-archive/" | relative_url }}) on the demo site ([portfolio]({{ "/portfolio/" | relative_url }}), [recipes]({{ "/recipes/" | relative_url }}), [pets]({{ "/pets/" | relative_url }})). 
+The theme has been built with collections in mind and you will find [several examples]({{ "/collection-archive/" }}) on the demo site ([portfolio]({{ "/portfolio/" }}), [recipes]({{ "/recipes/" }}), [pets]({{ "/pets/" }})). 
 
 **Collections in the Wild:** This set of documentation is also [built as a collection](https://github.com/{{ site.repository }}/blob/master/docs/_docs/) if you're looking for a fully fleshed out example to inspect.
 {: .notice--info}
@@ -56,4 +56,4 @@ classes: wide
 
 And then create portfolio content like [`_portfolio/foo-bar-website.md`](https://github.com/{{ site.repository }}/blob/master/docs/_portfolio/foo-bar-website.md), to end up with something like this.
 
-![portfolio collection example]({{ "/assets/images/mm-portfolio-collection-example.jpg" | relative_url }})
+![portfolio collection example]({{ "/assets/images/mm-portfolio-collection-example.jpg" }})

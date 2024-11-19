@@ -16,14 +16,14 @@
   <article class="archive__item h-entry" itemscope itemtype="https://schema.org/CreativeWork"{% if post.locale %} lang="{{ post.locale }}"{% endif %}>
     {% if include.type == "grid" and teaser %}
       <div class="archive__item-teaser">
-        <img src="{{ teaser | relative_url }}" alt="{{ title }}" data-pin-nopin="true">
+        <img src="{{ teaser }}" alt="{{ title }}" data-pin-nopin="true">
       </div>
     {% endif %}
     <h2 class="archive__item-title no_toc p-name" itemprop="headline">
       {% if post.link %}
-        <a class="u-url" rel="bookmark" href="{{ post.link }}">{{ title }}</a> <a href="{{ post.url | relative_url }}" rel="permalink"><i class="fas fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
+        <a class="u-url" rel="bookmark" href="{{ post.link }}">{{ title }}</a> <a href="{{ post.url }}" rel="permalink"><i class="fas fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
       {% else %}
-        <a class="u-url" rel="bookmark" href="{{ post.url | relative_url }}" rel="permalink">{{ title }}</a>
+        <a class="u-url" rel="bookmark" href="{{ post.url }}" rel="permalink">{{ title }}</a>
       {% endif %}
     </h2>
     {% include page__meta.html type=include.type %}

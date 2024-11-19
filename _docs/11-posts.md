@@ -31,7 +31,7 @@ defaults:
       related: true
 ```
 
-Adding the above to `_config.yml` will assign the `single` layout and enable: *author profile*, *reading time*, *comments*, [*social sharing links*]({{ "/docs/layouts/#social-sharing-links" | relative_url }}), and *related posts*, for all posts.
+Adding the above to `_config.yml` will assign the `single` layout and enable: *author profile*, *reading time*, *comments*, [*social sharing links*]({{ "/docs/layouts/#social-sharing-links" }}), and *related posts*, for all posts.
 
 **ProTip:** Remember to write unique `excerpt` descriptions for each post for improved SEO and archive listings.
 {: .notice--info}

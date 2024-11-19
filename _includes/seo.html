@@ -11,7 +11,7 @@
 {%- assign page_title = page_title | markdownify | strip_html | strip_newlines | escape_once -%}
 {%- assign seo_title  = seo_title  | markdownify | strip_html | strip_newlines | escape_once -%}
 
-{%- assign canonical_url = canonical_url | default: page.url | replace: "/index.html", "/" | absolute_url %}
+{%- assign canonical_url = canonical_url | default: page.url | htmlBaseUrl: site.url %}
 
 {%- assign seo_description = description | default: excerpt | default: site.description -%}
 {%- if seo_description -%}
@@ -25,9 +25,9 @@
   {%- assign author_twitter = author.twitter | replace: "@", "" -%}
 {%- endif -%}
 
-{%- assign page_large_image = header.og_image | default: header.overlay_image | default: header.image | absolute_url | escape -%}
-{%- assign page_teaser_image = header.teaser | default: site.og_image | absolute_url | escape -%}
-{%- assign site_og_image = site.og_image | absolute_url | escape -%}
+{%- assign page_large_image = header.og_image | default: header.overlay_image | default: header.image | escape -%}
+{%- assign page_teaser_image = header.teaser | default: site.og_image | htmlBaseUrl: site.url | escape -%}
+{%- assign site_og_image = site.og_image | htmlBaseUrl: site.url | escape -%}
 
 {%- if date -%}
   {%- assign og_type = "article" -%}
@@ -63,7 +63,7 @@
 {% endif %}
 {% endcomment %}
 
-{% assign og_url = site.url | append: site.baseurl | append: '/opengraph' | append: page.url %}
+{% assign og_url = '/opengraph' | append: page.url | htmlBaseUrl: site.url %}
 <meta property="og:image" content="https://v1.screenshot.11ty.dev/{{ og_url | url_encode }}/">
 
 {% if site.twitter.username %}
@@ -108,10 +108,10 @@
 <link rel="canonical" href="{{ canonical_url }}">
 
 {% if paginator.previous_page %}
-  <link rel="prev" href="{{ paginator.previous_page_path | absolute_url }}">
+  <link rel="prev" href="{{ paginator.previous_page_path | htmlBaseUrl: site.url }}">
 {% endif %}
 {% if paginator.next_page %}
-  <link rel="next" href="{{ paginator.next_page_path | absolute_url }}">
+  <link rel="next" href="{{ paginator.next_page_path | htmlBaseUrl: site.url }}">
 {% endif %}
 
 {% if url == '/' %}

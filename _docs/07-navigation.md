@@ -35,7 +35,7 @@ main:
 
 Which will give you a responsive masthead similar to this:
 
-![priority plus masthead animation]({{ "/assets/images/mm-priority-plus-masthead.gif" | relative_url }})
+![priority plus masthead animation]({{ "/assets/images/mm-priority-plus-masthead.gif" }})
 
 Optionally, you can add a `description` key per title in the `main` key. This `description` will show up like a tooltip, when the user hovers over the link on a desktop browser.
 
@@ -49,7 +49,7 @@ Enable breadcrumb links to help visitors better navigate deep sites. Because of 
 1. Use a category based permalink structure e.g. `permalink: /:categories/:title/`
 2. Manually create pages for each category or look into [**Zero Maintenance Tag Pages for your Blog**](https://www.11ty.dev/docs/quicktips/tag-pages/) to generate these pages automatically.
 
-![breadcrumb navigation example]({{ "/assets/images/mm-breadcrumbs-example.jpg" | relative_url }})
+![breadcrumb navigation example]({{ "/assets/images/mm-breadcrumbs-example.jpg" }})
 
 ```yaml
 breadcrumbs: true  # disabled by default
@@ -71,4 +71,4 @@ breadcrumb_separator  : ">"
 
 ## Custom sidebar navigation menu
 
-See the [**sidebars** documentation]({{ "/docs/layouts/#custom-sidebar-navigation-menu" | relative_url }}) for information on setting up a custom navigation menu.
+See the [**sidebars** documentation]({{ "/docs/layouts/#custom-sidebar-navigation-menu" }}) for information on setting up a custom navigation menu.
