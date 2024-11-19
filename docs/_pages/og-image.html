@@ -79,8 +79,6 @@ image_type: "og"
 
   </style>
 
-{% capture overlay_img_path %}{{ post.data.header.overlay_image | relative_url }}{% endcapture %}
-
 {% if post.data.header.overlay_filter contains "gradient" %}
   {% capture overlay_filter %}{{ post.data.header.overlay_filter }}{% endcapture %}
 {% elsif post.data.header.overlay_filter contains "rgba" %}
@@ -112,7 +110,7 @@ image_type: "og"
       {% assign author = authors[post.data.author] | default: site.author %}
 
     </div>
-    <img src="{{ overlay_img_path | default: post.data.header.image | default: "https://c.pxhere.com/photos/61/2f/person_human_child_girl_bike_cycling_away_nature-1074324.jpg!d" }}" alt="" loading="eager" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0;">
+    <img src="{{ post.data.header.overlay_image | default: post.data.header.image }}" alt="" loading="eager" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0;">
  
     <section id='author'>
       <img id='author-image' alt='' src='{{ author.avatar }}' width="120" height="120"  data-proofer-ignore>
