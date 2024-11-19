@@ -11,7 +11,7 @@
 {%- assign page_title = page_title | markdownify | strip_html | strip_newlines | escape_once -%}
 {%- assign seo_title  = seo_title  | markdownify | strip_html | strip_newlines | escape_once -%}
 
-{%- assign canonical_url = canonical_url | default: url | replace: "/index.html", "/" | absolute_url %}
+{%- assign canonical_url = canonical_url | default: page.url | replace: "/index.html", "/" | absolute_url %}
 
 {%- assign seo_description = description | default: excerpt | default: site.description -%}
 {%- if seo_description -%}
@@ -55,11 +55,16 @@
   <meta property="og:description" content="{{ seo_description }}">
 {% endif %}
 
+{% comment %} TODO
 {% if page_large_image %}
   <meta property="og:image" content="{{ page_large_image }}">
 {% elsif page_teaser_image %}
   <meta property="og:image" content="{{ page_teaser_image }}">
 {% endif %}
+{% endcomment %}
+
+{% assign og_url = site.url | append: site.baseurl | append: 'opengraph' | append: page.url %}
+<meta property="og:image" content="https://v1.screenshot.11ty.dev/{{ og_url | url_encode }}/">
 
 {% if site.twitter.username %}
   <meta name="twitter:site" content="@{{ site.twitter.username | replace: "@", "" }}">
