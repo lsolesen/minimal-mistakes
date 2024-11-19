@@ -21,7 +21,7 @@ Minimal Mistakes is a flexible two-column 11ty theme. Perfect for hosting your p
 
 {% include gallery id="layouts_gallery" caption="Examples of included layouts `splash`, `single`, and `archive`." %}
 
-[Install the Theme]({{ "/docs/quick-start-guide/" | htmlBaseUrl }}){: .btn .btn--success .btn--large}
+[Install the Theme]({{ "/docs/quick-start-guide/" }}){: .btn .btn--success .btn--large}
 
 ## Notable Features
 
@@ -43,11 +43,11 @@ Minimal Mistakes is a flexible two-column 11ty theme. Perfect for hosting your p
 | [HTML Tags and Formatting Post]({% post_url collections.posts, "2013-01-11-markup-html-tags-and-formatting" %}) | A variety of common markup showing how the theme styles them. |
 | [Syntax Highlighting Post]({% post_url collections.posts, "2013-08-16-markup-syntax-highlighting" %}) | Post displaying highlighted code. |
 | [Post with a Gallery]({% post_url collections.posts, "2010-09-09-post-gallery" %}) | A post showing several images wrapped in `<figure>` elements. |
-| [Sample Collection Page]({{ "/recipes/chocolate-chip-cookies/" | htmlBaseUrl }}) | Single page from a collection. |
-| [Categories Archive]({{ "/categories/" | htmlBaseUrl }}) | Posts grouped by category. |
-| [Tags Archive]({{ "/tags/" | htmlBaseUrl }}) | Posts grouped by tag. |
+| [Sample Collection Page]({{ "/recipes/chocolate-chip-cookies/" }}) | Single page from a collection. |
+| [Categories Archive]({{ "/categories/" }}) | Posts grouped by category. |
+| [Tags Archive]({{ "/tags/" }}) | Posts grouped by tag. |
 
-For even more demo pages check the [posts archive]({{ "/year-archive/" | htmlBaseUrl }}).
+For even more demo pages check the [posts archive]({{ "/year-archive/" }}).
 
 ---
 

@@ -74,11 +74,11 @@
 
   {% if page_large_image %}
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="{{ page_large_image }}">
+    <meta name="twitter:image" content="{{ page_large_image | htmlBaseUrl: site.url }}">
   {% else %}
     <meta name="twitter:card" content="summary">
     {% if page_teaser_image %}
-      <meta name="twitter:image" content="{{ page_teaser_image }}">
+      <meta name="twitter:image" content="{{ page_teaser_image | htmlBaseUrl: site.url }}">
     {% endif %}
   {% endif %}
 

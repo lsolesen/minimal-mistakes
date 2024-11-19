@@ -5,7 +5,7 @@
 
   {% if author.avatar %}
     <div class="author__avatar">
-      <a rel="author" href="{{ author.home | default: '/' | absolute_url }}">
+      <a rel="author" href="{{ author.home | default: '/' | htmlBaseUrl: site.url }}">
         <img src="{{ author.avatar }}" alt="{{ author.name }}" itemprop="image" class="u-photo">
       </a>
     </div>
@@ -13,7 +13,7 @@
 
   <div class="author__content">
     <p class="author__name p-name" itemprop="name">
-      <a class="u-url" rel="author" href="{{ author.home | default: '/' | absolute_url }}" itemprop="url">{{ author.name }}</a>
+      <a class="u-url" rel="author" href="{{ author.home | default: '/' | htmlBaseUrl: site.url }}" itemprop="url">{{ author.name }}</a>
     </p>
     {% if author.bio %}
       <div class="author__bio p-note" itemprop="description">

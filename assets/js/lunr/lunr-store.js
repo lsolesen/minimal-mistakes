@@ -78,7 +78,7 @@ var store = [
             replace:"</h6>", " "|
           strip_html | strip_newlines | truncatewords: 50 | jsonify }},
         {%- endif -%}
-      "url": {{ doc.url | absolute_url | jsonify }}
+      "url": {{ doc.url | htmlBaseUrl: site.url | jsonify }}
   }{%- unless forloop.last and l -%},{%- endunless -%}
   {%- endfor -%}
 {%- endif -%}]
