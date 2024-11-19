@@ -110,7 +110,7 @@ image_type: "og"
       {% assign author = authors[post.data.author] | default: site.author %}
 
     </div>
-    <img src="{{ post.data.header.overlay_image | default: post.data.header.image }}" alt="" loading="eager" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0;">
+    <img src="{{ post.data.header.overlay_image | default: post.data.header.image | relative_url }}" alt="" loading="eager" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0;">
  
     <section id='author'>
       <img id='author-image' alt='' src='{{ author.avatar }}' width="120" height="120"  data-proofer-ignore>
