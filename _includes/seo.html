@@ -63,7 +63,7 @@
 {% endif %}
 {% endcomment %}
 
-{% assign og_url = site.url | append: site.baseurl | append: 'opengraph' | append: page.url %}
+{% assign og_url = site.url | append: site.baseurl | append: '/opengraph' | append: page.url %}
 <meta property="og:image" content="https://v1.screenshot.11ty.dev/{{ og_url | url_encode }}/">
 
 {% if site.twitter.username %}
