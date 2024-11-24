@@ -2469,7 +2469,7 @@ blockquote.notice--danger {
   color: #3d4144;
 }
 
-.toc__menu {
+.toc__menu, .toc > ul:first-child {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -2477,11 +2477,11 @@ blockquote.notice--danger {
   font-size: 0.75em;
 }
 @media (min-width: 64em) {
-  .toc__menu {
+  .toc__menu, .toc > ul:first-child {
     font-size: 0.6875em;
   }
 }
-.toc__menu a {
+.toc__menu a, .toc > ul:first-child a {
   display: block;
   padding: 0.25rem 0.75rem;
   color: rgb(99.8, 103, 105.4);
@@ -2489,23 +2489,23 @@ blockquote.notice--danger {
   line-height: 1.5;
   border-bottom: 1px solid rgb(241.7, 242.5, 243.1);
 }
-.toc__menu a:hover {
+.toc__menu a:hover, .toc > ul:first-child a:hover {
   color: #3d4144;
 }
-.toc__menu li ul > li a {
+.toc__menu li ul > li a, .toc > ul:first-child li ul > li a {
   padding-inline-start: 1.25rem;
   font-weight: normal;
 }
-.toc__menu li ul li ul > li a {
+.toc__menu li ul li ul > li a, .toc > ul:first-child li ul li ul > li a {
   padding-inline-start: 1.75rem;
 }
-.toc__menu li ul li ul li ul > li a {
+.toc__menu li ul li ul li ul > li a, .toc > ul:first-child li ul li ul li ul > li a {
   padding-inline-start: 2.25rem;
 }
-.toc__menu li ul li ul li ul li ul > li a {
+.toc__menu li ul li ul li ul li ul > li a, .toc > ul:first-child li ul li ul li ul li ul > li a {
   padding-inline-start: 2.75rem;
 }
-.toc__menu li ul li ul li ul li ul li ul > li a {
+.toc__menu li ul li ul li ul li ul li ul > li a, .toc > ul:first-child li ul li ul li ul li ul li ul > li a {
   padding-inline-start: 3.25rem;
 }
 
@@ -4603,7 +4603,7 @@ body {
     content: "";
     display: table;
   }
-  .sidebar__right.sticky .toc .toc__menu {
+  .sidebar__right.sticky .toc .toc__menu, .sidebar__right.sticky .toc > ul:first-child {
     overflow-y: auto;
     max-height: calc(100vh - 7em);
   }
