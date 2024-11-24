@@ -96,7 +96,7 @@ image_type: "og"
 
 {% assign image_description = image_description | markdownify | strip_html | strip_newlines | escape_once %}
 
-{% assign post_date = post.data.last_modified_at | default: post.data.date | default: post.data.created | default: "" %}
+{% assign post_date = post.data.last_modified_at | default: post.date | default: false %}
 
 <div class="page__hero--overlay"
   style="background: #ccc; height: 100% !important; width: 100% !important; background-size: 100% auto !important;position: absolute !important;{% if post.data.header.overlay_color %}background-color: {{ post.header.overlay_color | default: 'transparent' }};{% endif %}">

@@ -91,7 +91,7 @@
       float: inline-end;
 
       .toc {
-        .toc__menu {
+        .toc__menu, & > ul:first-child {
           overflow-y: auto;
           max-height: calc(100vh - 7em);
         }

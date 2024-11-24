@@ -21,9 +21,23 @@ import { computedTitle } from './11ty/title.mjs';
 
 // Allow for data files to be in yaml
 import yaml from "js-yaml";
+
+// Outcommented on purpose to make sure subfolders work
+// Long talk on Discord as RSS also enables it.
 // import { EleventyHtmlBasePlugin } from "@11ty/eleventy";
 
-export default async function (eleventyConfig) {
+import pluginTOC from '@uncenter/eleventy-plugin-toc';
+
+export default function (eleventyConfig) {
+
+  const tocOptions = {
+    tags: ["h2", "h3", "h4"], // tags (heading levels) to include
+    ignoredHeadings: [], // headings to ignore (list of selectors)
+    ignoredElements: [], // elements (within the headings) to ignore when generating the TOC (list of selectors)
+    ul: true, // whether to a use a `ul` or `ol`
+  };
+
+  eleventyConfig.addPlugin(pluginTOC, tocOptions);
 
   // Make it possible to have the site served in a sub directory
   //const EleventyHtmlBasePlugin = eleventyConfig.resolvePlugin("@11ty/eleventy/html-base-plugin");
@@ -78,7 +92,8 @@ export default async function (eleventyConfig) {
     extname: ".liquid", // Use .liquid if not specified
     dynamicPartials: false, // allow to use feature_row without quotes
     strictFilters: true,
-    jekyllWhere: true
+    jekyllWhere: true,
+    trimTagRight: true // Whitespace control
   });
 
   // Syntax highlighting with prism
