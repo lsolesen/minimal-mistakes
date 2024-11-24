@@ -39,7 +39,7 @@ image_type: "og"
 
     .main-right {
       display: inline;
-      font-size: 1.2em;
+      font-size: 1.1em;
       position: absolute;
       bottom: 1em;
       right: 1em;
@@ -61,7 +61,7 @@ image_type: "og"
   margin: 20px auto;
   overflow:hidden;
   text-overflow: ellipsis;
-  font-size: 60pt !important;
+  font-size: 55pt !important;
 }
 .padded-multiline span { 
   background-color: black;
@@ -96,21 +96,20 @@ image_type: "og"
 
 {% assign image_description = image_description | markdownify | strip_html | strip_newlines | escape_once %}
 
+{% assign post_date = post.data.last_modified_at | default: post.data.date | default: post.data.created | default: "" %}
+
 <div class="page__hero--overlay"
   style="background: #ccc; height: 100% !important; width: 100% !important; background-size: 100% auto !important;position: absolute !important;{% if post.data.header.overlay_color %}background-color: {{ post.header.overlay_color | default: 'transparent' }};{% endif %}">
     <div style="padding: 0 2em; position: relative; z-index: 1;">
       <h1 id="page-title" class="page__title padded-multiline" itemprop="headline">
-      <span>{{ post.data.title | default: site.title | markdownify | remove: "<p>" | remove: "</p>" }}</span>
+        <span>{{ post.data.title | default: site.title | markdownify | remove: "<p>" | remove: "</p>" }}</span>
       </h1>
-      {% if post.data.tagline %}
-        <p class="page__lead" style="font-size: 2em;">{{ post.data.tagline | markdownify | remove: "<p>" | remove: "</p>" }}</p>
-      {% endif %}
-      {% assign author = authors[post.data.author] | default: site.author %}
     </div>
     {% assign background_image = post.og_image | default: post.data.header.image | default: post.data.header.overlay_image | default: site.og_large_image %}
     {% if background_image %}
     <img src="{{ background_image }}" alt="" loading="eager" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0;">
     {% endif %}
+    {% assign author = authors[post.data.author] | default: site.author %}
     <section id='author'>
       <img id='author-image' alt='' src='{{ author.avatar }}' width="120" height="120"  data-proofer-ignore>
       <p id='author-name'>{{ author.name }}</p>
@@ -118,8 +117,8 @@ image_type: "og"
  
     <p class="main-right">
       <span><i class="fa-solid fa-globe" aria-hidden="true"></i> {{ site.hostname }}{{ site.baseurl }}</span>
-      {% if post.page.last_modified_at %}
-      <span><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> <time class="dt-published" datetime="{{ post.data.last_modified_at | default: post.data.date | default: post.data.created | date: "%Y-%m-%d" }}">{{ post.data.last_modified_at | default: post.data.date | default: post.data.created | date: '%d-%m-%Y' }}</time></span>
+      {% if post_date %}
+      <span><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> <time class="dt-published" datetime="{{ post_date | date: "%Y-%m-%d" }}">{{ post_date | date: '%d-%m-%Y' }}</time></span>
       {% endif %}
     </p>
 </div>

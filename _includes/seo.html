@@ -59,7 +59,8 @@
   <meta property="og:image" content="{{ header.og_image | htmlBaseUrl: site.url }}">
 {% elsif page_large_image %}
   {% assign og_url = '/opengraph' | append: page.url | htmlBaseUrl: site.url %}
-  <meta property="og:image" content="https://v1.screenshot.11ty.dev/{{ og_url | url_encode }}/">
+  {{ og_url }}
+  <meta property="og:image" content="https://v1.screenshot.11ty.dev/{{ og_url | url_encode }}/opengraph/">
   {% comment %}<meta property="og:image" content="{{ page_large_image | htmlBaseUrl: site.url }}">{% endcomment %}
 {% elsif page_teaser_image %}
   <meta property="og:image" content="{{ page_teaser_image | htmlBaseUrl: site.url }}">
