@@ -31,7 +31,7 @@ export default async function (eleventyConfig) {
 			}
 		},
     htmlBasePluginOptions: {
-      baseHref: '/local-test/',
+      baseHref: '',
     }
   });
 

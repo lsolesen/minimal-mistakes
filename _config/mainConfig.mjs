@@ -21,13 +21,13 @@ import { computedTitle } from './11ty/title.mjs';
 
 // Allow for data files to be in yaml
 import yaml from "js-yaml";
-import { EleventyHtmlBasePlugin } from "@11ty/eleventy";
+// import { EleventyHtmlBasePlugin } from "@11ty/eleventy";
 
 export default async function (eleventyConfig) {
 
   // Make it possible to have the site served in a sub directory
   //const EleventyHtmlBasePlugin = eleventyConfig.resolvePlugin("@11ty/eleventy/html-base-plugin");
-  eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
+  // eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
 
   // Tags
   eleventyConfig.addCollection('tagList', getTagList);
