@@ -10,22 +10,23 @@ import { getTagList } from './11ty/tags.mjs';
 import md from './markdown/core.mjs';
 import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 
-// Shortcodes
+// Shortcode
 import { postUrl, link } from "./11ty/shortcodes.mjs";
 
 // Future posts
-import futurePosts from './11ty/future-posts.mjs';
+import { futurePosts } from './11ty/future-posts.mjs';
 
 // Excerpt and title in eleventyComputed
-import eleventyComputedTitle from './11ty/title.mjs';
+import { computedTitle } from './11ty/title.mjs';
 
 // Allow for data files to be in yaml
 import yaml from "js-yaml";
 import { EleventyHtmlBasePlugin } from "@11ty/eleventy";
 
-export default function (eleventyConfig) {
+export default async function (eleventyConfig) {
 
   // Make it possible to have the site served in a sub directory
+  //const EleventyHtmlBasePlugin = eleventyConfig.resolvePlugin("@11ty/eleventy/html-base-plugin");
   eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
 
   // Tags
@@ -85,7 +86,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addPlugin(syntaxHighlight);
 
   // Handle titles for posts without a title
-  eleventyConfig.addPlugin(eleventyComputedTitle);
+  eleventyConfig.addPlugin(computedTitle);
 
   // Configure excerpt
   // Create computed excerpts per page if none has been explicitly set

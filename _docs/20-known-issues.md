@@ -24,3 +24,7 @@ Right now there is a lot of room for improvement on the tags and category pages.
 ## Skin
 
 You have to set skin directly in `css/main.scss`. Found no way where I could just have it in site-configuration.
+
+## Cannot run --pathprefix
+
+At the moment this issue [3547](https://github.com/11ty/eleventy/issues/3547) blocks that the site can run via --pathprefix. You can disable the RSS-plugin, if you really need it for the time being.

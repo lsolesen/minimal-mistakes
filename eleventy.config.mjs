@@ -1,3 +1,5 @@
+'use strict';
+
 // Import main config
 import mainConfig from './_config/mainConfig.mjs';
 
@@ -27,7 +29,10 @@ export default async function (eleventyConfig) {
 				name: "Your Name",
 				email: "", // Optional
 			}
-		}
+		},
+    htmlBasePluginOptions: {
+      baseHref: '/local-test/',
+    }
   });
 
   // Collections
@@ -52,8 +57,7 @@ export default async function (eleventyConfig) {
   // Pass through
   eleventyConfig.addPassthroughCopy("assets/css");
   eleventyConfig.addPassthroughCopy("assets/js");
-  eleventyConfig.addPassthroughCopy("assets/images/");
-  eleventyConfig.addPassthroughCopy({ "docs/assets/images": "assets/images" });
+  eleventyConfig.addPassthroughCopy("assets/images");
 
   // USE if you want to override one of the layouts and use your own version
   // eleventyConfig.addLayoutAlias("single", "../_layouts/splash.html");
