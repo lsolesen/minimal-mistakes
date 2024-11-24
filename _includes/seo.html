@@ -25,8 +25,8 @@
   {%- assign author_twitter = author.twitter | replace: "@", "" -%}
 {%- endif -%}
 
-{%- assign page_large_image = header.og_image | default: header.overlay_image | default: header.image | escape -%}
-{%- assign page_teaser_image = header.teaser | default: site.og_image | htmlBaseUrl: site.url | escape -%}
+{%- assign page_large_image = header.og_background_image | default: header.overlay_image | default: header.image | escape -%}
+{%- assign page_teaser_image = header.teaser | default: site.og_teaser_image | default: site.og_image | escape -%}
 {%- assign site_og_image = site.og_image | htmlBaseUrl: site.url | escape -%}
 
 {%- if date -%}
@@ -55,16 +55,15 @@
   <meta property="og:description" content="{{ seo_description }}">
 {% endif %}
 
-{% comment %} TODO
-{% if page_large_image %}
-  <meta property="og:image" content="{{ page_large_image }}">
+{% if header.og_image %}
+  <meta property="og:image" content="{{ header.og_image | htmlBaseUrl: site.url }}">
+{% elsif page_large_image %}
+  {% assign og_url = '/opengraph' | append: page.url | htmlBaseUrl: site.url %}
+  <meta property="og:image" content="https://v1.screenshot.11ty.dev/{{ og_url | url_encode }}/">
+  {% comment %}<meta property="og:image" content="{{ page_large_image | htmlBaseUrl: site.url }}">{% endcomment %}
 {% elsif page_teaser_image %}
-  <meta property="og:image" content="{{ page_teaser_image }}">
+  <meta property="og:image" content="{{ page_teaser_image | htmlBaseUrl: site.url }}">
 {% endif %}
-{% endcomment %}
-
-{% assign og_url = '/opengraph' | append: page.url | htmlBaseUrl: site.url %}
-<meta property="og:image" content="https://v1.screenshot.11ty.dev/{{ og_url | url_encode }}/">
 
 {% if site.twitter.username %}
   <meta name="twitter:site" content="@{{ site.twitter.username | replace: "@", "" }}">

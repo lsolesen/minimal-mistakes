@@ -107,7 +107,7 @@ image_type: "og"
       {% endif %}
       {% assign author = authors[post.data.author] | default: site.author %}
     </div>
-    {% assign background_image = post.data.header.overlay_image | default: post.data.header.image %}
+    {% assign background_image = post.og_image | default: post.data.header.image | default: post.data.header.overlay_image | default: site.og_large_image %}
     {% if background_image %}
     <img src="{{ background_image }}" alt="" loading="eager" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0;">
     {% endif %}
