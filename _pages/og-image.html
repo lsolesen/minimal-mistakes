@@ -118,7 +118,9 @@ image_type: "og"
  
     <p class="main-right">
       <span><i class="fa-solid fa-globe" aria-hidden="true"></i> {{ site.hostname }}{{ site.baseurl }}</span>
-      <span><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> <time class="dt-published" datetime="{{ last_modified_at | default: post.data.date | default: post.data.created | date: "%Y-%m-%d" }}">{{ post.data.last_modified_at | default: post.data.date | default: post.data.created | date: '%d-%m-%Y' }}</time></span>
+      {% if post.page.last_modified_at %}
+      <span><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> <time class="dt-published" datetime="{{ post.data.last_modified_at | default: post.data.date | default: post.data.created | date: "%Y-%m-%d" }}">{{ post.data.last_modified_at | default: post.data.date | default: post.data.created | date: '%d-%m-%Y' }}</time></span>
+      {% endif %}
     </p>
 </div>
 
