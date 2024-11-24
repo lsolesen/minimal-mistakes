@@ -9,7 +9,6 @@ image_type: "og"
 ---
 
 <style>
-  
   #author {
     position: absolute;
     bottom: 1em;
@@ -76,6 +75,7 @@ image_type: "og"
   -webkit-box-decoration-break: clone;
 }
 
+
   </style>
 
 {% if post.data.header.overlay_filter contains "gradient" %}
@@ -97,7 +97,7 @@ image_type: "og"
 {% assign image_description = image_description | markdownify | strip_html | strip_newlines | escape_once %}
 
 <div class="page__hero--overlay"
-  style="background: #ccc; height: 100% !important; background-size: 100% auto !important;position: absolute !important;{% if post.data.header.overlay_color %}background-color: {{ post.header.overlay_color | default: 'transparent' }};{% endif %}">
+  style="background: #ccc; height: 100% !important; width: 100% !important; background-size: 100% auto !important;position: absolute !important;{% if post.data.header.overlay_color %}background-color: {{ post.header.overlay_color | default: 'transparent' }};{% endif %}">
     <div style="padding: 0 2em; position: relative; z-index: 1;">
       <h1 id="page-title" class="page__title padded-multiline" itemprop="headline">
       <span>{{ post.data.title | default: site.title | markdownify | remove: "<p>" | remove: "</p>" }}</span>
@@ -105,21 +105,20 @@ image_type: "og"
       {% if post.data.tagline %}
         <p class="page__lead" style="font-size: 2em;">{{ post.data.tagline | markdownify | remove: "<p>" | remove: "</p>" }}</p>
       {% endif %}
-
       {% assign author = authors[post.data.author] | default: site.author %}
-
     </div>
-    {% if post.data.header.overlay_image OR post.data.header.image %}
-    <img src="{{ post.data.header.overlay_image | default: post.data.header.image }}" alt="" loading="eager" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0;">
+    {% assign background_image = post.data.header.overlay_image | default: post.data.header.image %}
+    {% if background_image %}
+    <img src="{{ background_image }}" alt="" loading="eager" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0;">
     {% endif %}
     <section id='author'>
       <img id='author-image' alt='' src='{{ author.avatar }}' width="120" height="120"  data-proofer-ignore>
       <p id='author-name'>{{ author.name }}</p>
     </section>
  
-    {% if post.data.header.caption %}
-  <p class="main-right"><span>{{ site.hostname }}{{ site.baseurl }}</span>
-  <span><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i></strong> <time class="dt-published" datetime="{{ last_modified_at | date: "%Y-%m-%d" }}">{{ post.data.last_modified_at | default: post.data.date | date: '%d-%m-%Y' }}</time></span></p>
-  {% endif %}
+    <p class="main-right">
+      <span><i class="fa-solid fa-globe" aria-hidden="true"></i> {{ site.hostname }}{{ site.baseurl }}</span>
+      <span><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> <time class="dt-published" datetime="{{ last_modified_at | default: post.data.date | default: post.data.created | date: "%Y-%m-%d" }}">{{ post.data.last_modified_at | default: post.data.date | default: post.data.created | date: '%d-%m-%Y' }}</time></span>
+    </p>
 </div>
 
