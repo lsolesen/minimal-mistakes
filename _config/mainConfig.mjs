@@ -67,7 +67,7 @@ export default function (eleventyConfig) {
     // which file extensions to process
     extensions: 'html',
     // optional, output image formats
-    formats: ['auto', 'jpg', 'webp'],
+    formats: ['jpg', 'webp', 'avif'],
     // optional, output image widths
     widths: ['auto', 400, 800],
     // optional, attributes assigned on <img> override these values.
