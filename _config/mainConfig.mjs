@@ -93,7 +93,7 @@ export default function (eleventyConfig) {
     dynamicPartials: false, // allow to use feature_row without quotes
     strictFilters: true,
     jekyllWhere: true,
-    trimTagRight: true // Whitespace control
+    trimTagLeft: true // Whitespace control
   });
 
   // Syntax highlighting with prism

@@ -37,5 +37,7 @@ Like this:
 
 13. Go through the `eleventy.config.mjs`-file. In the bottom change `input`, `includes`, `layouts` to the proper directories compared to your setup.
 14. Make sure to copy the `assets/js` directory.
+15. Search for `| where: ` and you need to change the where to `| where: "data.tags", "my-tag"`. Do the same for `sort` and other filters used on the page-data.
+16. Check your markdown tables with liquid code, as whitespace is handled a little bit different in liquidjs.
 
 There might be more things you need to do. Follow error messages in the the prompt after doing `npm run watch:eleventy`.

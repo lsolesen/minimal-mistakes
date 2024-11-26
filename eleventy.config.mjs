@@ -16,6 +16,7 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPlugin(feedPlugin, {
     type: "rss", // 'atom' or "rss", "json"
 		outputPath: "/feed.xml",
+    eleventyExcludeFromCollections: true,
 		collection: {
 			name: "posts", // iterate over `collections.posts`
 			limit: 0,     // 0 means no limit
