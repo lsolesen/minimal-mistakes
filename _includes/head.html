@@ -23,6 +23,11 @@
 <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
 <noscript><link rel="stylesheet" href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" as="style" /></noscript>
 
+{% assign hero_image = header.image | default: header.overlay_image %}
+{% if hero_image %}
+<link rel="preload" fetchpriority="high" as="image" href="{{ hero_image }}">
+{% endif %}
+
 <meta name="generator" content="{{ eleventy.generator }}">
 
 {% if site.head_scripts %}
