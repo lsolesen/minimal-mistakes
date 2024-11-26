@@ -1,44 +1,39 @@
 
-<!doctype html>
-<!--
+<!doctype html><!--
   Minimal Mistakes 11ty Theme 4.26.2 based on Michael Rose's Jekyll theme
   Copyright 2013-2024 Michael Rose - mademistakes.com | @mmistakes
   Free for personal and commercial use under the MIT license
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
 -->
+
 <html lang="en-US" class="no-js">
-  <head>
-    <meta charset="utf-8">
-
-<!-- begin _includes/seo.html --><title>Markup: Syntax Highlighting - Minimal Mistakes</title>
+  <head><meta charset="utf-8"><!-- begin _includes/seo.html --><title>Markup: Syntax Highlighting - Minimal Mistakes</title>
 <meta name="description" content="Post displaying the various ways of highlighting code in Markdown.">
+  <meta name="author" content="Michael Rose">
 
-<meta name="author" content="Michael Rose">
-  <meta property="og:type" content="website">
+<meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Minimal Mistakes">
 <meta property="og:title" content="Markup: Syntax Highlighting">
 <meta property="og:url" content="https://lsolesen.github.io/minimal-mistakes/markup-syntax-highlighting/">
-
-<meta property="og:description" content="Post displaying the various ways of highlighting code in Markdown.">
-<meta property="og:image" content="https://v1.screenshot.11ty.dev/https%3A%2F%2Flsolesen.github.io%2Fminimal-mistakes%2Fopengraph%2Fmarkup-syntax-highlighting%2F/opengraph/">
+  <meta property="og:description" content="Post displaying the various ways of highlighting code in Markdown.">
+  <meta property="og:image" content="https://v1.screenshot.11ty.dev/https%3A%2F%2Flsolesen.github.io%2Fminimal-mistakes%2Fopengraph%2Fmarkup-syntax-highlighting%2F/opengraph/">
   <meta name="twitter:site" content="@mmistakes">
   <meta name="twitter:title" content="Markup: Syntax Highlighting">
   <meta name="twitter:description" content="Post displaying the various ways of highlighting code in Markdown.">
   <meta name="twitter:url" content="https://lsolesen.github.io/minimal-mistakes/markup-syntax-highlighting/">
-
-  <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="https://lsolesen.github.io/minimal-mistakes/markup-syntax-highlighting/">
-  <link rel="canonical" href="https://lsolesen.github.io/minimal-mistakes/markup-syntax-highlighting/">
 
-<meta name="google-site-verification" content="UQj93ERU9zgECodaaXgVpkjrFn9UrDMEzVamacSoQ8Y">
+<link rel="canonical" href="https://lsolesen.github.io/minimal-mistakes/markup-syntax-highlighting/">
+  <meta name="google-site-verification" content="UQj93ERU9zgECodaaXgVpkjrFn9UrDMEzVamacSoQ8Y">
 <!-- end _includes/seo.html -->
-<link href="/minimal-mistakes/feed.xml" type="application/atom+xml" rel="alternate" title="Minimal Mistakes Feed">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="/minimal-mistakes/feed.xml" type="application/atom+xml" rel="alternate" title="Minimal Mistakes Feed"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <script>
-  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
-  window.enable_copy_code_button = true;</script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';window.enable_copy_code_button = true;
+</script>
 
 <!-- For all browsers -->
 <link rel="stylesheet" href="/minimal-mistakes/assets/css/main.css">
@@ -48,29 +43,30 @@
 <noscript><link rel="stylesheet" href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" as="style"></noscript>
 
 <meta name="generator" content="Eleventy v3.0.0">
-
 <!-- start custom head snippets -->
 
 <!-- insert favicons. use https://realfavicongenerator.net/ -->
 
 <!-- end custom head snippets -->
-</head>
 
-  <body class="layout--single" dir="ltr">
-    <nav class="skip-links">
+  </head>
+
+  <body class="layout--single" dir="ltr"><nav class="skip-links">
   <ul>
     <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
     <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
     <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
   </ul>
 </nav>
+
+
 <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
         <a class="site-title" href="/minimal-mistakes/">
-          Minimal Mistakes
-          <span class="site-subtitle">A 11ty theme</span></a>
+          Minimal Mistakes<span class="site-subtitle">A 11ty theme</span>
+        </a>
         <ul class="visible-links"><li class="masthead__menu-item">
               <a href="/minimal-mistakes/docs/quick-start-guide/">Quick-Start Guide</a>
             </li><li class="masthead__menu-item">
@@ -95,83 +91,93 @@
     </div>
   </div>
 </div>
-<div class="initial-content">
+
+
+    <div class="initial-content">
       
+
 <div id="main" role="main">
   <div class="sidebar sticky">
-  <div itemscope="" itemtype="https://schema.org/Person" class="h-card">
 
-  <div class="author__avatar">
+<div itemscope="" itemtype="https://schema.org/Person" class="h-card">
+    <div class="author__avatar">
       <a rel="author" href="https://lsolesen.github.io/minimal-mistakes/">
         <picture><source type="image/png" srcset="/minimal-mistakes/img/4AlpoBDRnB-160.png 160w" sizes="100vw"><source type="image/webp" srcset="/minimal-mistakes/img/4AlpoBDRnB-160.webp 160w" sizes="100vw"><img loading="lazy" decoding="async" src="/minimal-mistakes/img/4AlpoBDRnB-160.jpeg" alt="Michael Rose" itemprop="image" class="u-photo" width="160" height="160"></picture>
       </a>
     </div>
+
   <div class="author__content">
     <p class="author__name p-name" itemprop="name">
       <a class="u-url" rel="author" href="https://lsolesen.github.io/minimal-mistakes/" itemprop="url">Michael Rose</a>
     </p>
-    <div class="author__bio p-note" itemprop="description">
+      <div class="author__bio p-note" itemprop="description">
         <p>Just another <em>boring</em>, <em>tattooed</em>, <em>time traveling</em>, <em>designer</em>.</p>
 
       </div>
-    </div>
+  </div>
 
   <div class="author__urls-wrapper">
     <button class="btn btn--inverse">Follow</button>
     <ul class="author__urls social-icons">
-      <li itemprop="homeLocation" itemscope="" itemtype="https://schema.org/Place">
+        <li itemprop="homeLocation" itemscope="" itemtype="https://schema.org/Place">
           <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">Buffalo, NY</span>
         </li>
-      <li>
+            <li>
               <a href="https://mademistakes.com" rel="nofollow noopener noreferrer author" itemprop="sameAs">
                 <i class="fas fa-fw fa-link" aria-hidden="true"></i><span class="label">Made Mistakes</span>
               </a>
             </li>
-          <li>
+            <li>
               <a href="https://twitter.com/mmistakes" rel="nofollow noopener noreferrer author" itemprop="sameAs">
                 <i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i><span class="label">Twitter</span>
               </a>
             </li>
-          <li>
+            <li>
               <a href="https://github.com/mmistakes" rel="nofollow noopener noreferrer author" itemprop="sameAs">
                 <i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span>
               </a>
             </li>
-          <li>
+            <li>
               <a href="https://instagram.com/mmistakes" rel="nofollow noopener noreferrer author" itemprop="sameAs">
                 <i class="fab fa-fw fa-instagram" aria-hidden="true"></i><span class="label">Instagram</span>
               </a>
-            </li>
-          <!--
+            </li><!--
   <li>
     <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
       <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
     </a>
   </li>
---></ul>
+-->
+    </ul>
   </div>
 </div>
-</div>
-<article class="page h-entry" itemscope="" itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Markup: Syntax Highlighting"><meta itemprop="description" content="Post displaying the various ways of highlighting code in Markdown."><meta itemprop="dateModified" content="2018-01-03T14:45:06+00:00"><div class="page__inner-wrap">
-      <header>
-          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+
+  </div>
+
+
+  <article class="page h-entry" itemscope="" itemtype="https://schema.org/CreativeWork"><meta itemprop="headline" content="Markup: Syntax Highlighting"><meta itemprop="description" content="Post displaying the various ways of highlighting code in Markdown."><meta itemprop="dateModified" content="2018-01-03T14:45:06+00:00">
+
+    <div class="page__inner-wrap">
+        <header><h1 id="page-title" class="page__title p-name" itemprop="headline">
             <a href="/minimal-mistakes/markup-syntax-highlighting/" itemprop="url">Markup: Syntax Highlighting
 </a>
-          </h1><p class="page__meta">
-    <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        less than 1 minute read
-        </span>
-    </p>
-</header>
+          </h1>
+  <p class="page__meta"><span class="page__meta-readtime">
+        <i class="farfa-clock" aria-hidden="true"></i>
+          2 minute read
+      </span>
+  </p>
+
+        </header>
+
       <section class="page__content e-content" itemprop="text">
-        <aside class="sidebar__right ">
+          <aside class="sidebar__right">
             <nav class="toc">
-              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
-              <nav class="toc"><ul><li><a href="#gfm-code-blocks">GFM Code Blocks</a></li>
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header><nav class="toc"><ul><li><a href="#gfm-code-blocks">GFM Code Blocks</a></li>
 <li><a href="#code-blocks-in-lists">Code Blocks in Lists</a></li>
-<li><a href="#highlight-tag">Highlight Tag</a></li></ul></nav></nav>
+<li><a href="#highlight-tag">Highlight Tag</a></li>
+<li><a href="#github-gist-embed">GitHub Gist Embed</a></li></ul></nav>
+            </nav>
           </aside>
         <p>Syntax highlighting is a feature that displays source code, in different colors and fonts according to the category of terms. This feature facilitates writing in a structured language such as a programming language or a markup language as both structures and syntax errors are visually distinct. Highlighting does not affect the meaning of the text itself; it is intended only for human readers.<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup></p>
 <h3 id="gfm-code-blocks" tabindex="-1">GFM Code Blocks</h3>
@@ -180,22 +186,23 @@
   <span class="token property">float</span><span class="token punctuation">:</span> left<span class="token punctuation">;</span>
   <span class="token property">margin</span><span class="token punctuation">:</span> 0 -240px 0 0<span class="token punctuation">;</span>
   <span class="token property">width</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code></pre>
-<pre class="language-scss"><code class="language-scss"><span class="token selector">.highlight </span><span class="token punctuation">{</span>
-  <span class="token property">margin</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
-  <span class="token property">padding</span><span class="token punctuation">:</span> 1em<span class="token punctuation">;</span>
-  <span class="token property">font-family</span><span class="token punctuation">:</span> <span class="token variable">$monospace</span><span class="token punctuation">;</span>
-  <span class="token property">font-size</span><span class="token punctuation">:</span> <span class="token variable">$type-size-7</span><span class="token punctuation">;</span>
-  <span class="token property">line-height</span><span class="token punctuation">:</span> 1.8<span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code></pre>```html
-<nav class="pagination" role="navigation">
-  {% if page.previous %}
-    <a href="{{ site.url }}{{ page.previous.url }}" class="btn" title="{{ page.previous.title }}">Previous article</a>
-  {% endif %}
-  {% if page.next %}
-    <a href="{{ site.url }}{{ page.next.url }}" class="btn" title="{{ page.next.title }}">Next article</a>
-  {% endif %}
-</nav><!-- /.pagination -->```
+<span class="token punctuation">}</span>
+<span class="token selector">```&lt;pre class="language-scss">&lt;code class="language-scss">&lt;span class="token selector">.highlight &lt;/span>&lt;span class="token punctuation"></span><span class="token punctuation">{</span>&lt;/span>
+  &lt;span class=<span class="token string">"token property"</span>>margin&lt;/span>&lt;span class=<span class="token string">"token punctuation"</span>><span class="token punctuation">:</span>&lt;/span> 0&lt;span class=<span class="token string">"token punctuation"</span>><span class="token punctuation">;</span>&lt;/span>
+  &lt;span class=<span class="token string">"token property"</span>>padding&lt;/span>&lt;span class=<span class="token string">"token punctuation"</span>><span class="token punctuation">:</span>&lt;/span> 1em&lt;span class=<span class="token string">"token punctuation"</span>><span class="token punctuation">;</span>&lt;/span>
+  &lt;span class=<span class="token string">"token property"</span>>font-family&lt;/span>&lt;span class=<span class="token string">"token punctuation"</span>><span class="token punctuation">:</span>&lt;/span> &lt;span class=<span class="token string">"token variable"</span>>$monospace&lt;/span>&lt;span class=<span class="token string">"token punctuation"</span>><span class="token punctuation">;</span>&lt;/span>
+  &lt;span class=<span class="token string">"token property"</span>>font-size&lt;/span>&lt;span class=<span class="token string">"token punctuation"</span>><span class="token punctuation">:</span>&lt;/span> &lt;span class=<span class="token string">"token variable"</span>>$type-size-7&lt;/span>&lt;span class=<span class="token string">"token punctuation"</span>><span class="token punctuation">;</span>&lt;/span>
+  &lt;span class=<span class="token string">"token property"</span>>line-height&lt;/span>&lt;span class=<span class="token string">"token punctuation"</span>><span class="token punctuation">:</span>&lt;/span> 1.8&lt;span class=<span class="token string">"token punctuation"</span>><span class="token punctuation">;</span>&lt;/span>
+&lt;span class=<span class="token string">"token punctuation"</span>><span class="token punctuation">}</span><span class="token selector">&lt;/span>&lt;/code>&lt;/pre>
+
+```html&lt;nav class="pagination" role="navigation"></span>
+  <span class="token punctuation">{</span>% if page.previous %<span class="token punctuation">}</span>
+    <span class="token selector">&lt;a href="{{ site.url }}{{ page.previous.url }}" class="btn" title="{{ page.previous.title }}">Previous article&lt;/a></span>
+  <span class="token punctuation">{</span>% endif %<span class="token punctuation">}</span>
+  <span class="token punctuation">{</span>% if page.next %<span class="token punctuation">}</span>
+    <span class="token selector">&lt;a href="{{ site.url }}{{ page.next.url }}" class="btn" title="{{ page.next.title }}">Next article&lt;/a></span>
+  <span class="token punctuation">{</span>% endif %<span class="token punctuation">}</span>
+&lt;/nav>&lt;!-- /.pagination --></code></pre>
 <pre class="language-ruby"><code class="language-ruby"><span class="token keyword">module</span> <span class="token class-name">Jekyll</span>
   <span class="token keyword">class</span> <span class="token class-name">TagIndex</span> <span class="token operator">&lt;</span> Page
     <span class="token keyword">def</span> <span class="token method-definition"><span class="token function">initialize</span></span><span class="token punctuation">(</span>site<span class="token punctuation">,</span> base<span class="token punctuation">,</span> dir<span class="token punctuation">,</span> tag<span class="token punctuation">)</span>
@@ -232,32 +239,32 @@ print_hi<span class="token punctuation">(</span><span class="token string-litera
 </li>
 </ol>
 <h3 id="highlight-tag" tabindex="-1">Highlight Tag</h3>
-<p>An example of a code blocking using <a href="https://www.11ty.dev/docs/plugins/syntaxhighlight/"><code>{% highlight %}</code> tag</a>.</p>
-<pre class="language-javascript"><code class="language-javascript"><span class="highlight-line"><span class="token comment">// 'gulp html' -- does nothing</span></span>
-<span class="highlight-line"><span class="token comment">// 'gulp html --prod' -- minifies and gzips HTML files for production</span></span>
-<span class="highlight-line">gulp<span class="token punctuation">.</span><span class="token function">task</span><span class="token punctuation">(</span><span class="token string">'html'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span></span>
-<span class="highlight-line">  <span class="token keyword">return</span> gulp<span class="token punctuation">.</span><span class="token function">src</span><span class="token punctuation">(</span>paths<span class="token punctuation">.</span>siteFolderName <span class="token operator">+</span> paths<span class="token punctuation">.</span>htmlPattern<span class="token punctuation">)</span></span>
-<span class="highlight-line">    <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span><span class="token function">when</span><span class="token punctuation">(</span>argv<span class="token punctuation">.</span>prod<span class="token punctuation">,</span> <span class="token function">htmlmin</span><span class="token punctuation">(</span><span class="token punctuation">{</span></span>
-<span class="highlight-line">      <span class="token literal-property property">removeComments</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span></span>
-<span class="highlight-line">      <span class="token literal-property property">collapseWhitespace</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span></span>
-<span class="highlight-line">      <span class="token literal-property property">collapseBooleanAttributes</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span></span>
-<span class="highlight-line">      <span class="token literal-property property">removeAttributeQuotes</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span></span>
-<span class="highlight-line">      <span class="token literal-property property">removeRedundantAttributes</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span></span>
-<span class="highlight-line">      <span class="token literal-property property">minifyJS</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span></span>
-<span class="highlight-line">      <span class="token literal-property property">minifyCSS</span><span class="token operator">:</span> <span class="token boolean">true</span></span>
-<span class="highlight-line">    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span></span>
-<span class="highlight-line">    <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span><span class="token function">when</span><span class="token punctuation">(</span>argv<span class="token punctuation">.</span>prod<span class="token punctuation">,</span> <span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token literal-property property">title</span><span class="token operator">:</span> <span class="token string">'optimized HTML'</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span></span>
-<span class="highlight-line">    <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span><span class="token function">when</span><span class="token punctuation">(</span>argv<span class="token punctuation">.</span>prod<span class="token punctuation">,</span> gulp<span class="token punctuation">.</span><span class="token function">dest</span><span class="token punctuation">(</span>paths<span class="token punctuation">.</span>siteFolderName<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span></span>
-<span class="highlight-line">    <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span><span class="token function">when</span><span class="token punctuation">(</span>argv<span class="token punctuation">.</span>prod<span class="token punctuation">,</span> <span class="token function">gzip</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token literal-property property">append</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span></span>
-<span class="highlight-line">    <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span><span class="token function">when</span><span class="token punctuation">(</span>argv<span class="token punctuation">.</span>prod<span class="token punctuation">,</span> <span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">{</span></span>
-<span class="highlight-line">      <span class="token literal-property property">title</span><span class="token operator">:</span> <span class="token string">'gzipped HTML'</span><span class="token punctuation">,</span></span>
-<span class="highlight-line">      <span class="token literal-property property">gzip</span><span class="token operator">:</span> <span class="token boolean">true</span></span>
-<span class="highlight-line">    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span></span>
-<span class="highlight-line">    <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span><span class="token function">when</span><span class="token punctuation">(</span>argv<span class="token punctuation">.</span>prod<span class="token punctuation">,</span> gulp<span class="token punctuation">.</span><span class="token function">dest</span><span class="token punctuation">(</span>paths<span class="token punctuation">.</span>siteFolderName<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span></span>
-<span class="highlight-line"><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></span></code></pre><pre class="language-wl"><code class="language-wl"><span class="highlight-line"><span class="token keyword">Module</span><span class="token punctuation">[</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span></span>
-<p><span class="highlight-line">  Sqrt<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span></span><br>
+<p>An example of a code blocking using <a href="https://www.11ty.dev/docs/plugins/syntaxhighlight/"><code>{% highlight %}</code> tag</a>.</p><pre class="language-javascript"><code class="language-javascript"><span class="highlight-line"><span class="token comment">// ‘gulp html’ – does nothing</span></span><br>
+<span class="highlight-line"><span class="token comment">// ‘gulp html --prod’ – minifies and gzips HTML files for production</span></span><br>
+<span class="highlight-line">gulp<span class="token punctuation">.</span><span class="token function">task</span><span class="token punctuation">(</span><span class="token string">‘html’</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span></span><br>
+<span class="highlight-line">  <span class="token keyword">return</span> gulp<span class="token punctuation">.</span><span class="token function">src</span><span class="token punctuation">(</span>paths<span class="token punctuation">.</span>siteFolderName <span class="token operator">+</span> paths<span class="token punctuation">.</span>htmlPattern<span class="token punctuation">)</span></span><br>
+<span class="highlight-line">    <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span><span class="token function">when</span><span class="token punctuation">(</span>argv<span class="token punctuation">.</span>prod<span class="token punctuation">,</span> <span class="token function">htmlmin</span><span class="token punctuation">(</span><span class="token punctuation">{</span></span><br>
+<span class="highlight-line">      <span class="token literal-property property">removeComments</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span></span><br>
+<span class="highlight-line">      <span class="token literal-property property">collapseWhitespace</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span></span><br>
+<span class="highlight-line">      <span class="token literal-property property">collapseBooleanAttributes</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span></span><br>
+<span class="highlight-line">      <span class="token literal-property property">removeAttributeQuotes</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span></span><br>
+<span class="highlight-line">      <span class="token literal-property property">removeRedundantAttributes</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span></span><br>
+<span class="highlight-line">      <span class="token literal-property property">minifyJS</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span></span><br>
+<span class="highlight-line">      <span class="token literal-property property">minifyCSS</span><span class="token operator">:</span> <span class="token boolean">true</span></span><br>
+<span class="highlight-line">    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span></span><br>
+<span class="highlight-line">    <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span><span class="token function">when</span><span class="token punctuation">(</span>argv<span class="token punctuation">.</span>prod<span class="token punctuation">,</span> <span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token literal-property property">title</span><span class="token operator">:</span> <span class="token string">‘optimized HTML’</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span></span><br>
+<span class="highlight-line">    <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span><span class="token function">when</span><span class="token punctuation">(</span>argv<span class="token punctuation">.</span>prod<span class="token punctuation">,</span> gulp<span class="token punctuation">.</span><span class="token function">dest</span><span class="token punctuation">(</span>paths<span class="token punctuation">.</span>siteFolderName<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span></span><br>
+<span class="highlight-line">    <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span><span class="token function">when</span><span class="token punctuation">(</span>argv<span class="token punctuation">.</span>prod<span class="token punctuation">,</span> <span class="token function">gzip</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token literal-property property">append</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span></span><br>
+<span class="highlight-line">    <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span><span class="token function">when</span><span class="token punctuation">(</span>argv<span class="token punctuation">.</span>prod<span class="token punctuation">,</span> <span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">{</span></span><br>
+<span class="highlight-line">      <span class="token literal-property property">title</span><span class="token operator">:</span> <span class="token string">‘gzipped HTML’</span><span class="token punctuation">,</span></span><br>
+<span class="highlight-line">      <span class="token literal-property property">gzip</span><span class="token operator">:</span> <span class="token boolean">true</span></span><br>
+<span class="highlight-line">    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span></span><br>
+<span class="highlight-line">    <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span><span class="token function">when</span><span class="token punctuation">(</span>argv<span class="token punctuation">.</span>prod<span class="token punctuation">,</span> gulp<span class="token punctuation">.</span><span class="token function">dest</span><span class="token punctuation">(</span>paths<span class="token punctuation">.</span>siteFolderName<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span></span><br>
+<span class="highlight-line"><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></span></code></pre><pre class="language-wl"><code class="language-wl"><span class="highlight-line"><span class="token keyword">Module</span><span class="token punctuation">[</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span></span><br>
+<span class="highlight-line">  Sqrt<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span></span><br>
 <span class="highlight-line">  <span class="token number">4</span></span><br>
-<span class="highlight-line"><span class="token punctuation">]</span></span></p></code></pre>### GitHub Gist Embed<p></p>
+<span class="highlight-line"><span class="token punctuation">]</span></span></code></pre><p></p>
+<h3 id="github-gist-embed" tabindex="-1">GitHub Gist Embed</h3>
 <p>An example of a Gist embed below.</p>
 <script src="https://gist.github.com/mmistakes/77c68fbb07731a456805a7b473f47841.js"></script><hr class="footnotes-sep">
 <section class="footnotes">
@@ -267,18 +274,20 @@ print_hi<span class="token punctuation">(</span><span class="token string-litera
 </ol>
 </section>
 
-        </section>
+      </section>
 
       <footer class="page__meta">
-        <p class="page__taxonomy">
+
+  <p class="page__taxonomy">
     <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
     <span itemprop="keywords">
-    <a href="/minimal-mistakes/tags/#code" class="page__taxonomy-item p-category" rel="tag">code</a><span class="sep">, </span><a href="/minimal-mistakes/tags/#syntax-highlighting" class="page__taxonomy-item p-category" rel="tag">syntax highlighting</a></span>
+      <a href="/minimal-mistakes/tags/#code" class="page__taxonomy-item p-category" rel="tag">code</a><span class="sep">, </span>
+      <a href="/minimal-mistakes/tags/#syntax-highlighting" class="page__taxonomy-item p-category" rel="tag">syntax highlighting</a>
+    </span>
   </p>
-<p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-updated" datetime="2018-01-03">January 3, 2018</time></p>
-</footer>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-updated" datetime="2018-01-03">January 3, 2018</time></p>
 
-      <section class="page__share">
+      </footer><section class="page__share">
   <h4 class="page__share-title">Share on</h4>
 
   <a href="https://twitter.com/intent/tweet?via=mmistakes&text=Markup%3A+Syntax+Highlighting%20https%3A%2F%2Flsolesen.github.io%2Fminimal-mistakes%2Fmarkup-syntax-highlighting%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
@@ -287,104 +296,111 @@ print_hi<span class="token punctuation">(</span><span class="token string-litera
 
   <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://lsolesen.github.io/minimal-mistakes/markup-syntax-highlighting/" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
-<nav class="pagination">
-    <a href="/minimal-mistakes/markup-more-images/" class="pagination--pager" title="Markup: Another Post with Images
+
+  <nav class="pagination">
+      <a href="/minimal-mistakes/markup-more-images/" class="pagination--pager" title="Markup: Another Post with Images
 ">Previous</a>
-    <a href="/minimal-mistakes/11ty/welcome-to-jekyll/" class="pagination--pager" title="Welcome to 11ty!
+      <a href="/minimal-mistakes/11ty/welcome-to-jekyll/" class="pagination--pager" title="Welcome to 11ty!
 ">Next</a>
-    </nav>
-</div>
+  </nav>
 
-    </article>
-
-  <div class="page__related">
+    </div>
+  </article>
+<div class="page__related">
   <h2 class="page__related-title">You may also enjoy</h2>
   <div class="grid__wrapper">
-    <div class="grid__item">
+
+<div class="grid__item">
   <article class="archive__item h-entry" itemscope="" itemtype="https://schema.org/CreativeWork">
     <h2 class="archive__item-title no_toc p-name" itemprop="headline">
-      <a class="u-url" rel="bookmark" href="/minimal-mistakes/edge-case/edge-case-nested-and-mixed-lists/">Edge Case: Nested and Mixed Lists</a>
-      </h2>
-    <p class="page__meta">
-    <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        less than 1 minute read
-        </span>
-    </p>
+        <a class="u-url" rel="bookmark" href="/minimal-mistakes/edge-case/edge-case-nested-and-mixed-lists/">Edge Case: Nested and Mixed Lists</a>
+    </h2>
+  <p class="page__meta"><span class="page__meta-readtime">
+        <i class="farfa-clock" aria-hidden="true"></i>
+          less than 1 minute read
+      </span>
+  </p>
 <p class="archive__item-excerpt p-summary" itemprop="description">Nested and mixed lists are an interesting beast. It’s a corner case to make sure that.
-</p></article>
+</p>
+  </article>
 </div>
+
+
 <div class="grid__item">
   <article class="archive__item h-entry" itemscope="" itemtype="https://schema.org/CreativeWork">
     <h2 class="archive__item-title no_toc p-name" itemprop="headline">
-      <a class="u-url" rel="bookmark" href="/minimal-mistakes/edge-case/edge-case-many-tags/">Edge Case: Many Tags</a>
-      </h2>
-    <p class="page__meta">
-    <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        less than 1 minute read
-        </span>
-    </p>
+        <a class="u-url" rel="bookmark" href="/minimal-mistakes/edge-case/edge-case-many-tags/">Edge Case: Many Tags</a>
+    </h2>
+  <p class="page__meta"><span class="page__meta-readtime">
+        <i class="farfa-clock" aria-hidden="true"></i>
+          less than 1 minute read
+      </span>
+  </p>
 <p class="archive__item-excerpt p-summary" itemprop="description">This post has many tags.
-</p></article>
+</p>
+  </article>
 </div>
+
+
 <div class="grid__item">
   <article class="archive__item h-entry" itemscope="" itemtype="https://schema.org/CreativeWork">
     <h2 class="archive__item-title no_toc p-name" itemprop="headline">
-      <a class="u-url" rel="bookmark" href="/minimal-mistakes/aciform/antiquarianism/arrangement/asmodeus/broder/buying/championship/chastening/disinclination/disinfection/dispatch/echappee/enphagy/edge-case-many-categories/">Edge Case: Many Categories</a>
-      </h2>
-    <p class="page__meta">
-    <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        less than 1 minute read
-        </span>
-    </p>
+        <a class="u-url" rel="bookmark" href="/minimal-mistakes/aciform/antiquarianism/arrangement/asmodeus/broder/buying/championship/chastening/disinclination/disinfection/dispatch/echappee/enphagy/edge-case-many-categories/">Edge Case: Many Categories</a>
+    </h2>
+  <p class="page__meta"><span class="page__meta-readtime">
+        <i class="farfa-clock" aria-hidden="true"></i>
+          less than 1 minute read
+      </span>
+  </p>
 <p class="archive__item-excerpt p-summary" itemprop="description">This post has many categories.
-</p></article>
+</p>
+  </article>
 </div>
+
+
 <div class="grid__item">
   <article class="archive__item h-entry" itemscope="" itemtype="https://schema.org/CreativeWork">
     <h2 class="archive__item-title no_toc p-name" itemprop="headline">
-      <a class="u-url" rel="bookmark" href="/minimal-mistakes/edge-case/edge-case-no-body-content/">Edge Case: No Body Content</a>
-      </h2>
-    <p class="page__meta">
-    <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        less than 1 minute read
-        </span>
-    </p>
-</article>
+        <a class="u-url" rel="bookmark" href="/minimal-mistakes/edge-case/edge-case-no-body-content/">Edge Case: No Body Content</a>
+    </h2>
+  <p class="page__meta"><span class="page__meta-readtime">
+        <i class="farfa-clock" aria-hidden="true"></i>
+          less than 1 minute read
+      </span>
+  </p>
+
+  </article>
 </div>
+
+  </div>
 </div>
+
 </div>
-</div>
+
+    </div>
+      <div class="search-content"><div class="search-content__inner-wrap"><div class="search-searchbar"></div>
+  <div class="search-hits"></div></div>
 
       </div>
 
-    <div class="search-content">
-        <div class="search-content__inner-wrap"><div class="search-searchbar"></div>
-  <div class="search-hits"></div></div>
-</div>
     <div id="footer" class="page__footer">
-      <footer>
-        <!-- start custom footer snippets -->
+      <footer><!-- start custom footer snippets -->
 
 <!-- end custom footer snippets --><div class="page__footer-follow">
   <ul class="social-icons">
-    <li><strong>Follow:</strong></li>
-    <li><a href="https://twitter.com/mmistakes" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
-        <li><a href="https://github.com/mmistakes" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
-        <li><a href="https://instagram.com/mmistakes" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>
-        <li><a href="/minimal-mistakes/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
-    </ul>
+      <li><strong>Follow:</strong></li>
+          <li><a href="https://twitter.com/mmistakes" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+          <li><a href="https://github.com/mmistakes" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+          <li><a href="https://instagram.com/mmistakes" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+      <li><a href="/minimal-mistakes/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
 </div>
 
 <div class="page__footer-copyright">&copy;  <a href="https://lsolesen.github.io">Minimal Mistakes</a>. Powered by <a href="https://www.11ty.dev/" rel="nofollow">11ty</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
-</footer>
-    </div>
 
-    <script src="/minimal-mistakes/assets/js/main.min.js"></script>
-<script>
+      </footer>
+    </div>
+  <script src="/minimal-mistakes/assets/js/main.min.js"></script><script>
 // Including InstantSearch.js library and styling
 const loadSearch = function() {
   const loadCSS = function(src) {
@@ -429,8 +445,8 @@ const loadSearch = function() {
     // Adding searchbar and results widgets
     search.addWidget(
       instantsearch.widgets.searchBox({
-        container: '.search-searchbar',
-        poweredBy: true,placeholder: 'Enter your search term...'
+        container: '.search-searchbar',poweredBy: true,
+        placeholder: 'Enter your search term...'
       })
     );
     search.addWidget(
@@ -465,5 +481,7 @@ $(document).ready(function() {
   });
 });
 </script>
-</body>
+
+
+  </body>
 </html>
