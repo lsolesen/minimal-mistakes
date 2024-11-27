@@ -1,13 +1,7 @@
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 {% include seo.html %}
-
-{% unless site.atom_feed.hide %}
-  <link href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' }}{% endif %}" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
-{% endunless %}
-
-{%- comment %} https://docs.google.com/presentation/d/1rmxwWa9P6_xHqonmh5ONXRS-jPc5XKbnv99Rjkhe04s/present {% endcomment -%}
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <script>
   document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
@@ -16,22 +10,21 @@
   {%- endif %}
 </script>
 
-<!-- For all browsers -->
-<link rel="stylesheet" href="/assets/css/main.css">
-<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<link rel="preload" href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
-<noscript><link rel="stylesheet" href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" as="style" /></noscript>
-
-{% assign hero_image = header.image | default: header.overlay_image %}
-{% if hero_image %}
-<link rel="preload" fetchpriority="high" as="image" href="{{ hero_image }}">
-{% endif %}
-
-<meta name="generator" content="{{ eleventy.generator }}">
-
 {% if site.head_scripts %}
   {% for script in site.head_scripts %}
     <script src="{{ script }}"></script>
   {% endfor %}
 {% endif %}
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.1/css/all.min.css"></noscript>
+<noscript><link rel="stylesheet" href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" as="style" /></noscript>
+
+<meta name="generator" content="{{ eleventy.generator }}">
+
+{% unless site.atom_feed.hide %}
+  <link href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' }}{% endif %}" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
+{% endunless %}
